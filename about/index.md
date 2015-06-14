@@ -4,21 +4,14 @@ fb_comments: 3
 title: About
 ---
 
-<img src="http://farm3.staticflickr.com/2849/9337114103_c7cf9c0c0c_c.jpg" width="256" height="170" align="right">
+<img src="/public/me_small.jpg" width="256" height="170" align="right">
 
-My name is Anastasios Kyrillidis. I'm a Swedish maker living in San Francisco with a passion for art and technology, who have worked with a number of different companies since the 1990s, including 
-[Facebook](http://facebook.com/design),
-[Spotify](http://www.spotify.com/),
-[Spray](http://www.spray.se/),
-[Lear Corporation](http://lear.com/) and
-[Notion](http://notion.se/).
-More information can be found through [LinkedIn](http://www.linkedin.com/in/rasmusandersson).
+My name is Anastasios (Tasos) Kyrillidis and, currently, I'm a PostDoc member of the [Wireless Networking & Communications Group](https://wncg.org/) (WNCG) at [the University of Texas at Austin](http://www.utexas.edu/), under the supervision of [Constantine Caramanis](http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html), [Alex Dimakis](http://users.ece.utexas.edu/~dimakis/) and [Sujay Sanghavi](http://users.ece.utexas.edu/~sanghavi/). 
+During my Ph.D. studies, I was under the supervision of Prof. [Volkan Cevher](http://lions.epfl.ch/volkancevher) and member of the [Laboratory for Information and Inference Systems](http://lions.epfl.ch/home) (LIONS lab) at [Ecole Polytechnique Federale de Lausanne](http://www.epfl.ch/) (EPFL), Switzerland.
 
-I work for & ♥ [Dropbox](http://dropbox.com/)
+I feel fortunate to have received my 5-year diploma and my M.Sc. on Electronic Engineering and Computer Science at the [Technical University of Crete](http://www.tuc.gr/3324.html). 
 
-- [Read more about my work with Spotify &rarr;](/about/spotify/)
-- [Some of my favorite technical papers &rarr;](https://www.dropbox.com/sh/is0sy5350lr4v9j/AADQlhVSQcRw6vCNKQgGWelqa)
-
+My research interests include machine learning, convex and non-convex analysis and optimization, data analytics and mining, structured low dimensional models, compressed sensing.
 
 ## Elsewhere
 
