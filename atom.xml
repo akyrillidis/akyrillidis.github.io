@@ -3,14 +3,14 @@ layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Rasmus Andersson</title>
-  <link href="http://rsms.me/atom.xml" rel="self"/>
-  <link href="http://rsms.me/"/>
+  <title>Tasos Kyrillidis</title>
+  <link href="http://akyrillidis.github.io/atom.xml" rel="self"/>
+  <link href="http://akyrillidis.github.io/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://rsms.me/</id>
   <author>
-    <name>Rasmus Andersson</name>
-    <email>rasmus@notion.se</email>
+    <name>Anastasios (Tasos) Kyrillidis/name>
+    <email>anatasios@utexas.edu</email>
   </author>
   {% for post in site.posts limit:10 %}
   <entry>
@@ -20,8 +20,8 @@ layout: null
     <id>http://rsms.me{{ post.id }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
     <author>
-      <name>Rasmus Andersson</name>
-      <uri>http://rsms.me/about/</uri>
+      <name>Anastasios (Tasos) Kyrillidis/name>
+      <email>anatasios@utexas.edu</email>
     </author>
   </entry>
   {% endfor %}
