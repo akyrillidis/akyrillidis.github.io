@@ -1,0 +1,47 @@
+---
+layout: post
+categories: [facebook, tech, code]
+tumblr_id: 189410547
+disqus_comments: true
+date: 2009-09-16 15:01:56 UTC
+title: Behind the Facebook Desktop Notification
+---
+
+<p>Me and a friend looked at what the newly released <a href="http://www.facebook.com/apps/application.php?id=219303305471">Facebook Desktop Notification</a> is doing (a simple OS X application which gives you seemingly real-time visual notifications when something happens on Facebook). Since it's very quick at displaying notifications and since people have requested a pub/sub API to Facebook for quite some time, we thought that <q>hey, maybe they're trying out a new notify-API! Let's reverse engineer it.</q>.</p>
+
+<p>Well, turns out they are actually <em>polling every 30 seconds</em>. Wow. With 100m+ users, thats <em>a lot</em> of queries.</p>
+
+<p>The application uses <code>fql.multiquery</code> to send optimised queries and also asks for JSON responses in order to keep the bandwidth usage down.</p>
+
+<pre>...
+messages:
+SELECT thread_id, subject, snippet_author, snippet, unread, updated_time 
+ FROM thread 
+  WHERE folder_id = 0 AND updated_time > 1253102646
+...</pre>
+
+<p>The response looks like this, if something new has happened since last time we checked:</p>
+
+<pre>{"name":"messages",
+ "fql_result_set":[
+  {"thread_id":"1040528110203",
+   "subject":"yoooo",
+   "updated_time":1253102646,
+   "snippet":"igen, hej hej! :)",
+   "snippet_author":1234567890,
+   "unread":1
+}]},
+...
+[{"name":"pic",
+  "fql_result_set":[
+   {"name":"Rasmus Andersson",
+    "uid":123456789,
+    "pic_square":"http:\/\/profile.ak.fbcdn.net\/v223\/550\/18\/q728642302_410.jpg"},
+   {"name":"Jon \u00c5slund",
+    "uid":1234567890,
+    "pic_square":"http:\/\/profile.ak.fbcdn.net\/v225\/558\/26\/q803274534_5076.jpg"}
+...</pre>
+
+<p>In other words; they return the minimum amount of data in a single response needed to  represent the event — subject, time, message excerpt and the parties involved in the discussion.</p>
+
+<p>Well, most if this is fairly old news, but the fact that themselves (Facebook) release an application which polls the API at such a high rate indicates that we (merely mortals) can do so too. Opens up for close-to-realtime applications.</p>

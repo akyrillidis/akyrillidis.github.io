@@ -1,0 +1,22 @@
+---
+layout: post
+categories: [spotify, api, libspotify, spotify core, software]
+tumblr_id: 1102106175
+disqus_comments: true
+date: 2009-04-07 14:52:21 UTC
+title: Write your own Spotify client
+---
+
+<a href="http://developer.spotify.com/en/libspotify/"><img src="http://developer.spotify.com/wp-content/uploads_dev/2009/04/spotify-core-logo-96x96.png" alt="spotify-core-logo" width="96" height="96" align="right" /></a>We just released <a href="http://developer.spotify.com/libspotify/"><em>libspotify</em></a> – The <a href="http://www.spotify.com/">Spotify</a> Core library – into the wild. This will enable anyone to write their own Spotify client application.
+
+<a href="http://developer.spotify.com/libspotify/"><em>libspotify</em></a> is a <a href="http://en.wikipedia.org/wiki/C_library">C library</a> which exposes all the features of the regular desktop application, except from the user interface – that, you have to write yourself ;). Now, of course there's a catch: You have to have a <a href="http://www.spotify.com/en/products/premium/">Spotify premium account</a> in order to use the library. But as the music-loving Spotify user you are, you're already a Premium user, right? <em><a href="https://www.spotify.com/en/products/premium/order/account/">right?!</a></em>.
+
+First off, you need to <a href="https://developer.spotify.com/en/libspotify/application-key/">apply for a <em>application key</em></a> which will be used to identify your application in our system. Then off to the <a href="https://developer.spotify.com/en/libspotify/overview/">download section</a> and grab a copy of this funky library (the link that says something like "tar.gz"). This package includes all you need to get started – the compiled library, <a href="https://developer.spotify.com/en/libspotify/docs/">documentation</a>, example code, the Spotify Core logotype as well as a copy of the <a href="https://developer.spotify.com/en/libspotify/terms-of-use/">terms of use</a>.
+
+At the moment, only Linux on <a href="http://en.wikipedia.org/wiki/IA32">IA-32</a> (Intel Architecture, 32-bit) is supported. Our goal is to support a host of additional platforms in the future.
+
+The API have two distinct features: Objects, or structs, are reference counted using functions named like <tt>sp_&lt;type&gt;_{release,retain}</tt>. Second; you have to establish a <a href="https://developer.spotify.com/en/libspotify/docs/group__session.html"><tt>sp_session</tt></a> object before calling any of the other library functions. Basically, you log in and receive a context object which is then passed around to the different library function calls.
+
+The examples which are provided with the downloadable package can also be <a href="https://developer.spotify.com/en/libspotify/docs/examples.html">viewed on the website</a>.
+
+You should also read our brand new official <a href="http://developer.spotify.com/blog/">Developer Blog at http://developer.spotify.com/blog/</a>. Here's the official <a href="http://developer.spotify.com/blog/archives/2009/04/07/launching-libspotify-and-developers-website/">post announcing libspotify</a>.
