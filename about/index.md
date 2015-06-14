@@ -6,7 +6,7 @@ title: About
 
 <img src="http://farm3.staticflickr.com/2849/9337114103_c7cf9c0c0c_c.jpg" width="256" height="170" align="right">
 
-My name is Rasmus Andersson. I'm a Swedish maker living in San Francisco with a passion for art and technology, who have worked with a number of different companies since the 1990s, including 
+My name is Anastasios Kyrillidis. I'm a Swedish maker living in San Francisco with a passion for art and technology, who have worked with a number of different companies since the 1990s, including 
 [Facebook](http://facebook.com/design),
 [Spotify](http://www.spotify.com/),
 [Spray](http://www.spray.se/),
