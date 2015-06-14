@@ -4,7 +4,7 @@ fb_comments: 3
 title: About
 ---
 
-<img src="/public/me_small.jpg">
+<img src="/public/me_small.jpg" width="170" height="256" align="right">
 
 My name is Anastasios (Tasos) Kyrillidis and, currently, I'm a PostDoc member of the [Wireless Networking & Communications Group](https://wncg.org/) (WNCG) at [the University of Texas at Austin](http://www.utexas.edu/), under the supervision of [Constantine Caramanis](http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html), [Alex Dimakis](http://users.ece.utexas.edu/~dimakis/) and [Sujay Sanghavi](http://users.ece.utexas.edu/~sanghavi/). 
 During my Ph.D. studies, I was under the supervision of Prof. [Volkan Cevher](http://lions.epfl.ch/volkancevher) and member of the [Laboratory for Information and Inference Systems](http://lions.epfl.ch/home) (LIONS lab) at [Ecole Polytechnique Federale de Lausanne](http://www.epfl.ch/) (EPFL), Switzerland.
