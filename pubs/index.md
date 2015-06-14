@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: dirindex
+fb_comments: 3
 title: Publications
 ---
 
