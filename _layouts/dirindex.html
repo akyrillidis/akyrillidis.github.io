@@ -3,13 +3,6 @@ layout: page
 hide_subdirindex: true
 ---
 <div class="dirindex">
-  <h2>
-    {% if page.title %}
-      {{ page.title }}
-    {% else %}
-      {{ page.url | remove_first:'/index.html' | remove_first:'/' | replace:'/',' &mdash; ' | capitalize }}
-    {% endif %}
-  </h2>
 
   {% if content != '' %}
   <p class="preamble">
