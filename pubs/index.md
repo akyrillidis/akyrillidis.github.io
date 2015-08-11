@@ -3,19 +3,7 @@ layout: dirindex
 fb_comments: 3
 ---
 
-## Theses
-
-+ Anastasios Kyrillidis, [*``Rigorous optimization recipes for sparse and low rank inverse problems with applications in data sciences"*](/pubs/Theses/Rigorous_optimization_recipes.pdf), Ph.D. Thesis, School of Computer and Communications, EPFL, September 2014.
-+ Anastasios Kyrillidis, [*``Polynomial-complexity computation of the M-phase vector that maximizes a rank-deficient quadratic form"*](/pubs/Theses/RankD_Thesis.pdf), M.Sc. Thesis, Dept. Electronic Engineering and Computer Science, Technical University of Crete, July 2010.
-
-## Current research efforts
-
-+ Luca Baldassarre, Nirav Bhan, Volkan Cevher and, Anastasios Kyrillidis, [*``Group-sparse model selection: Hardness and relaxations"*](/pubs/Preprints/GroupSparse-IT.pdf), submitted to IEEE Trans. on Information Theory, 2013. *(Authors listed in alphabetical order.)*
-+ Anastasios Kyrillidis, Luca Baldassarre, Stephen Becker and Volkan Cevher, *``Sparse projections onto general hyperplanes"*, preprint, 2013.
-+ Georgios Skoumas, Dieter Pfoser and Anastasios Kyrillidis, [*``Location estimation using crowdsourced geospatial data"*](/pubs/Preprints/Location.pdf), preprint, 2014.
-
 ## Journals
-
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``Composite self-concordant minimization"*](/pubs/Journals/TranDinhKyrillidisCevher_ComSelfMin2013.pdf), accepted in Journal of Machine Learning Research, 2013.
 + Quoc Tran-Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``An inexact proximal path-following algorithm for constrained convex minimization"*](/pubs/Journals/TranDinh_etal_PFPN_2013.pdf), accepted in SIAM Journal on Optimization (SIOPT), 2014.
 + Michail Vlachos, Nikolaos Freris and Anastasios Kyrillidis, [*``Compressive mining: fast and optimal data mining in the compressed domain"*](/pubs/Journals/optimalBounds_VLDB.pdf), accepted in Very Large Data Bases (VLDB) Journal, 2014.
@@ -23,13 +11,7 @@ fb_comments: 3
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix recipes for hard thresholding methods"*](/pubs/Journals/MatrixALPS_JMVI_v2.pdf), Journal of Mathematical Imaging and Vision (JMIV), April 2013, Springer.
 + Nikolaos D. Sidiropoulos and Anastasios Kyrillidis, [*``Multi-way compressed sensing for sparse low rank tensors"*](/pubs/Journals/MWCSR1twocol.pdf), IEEE Signal Processing Letters, 19(11):757-760, Oct. 2012.
 
-## Book chapters
-
-+ Volkan Cevher, Sina Jafarpour and Anastasios Kyrillidis, [*``Linear inverse problems with norm and sparsity constraints"*](), in Practical Applications of Sparse Modeling, Sept. 2014, MIT Press, *(Authors listed in alphabetical order)*.
-+ Anastasios Kyrillidis, Luca Baldassarre, Marwa El-Halabi, Quoc Tran-Dinh and Volkan Cevher, [*``Structured sparsity: discrete and convex approaches"*](), submitted as book chapter to ``Compressed sensing and its application", Springer, 2014.
-
 ## Conference papers
-
 + Michail Vlachos, Francesco Fusco, Harry Mavroforakis, Anastasios Kyrillidis and Vassilis Vasileiadis, [*``Scalable and robust co-clustering of large customer-product graphs"*](/pubs/Conferences/km0049-vlachosA.pdf), ACM CIKM International Conference on Information and Knowledge Management, 2014.
 + Dimitris Papailiopoulos, Anastasios Kyrillidis and Christos Boutsidis, [*``Provable deterministic leverage scores sampling"*](/pubs/Conferences/frp0826.pdf), ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2014.
 + Anastasios Kyrillidis, Rabeeh Karimi Mahabadi, Quoc Tran-Dinh and Volkan Cevher, [*``Scalable sparse covariance estimation via self-concordance"*](/pubs/Conferences/covselect_final.pdf), AAAI Conference on Artificial Intelligence (AAAI-14), 2014.
@@ -45,3 +27,12 @@ fb_comments: 3
 + Anastasios Kyrillidis, Gilles Puy and Volkan Cevher, [*``Hard thresholding with norm constraints"*](/pubs/Conferences/HardThreshNormCon.pdf), IEEE ICASSP, 2012.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Recipes on hard thresholding methods"*](/pubs/Conferences/CAMSAP_Recipes_for_HTM.pdf), 4th IEEE CAMSAP, 2011.
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Rank-deficient quadratic-form maximization over M-phase alphabet: Polynomial-complexity solvability and algorithmic developments"*](/pubs/Conferences/RankD_Conf_v1.pdf), IEEE ICASSP, 2011.
+
+## Book chapters
++ Volkan Cevher, Sina Jafarpour and Anastasios Kyrillidis, [*``Linear inverse problems with norm and sparsity constraints"*](), in Practical Applications of Sparse Modeling, Sept. 2014, MIT Press, *(Authors listed in alphabetical order)*.
++ Anastasios Kyrillidis, Luca Baldassarre, Marwa El-Halabi, Quoc Tran-Dinh and Volkan Cevher, [*``Structured sparsity: discrete and convex approaches"*](), submitted as book chapter to ``Compressed sensing and its application", Springer, 2014.
+
+## Theses
++ Anastasios Kyrillidis, [*``Rigorous optimization recipes for sparse and low rank inverse problems with applications in data sciences"*](/pubs/Theses/Rigorous_optimization_recipes.pdf), Ph.D. Thesis, School of Computer and Communications, EPFL, September 2014.
++ Anastasios Kyrillidis, [*``Polynomial-complexity computation of the M-phase vector that maximizes a rank-deficient quadratic form"*](/pubs/Theses/RankD_Thesis.pdf), M.Sc. Thesis, Dept. Electronic Engineering and Computer Science, Technical University of Crete, July 2010.
+

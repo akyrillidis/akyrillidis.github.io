@@ -1,0 +1,3 @@
+Read me (after some time passes)
+- Files like images are in public folder
+- About page has /about/ folder
