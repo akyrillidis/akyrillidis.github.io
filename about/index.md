@@ -4,7 +4,7 @@ fb_comments: 3
 title: About
 ---
 
-<img src="/public/me_small.jpg" width="170" height="256" align="right">
+<img src="/public/me_smaller.jpg" width="170" height="256" align="right">
 
 My name is Anastasios Kyrillidis, but most people call me Tasos. Currently, I'm a Simons 
 PostDoc member of the [Wireless Networking & Communications Group](https://wncg.org/) (WNCG) 
