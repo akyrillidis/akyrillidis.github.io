@@ -1,9 +1,7 @@
 ---
 layout: dirindex
 fb_comments: 3
-title: Projects
 ---
-
 - [Messenger for Mac](https://github.com/rsms/fb-mac-messenger) — a Mac app around Facebook's stand-alone Messenger.com
 - [Gotalk](http://rsms.me/2015/01/21/gotalk.html) — makes it easy for programs to talk with one another over the internet.
 - [Sol](/2012/10/14/sol-a-sunny-little-virtual-machine) — educational virtual machine implementation.  ([GH](https://github.com/rsms/sol))
