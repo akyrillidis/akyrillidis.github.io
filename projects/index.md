@@ -7,5 +7,3 @@ fb_comments: 3
  A greedy solver for sparsity-constrained CS problems.
 - [CLASH algorithm](/projects/CLASH/)
  A greedy solver for sparsity-constrained CS problems.
- 
-## More hacks
