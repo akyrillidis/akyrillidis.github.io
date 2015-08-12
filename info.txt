@@ -1,3 +1,5 @@
 Read me (after some time passes)
 - Files like images are in public folder
-- About page has /about/ folder
+- About page is in the /about/ folder
+- To change the fontsize, go to res/screen.css and change /*Base -> fontsize
+- If you want to add a new tab, go to layouts/default and add

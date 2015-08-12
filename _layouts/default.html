@@ -13,11 +13,9 @@
     <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
     <link rel="alternate" type="application/atom+xml" title="Anastasios Kyrillidis" href="/atom.xml">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-{% if page.ios_app_name %}{{page.ios_app_name}}-{% endif %}72x72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@rsms">
+    <link rel="apple-touch-icon-precomposed" href="/public/AK.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/AK.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/AK.png">
     {% if page.ios_app_name %}
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -78,7 +76,7 @@
       <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/public/signature.png" width="160" height="50" alt="Signature"></a></h1>
       <ul class="navigation">
         <li><a href="/pubs/"{% if page.url contains "/pubs/" %}class="active"{% endif %} title="Collection of publications">Publications</a></li>
-        <li><a href="/projects/"{% if page.url contains "/projects/" %}class="active"{% endif %} title="Projects I used or am currently working">Projects</a></li>
+        <li><a href="/projects/"{% if page.url contains "/projects/" %}class="active"{% endif %} title="Projects I used or am currently working">Software</a></li>
         <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li>
       </ul>
     </header>
