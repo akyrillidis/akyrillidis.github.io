@@ -3,3 +3,8 @@ Read me (after some time passes)
 - About page is in the /about/ folder
 - To change the fontsize, go to res/screen.css and change /*Base -> fontsize
 - If you want to add a new tab, go to layouts/default and add
+
+- [ALgebraic PursuitS](/projects/ALPS/)
+ A greedy solver for sparsity-constrained CS problems.
+- [CLASH algorithm](/projects/CLASH/)
+ A greedy solver for sparsity-constrained CS problems.
