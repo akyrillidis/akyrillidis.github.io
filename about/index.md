@@ -15,4 +15,4 @@ at [the University of Texas at Austin](http://www.utexas.edu/), working with
 My research interests include (but are not limited to) convex and non-convex analysis and optimization, 
 data analysis and machine learning.
 
-Curriculum vitae: [.pdf](/archive/Various/Anastasios_Kyrillidis_CV_academia.pdf) - Google scholar: [link](http://scholar.google.ch/citations?user=TEGzkZMAAAAJ&hl=en)
+Curriculum vitae: [.pdf](/pubs/Various/Anastasios_Kyrillidis_CV_academia.pdf) - Google scholar: [link](http://scholar.google.ch/citations?user=TEGzkZMAAAAJ&hl=en)
