@@ -5,6 +5,9 @@ Read me (after some time passes)
 - If you want to add a new tab, go to layouts/default and add
 - To change signature, go to _layouts/default.html/
 - The background color is V = 86, R = 220, G = 220, B = 220
+- To change size of images in posts:
+   1. for the post icon, do: 
+   2. for the icon in the post, do: 
 
 - [ALgebraic PursuitS](/projects/ALPS/)
  A greedy solver for sparsity-constrained CS problems.
