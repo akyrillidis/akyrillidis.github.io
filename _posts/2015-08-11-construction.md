@@ -1,6 +1,5 @@
 ---
 layout: post
-tumblr_id: 1121202947
 disqus_comments: false
 date: 2015-08-11 20:00:00 UTC
 title: New webpage (under construction)
