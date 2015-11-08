@@ -17,11 +17,12 @@
 }*/
 
 /* Base */
+/* 'Poly', oxygen, georgia, serif; */
 * { margin:0; padding:0; font-family:inherit; }
 body {
   background:#ddd;
   color:#444;
-  font:12px 'Poly', oxygen, georgia, serif;
+  font:12px arial;
   line-height:1.5;
   font-weight: lighter;
   margin: 0 auto;
@@ -39,7 +40,8 @@ p, ul, ol, pre, blockquote, hr, object { margin: 1em 0; }
 pre, code, tt {
   /*-webkit-font-smoothing: subpixel-antialiased;*/
   /*font-family: 'M+ 1mn', 'Consolas', monospace;*/
-  font-family: 'Ubuntu Mono', 'Consolas', monospace;
+  /*'Ubuntu Mono', 'Consolas', monospace;*/
+  font-family: arial
   font-weight:300;
   font-size: 12px;
 }
@@ -48,7 +50,8 @@ strong { font-weight:bold; }
 hr { height:1px; border:none; background-color:#ddd; }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Poly', helvetica, sans-serif;
+  /* 'Poly', helvetica, sans-serif; */
+  font-family: arial
   font-weight:normal;
   color:#040404;
   margin: 1.618em 0 0.7em 0;
@@ -110,7 +113,8 @@ header {
     float: right;
     line-height: 50px;
     margin-top: 35px;
-    font-family: helvetica, sans-serif;
+    /* helvetica, sans-serif; */
+    font-family: arial;
   }
   header ul.navigation li {
     display: inline-block;
@@ -157,7 +161,8 @@ div.content.photo {
   div.content ul > li { margin-left:1.4em; }
   
   div.content blockquote {
-    font-family: 'Poly', georgia;
+    /* 'Poly', georgia; */
+    font-family: arial;
     font-style:italic;
     line-height:1.618;
     background:transparent url(quotation-mark.png) no-repeat scroll 25px 1.4em;
@@ -1375,9 +1380,10 @@ footer {
 }
 
 /* medium-res devices (e.g. ipad, but not iphone) */
+/* 'Poly', georgia; */
 #sidebar { display:none; }
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-  body { zoom: 1; width:100%; font-family: 'Poly', georgia; }
+  body { zoom: 1; width:100%; font-family: arial; }
 }
 
 /* devices like laptops and regular computers (including ipad but not
