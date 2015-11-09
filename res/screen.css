@@ -22,7 +22,7 @@
 body {
   background:#ddd;
   color:#444;
-  font:12px arial;
+  font:12px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   line-height:1.5;
   font-weight: lighter;
   margin: 0 auto;
