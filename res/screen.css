@@ -17,12 +17,12 @@
 }*/
 
 /* Base */
-/* 'Poly', oxygen, georgia, serif; */
+/* 'Poly', oxygen, georgia, serif; 'Lucida Sans Unicode', 'Lucida Grande', */
 * { margin:0; padding:0; font-family:inherit; }
 body {
   background:#ddd;
   color:#444;
-  font:12px Century Gothic, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font:12px Century Gothic, sans-serif;
   line-height:1.5;
   font-weight: lighter;
   margin: 0 auto;
