@@ -2,10 +2,8 @@
 layout: post
 disqus_comments: false
 date: 2015-12-12 15:00:00 UTC
-title: ALPS with Python / part I
+title: ALPS with Python (Part I)
 ---
-
-# ALgebraic PursuitS (ALPS) with Python - part I
 
 **Purpose of this notebook**. the purpose of this notebook is 2-fold:
 
