@@ -395,6 +395,7 @@ div.content.photo-post {
 
 div.post {
   padding-bottom: 0em;
+  padding-top: 0em;
   /*margin-bottom:-70px;*/
   page-break-before: always;
 }
