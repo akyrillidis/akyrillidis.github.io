@@ -137,7 +137,7 @@ header {
 /* main content */
 div.content {
   background:white;
-  padding:70px 60px;
+  padding:10px 10px;
   margin-bottom:60px;
 }
 div.content.full-bleed {
