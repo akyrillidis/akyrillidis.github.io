@@ -139,6 +139,7 @@ div.content {
   background:white;
   padding:70px 60px;
   margin-bottom:60px;
+  margin-top:10px;
 }
 div.content.full-bleed {
   padding:0;
