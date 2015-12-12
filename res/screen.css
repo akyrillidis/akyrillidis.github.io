@@ -139,7 +139,6 @@ div.content {
   background:white;
   padding:70px 60px;
   margin-bottom:60px;
-  margin-top:10px;
 }
 div.content.full-bleed {
   padding:0;
@@ -235,14 +234,14 @@ div.content.sub {
 /* intro on first page */
 
 div.content.intro {
-  padding: 10px;
+  padding: 40px;
 }
 
 /* --------------------------------------------------------------------------------------------- */
 /* posts */
 
 div.posts div.end {
-  padding:10px;
+  padding:40px;
   text-align:center;
 }
 
@@ -257,7 +256,7 @@ a.post-excerpt {
 }
   a.post-excerpt div.padded-content {
     display: block;
-    padding: 10px;
+    padding: 40px;
   }
   a.post-excerpt div.grid-mask { display:none; }
   a.post-excerpt.photo {
@@ -363,14 +362,14 @@ a.post-excerpt {
 /* photo post */
 
 div.content.photo-post {
-  padding-top: 10px;
+  padding-top: 60px;
 }
   div.content.photo-post p:first-child, div.content.photo-post img:first-child {
     padding-top:0;
     margin-top:0;
   }
   div.content.photo-post p, div.content.photo-post iframe {
-    padding: 10px 0 0 0;
+    padding: 40px 0 0 0;
     margin:0;
   }
 /*div.content.photo-post {
@@ -378,7 +377,7 @@ div.content.photo-post {
   margin:0 0 70px 0;
 }
   div.content.photo-post p, div.content.photo-post iframe {
-    padding: 10px 40px 0 40px;
+    padding: 40px 40px 0 40px;
     margin:0;
   }
   div.content.photo-post img {
@@ -395,7 +394,6 @@ div.content.photo-post {
 
 div.post {
   padding-bottom: 0em;
-  padding-top: 0em;
   /*margin-bottom:-70px;*/
   page-break-before: always;
 }
@@ -434,7 +432,7 @@ div.post {
     margin-top:30px;
     margin-right:-60px;
     margin-bottom:0;
-    padding-top:0px;
+    padding-top:25px;
     padding-right:60px;
     padding-bottom:25px;
     opacity:0.6;
