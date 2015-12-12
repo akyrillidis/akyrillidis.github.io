@@ -6,6 +6,7 @@ Read me (after some time passes)
 - To change signature, go to _layouts/default.html/
 - The background color is V = 86, R = 220, G = 220, B = 220
 - To change size of images in posts, check seminar poist
+- To change margins, go to res/screen.css and change padding in div.content of main content (10px 30px means 10 top-bottom, 30 left-right)
 
 - [ALgebraic PursuitS](/projects/ALPS/)
  A greedy solver for sparsity-constrained CS problems.
