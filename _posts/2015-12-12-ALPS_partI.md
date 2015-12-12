@@ -1,3 +1,23 @@
+<style TYPE="text/css">
+	code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
+    }
+});
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 ---
 layout: post
 disqus_comments: false
@@ -46,7 +66,7 @@ x_mush_star.shape = (x_mush_orig.size[1], x_mush_orig.size[0])
 # Show the image
 plt.imshow(x_mush_star, interpolation = "nearest", cmap = plt.cm.gray)
 ```
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_4_1.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_4_1.png)
 
 Obviously, this is a simple image case: the "mushroom" image is sparse by itself (do you see the black pixels? Yes, they are zeros). To see this more clearly, let's sort the true coeffients in decreasing order.
 
@@ -82,7 +102,7 @@ x_house_star.shape = (x_house_orig.size[1], x_house_orig.size[0])
 plt.imshow(x_house_star, interpolation = "nearest", cmap = plt.cm.gray)
 ```
 
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_8_1.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_8_1.png)
 
 ...and here is the bar plot of the coefficients.
 
@@ -99,7 +119,7 @@ plt.plot(xs, x_house_abs_sort, alpha=0.8)
 plt.show()
 ```
 
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_10_0.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_10_0.png)
 
 In the plot above, all the coefficients are non-zero! Is there anything we can do in this case?
 
@@ -133,7 +153,7 @@ plt.title("Wavelet representation of image", fontsize=10)
 plt.tight_layout()
 ```
 
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_12_0.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_12_0.png)
 
 After wavelet transformation, let's plot the wavelet coefficients. 
 
@@ -153,7 +173,7 @@ plt.plot(xs, np.flipud(x_house_abs_wav_sort.transpose()), alpha = 0.8)
 plt.show()
 ```
 
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_14_0.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_14_0.png)
 
 It is obvious that much less number of coefficients are non-zero! (...and this holds generally for naturally images.)
 
@@ -193,7 +213,7 @@ ax.set_zlabel('Z axis')
 plt.show
 ```
 
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_16_1.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_16_1.png)
 
 In the above picture, the y values (1.0 to 4.0) correspond to four different image cases (for chanity check, observe that the red curve is the same curve for the house.png case, presented above). 
 
@@ -233,7 +253,7 @@ plt.ylabel('Amplitude')
 plt.show()
 ```
 
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_20_0.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_20_0.png)
 
 For sensing matrix, we assume $\boldsymbol{\Phi}$ satisfies the *Restricted Isometry Property*:
 
@@ -366,7 +386,7 @@ plt.show()
     iter# = 13, ||x_new - x_old||_2 = 1.15011381846e-06
     Number of steps: 15
 
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_24_1.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_24_1.png)
 
 This is great! IHT finds $\mathbf{x}^\star$ fast and 'accurately'. How fast? Let's create a convergence plot.
 
@@ -386,7 +406,7 @@ plt.subplots_adjust(top=0.8)
 plt.show()
 ```
 
-![png](ALPS%20demo%20I_files/ALPS%20demo%20I_26_0.png)
+![png](ALPS_demo_I_files/ALPS_demo_I_26_0.png)
 
 It turns out that vanilla IHT converges to $\mathbf{x}^\star$ *linearly*, according to the following theorem (for convergence in function values):
 
