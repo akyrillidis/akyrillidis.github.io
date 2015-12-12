@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2015-12-12 15:00:00 UTC
-title: ALPS with Python - part I
+title: ALPS with Python / part I
 ---
 
 # ALgebraic PursuitS (ALPS) with Python - part I
