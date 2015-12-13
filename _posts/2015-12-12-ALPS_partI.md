@@ -5,7 +5,8 @@ date: 2015-12-12 15:00:00 UTC
 title: ALPS with Python (Part I)
 ---
 
-**Purpose of this notebook**. the purpose of this notebook is 2-fold:
+**Purpose of this notebook**. 
+The purpose of this notebook is 2-fold:
 
 + Since this is the first attempt to "migrate" from Matlab-type-of-mathematical-programming language to Python language, this very first notebook serves as a guide for future posts.
 + Present ALgrebraic PursuitS (ALPS) algorithmic framework that solves Compressive Sensing problems in the non-convex setting.
@@ -377,7 +378,7 @@ plt.show()
     iter# = 13, ||x_new - x_old||_2 = 1.15011381846e-06
     Number of steps: 15
 
-![Image](/public/ALPSdemoIfiles/ALPSdemo_I_24_1.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI241.png)
 
 This is great! IHT finds $\mathbf{x}^\star$ fast and 'accurately'. How fast? Let's create a convergence plot.
 
