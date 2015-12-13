@@ -55,7 +55,7 @@ x_mush_star.shape = (x_mush_orig.size[1], x_mush_orig.size[0])
 plt.imshow(x_mush_star, interpolation = "nearest", cmap = plt.cm.gray)
 ```
 
-<img src="/public/ALPS_demo_I_files/ALPS_demo_I_4_1.png" alt="Mario's food">
+![Image](/public/ALPSdemoIfiles/ALPSdemoI41.png)
 
 Obviously, this is a simple image case: the "mushroom" image is sparse by itself (do you see the black pixels? Yes, they are zeros). To see this more clearly, let's sort the true coeffients in decreasing order.
 
