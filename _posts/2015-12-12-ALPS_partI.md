@@ -82,7 +82,9 @@ plt.show()
 ```
 For this 64 x 64 image, the total number of pixels sums up to 4096. As you can observe, by default almost half of the pixels are zero, which constitutes "mushroom" image sparse (but still the sparsity level is quite high: more than half the ambient dimension).
 
-Since this seems to be a "cooked"-up example, let us consider a more *realistic* scenario: a brick house. (*Does anyone know where is this house?*)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI60.png)
+
+Since this seems to be a "cooked"-up example, let us consider a more *realistic* scenario: a brick house. (*Does anyone know where is this house located?*)
 
 ```python
 x_house_orig = Image.open("house128.png").convert("L")
@@ -91,7 +93,7 @@ x_house_star.shape = (x_house_orig.size[1], x_house_orig.size[0])
 plt.imshow(x_house_star, interpolation = "nearest", cmap = plt.cm.gray)
 ```
 
-![png](ALPS_demo_I_files/ALPS_demo_I_8_1.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI81.png)
 
 ...and here is the bar plot of the coefficients.
 
@@ -108,7 +110,7 @@ plt.plot(xs, x_house_abs_sort, alpha=0.8)
 plt.show()
 ```
 
-![png](ALPS_demo_I_files/ALPS_demo_I_10_0.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI100.png)
 
 In the plot above, all the coefficients are non-zero! Is there anything we can do in this case?
 
@@ -142,7 +144,7 @@ plt.title("Wavelet representation of image", fontsize=10)
 plt.tight_layout()
 ```
 
-![png](ALPS_demo_I_files/ALPS_demo_I_12_0.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI120.png)
 
 After wavelet transformation, let's plot the wavelet coefficients. 
 
@@ -162,7 +164,7 @@ plt.plot(xs, np.flipud(x_house_abs_wav_sort.transpose()), alpha = 0.8)
 plt.show()
 ```
 
-![png](ALPS_demo_I_files/ALPS_demo_I_14_0.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI140.png)
 
 It is obvious that much less number of coefficients are non-zero! (...and this holds generally for naturally images.)
 
@@ -202,7 +204,7 @@ ax.set_zlabel('Z axis')
 plt.show
 ```
 
-![png](ALPS_demo_I_files/ALPS_demo_I_16_1.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI161.png)
 
 In the above picture, the y values (1.0 to 4.0) correspond to four different image cases (for chanity check, observe that the red curve is the same curve for the house.png case, presented above). 
 
@@ -242,7 +244,7 @@ plt.ylabel('Amplitude')
 plt.show()
 ```
 
-![png](ALPS_demo_I_files/ALPS_demo_I_20_0.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI200.png)
 
 For sensing matrix, we assume $\boldsymbol{\Phi}$ satisfies the *Restricted Isometry Property*:
 
@@ -375,7 +377,7 @@ plt.show()
     iter# = 13, ||x_new - x_old||_2 = 1.15011381846e-06
     Number of steps: 15
 
-![png](ALPS_demo_I_files/ALPS_demo_I_24_1.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemo_I_24_1.png)
 
 This is great! IHT finds $\mathbf{x}^\star$ fast and 'accurately'. How fast? Let's create a convergence plot.
 
@@ -395,7 +397,7 @@ plt.subplots_adjust(top=0.8)
 plt.show()
 ```
 
-![png](ALPS_demo_I_files/ALPS_demo_I_26_0.png)
+![Image](/public/ALPSdemoIfiles/ALPSdemoI260.png)
 
 It turns out that vanilla IHT converges to $\mathbf{x}^\star$ *linearly*, according to the following theorem (for convergence in function values):
 
