@@ -36,7 +36,6 @@ Let us consider the following practical case: image processing. In particular, w
 Our first example includes Mario's favorite food!
 
 ```python
-%matplotlib inline
 import numpy as np
 import scipy as sp
 import matplotlib.pyplot as plt
@@ -55,7 +54,7 @@ x_mush_star.shape = (x_mush_orig.size[1], x_mush_orig.size[0])
 # Show the image
 plt.imshow(x_mush_star, interpolation = "nearest", cmap = plt.cm.gray)
 ```
-![png](./ALPS_demo_I_files/ALPS_demo_I_4_1.png)
+![png](/_posts/ALPS_demo_I_files/ALPS_demo_I_4_1.png)
 
 Obviously, this is a simple image case: the "mushroom" image is sparse by itself (do you see the black pixels? Yes, they are zeros). To see this more clearly, let's sort the true coeffients in decreasing order.
 
