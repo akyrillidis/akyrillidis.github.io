@@ -12,7 +12,9 @@ title: ALPS with Python (Part I)
 
 The blog post is divided in several parts in order to help readability.
 
-**Some background on Compressed Sensing (CS) [1-3]**. Consider the following underdetermined linear inverse problem: a high-dimensional signal $ \mathbf{x}^\star \in \mathbb{R}^p \$ is observed through a low-dimensional observation vector $\mathbf{y} \in \mathbb{R}^n ~(n < p) \$ via:
+**Some background on Compressed Sensing (CS) [1-3]**. Consider the following underdetermined linear inverse 
+problem: a high-dimensional signal $ \mathbf{x}^\star \in \mathbb{R}^p$ is observed through a low-dimensional 
+observation vector $\mathbf{y} \in \mathbb{R}^n ~(n < p)$ via:
 $$
   \mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star + \mathbf{w}.
 $$
