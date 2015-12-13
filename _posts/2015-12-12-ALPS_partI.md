@@ -12,10 +12,10 @@ title: ALPS with Python (Part I)
 
 The blog post is divided in several parts in order to help readability.
 
-**Some background on Compressed Sensing (CS) [1-3]**. Consider the following underdetermined linear inverse problem: a high-dimensional signal $ \mathbf{x}^\star \in \mathbb{R}^p$ is observed through a low-dimensional observation vector $\mathbf{y} \in \mathbb{R}^n ~(n < p) $ via:
-\begin{align}
+**Some background on Compressed Sensing (CS) [1-3]**. Consider the following underdetermined linear inverse problem: a high-dimensional signal $ \mathbf{x}^\star \in \mathbb{R}^p \$ is observed through a low-dimensional observation vector $\mathbf{y} \in \mathbb{R}^n ~(n < p) \$ via:
+$$
   \mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star + \mathbf{w}.
-\end{align}
+$$
 In this setting, $\boldsymbol{\Phi} \in \mathbb{R}^{n \times p}$ represents the *sensing* matrix and $\mathbf{w} \in \mathbb{R}^n $ is an additive noise term. Given $\mathbf{y}$ and $\boldsymbol{\Phi}$, unconstrained least-squares method is the classic approach to the solution of linear systems by minimizing the data error function $f(\mathbf{x}) \triangleq \|\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\|_2^2$. Nevertheless, the reconstruction of $\mathbf{x}^\star$ from $\mathbf{y}$ is an ill-posed problem since $n < p$ and there is no hope in finding the *true vector* without ambiguity; additional prior information is needed. In CS, we assume that $\mathbf{x}^\star$ is a sparse vector, *i.e.*, $\|\mathbf{x}\|_0 \leq k$ where $k \ll p$ and $\|\cdot\|_0$ is the $\ell_0$-"norm" that counts the non-zero entries of a vector. It turns out that, under proper assumptions on the sensing matrix $\boldsymbol{\Phi}$ and the sparsity level $k$, one can still recover $\mathbf{x}$! 
 
 ### Why sparsity?
