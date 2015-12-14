@@ -412,7 +412,7 @@ It turns out that vanilla IHT converges to $\mathbf{x}^\star$ *linearly*, accord
 > $$
 > iterations.*
 
-
+...and according to the following theorem (for convergence in estimates):
 
 > **Theorem 2 (Convergence of IHT in estimates) [8]**. *Given observations $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$, where $\mathbf{x}^\star$ is $k$-sparse. If $\boldsymbol{\Phi}$ satisfies the RIP with $\delta\_{3k} < 1/8$, then, IHT recovers $\widehat{\mathbf{x}}$ such that
 > $$
