@@ -407,7 +407,7 @@ It turns out that vanilla IHT converges to $\mathbf{x}^\star$ *linearly*, accord
 **Theorem 1 (Convergence of IHT in function values) [7]**. *Suppose $\mathbf{x}^\star$ is an $k$-sparse vector satisfying $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$ and the isometry constants of the matrix $\boldsymbol{\Phi}$ satisfies $\delta\_{2k} < 1/3$. Then, IHT computes an s-sparse vector $\widehat{\mathbf{x}} \in \mathbb{R}^p$ such
 that $\|\|\mathbf{y} - \boldsymbol{\Phi} \widehat{\mathbf{x}}\|\|\_2 \leq \epsilon$ in 
 $$
-    \left\lceil \frac{1}{\log\left(\tfrac{1 − \delta\_{2k}}{2\cdot \delta\_{2k}}\right)} \cdot \log \left(\frac{\|\|\mathbf{y}\|\|\_2^2}{\epsilon}\right) \right\rceil
+    \left\lceil \frac{1}{\log\left(\tfrac{1 − \delta\_{2k}}{2\cdot \delta\_{2k}}\right)} \cdot \log \left(\frac{\|\|\mathbf{y}\|\|\_2 ^2}{\epsilon}\right) \right\rceil
 $$
 iterations.*
 
