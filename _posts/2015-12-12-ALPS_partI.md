@@ -249,11 +249,11 @@ plt.show()
 
 For sensing matrix, we assume $\boldsymbol{\Phi}$ satisfies the *Restricted Isometry Property*:
 
-**Definition (Restricted Isometry Property - RIP) [1-3]**. *An $n \times p$ matrix $\boldsymbol{\Phi}$ satisfies the restricted isometry property for sparsity level $k \geq 1$ if there exists constant $\delta \in (0,1)$ such that the inequalities
-$$
-    (1 - \delta) \|\|\mathbf{x}\|\|\_2 \leq \|\|\boldsymbol{\Phi} \mathbf{x}\|\|\_2 \leq (1 + \delta) \|\|\mathbf{x}\|\|\_2
-$$ 
-hold for all $\mathbf{x} \in \mathbb{R}^p$ with $\|\|\mathbf{x}\|\|\_0 \leq k$. The smallest number $\delta \equiv \delta(\boldsymbol{\Phi}, k)$ is called the restricted isometry constant of $\boldsymbol{\Phi}$.*
+> **Definition (Restricted Isometry Property - RIP) [1-3]**. *An $n \times p$ matrix $\boldsymbol{\Phi}$ satisfies the restricted isometry property for sparsity level $k \geq 1$ if there exists constant $\delta \in (0,1)$ such that the inequalities
+> $$
+>    (1 - \delta) \|\|\mathbf{x}\|\|\_2 \leq \|\|\boldsymbol{\Phi} \mathbf{x}\|\|\_2 \leq (1 + \delta) \|\|\mathbf{x}\|\|\_2
+> $$ 
+> hold for all $\mathbf{x} \in \mathbb{R}^p$ with $\|\|\mathbf{x}\|\|\_0 \leq k$. The smallest number $\delta \equiv \delta(\boldsymbol{\Phi}, k)$ is called the restricted isometry constant of $\boldsymbol{\Phi}$.*
 
 For ease of illustration, we will assume $\boldsymbol{\Phi}$ is drawn entrywise i.i.d. from a Gaussian distribution; see [6] for a proof that *subgaussian* class of matrices satisfy RIP with high probability. 
 
