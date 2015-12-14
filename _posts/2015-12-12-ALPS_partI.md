@@ -424,7 +424,7 @@ It turns out that vanilla IHT converges to $\mathbf{x}^\star$ *linearly*, accord
 **In the next post**:
 
 + We will introduce the simplest form of ALPS algorithm and compare with vanilla IHT.
-+ Briefly describe other IHT and ALPS variants and provide convergence comparison plots.
++ We will briefly describe other IHT and ALPS variants and provide convergence comparison plots.
 
 **References**
 
