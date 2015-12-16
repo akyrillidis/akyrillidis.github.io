@@ -275,9 +275,9 @@ Observe that this optimization problem can be solved in a projected gradient des
 
 &nbsp;&nbsp;&nbsp;    &nbsp; &nbsp; &nbsp; *The IHT method* <br>
 &nbsp;&nbsp;&nbsp;    1: &nbsp; Choose initial guess $\mathbf{x}\_0$ <br>
-&nbsp;&nbsp;&nbsp;    2: &nbsp; <b>for</b> k = 0, 1, 2, ... <b>do</b> <br>
-&nbsp;&nbsp;&nbsp;    3:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Compuete $\nabla f(\mathbf{x}\_k) = -\boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_k)$ <br>
-&nbsp;&nbsp;&nbsp;    4:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathbf{x}\_{k+1} = \mathbf{x}\_k - \nabla f(\mathbf{x}\_k)$ <br>
+&nbsp;&nbsp;&nbsp;    2: &nbsp; <b>for</b> i = 0, 1, 2, ... <b>do</b> <br>
+&nbsp;&nbsp;&nbsp;    3:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Compuete $\nabla f(\mathbf{x}\_i) = -\boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)$ <br>
+&nbsp;&nbsp;&nbsp;    4:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathbf{x}\_{k+1} = \mathcal{H}\_k\left(mathbf{x}\_i - \nabla f(\mathbf{x}\_i)\right)$ <br>
 &nbsp;&nbsp;&nbsp;    5: &nbsp;  <b>end for</b>
 
 Let's use this algorithm and see how it performs in practice.
