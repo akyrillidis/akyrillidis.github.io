@@ -2,6 +2,20 @@
 layout: page
 hide_subdirindex: true
 ---
+
+<script type="text/javascript" 
+	src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+
+<script>
+    $(document).ready(function(){
+    $('.markdown-block.sqs-block-content h6').css('cursor','pointer');
+    $(".markdown-block.sqs-block-content h6").nextUntil("h6").slideToggle();
+    $(".markdown-block.sqs-block-content h6").click(function() {$(this).nextUntil("h6").slideToggle();});
+    });
+</script>
+
+
 <div class="dirindex">
 
   {% if content != '' %}
