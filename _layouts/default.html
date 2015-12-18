@@ -120,3 +120,18 @@
 <script type="text/javascript"
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
+
+<script>
+    $(document).ready(function(){
+    $('.markdown-block .sqs-block-content h6').css('cursor','pointer');
+    $(".markdown-block .sqs-block-content h6").nextUntil("h6").slideToggle();
+    $(".markdown-block .sqs-block-content h6").click(function() 
+    	{
+    		$(".markdown-block .sqs-block-content h6").nextUntil("h6").slideUp();
+		    $(this).nextUntil("h6").slideDown();
+		    $(this).toggleClass('ui-closed ui-open');
+    	}
+     );
+    });
+</script>
