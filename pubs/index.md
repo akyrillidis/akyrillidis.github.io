@@ -3,25 +3,6 @@ layout: dirindex
 fb_comments: 3
 ---
 
-<script type="text/javascript" 
-	src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
-</script>
-
-<script>
-    $(document).ready(function(){
-    $('.markdown-block.sqs-block-content h6').css('cursor','pointer');
-    $(".markdown-block.sqs-block-content h6").nextUntil("h6").slideToggle();
-    $(".markdown-block.sqs-block-content h6").click(function() 
-    	{
-    		$(".markdown-block.sqs-block-content h6").nextUntil("h6").slideUp();
-		    $(this).nextUntil("h6").slideDown();
-		    $(this).toggleClass('ui-closed ui-open');
-    	}
-     );
-    });
-</script>
-
-
 ## Journals
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``Composite self-concordant minimization"*](/pubs/Journals/TranDinhKyrillidisCevher_ComSelfMin2013.pdf), Journal of Machine Learning Research, 16(Mar):371−416, 2015.
 
