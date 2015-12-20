@@ -13,17 +13,6 @@ without relying on the usual Lipschitz gradient assumption on the smooth part. A
 set of analytic step-size selection and correction procedures based on the structure of the problem. We describe concrete 
 algorithmic instances of our framework for several interesting applications and demonstrate them numerically on both 
 synthetic and real data. </i>
-   
-   <tt>
-   	@article{tran2015composite,
-  			 title={Composite Self-Concordant Minimization},
-		     author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
-		     journal={Journal of Machine Learning Research},
-		     volume={16},
-		     pages={371--416},
-		     year={2015}
-	}
-   </tt>   
    </p>
 
 
