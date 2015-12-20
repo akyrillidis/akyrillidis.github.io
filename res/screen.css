@@ -1429,3 +1429,8 @@ margin-left:1.5em;
   font-family:monospace;
   content: "- ";
 }
+
+#abs_j6, #bib_j6 {
+    display: none;
+}
+
