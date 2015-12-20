@@ -5,7 +5,6 @@ fb_comments: 3
 
 ## Journals
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``Composite self-concordant minimization"*](/pubs/Journals/TranDinhKyrillidisCevher_ComSelfMin2013.pdf), Journal of Machine Learning Research, 16(Mar):371−416, 2015.
-
   <button id="b_ab_j6">Abstract + Bibtex</button>
   <p id="ab_j6"> <i>We propose a variable metric framework for minimizing the sum of a self-concordant function and a possibly non-smooth convex 
 function, endowed with an easily computable proximal operator. We theoretically establish the convergence of our framework 
