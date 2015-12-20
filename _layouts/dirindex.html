@@ -3,21 +3,6 @@ layout: page
 hide_subdirindex: true
 ---
 
-<script type="text/javascript" 
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-</script>
-
-<script>
-    $(document).ready(function(){
-    $("h6").css('cursor','pointer');
-    $("h6").nextUntil("h6").slideToggle();
-    $("h6").click(function() {
-    		$(this).nextUntil("h6").slideToggle();
-    	});
-    });
-</script>
-
-
 <div class="dirindex">
 
   {% if content != '' %}
