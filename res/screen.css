@@ -1430,10 +1430,6 @@ margin-left:1.5em;
   content: "- ";
 }
 
-#buttoncontainer .ui-btn {
-    padding: 15px;
-}
-
 #abs_j6, #bib_j6 {
     display: none;
 }
