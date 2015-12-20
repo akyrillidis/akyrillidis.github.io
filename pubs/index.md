@@ -5,6 +5,7 @@ fb_comments: 3
 
 ## Journals
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``Composite self-concordant minimization"*](/pubs/Journals/TranDinhKyrillidisCevher_ComSelfMin2013.pdf), Journal of Machine Learning Research, 16(Mar):371−416, 2015.
+  
   <button id="b_ab_j6">Abstract + Bibtex</button>
 
    <p id="ab_j6"> <i> We propose a variable metric framework for minimizing the sum of a self-concordant function and a possibly non-smooth convex 
@@ -12,8 +13,19 @@ function, endowed with an easily computable proximal operator. We theoretically 
 without relying on the usual Lipschitz gradient assumption on the smooth part. An important highlight of our work is a new 
 set of analytic step-size selection and correction procedures based on the structure of the problem. We describe concrete 
 algorithmic instances of our framework for several interesting applications and demonstrate them numerically on both 
-synthetic and real data. </i> </p>
-
+synthetic and real data. </i> 
+   <br>
+   <pre><tt>
+   		@article{tran2015composite,
+  		  		 title={Composite Self-Concordant Minimization},
+		  	     author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
+	    		 journal={Journal of Machine Learning Research},
+			     volume={16},
+			     pages={371--416},
+			     year={2015}
+		}
+   </tt></pre>
+   </p>
 + Michail Vlachos, Nikolaos Freris and Anastasios Kyrillidis, [*``Compressive mining: fast and optimal data mining in the compressed domain"*](/pubs/Journals/optimalBounds_VLDB.pdf), Very Large Data Bases (VLDB) Journal, Volume 24 Issue 1, February 2015.
 + Quoc Tran-Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``An inexact proximal path-following algorithm for constrained convex minimization"*](/pubs/Journals/TranDinh_etal_PFPN_2013.pdf), SIAM Journal on Optimization (SIOPT), vol. 24, num. 4, p. 1718-1745, 2014.
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Fixed-rank Rayleigh quotient maximization by an M-PSK sequence"*](/pubs/Journals/05_journal_rankDcomplex_final_v21.pdf), IEEE Trans. on Communications, Volume:62, Issue:3, pages 961-975, 2014.
