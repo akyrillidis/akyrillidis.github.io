@@ -15,7 +15,7 @@ set of analytic step-size selection and correction procedures based on the struc
 algorithmic instances of our framework for several interesting applications and demonstrate them numerically on both 
 synthetic and real data. </i> </p>
    
-   <pre id="bib_j6"><tt>
+   <pre id="bib_j6"><samp>
    		@article{tran2015composite,
   		  		 title={Composite Self-Concordant Minimization},
 		  	     author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
@@ -24,7 +24,7 @@ synthetic and real data. </i> </p>
 			     pages={371--416},
 			     year={2015}
 		}
-   </tt></pre>
+   </samp></pre>
    
 + Michail Vlachos, Nikolaos Freris and Anastasios Kyrillidis, [*``Compressive mining: fast and optimal data mining in the compressed domain"*](/pubs/Journals/optimalBounds_VLDB.pdf), Very Large Data Bases (VLDB) Journal, Volume 24 Issue 1, February 2015.
 + Quoc Tran-Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``An inexact proximal path-following algorithm for constrained convex minimization"*](/pubs/Journals/TranDinh_etal_PFPN_2013.pdf), SIAM Journal on Optimization (SIOPT), vol. 24, num. 4, p. 1718-1745, 2014.
