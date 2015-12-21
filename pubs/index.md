@@ -29,6 +29,41 @@ synthetic and real data. </i> </p>
    </samp></pre>
    
 + Michail Vlachos, Nikolaos Freris and Anastasios Kyrillidis, [*``Compressive mining: fast and optimal data mining in the compressed domain"*](/pubs/Journals/optimalBounds_VLDB.pdf), Very Large Data Bases (VLDB) Journal, Volume 24 Issue 1, February 2015.
+
+  <button id="b_abs_j5"> Abstract </button>
+  <button id="b_bib_j5"> Bibtex </button>
+  <p id="abs_j5"> <i> Real-world data typically contain repeated and periodic patterns. This suggests that they 
+  can be effectively represented and compressed using only a few coefficients of an appropriate basis (e.g., 
+  Fourier and wavelets). However, distance estimation when the data are represented using different sets of 
+  coefficients is still a largely unexplored area. This work studies the optimization problems related to 
+  obtaining the tightest lower/upper bound on Euclidean distances when each data object is potentially compressed 
+  using a different set of orthonormal coefficients. Our technique leads to tighter distance estimates, which 
+  translates into more accurate search, learning and mining operations directly in the compressed domain. We 
+  formulate the problem of estimating lower/upper distance bounds as an optimization problem. We establish 
+  the properties of optimal solutions and leverage the theoretical analysis to develop a fast algorithm to 
+  obtain an exact solution to the problem. The suggested solution provides the tightest estimation of the 
+  Euclidean norm or the correlation. We show that typical data analysis operations, such as nearest-neighbor 
+  search or k-Means clustering, can operate more accurately using the proposed compression 
+  and distance reconstruction technique. We compare it with many other prevalent compression and 
+  reconstruction techniques, including random projections and PCA-based techniques. We highlight a 
+  surprising result, namely that when the data are highly sparse in some basis, our technique may 
+  even outperform PCA-based compression. The contributions of this work are generic as our methodology 
+  is applicable to any sequential or high-dimensional data as well as to any orthogonal data transformation 
+  used for the underlying data compression scheme. </i> </p>
+   
+   <pre id="bib_j6"><samp>
+   		@article{vlachos2015compressive,
+  				 title={Compressive mining: fast and optimal data mining in the compressed domain},
+  				 author={Vlachos, Michail and Freris, Nikolaos M and Kyrillidis, Anastasios},
+			     journal={The VLDB Journal—The International Journal on Very Large Data Bases},
+  				 volume={24},
+  				 number={1},
+  			 	 pages={1--24},
+  				 year={2015},
+  				 publisher={Springer-Verlag New York, Inc.}
+		}
+   </samp></pre>
+
 + Quoc Tran-Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``An inexact proximal path-following algorithm for constrained convex minimization"*](/pubs/Journals/TranDinh_etal_PFPN_2013.pdf), SIAM Journal on Optimization (SIOPT), vol. 24, num. 4, p. 1718-1745, 2014.
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Fixed-rank Rayleigh quotient maximization by an M-PSK sequence"*](/pubs/Journals/05_journal_rankDcomplex_final_v21.pdf), IEEE Trans. on Communications, Volume:62, Issue:3, pages 961-975, 2014.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix recipes for hard thresholding methods"*](/pubs/Journals/MatrixALPS_JMVI_v2.pdf), Journal of Mathematical Imaging and Vision (JMIV), April 2013, Springer.
