@@ -51,7 +51,7 @@ synthetic and real data. </i> </p>
   is applicable to any sequential or high-dimensional data as well as to any orthogonal data transformation 
   used for the underlying data compression scheme. </i> </p>
    
-   <pre id="bib_j6"><samp>
+   <pre id="bib_j5"><samp>
    		@article{vlachos2015compressive,
   				 title={Compressive mining: fast and optimal data mining in the compressed domain},
   				 author={Vlachos, Michail and Freris, Nikolaos M and Kyrillidis, Anastasios},
