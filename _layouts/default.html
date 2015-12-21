@@ -20,14 +20,22 @@
 			$(":button").css("background-color", "lightgray");
     		$(":button").css("border", "none");
 		    $(":button").css("font-family", "Verdana");
-		    $(":button").css("padding", "4px");
+		    $(":button").css("padding", "3px");
 		    $(":button").css("margin-left", "4px");
+    		
     		$("#b_abs_j6").click(function(){
         		$("#abs_j6").fadeToggle("slow");
 	    	});
 	    	$("#b_bib_j6").click(function(){
         		$("#bib_j6").fadeToggle("slow");
 	    	});
+	    	$("#b_pre_j6").click(function(){
+        		$.get("/pubs/Presentations/Composite_Self-Concordant_ Minimization.pdf");
+		    });
+		    $("#b_pos_j6").click(function(){
+        		$.get("/pubs/Posters/Composite_Self-Concordant_ Minimization.pdf");
+		    });
+	    	
 		});
 	</script>
 	

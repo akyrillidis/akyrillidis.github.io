@@ -8,6 +8,8 @@ fb_comments: 3
   
   <button id="b_abs_j6"> Abstract </button>
   <button id="b_bib_j6"> Bibtex </button>
+  <button id="b_pre_j6"> Presentation </button>
+  <button id="b_pos_j6"> Poster </button>
    <p id="abs_j6"> <i> We propose a variable metric framework for minimizing the sum of a self-concordant function and a possibly non-smooth convex 
 function, endowed with an easily computable proximal operator. We theoretically establish the convergence of our framework 
 without relying on the usual Lipschitz gradient assumption on the smooth part. An important highlight of our work is a new 
