@@ -65,6 +65,36 @@ synthetic and real data. </i> </p>
    </samp></pre>
 
 + Quoc Tran-Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``An inexact proximal path-following algorithm for constrained convex minimization"*](/pubs/Journals/TranDinh_etal_PFPN_2013.pdf), SIAM Journal on Optimization (SIOPT), vol. 24, num. 4, p. 1718-1745, 2014.
+
+  <button id="b_abs_j4"> Abstract </button>
+  <button id="b_bib_j4"> Bibtex </button>
+  <p id="abs_j4"> <i> Many scientific and engineering applications feature nonsmooth convex minimization 
+  problems over convex sets. In this paper, we address an important instance of this broad class where we 
+  assume that the nonsmooth objective is equipped with a tractable proximity operator and that the convex 
+  constraint set affords a self-concordant barrier. We provide a new joint treatment of proximal and 
+  self-concordant barrier concepts and illustrate that such problems can be efficiently solved, without 
+  the need of lifting the problem dimensions, as in disciplined convex optimization approach. We propose 
+  an inexact path-following algorithmic framework and theoretically characterize the worst-case analytical 
+  complexity of this framework when the proximal subproblems are solved inexactly. To show the merits 
+  of our framework, we apply its instances to both synthetic and real-world applications, where it shows 
+  advantages over standard interior point methods. As a byproduct, we describe how our framework can 
+  obtain points on the Pareto frontier of regularized problems with self-concordant objectives in a 
+  tuning free fashion. </i> </p>
+
+  <pre id="bib_j4"><samp>
+   		@article{tran2014inexact,
+  				 title={An inexact proximal path-following algorithm for constrained convex minimization},
+			     author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
+ 				 journal={SIAM Journal on Optimization},
+ 				 volume={24},
+ 				 number={4},
+ 				 pages={1718--1745},
+ 				 year={2014},
+ 				 publisher={SIAM}
+		}
+   </samp></pre>
+   
+Read More: http://epubs.siam.org/doi/abs/10.1137/130944539?journalCode=sjope8
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Fixed-rank Rayleigh quotient maximization by an M-PSK sequence"*](/pubs/Journals/05_journal_rankDcomplex_final_v21.pdf), IEEE Trans. on Communications, Volume:62, Issue:3, pages 961-975, 2014.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix recipes for hard thresholding methods"*](/pubs/Journals/MatrixALPS_JMVI_v2.pdf), Journal of Mathematical Imaging and Vision (JMIV), April 2013, Springer.
 + Nikolaos D. Sidiropoulos and Anastasios Kyrillidis, [*``Multi-way compressed sensing for sparse low rank tensors"*](/pubs/Journals/MWCSR1twocol.pdf), IEEE Signal Processing Letters, 19(11):757-760, Oct. 2012.
