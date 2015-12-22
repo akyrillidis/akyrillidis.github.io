@@ -9,9 +9,9 @@ title: ALPS with Python (Part I)
 The purpose of this notebook is 2-fold:
 
 + Since this is the first attempt to "migrate" from Matlab-type-of-mathematical-programming language to Python language, this very first notebook serves as a guide for future posts.
-+ Present ALgrebraic PursuitS (ALPS) algorithmic framework that solves Compressive Sensing problems in the non-convex setting.
++ This post also introduces Iterative Hard Thresholding (IHT) algorithm, as a first step for ALgrebraic PursuitS (ALPS) method that solves Compressive Sensing problems in the non-convex setting.
 
-The blog post is divided in several parts in order to help readability.
+The story is divided in several parts in order to help readability.
 
 **Some background on Compressed Sensing (CS) [1-3]**. Consider the following underdetermined linear inverse 
 problem: a high-dimensional signal $ \mathbf{x}^\star \in \mathbb{R}^p$ is observed through a low-dimensional 
