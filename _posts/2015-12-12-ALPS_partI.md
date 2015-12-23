@@ -410,7 +410,6 @@ plt.show()
 
 It turns out that vanilla IHT converges to $\mathbf{x}^\star$ *linearly*, according to the following theorem (for convergence in function values):
 
-
 > **Theorem 1 (Convergence of IHT in function values) [7]**. *Suppose $\mathbf{x}^\star$ is an $k$-sparse vector satisfying $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$ and the isometry constants of the matrix $\boldsymbol{\Phi}$ satisfies $\delta\_{2k} < 1/3$. Then, IHT computes an s-sparse vector $\widehat{\mathbf{x}} \in \mathbb{R}^p$ such
 > that $\|\|\mathbf{y} - \boldsymbol{\Phi} \widehat{\mathbf{x}}\|\|\_2 \leq \epsilon$ in 
 > $$
@@ -418,9 +417,10 @@ It turns out that vanilla IHT converges to $\mathbf{x}^\star$ *linearly*, accord
 > $$
 > iterations.*
 
-...and according to the following theorem (for convergence in estimates):
+...(remark: this holds for step size different than 1 - we will get back to that in the 
+next pot) and according to the following theorem (for convergence in estimates):
 
-> **Theorem 2 (Convergence of IHT in estimates) [8]**. *Given observations $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$, where $\mathbf{x}^\star$ is $k$-sparse. If $\boldsymbol{\Phi}$ satisfies the RIP with $\delta\_{3k} < 1/8$, then, IHT recovers $\widehat{\mathbf{x}}$ such that
+> **Theorem 2 (Convergence of IHT in estimates) [8]**. *Given observations $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$, where $\mathbf{x}^\star$ is $k$-sparse. If $\boldsymbol{\Phi}$ satisfies the RIP with $\delta\_{3k} < 1/15$, then, IHT recovers $\widehat{\mathbf{x}}$ such that
 > $$
 >    \|\|\mathbf{x}^\star - \widehat{\mathbf{x}}\|\|\_2 \leq 2^{-k} \|\|\mathbf{x}^\star - \mathbf{x}\_0\|\|\_2,
 > $$ after $k$ iterations.*
