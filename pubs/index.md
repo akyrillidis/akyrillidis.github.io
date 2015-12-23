@@ -98,7 +98,7 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_j3"> Abstract </button>
   <button id="b_bib_j3"> Bibtex </button>
-  <p id="abs_j4"> <i> Certain optimization problems in communication systems, such as limited-feedback 
+  <p id="abs_j3"> <i> Certain optimization problems in communication systems, such as limited-feedback 
   constant-envelope beamforming or noncoherent M-ary phase-shift keying (MPSK) sequence detection, result 
   in the maximization of a fixed-rank positive semidefinite quadratic form over the MPSK alphabet. 
   This form is a special case of the Rayleigh quotient of a matrix and, in general, its maximization 
