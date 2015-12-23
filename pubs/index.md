@@ -95,6 +95,37 @@ synthetic and real data. </i> </p>
    </samp></pre>
    
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Fixed-rank Rayleigh quotient maximization by an M-PSK sequence"*](/pubs/Journals/05_journal_rankDcomplex_final_v21.pdf), IEEE Trans. on Communications, Volume:62, Issue:3, pages 961-975, 2014.
+
+  <button id="b_abs_j3"> Abstract </button>
+  <button id="b_bib_j3"> Bibtex </button>
+  <p id="abs_j4"> <i> Certain optimization problems in communication systems, such as limited-feedback 
+  constant-envelope beamforming or noncoherent M-ary phase-shift keying (MPSK) sequence detection, result 
+  in the maximization of a fixed-rank positive semidefinite quadratic form over the MPSK alphabet. 
+  This form is a special case of the Rayleigh quotient of a matrix and, in general, its maximization 
+  by an MPSK sequence is NP-hard. However, if the rank of the matrix is not a function of its size, then 
+  the optimal solution can be computed with polynomial complexity in the matrix size. In this work, 
+  we develop a new technique to efficiently solve this problem by utilizing auxiliary continuous-valued 
+  angles and partitioning the resulting continuous space of solutions into a polynomial-size set of 
+  regions, each of which corresponds to a distinct MPSK sequence. The sequence that maximizes the 
+  Rayleigh quotient is shown to belong to this polynomial-size set of sequences, thus efficiently 
+  reducing the size of the feasible set from exponential to polynomial. Based on this analysis, we 
+  also develop an algorithm that constructs this set in polynomial time and show that it is fully 
+  parallelizable, memory efficient, and rank scalable. The proposed algorithm compares favorably with 
+  other solvers for this problem that have appeared recently in the literature. </i> </p>
+    
+  <pre id="bib_j3"><samp>
+  		@article{kyrillidis2014fixed,
+  				 title={Fixed-rank Rayleigh quotient maximization by an MPSK sequence},
+ 				 author={Kyrillidis, Anastasios and Karystinos, George N},
+ 				 journal={Communications, IEEE Transactions on},
+ 				 volume={62},
+ 				 number={3},
+ 				 pages={961--975},
+ 				 year={2014},
+ 				 publisher={IEEE}
+		}
+  </samp></pre>
+  
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix recipes for hard thresholding methods"*](/pubs/Journals/MatrixALPS_JMVI_v2.pdf), Journal of Mathematical Imaging and Vision (JMIV), April 2013, Springer.
 + Nikolaos D. Sidiropoulos and Anastasios Kyrillidis, [*``Multi-way compressed sensing for sparse low rank tensors"*](/pubs/Journals/MWCSR1twocol.pdf), IEEE Signal Processing Letters, 19(11):757-760, Oct. 2012.
 
