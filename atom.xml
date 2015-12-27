@@ -7,7 +7,7 @@ layout: null
   <link href="http://akyrillidis.github.io/atom.xml" rel="self"/>
   <link href="http://akyrillidis.github.io/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://rsms.me/</id>
+  <id>http://akyrillidis.github.io/</id>
   <author>
     <name>Anastasios (Tasos) Kyrillidis/name>
     <email>anatasios@utexas.edu</email>
@@ -15,9 +15,9 @@ layout: null
   {% for post in site.posts limit:10 %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://rsms.me{{ post.url }}"/>
+    <link href="http://akyrillidis.github.io{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://rsms.me{{ post.id }}</id>
+    <id>http://akyrillidis.github.io{{ post.id }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
     <author>
       <name>Anastasios (Tasos) Kyrillidis/name>
