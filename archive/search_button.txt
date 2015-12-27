@@ -1,0 +1,26 @@
+<!--<img src="/res/archive.png" width="64" height="64" align="right" alt="archive">
+
+<form action="http://www.google.com/cse" id="cse-search-box">
+  <p>
+    <input type="hidden" name="cx" value="006553118601910168903:-x3qflztwei" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" id="cse-search-field" placeholder="Search Tasos' stuff" />
+    <!--input type="submit" name="sa" value="Search" id="cse-search-button" /-->
+  </p>
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+<script type="text/javascript">
+var search_field = document.getElementById('cse-search-field');
+search_field.style.background = null;
+if (window.rsmsHostIsIOS) {
+  search_field.type = 'search';
+} else {
+  search_field.select();
+  search_field.focus();
+}
+search_field.addEventListener('blur', function (ev) {
+  this.style.background = null;
+});
+
+</script>
+-->
