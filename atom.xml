@@ -9,7 +9,7 @@ layout: null
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://akyrillidis.github.io/</id>
   <author>
-    <name>Anastasios (Tasos) Kyrillidis/name>
+    <name>Anastasios (Tasos) Kyrillidis<name>
     <email>anatasios@utexas.edu</email>
   </author>
   {% for post in site.posts limit:10 %}
@@ -20,7 +20,7 @@ layout: null
     <id>http://akyrillidis.github.io{{ post.id }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
     <author>
-      <name>Anastasios (Tasos) Kyrillidis/name>
+      <name>Anastasios (Tasos) Kyrillidis<name>
       <email>anatasios@utexas.edu</email>
     </author>
   </entry>
