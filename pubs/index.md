@@ -127,6 +127,32 @@ synthetic and real data. </i> </p>
   </samp></pre>
   
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix recipes for hard thresholding methods"*](/pubs/Journals/MatrixALPS_JMVI_v2.pdf), Journal of Mathematical Imaging and Vision (JMIV), April 2013, Springer.
+
+  <button id="b_abs_j2"> Abstract </button>
+  <button id="b_bib_j2"> Bibtex </button>
+  <p id="abs_j2"> <i> In this paper, we present and analyze a new set of low-rank recovery algorithms for 
+  linear inverse problems within the class of hard thresholding methods. We provide strategies on how 
+  to set up these algorithms via basic ingredients for different configurations to achieve complexity 
+  vs. accuracy tradeoffs. Moreover, we study acceleration schemes via memory-based techniques and 
+  randomized, ϵ-approximate matrix projections to decrease the computational costs in the recovery 
+  process. For most of the configurations, we present theoretical analysis that guarantees convergence 
+  under mild problem conditions. Simulation results demonstrate notable performance improvements as 
+  compared to state-of-the-art algorithms both in terms of reconstruction accuracy and computational 
+  complexity. </i> </p>
+    
+  <pre id="bib_j2"><samp>
+  		@article{kyrillidis2014matrix,
+  				 title={Matrix recipes for hard thresholding methods},
+ 				 author={Kyrillidis, Anastasios and Cevher, Volkan},
+ 				 journal={Journal of mathematical imaging and vision},
+ 				 volume={48},
+ 				 number={2},
+ 				 pages={235--265},
+ 				 year={2014},
+	 			 publisher={Springer}
+		}
+  </samp></pre>
+  
 + Nikolaos D. Sidiropoulos and Anastasios Kyrillidis, [*``Multi-way compressed sensing for sparse low rank tensors"*](/pubs/Journals/MWCSR1twocol.pdf), IEEE Signal Processing Letters, 19(11):757-760, Oct. 2012.
 
 ## Conference papers
