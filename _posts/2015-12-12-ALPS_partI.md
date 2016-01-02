@@ -118,6 +118,7 @@ natural images become sparse. In this simple tutorial, we use wavelets [4-5] ("b
 lead to sparsest solutions, but for ease of exposition and implementation, I use here `pywt` Python package.) 
 
 The wavelet settings for our simple example are:
+
 + Daubechies wavelet family: `db1`
 + Filters length: 2
 + Other properties: Orthogonal, biorthogonal, asymmetric.
