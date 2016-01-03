@@ -2,7 +2,7 @@
 layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" title="Tasos' posts">
   <title><?php bloginfo_rss('name'); ?> Tasos Kyrillidis </title>
   <link href="http://akyrillidis.github.io/atom.xml" rel="self"/>
   <link href="http://akyrillidis.github.io/"/>
