@@ -1,29 +1,28 @@
 ---
 layout: null
 ---
-
-
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>{{ site.name | xml_escape }} - Articles</title>
-		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-		<link>{{ site.url }}</link>
-		<atom:link href="{{ site.url }}/feed.articles.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.posts %}
-			{% unless post.link %}
-			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				{% if post.excerpt %}
-					<description>{{ post.excerpt | xml_escape }}</description>
-				{% else %}
-					<description>{{ post.content | xml_escape }}</description>
-				{% endif %}
-				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<link>{{ site.url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-			</item>
-			{% endunless %}
-		{% endfor %}
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" title="Tasos' posts">
+  <title><?php bloginfo_rss('name'); ?> Tasos Kyrillidis </title>
+  <link href="http://akyrillidis.github.io/atom.xml" rel="self"/>
+  <link href="http://akyrillidis.github.io/"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://akyrillidis.github.io/</id>
+  <author>
+    <name>Anastasios (Tasos) Kyrillidis<name>
+    <email>anastasios@utexas.edu</email>
+  </author>
+  {% for post in site.posts limit:10 %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="http://akyrillidis.github.io/{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>http://akyrillidis.github.io/{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+    <author>
+      <name>Anastasios (Tasos) Kyrillidis<name>
+      <email>anastasios@utexas.edu</email>
+    </author>
+  </entry>
+  {% endfor %}
+</feed>
