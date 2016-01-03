@@ -4,7 +4,7 @@ fb_comments: 3
 title: About
 ---
 
-<img src="/public/me_smaller.jpg" width="100" height="150" align="right">
+<img src="/public/me_smaller.jpg" width="120" height="180" align="right">
 
 My name is Anastasios Kyrillidis, but most people call me Tasos. Currently, I'm a Simons 
 PostDoc member of the [Wireless Networking & Communications Group](https://wncg.org/) (WNCG) 
@@ -15,6 +15,8 @@ at [the University of Texas at Austin](http://www.utexas.edu/), working with
 My research interests include (but are not limited to) convex and non-convex analysis and optimization, 
 data analysis and machine learning.
 
+<button id="b_CV"> CV </button>
+<button id="b_scholar"> Scholar </button>
 Curriculum vitae: [.pdf](/pubs/Various/Anastasios_Kyrillidis_CV_academia.pdf) - Google scholar: [link](http://scholar.google.ch/citations?user=TEGzkZMAAAAJ&hl=en)
 
 Contact: anastasios@utexas.edu
