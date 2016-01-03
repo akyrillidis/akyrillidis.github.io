@@ -17,6 +17,5 @@ data analysis and machine learning.
 
 <button id="b_CV"> CV </button>
 <button id="b_scholar"> Scholar </button>
-Curriculum vitae: [.pdf](/pubs/Various/Anastasios_Kyrillidis_CV_academia.pdf) - Google scholar: [link](http://scholar.google.ch/citations?user=TEGzkZMAAAAJ&hl=en)
 
 Contact: anastasios@utexas.edu
