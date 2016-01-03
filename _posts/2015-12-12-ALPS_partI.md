@@ -166,7 +166,7 @@ plt.show()
 
 ![Image](/public/ALPSdemoIfiles/ALPSdemoI140.png)
 
-It is obvious that much less number of coefficients are non-zero! (...and this holds generally for naturally images.)
+It is obvious that much less number of coefficients are non-zero! (...and this holds generally for natural images.)
 
 ```python
 from mpl_toolkits.mplot3d import Axes3D
@@ -250,7 +250,7 @@ For sensing matrix, we assume $\boldsymbol{\Phi}$ satisfies the *Restricted Isom
 
 > **Definition (Restricted Isometry Property - RIP) [1-3]**. *An $n \times p$ matrix $\boldsymbol{\Phi}$ satisfies the restricted isometry property for sparsity level $k \geq 1$ if there exists constant $\delta \in (0,1)$ such that the inequalities
 > $$
->    (1 - \delta) \|\|\mathbf{x}\|\|\_2 \leq \|\|\boldsymbol{\Phi} \mathbf{x}\|\|\_2 \leq (1 + \delta) \|\|\mathbf{x}\|\|\_2
+>    (1 - \delta) \|\|\mathbf{x}\|\|\_2 ^2 \leq \|\|\boldsymbol{\Phi} \mathbf{x}\|\|\_2 ^2 \leq (1 + \delta) \|\|\mathbf{x}\|\|\_2 ^2
 > $$ 
 > hold for all $\mathbf{x} \in \mathbb{R}^p$ with $\|\|\mathbf{x}\|\|\_0 \leq k$. The smallest number $\delta \equiv \delta(\boldsymbol{\Phi}, k)$ is called the restricted isometry constant of $\boldsymbol{\Phi}$.*
 
