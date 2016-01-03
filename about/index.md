@@ -16,3 +16,5 @@ My research interests include (but are not limited to) convex and non-convex ana
 data analysis and machine learning.
 
 Curriculum vitae: [.pdf](/pubs/Various/Anastasios_Kyrillidis_CV_academia.pdf) - Google scholar: [link](http://scholar.google.ch/citations?user=TEGzkZMAAAAJ&hl=en)
+
+Contact: anastasios@utexas.edu
