@@ -7,7 +7,7 @@ title: Telling a story about IHT using Python (Chapter I)
 
 The purpose of this notebook is 2-fold:
 $(i)$ Since this is the first attempt to "migrate" from Matlab-type-of-mathematical-programming language to Python language, this very first notebook serves as a guide for future posts.
-$(ii)$ This post also introduces Iterative Hard Thresholding (IHT) algorithm, as a first step for ALgrebraic PursuitS (ALPS) method that solves Compressive Sensing problems in the non-convex setting.
+$(ii)$ This is a loooong post that presents Iterative Hard Thresholding (IHT) algorithm and its variants, a method that solves Compressive Sensing problems in the non-convex setting.
 
 The story is divided in several parts in order to help readability.
 
