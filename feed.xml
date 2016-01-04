@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>Tasos' Posts</title>
+<description>
+	My personal website.
+</description>
+<link>http://akyrillidis.github.io/</link>
+<atom:link href="http://akyrillidis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+<pubDate>Mon, 04 Jan 2016 06:45:17 +0000</pubDate>
+<lastBuildDate>Mon, 04 Jan 2016 06:45:17 +0000</lastBuildDate>
+<generator>Jekyll v2.4.0</generator>
+<item>
+	<title>{{ post.title }}</title>
+    <link href="http://akyrillidis.github.io/{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>http://akyrillidis.github.io/{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+    <author>
+      <name>Anastasios (Tasos) Kyrillidis<name>
+      <email>anastasios@utexas.edu</email>
+    </author>
+</item>
+</channel>
+</rss>
