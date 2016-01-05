@@ -276,7 +276,7 @@ Observe that this optimization problem can be solved in a projected gradient des
 &nbsp;&nbsp;&nbsp;    1: &nbsp; Choose initial guess $\mathbf{x}\_0$ <br>
 &nbsp;&nbsp;&nbsp;    2: &nbsp; <b>for</b> i = 0, 1, 2, ... <b>do</b> <br>
 &nbsp;&nbsp;&nbsp;    3:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Compuete $\nabla f(\mathbf{x}\_i) = -\boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)$ <br>
-&nbsp;&nbsp;&nbsp;    4:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathbf{x}\_{k+1} = \mathcal{H}\_k\left(\mathbf{x}\_i - \nabla f(\mathbf{x}\_i)\right)$ <br>
+&nbsp;&nbsp;&nbsp;    4:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathbf{x}\_{i+1} = \mathcal{H}\_k\left(\mathbf{x}\_i - \nabla f(\mathbf{x}\_i)\right)$ <br>
 &nbsp;&nbsp;&nbsp;    5: &nbsp;  <b>end for</b>
 
 Here, $\mathcal{H}\_k(\cdot)$ denotes the *hard thresholding* operator:
@@ -421,8 +421,8 @@ next pot) and according to the following theorem (for convergence in estimates):
 
 > **Theorem 2 (Convergence of IHT in estimates) [8]**. *Given observations $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$, where $\mathbf{x}^\star$ is $k$-sparse. If $\boldsymbol{\Phi}$ satisfies the RIP with $\delta\_{3k} < 1/15$, then, IHT recovers $\widehat{\mathbf{x}}$ such that
 > $$
->    \|\|\mathbf{x}^\star - \widehat{\mathbf{x}}\|\|\_2 \leq 2^{-k} \|\|\mathbf{x}^\star - \mathbf{x}\_0\|\|\_2,
-> $$ after $k$ iterations.*
+>    \|\|\mathbf{x}^\star - \widehat{\mathbf{x}}\|\|\_2 \leq 2^{-i} \|\|\mathbf{x}^\star - \mathbf{x}\_0\|\|\_2,
+> $$ after $i$ iterations.*
 
 
 
