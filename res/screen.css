@@ -271,7 +271,7 @@ a.post-excerpt {
       padding:10px 40px;
       font-size: 300%;
       font-weight: 100;
-      color: #f5fffa;;
+      color: #fff5cc;
       /*background:rgba(255,200,0,0.1);*/
       -webkit-text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
       -moz-text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -341,7 +341,7 @@ a.post-excerpt {
   }*/
 
   a.post-excerpt:hover {
-    color:#f5fffa;
+    color:#fff5cc;
     background:#444;
     text-decoration:none;
   }
