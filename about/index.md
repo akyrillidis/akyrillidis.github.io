@@ -17,5 +17,6 @@ data analysis and machine learning.
 
 <button id="b_CV"> CV </button>
 <button id="b_scholar"> Scholar </button>
+<button id="b_LinkedIn"> LinkedIn </button>
 
 Contact: anastasios@utexas.edu
