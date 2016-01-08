@@ -271,7 +271,9 @@ a.post-excerpt {
       padding:10px 40px;
       font-size: 200%;
       font-weight: 100;
+      font-family: Lucida Sans Typewriter
       color: #fff5cc;
+      
       /*background:rgba(255,200,0,0.1);*/
       -webkit-text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
       -moz-text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
