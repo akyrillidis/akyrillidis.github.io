@@ -425,11 +425,10 @@ next pot) and according to the following theorem (for convergence in estimates):
 > $$ after $i$ iterations.*
 
 
-
 **In the next post**:
 
-+ We will introduce the simplest form of ALPS algorithm and compare with vanilla IHT.
-+ We will briefly describe other IHT variants and introduce ALPS algorithm. 
++ We will discuss further the properties of vanilla IHT. 
++ We will briefly describe constant step size selections that lead to several IHT variants. 
 
 **References**
 
@@ -445,6 +444,6 @@ next pot) and according to the following theorem (for convergence in estimates):
 
 [6] Roman Vershynin, Introduction to the non-asymptotic analysis of random matrices, Chapter 5 in Compressed Sensing, Theory and Applications, edited by Y. Eldar and G. Kutyniok, Cambridge University Press, 2012. pp. 210–268.
 
-[7] R. Garg, and R. Khandekar, Gradient descent with sparsification: An iterative algorithm for sparse recovery with restricted isometry property, in ICML, 2009.
+[7] Rahul Garg, and Rohit Khandekar, Gradient descent with sparsification: An iterative algorithm for sparse recovery with restricted isometry property, in ICML, 2009.
 
-[8] T. Blumensath, M. E. Davies, Iterative hard thresholding for compressed sensing, Applied and Computational Harmonic Analysis, vol. 27, no. 3, pp. 265-274, 2009.
+[8] Thomas Blumensath, Mike Davies, Iterative hard thresholding for compressed sensing, Applied and Computational Harmonic Analysis, vol. 27, no. 3, pp. 265-274, 2009.
