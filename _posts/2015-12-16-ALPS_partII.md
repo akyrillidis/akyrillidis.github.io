@@ -335,7 +335,7 @@ $$
 $$
 To optimize the convergence rate, one can pick $ \mu $ as the minimizer of the expression:
 $$
-\min\_{\mu} \|\|\mathbf{I} - \mu \boldsymbol{\Phi}\_{\mathcal{A}} ^\top \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \leq \min\_{\mu} \max \lbrace \mu \beta\_{3k} - 1, 1 - \mu \alpha\_{2k} \rbrace,
+\min\_{\mu} \|\|\mathbf{I} - \mu \boldsymbol{\Phi}\_{\mathcal{A}} ^\top \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \leq \min\_{\mu} \max \lbrace \mu \cdot \beta\_{3k} - 1, 1 - \mu \cdot \alpha\_{2k} \rbrace,
 $$
 which leads to the following result, inspired by convex optimization constant step size strategies [1].
 
