@@ -21,7 +21,7 @@ $$
 We remind that $\mathcal{H}\_{k}(\cdot)$ is the *hard thresholding* operator that keeps the $k$ largest in 
 magnitude elements of the input vector.
 
-Again, according to [this post](http://akyrillidis.github.io/2015/12/12/ALPS_partI.html), 
+Again, according to [*this post*](http://akyrillidis.github.io/2015/12/12/ALPS_partI.html), 
 IHT is nothing else than proj. gradient descent in a non-convex setting:
 $$
 	\mathbf{x}\_{i+1} = \mathcal{H}\_{k} \left(\mathbf{x}\_{i} - \mu \nabla f(\mathbf{x}\_i)\right)
@@ -29,16 +29,16 @@ $$
 where $\nabla f(\mathbf{x}\_i) := -\boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)$ and 
 the step size is set to $\mu = 1$. 
 
-**Convergence rate.** According to the two theorems in [this post](http://akyrillidis.github.io/2015/12/12/ALPS_partI.html), 
+**Convergence rate.** According to the two theorems in [*this post*](http://akyrillidis.github.io/2015/12/12/ALPS_partI.html), 
 IHT shows *linear* convergence. Those of you that know what *linear convergence* means, just skip 
 the following comments and continue with the next paragraph. For the rest of us, 
-[this note](http://cavern.uark.edu/~arnold/4363/OrderConv.pdf) succinctly describes the 
+[*this note*](http://cavern.uark.edu/~arnold/4363/OrderConv.pdf) succinctly describes the 
 differences in convergence rates: sublinear, linear, superlinear, etc. As a rule of thumb, 
 the descrease in distance $\|\|\widehat{\mathbf{x}} - \mathbf{x}^\star\|\|\_2$ (in logarithmic scale):
 
 + ... finds a 'plateau', as the iterations increase, in the sublinear rate case.
 + ... decreases as a linear function in the linear rate case.
-+ ... decreases as a $-\alpha x^2$ quadratic function in the quadratic rate case.
++ ... decreases as a "minus quadratic" function in the quadratic rate case.
 
 For a visual interpretation, see the next plot:
 
@@ -52,7 +52,7 @@ in a convergence rate sense.
 iteration. The bottleneck lies in the gradient calculation: $\nabla f(\mathbf{x}\_i) := -\boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)$, 
 which depends on matrix-vector multiplications. This can be computed in $O(n p)$ time. The hard-thresholding operator $\mathcal{H}\_{k}(\cdot)$ requires $O(p \log p)$ computational complexity due to sorting. (N.B.: Seeing IHT as a solver for generic $f$, the computational complexity depends on the 'complexity' of the objective function and how easy it is to compute its gradient; see [2] for a generalization of IHT to more generic problems.)
 
-**Ease of implementation.** Finally, IHT is easy to implement! *(this holds regardless of step size selection)*.
+**Ease of implementation.** Finally, IHT is easy to implement!
 
 **Step size selection.**
 In general, using a constant and -- more importantly -- independent-to-the-problem 
@@ -234,7 +234,7 @@ phase transition. We quote (and rephrase) from [5]:
 > the sparsest solution, provided that sparsity level $k$ is smaller than a certain definite fraction of ambient 
 > dimension $p$.
 
-The above introduce the following figure into our discussion (N.B.: see https://people.maths.ox.ac.uk/tanner/polytopes.shtml)
+The above introduce the following figure into our discussion (N.B.: see [*this site*](https://people.maths.ox.ac.uk/tanner/polytopes.shtml)).
 
 ![Image](/public/ALPSdemoIIfiles/l1_polytope.png)
 
@@ -248,8 +248,8 @@ as a function of position in phase space.
 
 The above are the conclusion of a rigorously proven theorem that describes asymptotic 
 properties of the $\ell\_1$-norm criterion. For any other algorithm, there is only 
-emprirical evidence; see the following plot from [this site](https://highnoongmt.wordpress.com/2011/05/30/ensembles_of_sparse_reconstruction_algorithms/) 
--- BP is $\ell\_1$-norm criterion.
+emprirical evidence; see the following plot from [*this site*](https://highnoongmt.wordpress.com/2011/05/30/ensembles_of_sparse_reconstruction_algorithms/) 
+-- BP is the $\ell\_1$-norm criterion.
 
 ![Image](/public/ALPSdemoIIfiles/empirical_PT.jpg)
 
@@ -259,10 +259,10 @@ What's the bottomline? The problem instance -- considered above -- is out of the
 
 At the same time IHT was published, Garg and Khandekar [6] proposed GraDeS, an IHT variant with constant step size selection. Actually, the only difference between IHT and GraDeS is that the latter uses step size $\mu = \frac{1}{1 + \delta\_{2k}}$, instead of $\mu = 1$. This step size selection leads to the following guarantees:
 
-> **Theorem 1 (Convergence of IHT in function values) [6]**. *Suppose $\mathbf{x}^\star$ is an $k$-sparse vector satisfying $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$ and the isometry constants of the matrix $\boldsymbol{\Phi}$ satisfies $\delta_{2k} < 1/3$. Then, IHT computes an s-sparse vector $\widehat{\mathbf{x}} \in \mathbb{R}^p$ such
-> that $\|\mathbf{y} - \boldsymbol{\Phi} \widehat{\mathbf{x}}\|_2 \leq \epsilon$ in 
+> **Theorem 1 (Convergence of IHT in function values) [7]**. *Suppose $\mathbf{x}^\star$ is an $k$-sparse vector satisfying $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$ and the isometry constants of the matrix $\boldsymbol{\Phi}$ satisfies $\delta\_{2k} < 1/3$. Then, IHT computes an s-sparse vector $\widehat{\mathbf{x}} \in \mathbb{R}^p$ such
+> that $\|\|\mathbf{y} - \boldsymbol{\Phi} \widehat{\mathbf{x}}\|\|\_2 \leq \epsilon$ in 
 > $$
->    \left\lceil \frac{1}{\log\left(\tfrac{1 − \delta_{2k}}{2\cdot \delta_{2k}}\right)} \cdot \log \left(\frac{\|\mathbf{y}\|_2^2}{\epsilon}\right) \right\rceil
+>    \Bigg\lceil \frac{1}{\log\left(\tfrac{1 − \delta\_{2k}}{2\cdot \delta\_{2k}}\right)} \cdot \log \left(\frac{\|\|\mathbf{y}\|\|\_2 ^2}{\epsilon}\right) \Bigg\rceil
 > $$
 > iterations.*
 
