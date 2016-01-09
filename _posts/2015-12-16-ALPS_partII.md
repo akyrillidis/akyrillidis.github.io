@@ -284,26 +284,26 @@ $$
 $$
 where $f(\mathbf{x})$ satisfies *Lipschitz gradient continuity* with constant $L > 0$ 
 (otherwise stated, $f$ is smooth - however, $f$ being smooth is a much stricter assumption
- -- see [here](https://en.wikipedia.org/wiki/Smoothness)):
+ -- see [*here*](https://en.wikipedia.org/wiki/Smoothness)):
 $$
-\|\|\nabla f(\mathbf{x}_1) - \nabla f(\mathbf{x}_2)\|\|_2 \leq L \cdot \|\|\mathbf{x}_1 - \mathbf{x}_2\|\|_2,
+\|\|\nabla f(\mathbf{x}\_1) - \nabla f(\mathbf{x}\_2)\|\|\_2 \leq L \cdot \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2,
 $$ 
-for any $\mathbf{x}_1,~\mathbf{x}_2$ in the domain of $f$. "Optimal" first-order (gradient) 
+for any $\mathbf{x}\_1,~\mathbf{x}\_2$ in the domain of $f$. "Optimal" first-order (gradient) 
 methods by Nesterov [1] suggest the following recursion:
 $$
-    \mathbf{x}_{k+1} = \mathbf{x}_k - \mu \cdot \nabla f(\mathbf{x}_k)
+    \mathbf{x}\_{i+1} = \mathbf{x}\_i - \mu \cdot \nabla f(\mathbf{x}\_i)
 $$
 where the step size is set to $\mu = \frac{1}{L}$. It turns out that such *constant* step 
 size selection is sufficient to provide attractive convergence guarantees for any $f$.
 
-Let us compute Lipschitz constant in CS problem. Focusing on $k$-sparse vectors $\mathbf{x}_1,~\mathbf{x}_2$, we compute:
+Let us compute Lipschitz constant in CS problem. Focusing on $k$-sparse vectors $\mathbf{x}\_1,~\mathbf{x}\_2$, we compute:
 $$
-\|\|\nabla f(\mathbf{x}_1) - \nabla f(\mathbf{x}_2)\|\|_2 &= \|\|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}_2)\|\|_2 \\
-&\stackrel{(i)}{=} \|\|\boldsymbol{\Phi}_\mathcal{S}^\top \boldsymbol{\Phi}_\mathcal{S} \cdot (\mathbf{x}_1 - \mathbf{x}_2)\|\|_2 \\
-&\stackrel{(ii)}{\leq} \max_{\mathcal{S} \in [p]} \|\|\boldsymbol{\Phi}_\mathcal{S}^\top \boldsymbol{\Phi}_\mathcal{S}\|\|_2 \cdot \|\|\mathbf{x}_1 - \mathbf{x}_2\|\|_2 \\
-&\stackrel{(iii)}{\leq} (1 + \delta\_{2k}) \|\|\mathbf{x}_1 - \mathbf{x}_2\|\|_2
+\|\|\nabla f(\mathbf{x}\_1) - \nabla f(\mathbf{x}\_2)\|\|\_2 &= \|\|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_2)\|\|\_2 \\
+&\stackrel{(i)}{=} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S} \cdot (\mathbf{x}\_1 - \mathbf{x}\_2)\|\|\_2 \\
+&\stackrel{(ii)}{\leq} \max\_{\mathcal{S} \in [p]} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S}\|\|\_2 \cdot \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2 \\
+&\stackrel{(iii)}{\leq} (1 + \delta\_{2k}) \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2
 $$ 
-where $(i)$ $\mathcal{S}$ denotes the union of non-zero indices in $\mathbf{x}_1,~\mathbf{x}_2$
+where $(i)$ $\mathcal{S}$ denotes the union of non-zero indices in $\mathbf{x}\_1,~\mathbf{x}\_2$
  -- observe that $|\mathcal{S}| \leq 2k$, $(ii)$ here $\mathcal{S}$ denotes the placeholder
   for any possible, at most $2k$-sparse combination of sparsity supports, $(iii)$ is due to RIP; see also [7, Section 5.1].
 
