@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2016-01-09 09:30:00 UTC
-title: Telling a story about IHT using Python (Chapter II - under review)
+title: Telling a story about IHT using Python (Chapter II)
 ---
 
 In this notebook, $(i)$ we will further dive in the original IHT scheme and note some of its 
@@ -317,7 +317,7 @@ In other words, convex optimization wisdom suggests step size $\mu = \frac{1}{1 
 
 ### Constant step size selection for non-symmetric RIP matrices
 
-In one of my first research attempts during my PhD [8], me and Volkan provide a another constant step size selection. To be even more generic, we consider the case of non-symmetric RIP matrices:
+In one of my first research attempts during my PhD [8], Volkan and I provide a another constant step size selection. To be even more generic, we consider the case of non-symmetric RIP matrices:
 
 > **Definition (Non-symmetric Restricted Isometry Property - RIP)**. *An $n \times p$ matrix $\boldsymbol{\Phi}$ satisfies the non-symmetric restricted isometry property for sparsity level $k \geq 1$ if there exist constans $\alpha\_k, ~\beta\_k$ such that the inequalities
 > $$
@@ -364,7 +364,7 @@ $$
 It is not hard to see that non-symmetric RIP (as well as classic RIP) implies similar spectral
 inequalities, restricted on the domain of sparse vectors:
 $$
-\alpha\_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~\forall k\text{-sparse vectors}.
+\alpha\_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~ ~ ~ ~\forall k\text{-sparse vectors}.
 $$
 This is also related to the notion of restricted strong convexity and smoothness in [9-10].
 
