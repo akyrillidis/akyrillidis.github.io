@@ -319,9 +319,9 @@ In other words, convex optimization wisdom suggests step size $\mu = \frac{1}{1 
 
 In one of my first research attempts during my PhD [8], me and Volkan provide a another constant step size selection. To be even more generic, we consider the case of non-symmetric RIP matrices:
 
-> **Definition (Non-symmetric Restricted Isometry Property - RIP)**. *An $n \times p$ matrix $\boldsymbol{\Phi}$ satisfies the non-symmetric restricted isometry property for sparsity level $k \geq 1$ if there exist constans $\alpha, ~\beta$ such that the inequalities
+> **Definition (Non-symmetric Restricted Isometry Property - RIP)**. *An $n \times p$ matrix $\boldsymbol{\Phi}$ satisfies the non-symmetric restricted isometry property for sparsity level $k \geq 1$ if there exist constans $\alpha\_k, ~\beta\_k$ such that the inequalities
 > $$
-    \alpha \|\|\mathbf{x}\|\|\_2 ^2 \leq \|\|\boldsymbol{\Phi} \mathbf{x}\|\|\_2 ^2 \leq \beta \|\|\mathbf{x}\|\|\_2 ^2
+    \alpha\_k \|\|\mathbf{x}\|\|\_2 ^2 \leq \|\|\boldsymbol{\Phi} \mathbf{x}\|\|\_2 ^2 \leq \beta\_k \|\|\mathbf{x}\|\|\_2 ^2
 > $$ 
 > hold for all $\mathbf{x} \in \mathbb{R}^p$ with $\|\|\mathbf{x}\|\|\_0 \leq k$.* 
 
