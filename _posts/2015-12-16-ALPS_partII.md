@@ -280,7 +280,7 @@ step size selection, we make the connection with step size selection made in con
 
 Consider the following convex optimization problem:
 $$
-    \min_{\mathbf{x}} f(\mathbf{x})
+    \min\_{\mathbf{x}} f(\mathbf{x})
 $$
 where $f(\mathbf{x})$ satisfies *Lipschitz gradient continuity* with constant $L > 0$ 
 (otherwise stated, $f$ is smooth - however, $f$ being smooth is a much stricter assumption
