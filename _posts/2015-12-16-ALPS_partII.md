@@ -361,7 +361,7 @@ strongly convex and Lipschitz gradient continuous function satisfies:
 $$
 M \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq L \mathbf{I}
 $$ 
-It is not hard to see that non-symmetric RIP (as well as classic RIP) implies similar PSD 
+It is not hard to see that non-symmetric RIP (as well as classic RIP) implies similar spectral
 inequalities, restricted on the domain of sparse vectors:
 $$
 \alpha\_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~\forall k\text{-sparse vectors}.
