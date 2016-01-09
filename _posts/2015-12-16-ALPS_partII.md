@@ -329,7 +329,7 @@ For our step size derivation, we use the convergence proof of IHT -- in vector e
 $$
 \|\|\mathbf{x}\_{i+1} - \mathbf{x}^\star\|\|\_2 \leq 2 \cdot \|\|\mathbf{I} - \mu \boldsymbol{\Phi}^\top\_{\mathcal{A}} \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \cdot \|\|\mathbf{x}\_i - \mathbf{x}^\star\|\|\_2 + 2\mu \sqrt{\beta\_{2k}} \|\|\mathbf{w}\|\|\_2.
 $$
-Observe that 
+Here, $\mathcal{A} := \mathcal{S}^\star \cup \mathcal{S}\_{i} \cup \mathcal{S}\_{i+1}$. Observe that 
 $$
 \lambda(\boldsymbol{\Phi}\_{\mathcal{A}} ^{\top} \boldsymbol{\Phi}\_{\mathcal{A}}) \in [\alpha\_{3k}, \beta\_{3k} ].
 $$
