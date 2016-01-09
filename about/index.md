@@ -6,7 +6,7 @@ title: About
 
 <img src="/public/me2.jpg" width="132" height="180" align="right">
 
-My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the short Tasos (Τάσος). Currently, I'm a Simons 
+My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname 'Tasos' ('Τάσος'). Currently, I'm a Simons 
 PostDoc member of the [Wireless Networking & Communications Group](https://wncg.org/) (WNCG) 
 at [the University of Texas at Austin](http://www.utexas.edu/), working with 
 [Constantine Caramanis](http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html), 
