@@ -301,10 +301,10 @@ $$
 \|\|\nabla f(\mathbf{x}\_1) - \nabla f(\mathbf{x}\_2)\|\|\_2 = \|\|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_2)\|\|\_2 \\
 $$
 $$
-~ ~ \quad \stackrel{(i)}{=} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S} \cdot (\mathbf{x}\_1 - \mathbf{x}\_2)\|\|\_2 \\
+~ ~ ~ \stackrel{(i)}{=} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S} \cdot (\mathbf{x}\_1 - \mathbf{x}\_2)\|\|\_2 \\
 $$
 $$
-~ ~ ~ ~ ~ \quad \quad \quad \quad \stackrel{(ii)}{\leq} \max\_{\mathcal{S} \in [p], |\mathcal{S}| \leq 2k} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S}\|\|\_2 \cdot \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2 \\
+~ ~ ~ ~ ~ \quad \quad \quad \stackrel{(ii)}{\leq} \max\_{\mathcal{S} \in [p], |\mathcal{S}| \leq 2k} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S}\|\|\_2 \cdot \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2 \\
 $$
 $$
 ~ ~ \stackrel{(iii)}{\leq} (1 + \delta\_{2k}) \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2
