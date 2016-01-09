@@ -298,7 +298,7 @@ size selection is sufficient to provide attractive convergence guarantees for an
 
 Let us compute Lipschitz constant in CS problem. Focusing on $k$-sparse vectors $\mathbf{x}\_1,~\mathbf{x}\_2$, we compute:
 $$
-\|\|\nabla f(\mathbf{x}\_1) - \nabla f(\mathbf{x}\_2)\|\|\_2 &= \|\|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_2)\|\|\_2 \\
+\|\|\nabla f(\mathbf{x}\_1) - \nabla f(\mathbf{x}\_2)\|\|\_2 = \|\|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_2)\|\|\_2 \\
 $$ 
 where $(i)$ $\mathcal{S}$ denotes the union of non-zero indices in $\mathbf{x}\_1,~\mathbf{x}\_2$
  -- observe that $|\mathcal{S}| \leq 2k$, $(ii)$ here $\mathcal{S}$ denotes the placeholder
