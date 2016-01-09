@@ -319,7 +319,7 @@ In one of my first research attempts during my PhD [8], me and Volkan provide a 
 > $$ 
 > hold for all $\mathbf{x} \in \mathbb{R}^p$ with $\|\mathbf{x}\|_0 \leq k$.* 
 
-For our step size derivation, we use the convergence proof of IHT -- in vector estimates, not in function values -- where step size is considered as a variable. [*This note*](/public/ALPSdemoIIfiles/IHT_notes_1.pdf) lists the basic steps that lead to the following recursive formula for IHT:
+For our step size derivation, we use the convergence proof of IHT -- in vector estimates, not in function values -- where step size is considered as a variable. [*This note*](/public/ALPSdemoIIfiles/IHT_note_1.pdf) lists the basic steps that lead to the following recursive formula for IHT:
 $$
 \|\|\mathbf{x}\_{i+1} - \mathbf{x}^\star\|\|\_2 \leq 2 \|\|\mathbb{I} - \mu \boldsymbol{\Phi}^\top\_{\mathcal{A}} \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \|\|\mathbf{x}\_i - \mathbf{x}^\star\|\|\_2 + 2\mu \sqrt{\beta\_{2k}} \|\|\mathbf{w}\|\|\_2.
 $$
