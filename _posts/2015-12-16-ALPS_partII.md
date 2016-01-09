@@ -364,7 +364,7 @@ $$
 It is not hard to see that non-symmetric RIP (as well as classic RIP) implies similar PSD 
 inequalities, restricted on the domain of sparse vectors:
 $$
-\alpha\_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~\forall k-\text{sparse vectors}.
+\alpha\_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~\forall k\text{-sparse vectors}.
 $$
 This is also related to the notion of restricted strong convexity and smoothness in [9-10].
 
