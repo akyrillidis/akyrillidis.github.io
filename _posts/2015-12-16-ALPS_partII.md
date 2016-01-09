@@ -301,13 +301,13 @@ $$
 \|\|\nabla f(\mathbf{x}\_1) - \nabla f(\mathbf{x}\_2)\|\|\_2 = \|\|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_2)\|\|\_2 \\
 $$
 $$
-\quad \stackrel{(i)}{=} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S} \cdot (\mathbf{x}\_1 - \mathbf{x}\_2)\|\|\_2 \\
+\quad \quad \stackrel{(i)}{=} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S} \cdot (\mathbf{x}\_1 - \mathbf{x}\_2)\|\|\_2 \\
 $$
 $$
-\quad \quad \stackrel{(ii)}{\leq} \max\_{\mathcal{S} \in [p], |\mathcal{S}| \leq 2k} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S}\|\|\_2 \cdot \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2 \\
+\quad \quad \quad \quad \stackrel{(ii)}{\leq} \max\_{\mathcal{S} \in [p], |\mathcal{S}| \leq 2k} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S}\|\|\_2 \cdot \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2 \\
 $$
 $$
-\!\! \stackrel{(iii)}{\leq} (1 + \delta\_{2k}) \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2
+\stackrel{(iii)}{\leq} (1 + \delta\_{2k}) \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2
 $$ 
 where $(i)$ $\mathcal{S}$ denotes the union of non-zero indices in $\mathbf{x}\_1,~\mathbf{x}\_2$
  -- observe that $|\mathcal{S}| \leq 2k$, $(ii)$ here $\mathcal{S}$ denotes the placeholder
@@ -321,21 +321,21 @@ In one of my first research attempts during my PhD [8], me and Volkan provide a 
 
 > **Definition (Non-symmetric Restricted Isometry Property - RIP)**. *An $n \times p$ matrix $\boldsymbol{\Phi}$ satisfies the non-symmetric restricted isometry property for sparsity level $k \geq 1$ if there exist constans $\alpha, ~\beta$ such that the inequalities
 > $$
-    \alpha \|\mathbf{x}\|_2^2 \leq \|\boldsymbol{\Phi} \mathbf{x}\|_2^2 \leq \beta \|\mathbf{x}\|_2^2
+    \alpha \|\|\mathbf{x}\|\|\_2 ^2 \leq \|\|\boldsymbol{\Phi} \mathbf{x}\|\|\_2 ^2 \leq \beta \|\|\mathbf{x}\|\|\_2 ^2
 > $$ 
-> hold for all $\mathbf{x} \in \mathbb{R}^p$ with $\|\mathbf{x}\|_0 \leq k$.* 
+> hold for all $\mathbf{x} \in \mathbb{R}^p$ with $\|\|\mathbf{x}\|\|\_0 \leq k$.* 
 
 For our step size derivation, we use the convergence proof of IHT -- in vector estimates, not in function values -- where step size is considered as a variable. [*This note*](/public/ALPSdemoIIfiles/IHT_note_1.pdf) lists the basic steps that lead to the following recursive formula for IHT:
 $$
-\|\|\mathbf{x}\_{i+1} - \mathbf{x}^\star\|\|\_2 \leq 2 \|\|\mathbb{I} - \mu \boldsymbol{\Phi}^\top\_{\mathcal{A}} \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \|\|\mathbf{x}\_i - \mathbf{x}^\star\|\|\_2 + 2\mu \sqrt{\beta\_{2k}} \|\|\mathbf{w}\|\|\_2.
+\|\|\mathbf{x}\_{i+1} - \mathbf{x}^\star\|\|\_2 \leq 2 \|\|\mathbf{I} - \mu \boldsymbol{\Phi}^\top\_{\mathcal{A}} \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \cdot \|\|\mathbf{x}\_i - \mathbf{x}^\star\|\|\_2 + 2\mu \sqrt{\beta\_{2k}} \|\|\mathbf{w}\|\|\_2.
 $$
 Observe that 
 $$
-\lambda(\boldsymbol{\Phi}\_{\mathcal{A}}^{\top} \boldsymbol{\Phi}\_{\mathcal{A}}) \in [\alpha_{3k}, \beta_{3k} ].
+\lambda(\boldsymbol{\Phi}\_{\mathcal{A}} ^{\top} \boldsymbol{\Phi}\_{\mathcal{A}}) \in [\alpha\_{3k}, \beta\_{3k} ].
 $$
 To optimize the convergence rate, one can pick $ \mu $ as the minimizer of the expression:
 $$
-\min\_{\mu} \|\|\mathbf{I} - \mu \boldsymbol{\Phi}\_{\mathcal{A}}^\top \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \leq \min\_{\mu} \max \lbrace \mu \beta\_{3k} - 1, 1 - \mu \alpha\_{2k} \rbrace,
+\min\_{\mu} \|\|\mathbf{I} - \mu \boldsymbol{\Phi}\_{\mathcal{A}} ^\top \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \leq \min\_{\mu} \max \lbrace \mu \beta\_{3k} - 1, 1 - \mu \alpha\_{2k} \rbrace,
 $$
 which leads to the following result, inspired by convex optimization constant step size strategies [1].
 
