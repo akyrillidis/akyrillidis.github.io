@@ -348,7 +348,7 @@ which leads to the following result, inspired by convex optimization constant st
 In the special case where $ \boldsymbol{\Phi} $ satisfies the symmetric RIP for some constant $ \delta\_{3k} $, we have:
 
 > **Corollary 1 (RIP constant step size strategy) [8]**.
-> *Given $ \boldsymbol{\Phi} $ satisfies the RIP for some $ \delta\_{3k} $, the step size $ \mu $ that implies the fastest convergence rate in the above discussion amounts to  $\mu = 1$. Moreover, this step size results in contraction:
+> *Given $ \boldsymbol{\Phi} $ satisfies the RIP for some $ \delta\_{3k} $, the step size $ \mu $ that implies the fastest convergence rate in the above discussion amounts to  $\mu = 1$. Moreover, this step size results in contraction (noiseless case):
 > $$ 
 > \|\|\mathbf{x}\_{i+1} - \mathbf{x}^\star\|\|\_2 \leq \rho \cdot \|\|\mathbf{x}\_i - \mathbf{x}^\star\|\|\_2
 > $$
@@ -359,12 +359,12 @@ Lipschitz gradient continuous functions, Nesterov again [1] suggests as step siz
 where $M$ is the strong convexity parameter and $L$ is the Lipschitz parameter. We remind that a 
 strongly convex and Lipschitz gradient continuous function satisfies:
 $$
-M \mathbf{I} \preceq \nabla^2 f(\mathbf{x}) \preceq L \mathbf{I}
+M \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq L \mathbf{I}
 $$ 
 It is not hard to see that non-symmetric RIP (as well as classic RIP) implies similar PSD 
 inequalities, restricted on the domain of sparse vectors:
 $$
-\alpha\_k \mathbf{I} \preceq \nabla^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~\forall k-\text{sparse vectors}.
+\alpha\_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~\forall k-\text{sparse vectors}.
 $$
 This is also related to the notion of restricted strong convexity and smoothness in [9-10].
 
