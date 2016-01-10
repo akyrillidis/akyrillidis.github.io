@@ -224,7 +224,7 @@ The purpose of this post is to highlight the importance of step size selections 
 iterative schemes. As it will be apparent next (and more clearly in the next post), one of
 the reasons for this poor performance of IHT is its simplistic step size selection procedure.
 
-But first, to answer these question, let us introduce the 
+But first, to answer these questions, let us introduce the 
 notion of *phase transition* in CS problems.
 
 ### Phase transition in CS problems
@@ -271,7 +271,7 @@ vanilla IHT cannot.
 
 For completeness, we present next several attempts on finding a different constant step size selection.
 This discussion will be also helpful for our next post.
-The crux is that, even if more sophisticated step size selections lead to better 
+The crux is that, even if more sophisticated constant step size selections lead to better 
 theoretical guarantees, it usually is the case that computing such step size is as hard as the initial problem!
 
 ### GraDeS (or IHT with a different constant step size)

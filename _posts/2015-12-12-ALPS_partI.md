@@ -266,7 +266,7 @@ Phi = (1 / math.sqrt(n)) * np.random.randn(n, p)
 y = Phi @ x_star
 ```
 
-**Iteratiove hard thresholding (IHT) method [7-8]**. A natural way to reconstruct $\mathbf{x}^\star$ from $\mathbf{y}$ and $\boldsymbol{\Phi}$ is by solving the criterion:
+**Iterative hard thresholding (IHT) method [7-8]**. A natural way to reconstruct $\mathbf{x}^\star$ from $\mathbf{y}$ and $\boldsymbol{\Phi}$ is by solving the criterion:
 $$
     \min_{\mathbf{x}} ~~f(\mathbf{x}) := \frac{1}{2}\|\|\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\|\|\_2 ^2 \quad \text{s.t.} \quad \|\|\mathbf{x}\|\|\_0 \leq k
 $$
