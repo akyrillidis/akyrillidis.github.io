@@ -406,7 +406,7 @@ From an optimization point of view, improving the conditions on these constants 
 insignificant: IHT has already linear convergence and convex wisdom suggests that this is the best we could do.
 
 From a signal processing point of view though, improving such conditions means that the 
-algorithm succeeds under weaker conditions: requiring $\delta\_{ck} < \gamma$ where $c$ 
+algorithm succeeds under weaker assumptions: requiring $\delta\_{ck} < \gamma$ where $c$ 
 is as small as possible and $\gamma$ as big as possible implies that the algorithm will 
 provably find the true $\mathbf{x}^\star$ under a wider set of design matrices. *I.e.*, 
 requiring $\delta\_{ck} < \gamma$ for a very small $\gamma$ signifies that we need to try 
@@ -416,7 +416,7 @@ selected sensing matrix.
 On the other hand and as we will see in the next post, stricter conditions of the 
 form $\delta\_{ck} < \gamma$ do not necessarily indicate that the algorithm is actually 
 worse in practice: as we make algorithms more sophisticated (by introducing more processing steps), 
-we introduce more 'places' in our analysis which might introduce loose bounds in our theory.
+we introduce more 'places' in our analysis which might lead to loose bounds in our theory.
 
 Bottomline, things are not as simple as they seem!
 
