@@ -7,22 +7,22 @@ title: Telling a story about IHT using Python (Chapter II)
 
 In this notebook, $(i)$ we will further dive in the original IHT scheme and note some of its 
 pros/cons in solving the CS problem, and $(ii)$ we will provide an overview of more recent 
-developments on constant step size selection for IHT .
+developments on constant step size selection for IHT.
 
 To connect with the previous post, we have briefly discussed the importance of CS via an 
 image compression/de-compression application (there are several more!) and, we have formulated 
-the classic CS problem as an optimization problem criterion.
+the classic CS problem via a non-convex optimization problem criterion.
 
-### A closer look into IHT algorithm
+### A closer look into the IHT algorithm
 Recall the IHT iteration, 
 $$
-	\mathbf{x}\_{i+1} = \mathcal{H}\_{k} \left(\mathbf{x}\_{i} + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)\right)
+	\mathbf{x}\_{i+1} = \mathcal{H}\_{k} \left(\mathbf{x}\_{i} + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)\right).
 $$
 We remind that $\mathcal{H}\_{k}(\cdot)$ is the *hard thresholding* operator that keeps the $k$ largest in 
 magnitude elements of the input vector.
 
 Again, according to [*this post*](http://akyrillidis.github.io/2015/12/12/ALPS_partI.html), 
-IHT is nothing else than proj. gradient descent in a non-convex setting:
+IHT is nothing else than projected gradient descent in a non-convex setting:
 $$
 	\mathbf{x}\_{i+1} = \mathcal{H}\_{k} \left(\mathbf{x}\_{i} - \mu \nabla f(\mathbf{x}\_i)\right)
 $$ 
@@ -34,7 +34,7 @@ IHT shows *linear* convergence. Those of you that know what *linear convergence*
 the following comments and continue with the next paragraph. For the rest of us, 
 [*this note*](http://cavern.uark.edu/~arnold/4363/OrderConv.pdf) succinctly describes the 
 differences in convergence rates: sublinear, linear, superlinear, etc. As a rule of thumb, 
-the descrease in distance $\|\|\widehat{\mathbf{x}} - \mathbf{x}^\star\|\|\_2$ (in logarithmic scale):
+just remember that the descrease in distance $\|\|\widehat{\mathbf{x}} - \mathbf{x}^\star\|\|\_2$ (in logarithmic scale):
 
 + ... finds a 'plateau', as the iterations increase, in the sublinear rate case.
 + ... decreases as a linear function in the linear rate case.
@@ -45,19 +45,23 @@ For a visual interpretation, see the next plot:
 ![Image](/public/ALPSdemoIIfiles/convergence_rates.png)
 
 To make a comparison with convex methods, linear convergence rate is the best one can hope for, 
-by using first-order (gradient) information [1]. To this end, IHT could be considered *optimal*, 
+by only using first-order (gradient) information [1]. To this end, IHT could be considered *optimal*, 
 in a convergence rate sense.
 
 **Computational complexity.** It is obvious that IHT has low-computational complexity per 
 iteration. The bottleneck lies in the gradient calculation: $\nabla f(\mathbf{x}\_i) := -\boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)$, 
-which depends on matrix-vector multiplications. This can be computed in $O(n p)$ time. The hard-thresholding operator $\mathcal{H}\_{k}(\cdot)$ requires $O(p \log p)$ computational complexity due to sorting. (N.B.: Seeing IHT as a solver for generic $f$, the computational complexity depends on the 'complexity' of the objective function and how easy it is to compute its gradient; see [2] for a generalization of IHT to more generic problems.)
+which depends on matrix-vector multiplications. These can be computed in $O(n p)$ time. 
+The hard-thresholding operator $\mathcal{H}\_{k}(\cdot)$ requires $O(p \log p)$ 
+complexity due to sorting. (N.B.: Seeing IHT as a solver for generic $f$, the computational 
+bottleneck depends on the 'complexity' of the objective function and how easy it is to 
+compute its gradient; see [2] for a generalization of IHT to more generic problems.)
 
-**Ease of implementation.** Finally, IHT is easy to implement!
+**Ease of implementation.** Not many things to say here: IHT is easy to implement!
 
 **Step size selection.**
 In general, using a constant and -- more importantly -- independent-to-the-problem 
-step size in iterative methods (as is the case here, $\mu = 1$) might effect the efficiency 
-of the algorithm under various problem settings. What we mean by that? Let us consider the following example.
+step size (as is the case here, $\mu = 1$) might effect the efficiency 
+of the algorithm, under various problem settings. What we mean by that? Let us consider the following example.
 
 ```python
 %matplotlib inline
@@ -211,28 +215,35 @@ plt.show()
 
 ![Image](/public/ALPSdemoIIfiles/ALPSdemoII41.png)
 
-It diverges! The only difference of this setting, compared to the previous post, is the 
+It diverges! The only difference of this setting, compared to the previous [*post*](http://akyrillidis.github.io/2015/12/12/ALPS_partI.html), is the 
 sparsity level: here, it is $k = 100$, while in our initial illustration it was $k = 10$. 
 The rest of the parameters (ambient dimension $p$ and number of measurements $n$) remain 
-the same. Why does this make a difference? To answer this question, let us introduce the 
+the same. Why does this make a difference? 
+
+The purpose of this post is to highlight the importance of step size selections in such
+iterative schemes. As it will be apparent next (and more clearly in the next post), one of
+the reasons for this poor performance of IHT is its simplistic step size selection procedure.
+
+But first, to answer these question, let us introduce the 
 notion of *phase transition* in CS problems.
 
 ### Phase transition in CS problems
 
-We will describe the notion of phase transition in CS problems for the convex 
+We will describe the notion of phase transition for the convex 
 $\ell\_1$-norm minimization case (explicit phase transitions for non-convex case 
 have not been proved yet -- in case I'm wrong, I would love to discuss it with you!):
 $$
-    \min\_{\mathbf{x}} \|\|\mathbf{x}\|\|\_1 \quad \text{s.t.} \quad \mathbf{y} = \boldsymbol{\Phi} \mathbf{x}
+    \min\_{\mathbf{x}} \|\|\mathbf{x}\|\|\_1 \quad \text{s.t.} \quad \mathbf{y} = \boldsymbol{\Phi} \mathbf{x}.
 $$
 In their seminal work [3-4], Tanner and Donoho explicitly characterize the 
 performance of such $\ell\_1$-norm minimization criterion, using the notion of 
 phase transition. We quote (and rephrase) from [5]:
 
 > In the case of $\ell\_1$-norm minimization with $\boldsymbol{\Phi}$ a random sensing matrix, there is a well-defined 
-> "break-point": even given infinite computational power, such optimization criterion can successfully recover
-> the sparsest solution, provided that sparsity level $k$ is smaller than a certain definite fraction of ambient 
-> dimension $p$.
+> "break-point": even given infinite computational power, there are problem configurations (sparsity vs. ambient dimension
+> vs. number of samples) where the above criterion fails to find the ground truth. On the other hand, such optimization 
+> criterion can successfully recover the sparsest solution, provided that sparsity level $k$ is smaller than a 
+> certain definite fraction of ambient dimension $p$.
 
 The above introduce the following figure into our discussion (N.B.: see [*this site*](https://people.maths.ox.ac.uk/tanner/polytopes.shtml)).
 
@@ -241,7 +252,7 @@ The above introduce the following figure into our discussion (N.B.: see [*this s
 Here, $\delta := \frac{n}{p}$ is a normalized measure of problem indeterminacy, *i.e.*, 
 how much information we have in terms of linear observations w.r.t. ambient dimension. 
 Also, $\rho = \frac{k}{n}$ denotes a normalized measure of the sparsity; *e.g.*, observe 
-that one needs at least $n = k + 1$ to find a $k$-sparse signal. Then, (and I quote again [5]) 
+that one needs $n = k + 1$ to find a $k$-sparse signal. Then, (and I quote again [5]) 
 the above figure describes the difficulty of a problem instance: problems are intrincically 
 harder as one moves up and the left. Also, points in the figure indicate success and failure 
 as a function of position in phase space. 
@@ -253,11 +264,22 @@ emprirical evidence; see the following plot from [*this site*](https://highnoong
 
 ![Image](/public/ALPSdemoIIfiles/empirical_PT.jpg)
 
-What's the bottomline? The problem instance -- considered above -- is out of the capabilities of IHT with high probability!
+What's the bottomline? It might be the case that IHT, with step size $\mu = 1$, fails to solve this problem
+just because it is out of its capabilities, with high probability! In the next post, we will describe 
+specific techniques that lead to *adaptive* step size selections and solve problem instances that
+vanilla IHT cannot.
+
+For completeness, we present next several attempts on finding a different constant step size selection.
+This discussion will be also helpful for our next post.
+The crux is that, even if more sophisticated step size selections lead to better 
+theoretical guarantees, it usually is the case that computing such step size is as hard as the initial problem!
 
 ### GraDeS (or IHT with a different constant step size)
 
-At the same time IHT was published, Garg and Khandekar [6] proposed GraDeS, an IHT variant with constant step size selection. Actually, the only difference between IHT and GraDeS is that the latter uses step size $\mu = \frac{1}{1 + \delta\_{2k}}$, instead of $\mu = 1$. This step size selection leads to the following guarantees:
+At the same time IHT was published, Garg and Khandekar [6] proposed GraDeS, an IHT variant 
+with constant step size selection. Actually, the only difference between IHT and GraDeS is 
+that the latter uses step size $\mu = \frac{1}{1 + \delta\_{2k}}$, instead of $\mu = 1$. 
+This leads to the following guarantees:
 
 > **Theorem 1 (Convergence of IHT in function values) [7]**. *Suppose $\mathbf{x}^\star$ is an $k$-sparse vector satisfying $\mathbf{y} = \boldsymbol{\Phi} \mathbf{x}^\star$ and the isometry constants of the matrix $\boldsymbol{\Phi}$ satisfies $\delta\_{2k} < 1/3$. Then, IHT computes an s-sparse vector $\widehat{\mathbf{x}} \in \mathbb{R}^p$ such
 > that $\|\|\mathbf{y} - \boldsymbol{\Phi} \widehat{\mathbf{x}}\|\|\_2 \leq \epsilon$ in 
@@ -269,14 +291,14 @@ At the same time IHT was published, Garg and Khandekar [6] proposed GraDeS, an I
 In other words, GraDeS converges *linearly* to the optimal solution (as IHT does) and 
 requires a less strict condition on the RIP constants of the sensing matrix ($\delta\_{2k} < 1/3$ vs. $\delta\_{3k} < 1/15$).
 
-This is great news! So, what left is to compute the RIP constant of $\boldsymbol{\Phi}$ 
+This is great news! So, what is left is to compute the RIP constant of $\boldsymbol{\Phi}$ 
 and use it for step size in IHT. But how can we compute (or at least approximate) $\delta\_{2k}$? 
-However, it turns out that, given sensing matrix $\boldsymbol{\Phi}$, computing its RIP 
-constants is... at least as hard as the original combinatorial problem! In [6], GraDeS is 
-implemented with a constant step size (N.B.: in particular $\mu = 1/3$ and $\mu = 3/4$).
+It turns out that, given sensing matrix $\boldsymbol{\Phi}$, computing its RIP 
+constants is...(wait for it!) at least as hard as the original combinatorial problem! 
+(N.B.: In [6], GraDeS is implemented with a constant step size -- in particular $\mu = 1/3$ and $\mu = 3/4$).
 
 **Why $\mu = \frac{1}{1 + \delta\_{2k}}$?** Just to provide some intuition about GraDeS 
-step size selection, we make the connection with step size selection made in convex optimization. 
+step size selection, we make the connection with that made in convex optimization. 
 
 Consider the following convex optimization problem:
 $$
@@ -348,7 +370,7 @@ which leads to the following result, inspired by convex optimization constant st
 In the special case where $ \boldsymbol{\Phi} $ satisfies the symmetric RIP for some constant $ \delta\_{3k} $, we have:
 
 > **Corollary 1 (RIP constant step size strategy) [8]**.
-> *Given $ \boldsymbol{\Phi} $ satisfies the RIP for some $ \delta\_{3k} $, the step size $ \mu $ that implies the fastest convergence rate in the above discussion amounts to  $\mu = 1$. Moreover, this step size results in contraction (noiseless case):
+> *Given $ \boldsymbol{\Phi} $ satisfies the RIP for some $ \delta\_{3k} $, the step size $ \mu $ that implies the fastest convergence rate in the above lemma amounts to  $\mu = 1$. Moreover, this step size results in contraction (noiseless case):
 > $$ 
 > \|\|\mathbf{x}\_{i+1} - \mathbf{x}^\star\|\|\_2 \leq \rho \cdot \|\|\mathbf{x}\_i - \mathbf{x}^\star\|\|\_2
 > $$
@@ -367,6 +389,14 @@ $$
 \alpha\_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~ ~ ~ ~\forall k\text{-sparse vectors}.
 $$
 This is also related to the notion of restricted strong convexity and smoothness in [9-10].
+
+### Conclusion
+
+It is obvious that computing such step sizes in practice is inefficient. That being said, 
+in the next post:
+
++ We will describe some adaptive step size strategies for IHT.
++ We will start introducing the ALPS framework, that includes IHT as a special case.
 
 **A small note on RIP constants and convergence rate.** 
 As a concluding remark for this post, I would like to note the significance of RIP constants 
@@ -389,11 +419,6 @@ worse in practice: as we make algorithms more sophisticated (by introducing more
 we introduce more 'places' in our analysis which might introduce loose bounds in our theory.
 
 Bottomline, things are not as simple as they seem!
-
-**In the next post**:
-
-+ We will describe some adaptive step size strategies for IHT.
-+ We will start introducing the ALPS framework, that includes IHT as a special case.
 
 **References**
 
