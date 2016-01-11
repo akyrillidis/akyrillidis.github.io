@@ -257,7 +257,7 @@ a.post-excerpt {
   a.post-excerpt div.padded-content {
     display: block;
     padding: 40px;
-    border: dashed;
+    /*border: dashed;*/
   }
   a.post-excerpt div.grid-mask { display:none; }
   a.post-excerpt.photo {
