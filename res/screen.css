@@ -142,7 +142,6 @@ div.content {
 }
 div.content.full-bleed {
   padding:0;
-  border:dashed;
 }
 div.content.photo {
   padding: 0;
@@ -254,11 +253,11 @@ a.post-excerpt {
   display: block;
   color: inherit;
   border-bottom: 4px solid #ddd;
-  border: dashed;
 }
   a.post-excerpt div.padded-content {
     display: block;
     padding: 40px;
+    border: dashed;
   }
   a.post-excerpt div.grid-mask { display:none; }
   a.post-excerpt.photo {
