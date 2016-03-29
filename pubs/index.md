@@ -186,6 +186,36 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 + Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](), AI & Statistics Conference (AISTATS), 2016.
+
+  <button id="b_abs_c1"> Abstract </button>
+  <button id="b_bib_c1"> Bibtex </button>
+  <p id="abs_c1"> <i> For linear models, compressed sensing theory and methods enable recovery of 
+  sparse signals of interest from few measurements - in the order of the number of nonzero
+  entries as opposed to the length of the signal of interest. Results of similar flavor have more 
+  recently emerged for bilinear models, but no results are available for multilinear models of 
+  tensor data. In this contribution, we consider compressed sensing for sparse and low-rank 
+  tensors. More specifically, we consider low-rank tensors synthesized as sums of outer products 
+  of sparse loading vectors, and a special class of linear dimensionality-reducing transformations 
+  that reduce each mode individually. We prove interesting `oracle' properties showing that it 
+  is possible to identify the uncompressed sparse loadings directly from the compressed tensor 
+  data. The proofs naturally suggest a two-step recovery process: fitting a low-rank model 
+  in compressed domain, followed by per-mode $\ell_0$ / $\ell_1$ de-compression. This two-step
+  process is also appealing from a computational complexity and memory capacity point of view, 
+  especially for big tensor datasets. </i> </p>
+ 
+  <pre id="bib_c1"><samp>
+  		@article{sidiropoulos2012multi,
+ 				 title={Multi-way compressed sensing for sparse low-rank tensors},
+ 				 author={Sidiropoulos, Nicholas D and Kyrillidis, Anastasios},
+ 				 journal={Signal Processing Letters, IEEE},
+ 				 volume={19},
+ 				 number={11},
+ 				 pages={757--760},
+ 				 year={2012},
+ 				 publisher={IEEE}
+		}
+  </samp></pre>
+  
 + Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Learning sparse additive models with interactions in high dimensions"*](), AI & Statistics Conference (AISTATS), 2016.
 + Megasthenis Asteris, Anastasios Kyrillidis, Dimitris Papailiopoulos, and Alex Dimakis, [*``Bipartite correlation clustering -- Maximizing agreements"*](), AI & Statistics Conference (AISTATS), 2016.
 + Megasthenis Asteris, Dimitris Papailiopoulos, Anastasios Kyrillidis, and Alex Dimakis, [*``Space PCA via bipartite matchings"*](/pubs/Conferences/Sparse_PCA_Bipartite.pdf), Neural Information Processing Systems (NIPS), 2015.
