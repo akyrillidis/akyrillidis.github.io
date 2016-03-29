@@ -185,9 +185,9 @@ synthetic and real data. </i> </p>
   </samp></pre>
   
 ## Conference papers
-+ (**<span style="color:red">New</span>**) Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](), AI & Statistics Conference (AISTATS), 2016.
-+ (**<span style="color:red">New</span>**) Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Learning sparse additive models with interactions in high dimensions"*](), AI & Statistics Conference (AISTATS), 2016.
-+ (**<span style="color:red">New</span>**) Megasthenis Asteris, Anastasios Kyrillidis, Dimitris Papailiopoulos, and Alex Dimakis, [*``Bipartite correlation clustering -- Maximizing agreements"*](), AI & Statistics Conference (AISTATS), 2016.
++ Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](), AI & Statistics Conference (AISTATS), 2016.
++ Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Learning sparse additive models with interactions in high dimensions"*](), AI & Statistics Conference (AISTATS), 2016.
++ Megasthenis Asteris, Anastasios Kyrillidis, Dimitris Papailiopoulos, and Alex Dimakis, [*``Bipartite correlation clustering -- Maximizing agreements"*](), AI & Statistics Conference (AISTATS), 2016.
 + Megasthenis Asteris, Dimitris Papailiopoulos, Anastasios Kyrillidis, and Alex Dimakis, [*``Space PCA via bipartite matchings"*](/pubs/Conferences/Sparse_PCA_Bipartite.pdf), Neural Information Processing Systems (NIPS), 2015.
 + Megasthenis Asteris, Anastasios Kyrillidis, Alex Dimakis, Han-Gyol Yi and Bharath Chandrasekaran, [*``Stay on path: PCA along graph paths"*](/pubs/Conferences/Stay_on_path.pdf),  International Conference on Machine Learning (ICML), 2015.
 + Michail Vlachos, Francesco Fusco, Harry Mavroforakis, Anastasios Kyrillidis and Vassilis Vasileiadis, [*``Scalable and robust co-clustering of large customer-product graphs"*](/pubs/Conferences/km0049-vlachosA.pdf), ACM CIKM International Conference on Information and Knowledge Management, 2014.
