@@ -187,32 +187,31 @@ synthetic and real data. </i> </p>
 ## Conference papers
 + Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](), AI & Statistics Conference (AISTATS), 2016.
 
-  <button id="b_abs_c1"> Abstract </button>
-  <button id="b_bib_c1"> Bibtex </button>
-  <p id="abs_c1"> <i> For linear models, compressed sensing theory and methods enable recovery of 
-  sparse signals of interest from few measurements - in the order of the number of nonzero
-  entries as opposed to the length of the signal of interest. Results of similar flavor have more 
-  recently emerged for bilinear models, but no results are available for multilinear models of 
-  tensor data. In this contribution, we consider compressed sensing for sparse and low-rank 
-  tensors. More specifically, we consider low-rank tensors synthesized as sums of outer products 
-  of sparse loading vectors, and a special class of linear dimensionality-reducing transformations 
-  that reduce each mode individually. We prove interesting `oracle' properties showing that it 
-  is possible to identify the uncompressed sparse loadings directly from the compressed tensor 
-  data. The proofs naturally suggest a two-step recovery process: fitting a low-rank model 
-  in compressed domain, followed by per-mode $\ell_0$ / $\ell_1$ de-compression. This two-step
-  process is also appealing from a computational complexity and memory capacity point of view, 
-  especially for big tensor datasets. </i> </p>
+  <button id="b_abs_c20"> Abstract </button>
+  <button id="b_bib_c20"> Bibtex </button>
+  <p id="abs_c20"> <i> Sparse matrices are favorable objects in machine learning and optimization. 
+  When such matrices are used, in place of dense ones, the overall complexity requirements in optimization 
+  can be significantly reduced in practice, both in terms of space and run-time. 
+  Prompted by this observation, we study a convex optimization scheme for block-sparse recovery from linear measurements. 
+  To obtain linear sketches, we use expander matrices, i.e., sparse matrices containing only few 
+  non-zeros per column. Hitherto, to the best of our knowledge, such algorithmic solutions have been only 
+  studied from a non-convex perspective. Our aim here is to theoretically characterize the performance of 
+  convex approaches under such setting. 
+
+  Our key novelty is the expression of the recovery error in terms of the model-based norm, while assuring 
+  that solution lives in the model. 
+  To achieve this, we show that sparse model-based matrices satisfy a group version of the null-space property. 
+  Our experimental findings on synthetic and real applications support our claims for faster recovery 
+  in the convex setting -- as opposed to using dense sensing matrices, while showing a 
+  competitive recovery performance.  
+  </i> </p>
  
-  <pre id="bib_c1"><samp>
-  		@article{sidiropoulos2012multi,
- 				 title={Multi-way compressed sensing for sparse low-rank tensors},
- 				 author={Sidiropoulos, Nicholas D and Kyrillidis, Anastasios},
- 				 journal={Signal Processing Letters, IEEE},
- 				 volume={19},
- 				 number={11},
- 				 pages={757--760},
- 				 year={2012},
- 				 publisher={IEEE}
+  <pre id="bib_c20"><samp>
+  		@article{kyrillidis2016convex,
+  				 title={Convex block-sparse linear regression with expanders--provably},
+			     author={Kyrillidis, Anastasios and Bah, Bubacarr and Hasheminezhad, Rouzbeh and Tran-Dinh, Quoc and Baldassarre, Luca and Cevher, Volkan},
+			     journal={arXiv preprint arXiv:1603.06313},
+			     year={2016}
 		}
   </samp></pre>
   
