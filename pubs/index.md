@@ -197,7 +197,6 @@ synthetic and real data. </i> </p>
   non-zeros per column. Hitherto, to the best of our knowledge, such algorithmic solutions have been only 
   studied from a non-convex perspective. Our aim here is to theoretically characterize the performance of 
   convex approaches under such setting. 
-
   Our key novelty is the expression of the recovery error in terms of the model-based norm, while assuring 
   that solution lives in the model. 
   To achieve this, we show that sparse model-based matrices satisfy a group version of the null-space property. 
