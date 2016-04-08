@@ -3,10 +3,10 @@ highlighter: pygments
 lsi: false
 permalink: /:year/:month/:day/:title.html
 # paginate: 50
-markdown: rdiscount
+# markdown: rdiscount
 # enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
-rdiscount:
-  extensions: [smart]
+#rdiscount:
+#  extensions: [smart]
 # Since GH pages override this to "true", we test this value to see if we are running locally
 safe: false
 include: [".well-known"]
