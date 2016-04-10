@@ -68,7 +68,7 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_j4"> Abstract </button>
   <button id="b_bib_j4"> Bibtex </button>
-  <button id="b_pos_j6"> Poster </button>
+  <button id="b_pre_j6"> Presentation </button>
   <p id="abs_j4"> <i> Many scientific and engineering applications feature nonsmooth convex minimization 
   problems over convex sets. In this paper, we address an important instance of this broad class where we 
   assume that the nonsmooth objective is equipped with a tractable proximity operator and that the convex 
