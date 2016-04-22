@@ -19,12 +19,12 @@ synthetic and real data. </i> </p>
    
    <pre id="bib_j6"><samp>
    		@article{tran2015composite,
-  		  		 title={Composite Self-Concordant Minimization},
-		  	     author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
-	    		 journal={Journal of Machine Learning Research},
-			     volume={16},
-			     pages={371--416},
-			     year={2015}
+  		  	title={Composite Self-Concordant Minimization},
+		  	author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
+	    	journal={Journal of Machine Learning Research},
+			volume={16},
+			pages={371--416},
+			year={2015}
 		}
    </samp></pre>
    
@@ -53,14 +53,14 @@ synthetic and real data. </i> </p>
    
    <pre id="bib_j5"><samp>
    		@article{vlachos2015compressive,
-  				 title={Compressive mining: fast and optimal data mining in the compressed domain},
-  				 author={Vlachos, Michail and Freris, Nikolaos M and Kyrillidis, Anastasios},
-			     journal={The VLDB Journal—The International Journal on Very Large Data Bases},
-  				 volume={24},
-  				 number={1},
-  			 	 pages={1--24},
-  				 year={2015},
-  				 publisher={Springer-Verlag New York, Inc.}
+  			title={Compressive mining: fast and optimal data mining in the compressed domain},
+  			author={Vlachos, Michail and Freris, Nikolaos M and Kyrillidis, Anastasios},
+			journal={The VLDB Journal—The International Journal on Very Large Data Bases},
+  			volume={24},
+  			number={1},
+  			pages={1--24},
+  			year={2015},
+  			publisher={Springer-Verlag New York, Inc.}
 		}
    </samp></pre>
 
@@ -84,14 +84,14 @@ synthetic and real data. </i> </p>
 
   <pre id="bib_j4"><samp>
    		@article{tran2014inexact,
-  				 title={An inexact proximal path-following algorithm for constrained convex minimization},
-			     author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
- 				 journal={SIAM Journal on Optimization},
- 				 volume={24},
- 				 number={4},
- 				 pages={1718--1745},
- 				 year={2014},
- 				 publisher={SIAM}
+  			title={An inexact proximal path-following algorithm for constrained convex minimization},
+			author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
+ 			journal={SIAM Journal on Optimization},
+ 			volume={24},
+ 			number={4},
+ 			pages={1718--1745},
+ 			year={2014},
+ 			publisher={SIAM}
 		}
    </samp></pre>
    
@@ -116,14 +116,14 @@ synthetic and real data. </i> </p>
     
   <pre id="bib_j3"><samp>
   		@article{kyrillidis2014fixed,
-  				 title={Fixed-rank Rayleigh quotient maximization by an MPSK sequence},
- 				 author={Kyrillidis, Anastasios and Karystinos, George N},
- 				 journal={Communications, IEEE Transactions on},
- 				 volume={62},
- 				 number={3},
- 				 pages={961--975},
- 				 year={2014},
- 				 publisher={IEEE}
+  			title={Fixed-rank Rayleigh quotient maximization by an MPSK sequence},
+ 			author={Kyrillidis, Anastasios and Karystinos, George N},
+ 			journal={Communications, IEEE Transactions on},
+ 			volume={62},
+ 			number={3},
+ 			pages={961--975},
+ 			year={2014},
+ 			publisher={IEEE}
 		}
   </samp></pre>
   
@@ -143,14 +143,14 @@ synthetic and real data. </i> </p>
     
   <pre id="bib_j2"><samp>
   		@article{kyrillidis2014matrix,
-  				 title={Matrix recipes for hard thresholding methods},
- 				 author={Kyrillidis, Anastasios and Cevher, Volkan},
- 				 journal={Journal of mathematical imaging and vision},
- 				 volume={48},
- 				 number={2},
- 				 pages={235--265},
- 				 year={2014},
-	 			 publisher={Springer}
+  			title={Matrix recipes for hard thresholding methods},
+ 			author={Kyrillidis, Anastasios and Cevher, Volkan},
+ 			journal={Journal of mathematical imaging and vision},
+ 			volume={48},
+ 			number={2},
+ 			pages={235--265},
+ 			year={2014},
+	 		publisher={Springer}
 		}
   </samp></pre>
   
@@ -174,14 +174,14 @@ synthetic and real data. </i> </p>
  
   <pre id="bib_j1"><samp>
   		@article{sidiropoulos2012multi,
- 				 title={Multi-way compressed sensing for sparse low-rank tensors},
- 				 author={Sidiropoulos, Nicholas D and Kyrillidis, Anastasios},
- 				 journal={Signal Processing Letters, IEEE},
- 				 volume={19},
- 				 number={11},
- 				 pages={757--760},
- 				 year={2012},
- 				 publisher={IEEE}
+ 			title={Multi-way compressed sensing for sparse low-rank tensors},
+ 			author={Sidiropoulos, Nicholas D and Kyrillidis, Anastasios},
+ 			journal={Signal Processing Letters, IEEE},
+ 			volume={19},
+ 			number={11},
+ 			pages={757--760},
+ 			year={2012},
+ 			publisher={IEEE}
 		}
   </samp></pre>
   
@@ -209,10 +209,10 @@ synthetic and real data. </i> </p>
  
   <pre id="bib_c20"><samp>
   		@article{kyrillidis2016convex,
-  				 title={Convex block-sparse linear regression with expanders--provably},
-			     author={Kyrillidis, Anastasios and Bah, Bubacarr and Hasheminezhad, Rouzbeh and Tran-Dinh, Quoc and Baldassarre, Luca and Cevher, Volkan},
-			     journal={arXiv preprint arXiv:1603.06313},
-			     year={2016}
+  			title={Convex block-sparse linear regression with expanders--provably},
+			author={Kyrillidis, Anastasios and Bah, Bubacarr and Hasheminezhad, Rouzbeh and Tran-Dinh, Quoc and Baldassarre, Luca and Cevher, Volkan},
+			journal={arXiv preprint arXiv:1603.06313},
+			year={2016}
 		}
   </samp></pre>
   
@@ -236,10 +236,10 @@ validate our theoretical findings.
  
   <pre id="bib_c19"><samp>
   		@article{kyrillidis2016convex,
-  				 title={Learning Sparse Additive Models with Interactions in High Dimensions},
-			     author={Tyagi, Hemant and Kyrillidis, Anastasios and Gartner, Bernd and Krause, Andreas},
-			     journal={arXiv preprint arXiv:1604.05307},
-			     year={2016}
+  			title={Learning Sparse Additive Models with Interactions in High Dimensions},
+			author={Tyagi, Hemant and Kyrillidis, Anastasios and Gartner, Bernd and Krause, Andreas},
+			journal={arXiv preprint arXiv:1604.05307},
+			year={2016}
 		}
   </samp></pre>
 
@@ -247,7 +247,18 @@ validate our theoretical findings.
 
   <button id="b_abs_c18"> Abstract </button>
   <button id="b_bib_c18"> Bibtex </button>
-  <p id="abs_c18"> <i> 
+  <p id="abs_c18"> <i> In Bipartite Correlation Clustering (BCC) we are given a complete bipartite graph 
+  G with `+' and `-' edges, and we seek a vertex clustering that maximizes the number of agreements: 
+  the number of all `+' edges within clusters plus all `-' edges cut across clusters. BCC is known to be NP-hard. 
+  
+  We present a novel approximation algorithm for k-BCC, a variant of BCC with an upper bound k 
+  on the number of clusters. Our algorithm outputs a k-clustering that provably achieves a 
+  number of agreements within a multiplicative (1−δ)-factor from the optimal, for any desired 
+  accuracy δ. It relies on solving a combinatorially constrained bilinear maximization on 
+  the bi-adjacency matrix of G. It runs in time exponential in k and δ−1, but linear in the size of the input. 
+  Further, we show that, in the (unconstrained) BCC setting, an (1−δ)-approximation can be 
+  achieved by O(δ−1) clusters regardless of the size of the graph. In turn, our k-BCC 
+  algorithm implies an Efficient PTAS for the BCC objective of maximizing agreements.
   </i> </p>
  
   <pre id="bib_c18"><samp>
