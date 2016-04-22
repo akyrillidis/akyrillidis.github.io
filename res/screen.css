@@ -1441,11 +1441,11 @@ margin-left:1.5em;
     display: none;
 }
 
-#abs_c20 {
+#abs_c20, #abs_c19 {
     display: none;
 }
 
-#bib_c20 {
+#bib_c20, #bib_c19 {
     display: none;
 }
 

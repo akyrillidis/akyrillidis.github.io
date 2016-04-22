@@ -186,7 +186,7 @@ synthetic and real data. </i> </p>
   </samp></pre>
   
 ## Conference papers
-+ Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](), AI & Statistics Conference (AISTATS), 2016.
++ Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](/pubs/Conferences/cvx_block_expanders.pdf), AI & Statistics Conference (AISTATS), 2016.
 
   <button id="b_abs_c20"> Abstract </button>
   <button id="b_bib_c20"> Bibtex </button>
@@ -215,7 +215,33 @@ synthetic and real data. </i> </p>
 		}
   </samp></pre>
   
-+ Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Learning sparse additive models with interactions in high dimensions"*](), AI & Statistics Conference (AISTATS), 2016.
++ Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Learning sparse additive models with interactions in high dimensions"*](/pubs/Conferences/GSPAM.pdf), AI & Statistics Conference (AISTATS), 2016.
+
+  <button id="b_abs_c19"> Abstract </button>
+  <button id="b_bib_c19"> Bibtex </button>
+  <p id="abs_c19"> <i> A function $f: \mathbb{R}^d \rightarrow \mathbb{R}$ is referred to as a Sparse Additive Model (SPAM), if it is of the
+form $f(\mathbf{x}) = \sum\_{l \in \mathcal{S}}\phi\_{l}(x\_l)$, where $\mathcal{S} \subset [d]$, $|\mathcal{S}| \ll d$.
+Assuming $\phi\_l$'s and $\mathcal{S}$ to be unknown, the problem of estimating $f$ from its samples has been
+studied extensively. In this work, we consider a generalized SPAM, allowing for *second order* interaction terms.
+For some $\mathcal{S}\_1 \subset [d], \mathcal{S}\_2 \subset {[d] \choose 2}$, the function $f$ is assumed to be of the form: 
+$f(\mathbf{x}) = \sum\_{p \in \mathcal{S}\_1}\phi\_{p} (x\_p) + \sum\_{(l\_1, l\_2) \in \mathcal{S}\_2}\phi\_{(l\_1, l\_2)} \mathbf{x}\_{(l\_1, l\_2)}.$
+Assuming $\phi\_{p},\phi\_{(l\_1, l\_2)}$, $\mathcal{S}\_1$ and, $\mathcal{S}\_2$ to be unknown,
+we provide a randomized algorithm that queries $f$ and *exactly recovers* $\mathcal{S}\_1,\mathcal{S}\_2$. Consequently, this also enables us to estimate the underlying 
+$\phi\_p, \phi\_{(l\_1, l\_2)}$. We derive sample complexity bounds for our scheme and also extend our analysis
+to include the situation where the queries are corrupted with noise -- either stochastic, 
+or arbitrary but bounded. Lastly, we provide simulation results on synthetic data, that
+validate our theoretical findings. 
+  </i> </p>
+ 
+  <pre id="bib_c19"><samp>
+  		@article{kyrillidis2016convex,
+  				 title={Learning Sparse Additive Models with Interactions in High Dimensions},
+			     author={Tyagi, Hemant and Kyrillidis, Anastasios and Gartner, Bernd and Krause, Andreas},
+			     journal={arXiv preprint arXiv:1604.05307},
+			     year={2016}
+		}
+  </samp></pre>
+
 + Megasthenis Asteris, Anastasios Kyrillidis, Dimitris Papailiopoulos, and Alex Dimakis, [*``Bipartite correlation clustering -- Maximizing agreements"*](), AI & Statistics Conference (AISTATS), 2016.
 + Megasthenis Asteris, Dimitris Papailiopoulos, Anastasios Kyrillidis, and Alex Dimakis, [*``Space PCA via bipartite matchings"*](/pubs/Conferences/Sparse_PCA_Bipartite.pdf), Neural Information Processing Systems (NIPS), 2015.
 + Megasthenis Asteris, Anastasios Kyrillidis, Alex Dimakis, Han-Gyol Yi and Bharath Chandrasekaran, [*``Stay on path: PCA along graph paths"*](/pubs/Conferences/Stay_on_path.pdf),  International Conference on Machine Learning (ICML), 2015.
