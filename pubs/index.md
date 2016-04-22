@@ -190,6 +190,7 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_c20"> Abstract </button>
   <button id="b_bib_c20"> Bibtex </button>
+  <button id="b_pos_c20"> Poster </button>
   <p id="abs_c20"> <i> Sparse matrices are favorable objects in machine learning and optimization. 
   When such matrices are used, in place of dense ones, the overall complexity requirements in optimization 
   can be significantly reduced in practice, both in terms of space and run-time. 
@@ -242,7 +243,22 @@ validate our theoretical findings.
 		}
   </samp></pre>
 
-+ Megasthenis Asteris, Anastasios Kyrillidis, Dimitris Papailiopoulos, and Alex Dimakis, [*``Bipartite correlation clustering -- Maximizing agreements"*](), AI & Statistics Conference (AISTATS), 2016.
++ Megasthenis Asteris, Anastasios Kyrillidis, Dimitris Papailiopoulos, and Alex Dimakis, [*``Bipartite correlation clustering: Maximizing agreements"*](/pubs/Conferences/BCC.pdf), AI & Statistics Conference (AISTATS), 2016.
+
+  <button id="b_abs_c18"> Abstract </button>
+  <button id="b_bib_c18"> Bibtex </button>
+  <p id="abs_c18"> <i> 
+  </i> </p>
+ 
+  <pre id="bib_c18"><samp>
+  		@article{asteris2016bipartite,
+  			title={Bipartite Correlation Clustering--Maximizing Agreements},
+  			author={Asteris, Megasthenis and Kyrillidis, Anastasios and Papailiopoulos, Dimitris and Dimakis, Alexandros G},
+  			journal={arXiv preprint arXiv:1603.02782},
+  			year={2016}
+		}
+  </samp></pre>
+
 + Megasthenis Asteris, Dimitris Papailiopoulos, Anastasios Kyrillidis, and Alex Dimakis, [*``Space PCA via bipartite matchings"*](/pubs/Conferences/Sparse_PCA_Bipartite.pdf), Neural Information Processing Systems (NIPS), 2015.
 + Megasthenis Asteris, Anastasios Kyrillidis, Alex Dimakis, Han-Gyol Yi and Bharath Chandrasekaran, [*``Stay on path: PCA along graph paths"*](/pubs/Conferences/Stay_on_path.pdf),  International Conference on Machine Learning (ICML), 2015.
 + Michail Vlachos, Francesco Fusco, Harry Mavroforakis, Anastasios Kyrillidis and Vassilis Vasileiadis, [*``Scalable and robust co-clustering of large customer-product graphs"*](/pubs/Conferences/km0049-vlachosA.pdf), ACM CIKM International Conference on Information and Knowledge Management, 2014.
