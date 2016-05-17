@@ -233,7 +233,7 @@ We will describe the notion of phase transition for the convex
 $\ell\_1$-norm minimization case (explicit phase transitions for non-convex case 
 have not been proved yet -- in case I'm wrong, I would love to discuss it with you!):
 $$
-    \min_{\mathbf{x}} \|\mathbf{x}\|\_1 \quad \text{s.t.} \quad \mathbf{y} = \boldsymbol{\Phi} \mathbf{x}.
+    \min_{\mathbf{x}} \|\mathbf{x}\|_1 \quad \text{s.t.} \quad \mathbf{y} = \boldsymbol{\Phi} \mathbf{x}.
 $$
 In their seminal work [3-4], Tanner and Donoho explicitly characterize the 
 performance of such $\ell\_1$-norm minimization criterion, using the notion of 
@@ -307,8 +307,9 @@ $$
 where $f(\mathbf{x})$ satisfies *Lipschitz gradient continuity* with constant $L > 0$ 
 (otherwise stated, $f$ is smooth - however, $f$ being smooth is a much stricter assumption
  -- see [*here*](https://en.wikipedia.org/wiki/Smoothness)):
+
 $$
-\|\nabla f(\mathbf{x}_1) - \nabla f(\mathbf{x}_2)\|\_2 \leq L \cdot \|\mathbf{x}_1 - \mathbf{x}_2\|\_2,
+\|\nabla f(\mathbf{x}_1) - \nabla f(\mathbf{x}_2)\|_2 \leq L \cdot \|\mathbf{x}_1 - \mathbf{x}_2\|_2,
 $$ 
 for any $\mathbf{x}\_1,~\mathbf{x}\_2$ in the domain of $f$. "Optimal" first-order (gradient) 
 methods by Nesterov [1] suggest the following recursion:
@@ -319,18 +320,23 @@ where the step size is set to $\mu = \frac{1}{L}$. It turns out that such *const
 size selection is sufficient to provide attractive convergence guarantees for any $f$.
 
 Let us compute Lipschitz constant in CS problem. Focusing on $k$-sparse vectors $\mathbf{x}\_1,~\mathbf{x}\_2$, we compute:
+
 $$
 \|\nabla f(\mathbf{x}_1) - \nabla f(\mathbf{x}_2)\|_2 = \|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}_2)\|_2 \\
 $$
+
 $$
 \stackrel{(i)}{=} \|\boldsymbol{\Phi}_\mathcal{S}^\top \boldsymbol{\Phi}_\mathcal{S} \cdot (\mathbf{x}_1 - \mathbf{x}_2)\|_2 \\
 $$
+
 $$
 ~ ~ ~ ~ ~ \quad \quad \quad \stackrel{(ii)}{\leq} \max_{\mathcal{S} \in [p], |\mathcal{S}| \leq 2k} \|\boldsymbol{\Phi}_\mathcal{S}^\top \boldsymbol{\Phi}_\mathcal{S}\|\_2 \cdot \|\mathbf{x}_1 - \mathbf{x}_2\|_2 \\
 $$
+
 $$
 \stackrel{(iii)}{\leq} (1 + \delta_{2k}) \|\mathbf{x}_1 - \mathbf{x}_2\|_2
 $$ 
+
 where $(i)$ $\mathcal{S}$ denotes the union of non-zero indices in $\mathbf{x}\_1,~\mathbf{x}\_2$
  -- observe that $|\mathcal{S}| \leq 2k$, $(ii)$ here $\mathcal{S}$ denotes the placeholder
   for any possible, at most $2k$-sparse combination of sparsity supports, $(iii)$ is due to RIP; see also [7, Section 5.1].
@@ -343,28 +349,33 @@ In one of my first research attempts during my PhD [8], Volkan and I provide a a
 
 > **Definition (Non-symmetric Restricted Isometry Property - RIP)**. *An $n \times p$ matrix $\boldsymbol{\Phi}$ satisfies the non-symmetric restricted isometry property for sparsity level $k \geq 1$ if there exist constans $\alpha\_k, ~\beta\_k$ such that the inequalities
 > $$
-    \alpha\_k \|\|\mathbf{x}\|\|\_2 ^2 \leq \|\|\boldsymbol{\Phi} \mathbf{x}\|\|\_2 ^2 \leq \beta\_k \|\|\mathbf{x}\|\|\_2 ^2
+    \alpha_k \|\mathbf{x}\|_2^2 \leq \|\boldsymbol{\Phi} \mathbf{x}\|_2^2 \leq \beta_k \|\mathbf{x}\|\_2^2
 > $$ 
 > hold for all $\mathbf{x} \in \mathbb{R}^p$ with $\|\|\mathbf{x}\|\|\_0 \leq k$.* 
 
 For our step size derivation, we use the convergence proof of IHT -- in vector estimates, not in function values -- where step size is considered as a variable. [*This note*](/public/ALPSdemoIIfiles/IHT_note_1.pdf) lists the basic steps that lead to the following recursive formula for IHT:
+
 $$
-\|\|\mathbf{x}\_{i+1} - \mathbf{x}^\star\|\|\_2 \leq 2 \cdot \|\|\mathbf{I} - \mu \boldsymbol{\Phi}^\top\_{\mathcal{A}} \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \cdot \|\|\mathbf{x}\_i - \mathbf{x}^\star\|\|\_2 + 2\mu \sqrt{\beta\_{2k}} \|\|\mathbf{w}\|\|\_2.
+\|\mathbf{x}_{i+1} - \mathbf{x}^\star\|_2 \leq 2 \cdot \|\mathbf{I} - \mu \boldsymbol{\Phi}^\top_{\mathcal{A}} \boldsymbol{\Phi}_{\mathcal{A}}\|_2 \cdot \|\mathbf{x}_i - \mathbf{x}^\star\|_2 + 2\mu \sqrt{\beta_{2k}} \|\mathbf{w}\|_2.
 $$
+
 Here, $\mathcal{A} := \mathcal{S}^\star \cup \mathcal{S}\_{i} \cup \mathcal{S}\_{i+1}$. Observe that 
+
 $$
-\lambda(\boldsymbol{\Phi}\_{\mathcal{A}} ^{\top} \boldsymbol{\Phi}\_{\mathcal{A}}) \in [\alpha\_{3k}, \beta\_{3k} ].
+\lambda(\boldsymbol{\Phi}_{\mathcal{A}} ^{\top} \boldsymbol{\Phi}_{\mathcal{A}}) \in [\alpha_{3k}, \beta_{3k} ].
 $$
+
 To optimize the convergence rate, one can pick $ \mu $ as the minimizer of the expression:
 $$
-\min\_{\mu} \|\|\mathbf{I} - \mu \boldsymbol{\Phi}\_{\mathcal{A}} ^\top \boldsymbol{\Phi}\_{\mathcal{A}}\|\|\_2 \leq \min\_{\mu} \max \lbrace \mu \cdot \beta\_{3k} - 1, 1 - \mu \cdot \alpha\_{3k} \rbrace,
+\min_{\mu} \|\mathbf{I} - \mu \boldsymbol{\Phi}_{\mathcal{A}}^\top \boldsymbol{\Phi}_{\mathcal{A}}\|_2 \leq \min_{\mu} \max \lbrace \mu \cdot \beta_{3k} - 1, 1 - \mu \cdot \alpha_{3k} \rbrace,
 $$
+
 which leads to the following result, inspired by convex optimization constant step size strategies [1].
 
 > **Lemma 1 (Non-symmetric RIP constant step size strategy) [8]**.
 > *Assume $ \boldsymbol{\Phi} $ satisfies the non-symmetric RIP with known upper/lower bounds $ \alpha\_{cK}, \beta\_{cK}, (c = 2,3) $. The step size $ \mu $ that implies the fastest convergence rate in the recursion above amounts to
 > $$
->	\mu = \frac{2}{\alpha\_{3k} + \beta\_{3k}}.
+>	\mu = \frac{2}{\alpha_{3k} + \beta_{3k}}.
 > $$*
 
 In the special case where $ \boldsymbol{\Phi} $ satisfies the symmetric RIP for some constant $ \delta\_{3k} $, we have:
@@ -372,7 +383,7 @@ In the special case where $ \boldsymbol{\Phi} $ satisfies the symmetric RIP for 
 > **Corollary 1 (RIP constant step size strategy) [8]**.
 > *Given $ \boldsymbol{\Phi} $ satisfies the RIP for some $ \delta\_{3k} $, the step size $ \mu $ that implies the fastest convergence rate in the above lemma amounts to  $\mu = 1$. Moreover, this step size results in contraction (noiseless case):
 > $$ 
-> \|\|\mathbf{x}\_{i+1} - \mathbf{x}^\star\|\|\_2 \leq \rho \cdot \|\|\mathbf{x}\_i - \mathbf{x}^\star\|\|\_2
+> \|\mathbf{x}_{i+1} - \mathbf{x}^\star\|_2 \leq \rho \cdot \|\mathbf{x}_i - \mathbf{x}^\star\|_2
 > $$
 > with  $ \rho = 2\delta\_{3k} $. I.e., $ |\rho| < \frac{1}{2} $ implies that we require $\delta_{3k} < 1/4 $.*
 
@@ -386,7 +397,7 @@ $$
 It is not hard to see that non-symmetric RIP (as well as classic RIP) implies similar spectral
 inequalities, restricted on the domain of sparse vectors:
 $$
-\alpha\_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta\_k \mathbf{I}, ~ ~ ~ ~\forall k\text{-sparse vectors}.
+\alpha_k \mathbf{I} \preceq \nabla ^2 f(\mathbf{x}) \preceq \beta_k \mathbf{I}, ~ ~ ~ ~\forall k\text{-sparse vectors}.
 $$
 This is also related to the notion of restricted strong convexity and smoothness in [9-10].
 
