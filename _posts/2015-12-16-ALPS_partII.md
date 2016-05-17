@@ -16,7 +16,7 @@ the classic CS problem via a non-convex optimization problem criterion.
 ### A closer look into the IHT algorithm
 Recall the IHT iteration, 
 $$
-	\mathbf{x}\_{i+1} = \mathcal{H}\_{k} \left(\mathbf{x}\_{i} + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)\right).
+	\mathbf{x}_{i+1} = \mathcal{H}\_{k} \left(\mathbf{x}\_{i} + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)\right).
 $$
 We remind that $\mathcal{H}\_{k}(\cdot)$ is the *hard thresholding* operator that keeps the $k$ largest in 
 magnitude elements of the input vector.
