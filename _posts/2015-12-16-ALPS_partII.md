@@ -16,7 +16,7 @@ the classic CS problem via a non-convex optimization problem criterion.
 ### A closer look into the IHT algorithm
 Recall the IHT iteration, 
 $$
-	\mathbf{x}_{i+1} = \mathcal{H}_{k} \left(\mathbf{x}_{i} + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)\right).
+	\mathbf{x}_{i+1} = \mathcal{H}_{k} \left(\mathbf{x}_{i} + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}_i)\right).
 $$
 We remind that $\mathcal{H}\_{k}(\cdot)$ is the *hard thresholding* operator that keeps the $k$ largest in 
 magnitude elements of the input vector.
@@ -24,7 +24,7 @@ magnitude elements of the input vector.
 Again, according to [*this post*](http://akyrillidis.github.io/2015/12/12/ALPS_partI.html), 
 IHT is nothing else than projected gradient descent in a non-convex setting:
 $$
-	\mathbf{x}\_{i+1} = \mathcal{H}\_{k} \left(\mathbf{x}\_{i} - \mu \nabla f(\mathbf{x}\_i)\right)
+	\mathbf{x}_{i+1} = \mathcal{H}_{k} \left(\mathbf{x}_{i} - \mu \nabla f(\mathbf{x}_i)\right)
 $$ 
 where $\nabla f(\mathbf{x}\_i) := -\boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi} \mathbf{x}\_i)$ and 
 the step size is set to $\mu = 1$. 
@@ -233,7 +233,7 @@ We will describe the notion of phase transition for the convex
 $\ell\_1$-norm minimization case (explicit phase transitions for non-convex case 
 have not been proved yet -- in case I'm wrong, I would love to discuss it with you!):
 $$
-    \min\_{\mathbf{x}} \|\|\mathbf{x}\|\|\_1 \quad \text{s.t.} \quad \mathbf{y} = \boldsymbol{\Phi} \mathbf{x}.
+    \min_{\mathbf{x}} \|\mathbf{x}\|\_1 \quad \text{s.t.} \quad \mathbf{y} = \boldsymbol{\Phi} \mathbf{x}.
 $$
 In their seminal work [3-4], Tanner and Donoho explicitly characterize the 
 performance of such $\ell\_1$-norm minimization criterion, using the notion of 
@@ -302,34 +302,34 @@ step size selection, we make the connection with that made in convex optimizatio
 
 Consider the following convex optimization problem:
 $$
-    \min\_{\mathbf{x}} f(\mathbf{x})
+    \min_{\mathbf{x}} f(\mathbf{x})
 $$
 where $f(\mathbf{x})$ satisfies *Lipschitz gradient continuity* with constant $L > 0$ 
 (otherwise stated, $f$ is smooth - however, $f$ being smooth is a much stricter assumption
  -- see [*here*](https://en.wikipedia.org/wiki/Smoothness)):
 $$
-\|\|\nabla f(\mathbf{x}\_1) - \nabla f(\mathbf{x}\_2)\|\|\_2 \leq L \cdot \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2,
+\|\nabla f(\mathbf{x}_1) - \nabla f(\mathbf{x}_2)\|\_2 \leq L \cdot \|\mathbf{x}_1 - \mathbf{x}_2\|\_2,
 $$ 
 for any $\mathbf{x}\_1,~\mathbf{x}\_2$ in the domain of $f$. "Optimal" first-order (gradient) 
 methods by Nesterov [1] suggest the following recursion:
 $$
-    \mathbf{x}\_{i+1} = \mathbf{x}\_i - \mu \cdot \nabla f(\mathbf{x}\_i)
+    \mathbf{x}_{i+1} = \mathbf{x}_i - \mu \cdot \nabla f(\mathbf{x}_i)
 $$
 where the step size is set to $\mu = \frac{1}{L}$. It turns out that such *constant* step 
 size selection is sufficient to provide attractive convergence guarantees for any $f$.
 
 Let us compute Lipschitz constant in CS problem. Focusing on $k$-sparse vectors $\mathbf{x}\_1,~\mathbf{x}\_2$, we compute:
 $$
-\|\|\nabla f(\mathbf{x}\_1) - \nabla f(\mathbf{x}\_2)\|\|\_2 = \|\|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}\_2)\|\|\_2 \\
+\|\nabla f(\mathbf{x}_1) - \nabla f(\mathbf{x}_2)\|_2 = \|-\boldsymbol{\Phi}^\top\cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}_1) + \boldsymbol{\Phi}^\top \cdot (\mathbf{y} - \boldsymbol{\Phi}\mathbf{x}_2)\|_2 \\
 $$
 $$
-\stackrel{(i)}{=} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S} \cdot (\mathbf{x}\_1 - \mathbf{x}\_2)\|\|\_2 \\
+\stackrel{(i)}{=} \|\boldsymbol{\Phi}_\mathcal{S}^\top \boldsymbol{\Phi}_\mathcal{S} \cdot (\mathbf{x}_1 - \mathbf{x}_2)\|_2 \\
 $$
 $$
-~ ~ ~ ~ ~ \quad \quad \quad \stackrel{(ii)}{\leq} \max\_{\mathcal{S} \in [p], |\mathcal{S}| \leq 2k} \|\|\boldsymbol{\Phi}\_\mathcal{S}^\top \boldsymbol{\Phi}\_\mathcal{S}\|\|\_2 \cdot \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2 \\
+~ ~ ~ ~ ~ \quad \quad \quad \stackrel{(ii)}{\leq} \max_{\mathcal{S} \in [p], |\mathcal{S}| \leq 2k} \|\boldsymbol{\Phi}_\mathcal{S}^\top \boldsymbol{\Phi}_\mathcal{S}\|\_2 \cdot \|\mathbf{x}_1 - \mathbf{x}_2\|_2 \\
 $$
 $$
-\stackrel{(iii)}{\leq} (1 + \delta\_{2k}) \|\|\mathbf{x}\_1 - \mathbf{x}\_2\|\|\_2
+\stackrel{(iii)}{\leq} (1 + \delta_{2k}) \|\mathbf{x}_1 - \mathbf{x}_2\|_2
 $$ 
 where $(i)$ $\mathcal{S}$ denotes the union of non-zero indices in $\mathbf{x}\_1,~\mathbf{x}\_2$
  -- observe that $|\mathcal{S}| \leq 2k$, $(ii)$ here $\mathcal{S}$ denotes the placeholder
