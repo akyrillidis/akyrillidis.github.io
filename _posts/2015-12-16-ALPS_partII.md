@@ -311,6 +311,7 @@ where $f(\mathbf{x})$ satisfies *Lipschitz gradient continuity* with constant $L
 $$
 \|\nabla f(\mathbf{x}_1) - \nabla f(\mathbf{x}_2)\|_2 \leq L \cdot \|\mathbf{x}_1 - \mathbf{x}_2\|_2,
 $$ 
+
 for any $\mathbf{x}\_1,~\mathbf{x}\_2$ in the domain of $f$. "Optimal" first-order (gradient) 
 methods by Nesterov [1] suggest the following recursion:
 $$
