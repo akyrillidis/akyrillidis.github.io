@@ -1453,6 +1453,6 @@ margin-left:1.5em;
     display: none;
 }
 
-#des_s1 {
+#des_s1, #des_s2, #des_s3 {
     display: none;
 }
