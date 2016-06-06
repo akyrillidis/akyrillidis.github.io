@@ -39,7 +39,7 @@ fb_comments: 3
    low rank and sparse recovery. Applications include background video subtraction and robust PCA, among others.
     </i> </p>
     
-+ Self-Concordant OPTimization (SCOPT) for composite convex problems
++ Self-Concordant OPTimization (SCOPT) for composite convex problems (Matlab)
   
   <button id="b_des_s4"> Description </button>
   <button id="b_dow_s4"> Link to software </button>
