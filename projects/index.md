@@ -4,7 +4,7 @@ fb_comments: 3
 ---
 
 ## Code packages 
-+ ALgebraic PursuitS for sparse signal recovery (Matlab)
++ ALgebraic PursuitS (ALPS) for sparse signal recovery (Matlab)
   
   <button id="b_des_s1"> Description </button>
   <button id="b_dow_s1"> Download </button>
@@ -16,7 +16,7 @@ fb_comments: 3
     </i> </p>
    
    
-+ Matrix ALgebraic PursuitS for low rank recovery (Matlab)
++ Matrix ALgebraic PursuitS (Matrix ALPS) for low rank recovery (Matlab)
   
   <button id="b_des_s2"> Description </button>
   <button id="b_dow_s2"> Download </button>
@@ -30,7 +30,7 @@ fb_comments: 3
     </i> </p>
    
 
-+ Matrix ALgebraic PursuitS for low rank + sparse recovery (Matlab)
++ Matrix ALgebraic PursuitS (Matrix ALPS) for low rank + sparse recovery (Matlab)
   
   <button id="b_des_s3"> Description </button>
   <button id="b_dow_s3"> Download </button>
@@ -38,4 +38,16 @@ fb_comments: 3
    <p id="des_s3"> <i> This software package is the extension of the Matrix ALPS software package for the case of
    low rank and sparse recovery. Applications include background video subtraction and robust PCA, among others.
     </i> </p>
+    
++ Self-Concordant OPTimization (SCOPT) for composite convex problems
+  
+  <button id="b_des_s4"> Description </button>
+  <button id="b_dow_s4"> Link to software </button>
+  <button id="b_pap_s4"> Paper </button>
+   <p id="des_s4"> <i> SCOPT  is a MATLAB implementation of the proximal gradient, proximal 
+   quasi-Newton, proximal Newton, and path-following interior-point algorithms for solving 
+   composite convex minimization problems involving self-concordant and self-concordant-like functions.
+    </i> </p>
+    
+
    
