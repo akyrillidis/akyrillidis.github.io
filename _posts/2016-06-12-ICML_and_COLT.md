@@ -6,7 +6,7 @@ title: Papers in ICML 2016 & COLT 2016
 photo_url: "/public/ny.jpg"
 ---
 
-Two papers are accepted in ICML and COLT conferences this year (both held in New Tork).
+Two papers are accepted in ICML and COLT conferences this year (both held in New York).
 
 - *A simple and provable algorithm for sparse diagonal CCA*: 
 Joint work with [*Megasthenis Asteris*](http://megasthenis.github.io/), [*Olumsanmi Koyejo*](http://sanmik.github.io/) 
