@@ -9,8 +9,8 @@ photo_url: "/public/ny.jpg"
 Two papers are accepted in ICML and COLT conferences this year (both held in New Tork).
 
 - *A simple and provable algorithm for sparse diagonal CCA*: 
-Joint work with [*Megasthenis Asteris*](), [*Olumsanmi Koyejo*]() 
-and [*Russell Poldrack*]() - to be presented in ICML.
+Joint work with [*Megasthenis Asteris*](http://megasthenis.github.io/), [*Olumsanmi Koyejo*](http://sanmik.github.io/) 
+and [*Russell Poldrack*](https://poldracklab.stanford.edu/) - to be presented in ICML.
 
 >**Abstract.** 
 >Given two sets of variables, derived from a common set of samples,
@@ -32,7 +32,7 @@ Finally, it can be straightforwardly adapted to other constrained variants of CC
 and apply it on a real neuroimaging dataset to investigate associations between brain activity and behavior measurements.
 
 - *Dropping convexity for faster semidefinite optimization*:
-Joint work with [*Srinadh Bhojanapalli*]() and [*Sujay Sanghavi*]() - to be presented in COLT.
+Joint work with [*Srinadh Bhojanapalli*](http://ttic.uchicago.edu/~srinadh/) and [*Sujay Sanghavi*](http://users.ece.utexas.edu/~sanghavi/) - to be presented in COLT.
 
 >**Abstract.** 
 >We study the minimization of a convex function $f(X)$ over the set of $n\times n$ positive semi-definite matrices, 
