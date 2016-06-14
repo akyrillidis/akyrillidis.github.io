@@ -188,6 +188,42 @@ synthetic and real data. </i> </p>
   </samp></pre>
   
 ## Conference papers
+
++ Megasthenis Asteris, Anastasios Kyrillidis, Oluwasanmi Koyejo, and Russell Poldrack, [*``A simple and provable algorithm for sparse diagonal CCA"*](/pubs/Conferences/cca.pdf), International Conference on Machine Learning (ICML), 2016.
+
+  <button id="b_abs_c21"> Abstract </button>
+  <button id="b_bib_c21"> Bibtex </button>
+  <button id="b_pre_c21"> Presentation </button>
+  <button id="b_pos_c21"> Poster </button>
+  <button id="b_sof_c21"> Link to software </button>
+  <p id="abs_c21"> <i> Given two sets of variables, derived from a common set of samples,
+	sparse Canonical Correlation Analysis (CCA)
+	seeks linear combinations of a small number of variables in each set,
+	such that the induced canonical variables are maximally correlated.
+	Sparse CCA is NP-hard.
+
+	We propose a novel combinatorial algorithm for sparse diagonal CCA, 
+	i.e., sparse CCA under the additional assumption that variables within each set are standardized and uncorrelated.
+	Our algorithm operates on a low rank approximation of the input data and its computational complexity scales linearly with the number of input variables.
+	It is simple to implement, and parallelizable.
+	In contrast to most existing approaches, 
+	our algorithm administers precise control on the sparsity of the extracted canonical vectors,
+	and comes with theoretical data-dependent global approximation guarantees, that hinge on the spectrum of the input data.
+	Finally, it can be straightforwardly adapted to other constrained variants of CCA enforcing structure beyond sparsity.
+
+	We empirically evaluate the proposed scheme
+	and apply it on a real neuroimaging dataset to investigate associations between brain activity and behavior measurements.
+  </i> </p>
+ 
+  <pre id="bib_c21"><samp>
+  		@article{asterix2016simple,
+  			title={A simple and provable algorithm for sparse diagonal CCA},
+			author={Asterix, Megasthenis and Kyrillidis, Anastasios and Koyejo, Oluwasanmi and Poldrack, Russell},
+			journal={arXiv preprint arXiv:1605.08961},
+		    year={2016}
+		}
+  </samp></pre>
+
 + Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](/pubs/Conferences/cvx_block_expanders.pdf), AI & Statistics Conference (AISTATS), 2016.
 
   <button id="b_abs_c20"> Abstract </button>

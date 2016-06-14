@@ -9,7 +9,7 @@ photo_url: "/public/ny.jpg"
 Two papers are accepted in ICML and COLT conferences this year (both held in New York).
 
 - [*A simple and provable algorithm for sparse diagonal CCA*](/pubs/Conferences/cca.pdf): 
-Joint work with [*Megasthenis Asteris*](http://megasthenis.github.io/), [*Olumsanmi Koyejo*](http://sanmik.github.io/) 
+Joint work with [*Megasthenis Asteris*](http://megasthenis.github.io/), [*Oluwasanmi Koyejo*](http://sanmik.github.io/) 
 and [*Russell Poldrack*](https://poldracklab.stanford.edu/) - to be presented in ICML.
 
 >**Abstract.** 
