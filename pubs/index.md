@@ -189,6 +189,39 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
++ Srinadh Bhojanapalli, Anastasios Kyrillidis, and Sujay Sanghavi, [*``Dropping convexity for faster semi-definite optimization"*](/pubs/Conferences/FGD.pdf), Conference on Learning Theory (COLT), 2016.
+
+  <button id="b_abs_c22"> Abstract </button>
+  <button id="b_bib_c22"> Bibtex </button>
+  <button id="b_pos_c22"> Poster </button>
+  <p id="abs_c21"> <i> We study the minimization of a convex function $f(X)$ over the set of 
+  $n\times n$ positive semi-definite matrices, but when the problem is recast as 
+  $\min_U g(U) :=  f(UU^\top)$, with $U \in \R^{n \times r}$ and $r\leq n$. 
+  We study the performance of gradient descent on $g$---which we refer to as Factored 
+  Gradient Descent (FGD)---under standard assumptions on the original function $f$.
+
+  We provide a rule for selecting the step size and, with this choice, show that the 
+  local convergence rate of FGD mirrors that of standard gradient descent on the original 
+  $f$: i.e., after $k$ steps, the error is $O(1/k)$ for smooth $f$, and exponentially small 
+  in $k$ when $f$ is (restricted) strongly convex. 
+  In addition, we provide a procedure to initialize FGD for (restricted) strongly convex 
+  objectives and when one only has access to $f$ via a first-order oracle; 
+  for several problem instances, such proper initialization leads to global convergence guarantees.
+
+  FGD and similar procedures are widely used in practice for problems that can be posed as matrix factorization.
+  To the best of our knowledge, this is the first paper to provide precise convergence 
+  rate guarantees for general convex functions under standard convex assumptions.
+  </i> </p>
+ 
+  <pre id="bib_c22"><samp>
+  		@article{bhojanapalli2016dropping,
+  			title={Dropping convexity for faster semi-definite optimization},
+			author={Srinadh Bhojanapalli, Anastasios Kyrillidis, and Sujay Sanghavi},
+			journal={Conference on Learning Theory (COLT)},
+		    year={2016}
+		}
+  </samp></pre>
+
 + Megasthenis Asteris, Anastasios Kyrillidis, Oluwasanmi Koyejo, and Russell Poldrack, [*``A simple and provable algorithm for sparse diagonal CCA"*](/pubs/Conferences/cca.pdf), International Conference on Machine Learning (ICML), 2016.
 
   <button id="b_abs_c21"> Abstract </button>
