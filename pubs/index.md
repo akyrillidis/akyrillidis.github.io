@@ -194,7 +194,7 @@ synthetic and real data. </i> </p>
   <button id="b_abs_c22"> Abstract </button>
   <button id="b_bib_c22"> Bibtex </button>
   <button id="b_pos_c22"> Poster </button>
-  <p id="abs_c21"> <i> We study the minimization of a convex function $f(X)$ over the set of 
+  <p id="abs_c22"> <i> We study the minimization of a convex function $f(X)$ over the set of 
   $n\times n$ positive semi-definite matrices, but when the problem is recast as 
   $\min_U g(U) :=  f(UU^\top)$, with $U \in \R^{n \times r}$ and $r\leq n$. 
   We study the performance of gradient descent on $g$---which we refer to as Factored 
@@ -215,11 +215,11 @@ synthetic and real data. </i> </p>
  
   <pre id="bib_c22"><samp>
   		@article{bhojanapalli2016dropping,
-  			title={Dropping convexity for faster semi-definite optimization},
-			author={Srinadh Bhojanapalli, Anastasios Kyrillidis, and Sujay Sanghavi},
-			journal={Conference on Learning Theory (COLT)},
-		    year={2016}
-		}
+  				title={Dropping convexity for faster semi-definite optimization},
+				author={Srinadh Bhojanapalli, Anastasios Kyrillidis, and Sujay Sanghavi},
+				journal={Conference on Learning Theory (COLT)},
+		    	year={2016}
+				}
   </samp></pre>
 
 + Megasthenis Asteris, Anastasios Kyrillidis, Oluwasanmi Koyejo, and Russell Poldrack, [*``A simple and provable algorithm for sparse diagonal CCA"*](/pubs/Conferences/cca.pdf), International Conference on Machine Learning (ICML), 2016.
