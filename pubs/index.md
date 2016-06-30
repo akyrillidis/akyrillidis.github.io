@@ -196,7 +196,7 @@ synthetic and real data. </i> </p>
   <button id="b_pos_c22"> Poster </button>
   <p id="abs_c22"> <i> We study the minimization of a convex function $f(X)$ over the set of 
   $n\times n$ positive semi-definite matrices, but when the problem is recast as 
-  $\min_U g(U) :=  f(UU^\top)$, with $U \in \R^{n \times r}$ and $r\leq n$. 
+  $\min_U g(U) :=  f(UU^\top)$, with $U \in \mathbb{R}^{n \times r}$ and $r\leq n$. 
   We study the performance of gradient descent on $g$---which we refer to as Factored 
   Gradient Descent (FGD)---under standard assumptions on the original function $f$.
 
