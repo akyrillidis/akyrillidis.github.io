@@ -4,6 +4,40 @@ fb_comments: 3
 ---
 
 ## Journals
++ Georgios Skoumas, Dieter Pfoser, Anastasios Kyrillidis and Timos Sellis, [*``Location estimation using crowdsourced spatial relations"*](/pubs/Journals/.pdf), ACM Transactions on Spatial Algorithms and Systems, vol. 2, issue 2, 2016. 
+  
+  <button id="b_abs_j7"> Abstract </button>
+  <button id="b_bib_j7"> Bibtex </button>
+   <p id="abs_j7"> <i> The “crowd” has become a very important geospatial data provider. 
+   Specifically, nonexpert users have been providing a wealth of quantitative geospatial data 
+   (e.g., geotagged tweets or photos, online). With spatial reasoning being a basic form of 
+   human cognition, textual narratives expressing user travel experiences (e.g., travel blogs) 
+   would provide an even bigger source of geospatial data. Narratives typically contain 
+   qualitative geospatial data in the form of objects and spatial relations (e.g., “St. John’s 
+   church is to the North of the Acropolis museum.” The scope of this work is (i) to extract 
+   these spatial relations from textual narratives, (ii) to quantify (model) them, and (iii) 
+   to reason about object locations based only on the quantified spatial relations. We use 
+   information extraction methods to identify toponyms and spatial relations, and we formulate 
+   a quantitative approach based on distance and orientation features to represent the latter. 
+   Probability density functions (PDFs) for spatial relations are determined by means of a 
+   greedy expectation maximization (EM)-based algorithm. These PDFs are then used to estimate 
+   unknown object locations. Experiments using a text corpus harvested from travel blog sites 
+   establish the considerable location estimation accuracy of the proposed approach on synthetic 
+   and real-world scenarios. </i> </p>
+   
+   <pre id="bib_j7"><samp>
+   		@article{skoumas2016location,
+ 			author = {Skoumas, Georgios and Pfoser, Dieter and Kyrillidis, Anastasios and Sellis, Timos},
+ 			title = {Location Estimation Using Crowdsourced Spatial Relations},
+ 			journal = {ACM Trans. Spatial Algorithms Syst.},
+ 			volume = {2},
+ 			number = {2}, 		
+			year = {2016},
+ 			pages = {5:1--5:23},
+ 			publisher = {ACM},
+		} 
+   </samp></pre>
+
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``Composite self-concordant minimization"*](/pubs/Journals/TranDinhKyrillidisCevher_ComSelfMin2013.pdf), Journal of Machine Learning Research, 16(Mar):371−416, 2015.
   
   <button id="b_abs_j6"> Abstract </button>
