@@ -4,7 +4,7 @@ fb_comments: 3
 ---
 
 ## Journals
-+ Georgios Skoumas, Dieter Pfoser, Anastasios Kyrillidis and Timos Sellis, [*``Location estimation using crowdsourced spatial relations"*](/pubs/Journals/.pdf), ACM Transactions on Spatial Algorithms and Systems, vol. 2, issue 2, 2016. 
++ Georgios Skoumas, Dieter Pfoser, Anastasios Kyrillidis and Timos Sellis, [*``Location estimation using crowdsourced spatial relations"*](/pubs/Journals/LocationEstimation.pdf), ACM Transactions on Spatial Algorithms and Systems, vol. 2, issue 2, 2016. 
   
   <button id="b_abs_j7"> Abstract </button>
   <button id="b_bib_j7"> Bibtex </button>
