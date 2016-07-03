@@ -52,7 +52,7 @@ fb_comments: 3
 + Expanders and group sparse recovery (Matlab)
 
   <button id="b_des_s5"> Description </button>
-  <button id="b_dow_s5"> Link to software </button>
+  <button id="b_dow_s5"> Download </button>
   <button id="b_pap_s5"> Paper </button>
    <p id="des_s5"> <i> Proof of concept why expanders accelerate execution time of convex solvers for group sparse
    recovery. The problem setting is that of group sparse convex norm minimization over linear constraints.
