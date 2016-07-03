@@ -49,7 +49,7 @@ fb_comments: 3
    composite convex minimization problems involving self-concordant and self-concordant-like functions.
     </i> </p>
     
-+ Block expanders and group sparse recovery (Matlab)
++ Expanders and group sparse recovery (Matlab)
 
   <button id="b_des_s5"> Description </button>
   <button id="b_dow_s5"> Link to software </button>
