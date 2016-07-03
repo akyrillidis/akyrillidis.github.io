@@ -296,6 +296,7 @@ synthetic and real data. </i> </p>
   <button id="b_abs_c20"> Abstract </button>
   <button id="b_bib_c20"> Bibtex </button>
   <button id="b_pos_c20"> Poster </button>
+  <button id="b_sof_c20"> Link to software </button>
   <p id="abs_c20"> <i> Sparse matrices are favorable objects in machine learning and optimization. 
   When such matrices are used, in place of dense ones, the overall complexity requirements in optimization 
   can be significantly reduced in practice, both in terms of space and run-time. 
