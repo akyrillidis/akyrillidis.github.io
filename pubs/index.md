@@ -135,6 +135,7 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_j3"> Abstract </button>
   <button id="b_bib_j3"> Bibtex </button>
+  <button id="b_pre_j3"> Presentation </button>
   <button id="b_sof_j3"> Link to software </button>
   <p id="abs_j3"> <i> Certain optimization problems in communication systems, such as limited-feedback 
   constant-envelope beamforming or noncoherent M-ary phase-shift keying (MPSK) sequence detection, result 
