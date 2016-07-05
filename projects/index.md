@@ -58,3 +58,13 @@ fb_comments: 3
    recovery. The problem setting is that of group sparse convex norm minimization over linear constraints.
    The experiments include both synthetic and real data settings. 
     </i> </p>
+    
++ Finding the M-PSK vector that maximizes a rank-definition complex quadratic form (Matlab - to be updated soon)
+
+  <button id="b_des_s6"> Description </button>
+  <button id="b_dow_s6"> Download </button>
+  <button id="b_pap_s6"> Paper </button>
+   <p id="des_s6"> <i> Given a rank-deficient PSD complex matrix as an input, computes the 
+   polynomial-sized set of candidate M-PSK solutions, among which the
+   optimal M-PSK vector --that maximizes the rank-deficient quadratic form-- lies. 
+  </i> </p>
