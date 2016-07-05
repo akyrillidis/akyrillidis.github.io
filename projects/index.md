@@ -59,7 +59,7 @@ fb_comments: 3
    The experiments include both synthetic and real data settings. 
     </i> </p>
     
-+ Finding the M-PSK vector that maximizes a rank-definition complex quadratic form (Matlab - to be updated soon)
++ Finding the M-PSK vector that maximizes a rank-deficient complex quadratic form (Matlab - to be updated)
 
   <button id="b_des_s6"> Description </button>
   <button id="b_dow_s6"> Download </button>
