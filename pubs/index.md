@@ -233,6 +233,7 @@ synthetic and real data. </i> </p>
   <button id="b_abs_c22"> Abstract </button>
   <button id="b_bib_c22"> Bibtex </button>
   <button id="b_pos_c22"> Poster </button>
+  <button id="b_sof_c22"> Link to software </button>
   <p id="abs_c22"> <i> We study the minimization of a convex function $f(X)$ over the set of 
   $n\times n$ positive semi-definite matrices, but when the problem is recast as 
   $\min_U g(U) :=  f(UU^\top)$, with $U \in \mathbb{R}^{n \times r}$ and $r\leq n$. 

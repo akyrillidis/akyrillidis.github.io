@@ -4,6 +4,22 @@ fb_comments: 3
 ---
 
 ## Code packages 
+
++ (Bi-) Factored Gradient Descent algorithm for low-rank recovery (Matlab - to be updated)
+  
+  <!---<button id="b_des_s8"> Description </button>-->
+  <button id="b_dow_s8"> Download </button>
+  <button id="b_pap_s8"> Paper </button>
+   <p id="des_s8"> <i> This software package is a proof of concept for $UV^\top$ parameterization 
+   in optimization and focuses on first-order, gradient descent algorithmic solutions for the case
+   of matrix sensing. The algorithm proposed is named as Bi-Factored Gradient Descent (BFGD) algorithm, 
+   an efficient first-order method that operates on the U, V factors. 
+   
+   Subsequent versions will include more involved applications such as 1-bit matrix completion (logistic
+   regression objective), low-rank image recovery from limited measurements, quantum state tomography
+   settings, etc.   
+    </i> </p>
+
 + ALgebraic PursuitS (ALPS) for sparse signal recovery (Matlab)
   
   <!---<button id="b_des_s1"> Description </button>-->
