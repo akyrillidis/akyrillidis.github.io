@@ -13,7 +13,7 @@ fb_comments: 3
    <p id="des_s8"> <i> This software package is a proof of concept for $UV^\top$ parameterization 
    in optimization and focuses on first-order, gradient descent algorithmic solutions for the case
    of matrix sensing. The algorithm proposed is named as Bi-Factored Gradient Descent (BFGD) algorithm, 
-   an efficient first-order method that operates on the U, V factors. 
+   an efficient first-order method that operates on the $U, V$ factors. 
    
    Subsequent versions will include more involved applications such as 1-bit matrix completion (logistic
    regression objective), low-rank image recovery from limited measurements, quantum state tomography
