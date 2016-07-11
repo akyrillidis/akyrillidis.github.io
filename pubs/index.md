@@ -197,7 +197,7 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_j1"> Abstract </button>
   <button id="b_bib_j1"> Bibtex </button>
-  <button id="b_pre_j1"> Presentation </button>
+  <button id="b_pre_j1"> Presentation (by Mr. Nikos) </button>
   <button id="b_sof_j1"> Link to software </button>
   <p id="abs_j1"> <i> For linear models, compressed sensing theory and methods enable recovery of 
   sparse signals of interest from few measurements - in the order of the number of nonzero
