@@ -6,7 +6,7 @@ fb_comments: 3
 ## Code packages 
 + ALgebraic PursuitS (ALPS) for sparse signal recovery (Matlab)
   
-  <button id="b_des_s1"> Description </button>
+  <!---<button id="b_des_s1"> Description </button>-->
   <button id="b_dow_s1"> Download </button>
   <button id="b_pap_s1"> Paper </button>
    <p id="des_s1"> <i> This software package implements the ALgebraic PursuitS class of methods for sparse signal recovery.
@@ -18,7 +18,7 @@ fb_comments: 3
    
 + Matrix ALgebraic PursuitS (Matrix ALPS) for low rank recovery (Matlab)
   
-  <button id="b_des_s2"> Description </button>
+  <!---<button id="b_des_s2"> Description </button>-->
   <button id="b_dow_s2"> Download </button>
   <button id="b_pap_s2"> Paper </button>
    <p id="des_s2"> <i> This software package implements the Matrix ALgebraic PursuitS class of methods for low rank recovery.
@@ -32,7 +32,7 @@ fb_comments: 3
 
 + Matrix ALgebraic PursuitS (Matrix ALPS) for low rank + sparse recovery (Matlab)
   
-  <button id="b_des_s3"> Description </button>
+  <!---<button id="b_des_s3"> Description </button>-->
   <button id="b_dow_s3"> Download </button>
   <button id="b_pap_s3"> Paper </button>
    <p id="des_s3"> <i> This software package is the extension of the Matrix ALPS software package for the case of
@@ -41,7 +41,7 @@ fb_comments: 3
     
 + Self-Concordant OPTimization (SCOPT) for composite convex problems (Matlab)
   
-  <button id="b_des_s4"> Description </button>
+  <!---<button id="b_des_s4"> Description </button>-->
   <button id="b_dow_s4"> Link to software </button>
   <button id="b_pap_s4"> Paper </button>
    <p id="des_s4"> <i> SCOPT  is a MATLAB implementation of the proximal gradient, proximal 
@@ -51,7 +51,7 @@ fb_comments: 3
     
 + Expanders and group sparse recovery (Matlab)
 
-  <button id="b_des_s5"> Description </button>
+  <!---<button id="b_des_s5"> Description </button>-->
   <button id="b_dow_s5"> Download </button>
   <button id="b_pap_s5"> Paper </button>
    <p id="des_s5"> <i> Proof of concept why expanders accelerate execution time of convex solvers for group sparse
@@ -61,7 +61,7 @@ fb_comments: 3
     
 + Finding the M-PSK vector that maximizes a rank-deficient complex quadratic form (Matlab - to be updated)
 
-  <button id="b_des_s6"> Description </button>
+  <!---<button id="b_des_s6"> Description </button>-->
   <button id="b_dow_s6"> Download </button>
   <button id="b_pap_s6"> Paper </button>
    <p id="des_s6"> <i> Given a rank-deficient PSD complex matrix as an input, computes the 
@@ -71,7 +71,7 @@ fb_comments: 3
   
 + Multiway (tensor) compressed sensing for sparse and low rank tensors (Matlab)
 
-  <button id="b_des_s7"> Description </button>
+  <!---<button id="b_des_s7"> Description </button>-->
   <button id="b_dow_s7"> Download </button>
   <button id="b_pap_s7"> Paper </button>
    <p id="des_s7"> <i> In this contribution, we consider
