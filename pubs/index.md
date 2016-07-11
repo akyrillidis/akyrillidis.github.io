@@ -169,6 +169,7 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_j2"> Abstract </button>
   <button id="b_bib_j2"> Bibtex </button>
+  <button id="b_sof_j2"> Link to software </button>
   <p id="abs_j2"> <i> In this paper, we present and analyze a new set of low-rank recovery algorithms for 
   linear inverse problems within the class of hard thresholding methods. We provide strategies on how 
   to set up these algorithms via basic ingredients for different configurations to achieve complexity 
@@ -196,6 +197,8 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_j1"> Abstract </button>
   <button id="b_bib_j1"> Bibtex </button>
+  <button id="b_pre_j1"> Presentation </button>
+  <button id="b_sof_j1"> Link to software </button>
   <p id="abs_j1"> <i> For linear models, compressed sensing theory and methods enable recovery of 
   sparse signals of interest from few measurements - in the order of the number of nonzero
   entries as opposed to the length of the signal of interest. Results of similar flavor have more 

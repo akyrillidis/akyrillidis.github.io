@@ -68,3 +68,19 @@ fb_comments: 3
    polynomial-sized set of candidate M-PSK solutions, among which the
    optimal M-PSK vector --that maximizes the rank-deficient quadratic form-- lies. 
   </i> </p>
+  
++ Multiway (tensor) compressed sensing for sparse and low rank tensors (Matlab)
+
+  <button id="b_des_s7"> Description </button>
+  <button id="b_dow_s7"> Download </button>
+  <button id="b_pap_s7"> Paper </button>
+   <p id="des_s7"> <i> In this contribution, we consider
+	compressed sensing for sparse and low-rank tensors. More specifically,
+	we consider low-rank tensors synthesized as sums of outer products
+	of sparse loading vectors, and a special class of linear dimensionality-reducing
+	transformations that reduce each mode individually. We prove
+	interesting "oracle" properties showing that it is possible to identify
+	the uncompressed sparse loadings directly from the compressed tensor data.
+	
+	This Matlab demo works as a proof of concept for the main ideas in the paper.
+  </i> </p>  

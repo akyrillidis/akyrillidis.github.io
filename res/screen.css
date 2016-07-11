@@ -1437,7 +1437,7 @@ margin-left:1.5em;
     display: none;
 }
 
-#sof_j6, #sof_j4, #sof_j3 {
+#sof_j6, #sof_j4, #sof_j3, #sof_j2, #sof_j1{
 	display: none;
 }
 
@@ -1453,6 +1453,6 @@ margin-left:1.5em;
     display: none;
 }
 
-#des_s1, #des_s2, #des_s3, #des_s4, #des_s5, #des_s6 {
+#des_s1, #des_s2, #des_s3, #des_s4, #des_s5, #des_s6, #des_s7 {
     display: none;
 }
