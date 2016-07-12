@@ -332,15 +332,16 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_c19"> Abstract </button>
   <button id="b_bib_c19"> Bibtex </button>
+  <button id="b_pos_c19"> Poster </button>
   <p id="abs_c19"> <i> A function $f: \mathbb{R}^d \rightarrow \mathbb{R}$ is referred to as a Sparse Additive Model (SPAM), if it is of the
-form $f(\mathbf{x}) = \sum\_{l \in \mathcal{S}}\phi\_{l}(x\_l)$, where $\mathcal{S} \subset [d]$, $|\mathcal{S}| \ll d$.
-Assuming $\phi\_l$'s and $\mathcal{S}$ to be unknown, the problem of estimating $f$ from its samples has been
+form $f(\mathbf{x}) = \sum_{l \in \mathcal{S}}\phi_{l}(x_l)$, where $\mathcal{S} \subset [d]$, $|\mathcal{S}| \ll d$.
+Assuming $\phi_l$'s and $\mathcal{S}$ to be unknown, the problem of estimating $f$ from its samples has been
 studied extensively. In this work, we consider a generalized SPAM, allowing for *second order* interaction terms.
-For some $\mathcal{S}\_1 \subset [d], \mathcal{S}\_2 \subset {[d] \choose 2}$, the function $f$ is assumed to be of the form: 
-$f(\mathbf{x}) = \sum\_{p \in \mathcal{S}\_1}\phi\_{p} (x\_p) + \sum\_{(l\_1, l\_2) \in \mathcal{S}\_2}\phi\_{(l\_1, l\_2)} \mathbf{x}\_{(l\_1, l\_2)}.$
-Assuming $\phi\_{p},\phi\_{(l\_1, l\_2)}$, $\mathcal{S}\_1$ and, $\mathcal{S}\_2$ to be unknown,
-we provide a randomized algorithm that queries $f$ and *exactly recovers* $\mathcal{S}\_1,\mathcal{S}\_2$. Consequently, this also enables us to estimate the underlying 
-$\phi\_p, \phi\_{(l\_1, l\_2)}$. We derive sample complexity bounds for our scheme and also extend our analysis
+For some $\mathcal{S}_1 \subset [d], \mathcal{S}_2 \subset {[d] \choose 2}$, the function $f$ is assumed to be of the form: 
+$f(\mathbf{x}) = \sum_{p \in \mathcal{S}_1}\phi_{p} (x_p) + \sum\_{(l_1, l_2) \in \mathcal{S}_2}\phi_{(l_1, l_2)} \mathbf{x}_{(l_1, l_2)}.$
+Assuming $\phi_{p},\phi_{(l_1, l_2)}$, $\mathcal{S}\_1$ and, $\mathcal{S}\_2$ to be unknown,
+we provide a randomized algorithm that queries $f$ and *exactly recovers* $\mathcal{S}_1,\mathcal{S}_2$. Consequently, this also enables us to estimate the underlying 
+$\phi_p, \phi_{(l_1, l_2)}$. We derive sample complexity bounds for our scheme and also extend our analysis
 to include the situation where the queries are corrupted with noise -- either stochastic, 
 or arbitrary but bounded. Lastly, we provide simulation results on synthetic data, that
 validate our theoretical findings. 
