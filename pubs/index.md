@@ -338,8 +338,8 @@ form $f(\mathbf{x}) = \sum_{l \in \mathcal{S}}\phi_{l}(x_l)$, where $\mathcal{S}
 Assuming $\phi_l$'s and $\mathcal{S}$ to be unknown, the problem of estimating $f$ from its samples has been
 studied extensively. In this work, we consider a generalized SPAM, allowing for *second order* interaction terms.
 For some $\mathcal{S}_1 \subset [d], \mathcal{S}_2 \subset {[d] \choose 2}$, the function $f$ is assumed to be of the form: 
-$f(\mathbf{x}) = \sum_{p \in \mathcal{S}_1}\phi_{p} (x_p) + \sum\_{(l_1, l_2) \in \mathcal{S}_2}\phi_{(l_1, l_2)} \mathbf{x}_{(l_1, l_2)}.$
-Assuming $\phi_{p},\phi_{(l_1, l_2)}$, $\mathcal{S}\_1$ and, $\mathcal{S}\_2$ to be unknown,
+$f(\mathbf{x}) = \sum_{p \in \mathcal{S}_1}\phi_{p} (x_p) + \sum_{(l_1, l_2) \in \mathcal{S}_2}\phi_{(l_1, l_2)} \mathbf{x}_{(l_1, l_2)}.$
+Assuming $\phi_{p},\phi_{(l_1, l_2)}$, $\mathcal{S}_1$ and, $\mathcal{S}_2$ to be unknown,
 we provide a randomized algorithm that queries $f$ and *exactly recovers* $\mathcal{S}_1,\mathcal{S}_2$. Consequently, this also enables us to estimate the underlying 
 $\phi_p, \phi_{(l_1, l_2)}$. We derive sample complexity bounds for our scheme and also extend our analysis
 to include the situation where the queries are corrupted with noise -- either stochastic, 
