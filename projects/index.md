@@ -60,9 +60,19 @@ fb_comments: 3
   <!---<button id="b_des_s4"> Description </button>-->
   <button id="b_dow_s4"> Link to software </button>
   <button id="b_pap_s4"> Paper </button>
-   <p id="des_s4"> <i> SCOPT  is a MATLAB implementation of the proximal gradient, proximal 
+   <p id="des_s4"> <i> SCOPT is a MATLAB implementation of the proximal gradient, proximal 
    quasi-Newton, proximal Newton, and path-following interior-point algorithms for solving 
    composite convex minimization problems involving self-concordant and self-concordant-like functions.
+    </i> </p>
+    
++ Generalized Sparse Additive Models (GSPAM) with interactions in high-dimensions (Matlab)
+
+  <!---<button id="b_des_s9"> Description </button>-->
+  <button id="b_dow_s9"> Download </button>
+  <button id="b_pap_s9"> Paper </button>
+   <p id="des_s9"> <i> This software package solves a d-dimensional GSPAM instance, where
+   univariate and bivariate set of indices ($S_1$ and $S_2$, respectively) are unknowns. 
+   The code follows the steps indicated by the main algorithm, described in the conference paper.
     </i> </p>
     
 + Expanders and group sparse recovery (Matlab)
