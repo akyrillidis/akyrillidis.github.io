@@ -333,6 +333,7 @@ synthetic and real data. </i> </p>
   <button id="b_abs_c19"> Abstract </button>
   <button id="b_bib_c19"> Bibtex </button>
   <button id="b_pos_c19"> Poster </button>
+  <button id="b_sof_c19"> Link to software </button>
   <p id="abs_c19"> <i> A function $f: \mathbb{R}^d \rightarrow \mathbb{R}$ is referred to as a Sparse Additive Model (SPAM), if it is of the
 form $f(\mathbf{x}) = \sum_{l \in \mathcal{S}}\phi_{l}(x_l)$, where $\mathcal{S} \subset [d]$, $|\mathcal{S}| \ll d$.
 Assuming $\phi_l$'s and $\mathcal{S}$ to be unknown, the problem of estimating $f$ from its samples has been
