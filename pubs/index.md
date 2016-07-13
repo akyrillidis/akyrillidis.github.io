@@ -419,6 +419,39 @@ validate our theoretical findings.
   </samp></pre>
 
 + Megasthenis Asteris, Anastasios Kyrillidis, Alex Dimakis, Han-Gyol Yi and Bharath Chandrasekaran, [*``Stay on path: PCA along graph paths"*](/pubs/Conferences/Stay_on_path.pdf),  International Conference on Machine Learning (ICML), 2015.
+
+  <button id="b_abs_c16"> Abstract </button>
+  <button id="b_bib_c16"> Bibtex </button>
+  <button id="b_pre_c16"> Presentation </button>  
+  <button id="b_pos_c16"> Poster </button>
+  <p id="abs_c16"> <i> We introduce a variant of (sparse) PCA
+in which the set of feasible support sets is determined by a graph.
+In particular, we consider the following setting:
+given a directed acyclic graph~$G$ on $p$ vertices corresponding to variables,
+the non-zero entries of the extracted principal component must coincide with vertices lying along a path in $G$.
+
+From a statistical perspective, 
+information on the underlying network may potentially reduce the number of observations required to recover the population principal component.
+We consider the canonical estimator which optimally exploits the prior knowledge by solving a non-convex quadratic maximization on the empirical covariance. 
+We introduce a simple network and analyze the estimator under the spiked covariance model.
+We show that side information potentially improves
+the statistical complexity.
+
+We propose two algorithms to approximate the solution of the constrained quadratic maximization,
+and recover a component with the desired properties.
+We empirically evaluate our schemes on synthetic and real datasets. 
+  </i> </p>
+ 
+  <pre id="bib_c16"><samp>
+  		@inproceedings{asteris2015stay,
+  			title={Stay on path: PCA along graph paths},
+  			author={Asteris, Megasthenis and Kyrillidis, Anastasios and Dimakis, EDU Alexandros G and Yi, Han-Gyol and Chandrasekaran, Bharath},
+  			booktitle={Proceedings of the 32nd International Conference on Machine Learning (ICML-15)},
+  			volume={37},
+  			year={2015}
+		}	
+  </samp></pre>
+
 + Michail Vlachos, Francesco Fusco, Harry Mavroforakis, Anastasios Kyrillidis and Vassilis Vasileiadis, [*``Scalable and robust co-clustering of large customer-product graphs"*](/pubs/Conferences/km0049-vlachosA.pdf), ACM CIKM International Conference on Information and Knowledge Management, 2014.
 + Dimitris Papailiopoulos, Anastasios Kyrillidis and Christos Boutsidis, [*``Provable deterministic leverage scores sampling"*](/pubs/Conferences/frp0826.pdf), ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2014.
 + Anastasios Kyrillidis, Rabeeh Karimi Mahabadi, Quoc Tran-Dinh and Volkan Cevher, [*``Scalable sparse covariance estimation via self-concordance"*](/pubs/Conferences/covselect_final.pdf), AAAI Conference on Artificial Intelligence (AAAI-14), 2014.
