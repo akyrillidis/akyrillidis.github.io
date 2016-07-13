@@ -387,6 +387,37 @@ validate our theoretical findings.
   </samp></pre>
 
 + Megasthenis Asteris, Dimitris Papailiopoulos, Anastasios Kyrillidis, and Alex Dimakis, [*``Space PCA via bipartite matchings"*](/pubs/Conferences/Sparse_PCA_Bipartite.pdf), Neural Information Processing Systems (NIPS), 2015.
+
+  <button id="b_abs_c17"> Abstract </button>
+  <button id="b_bib_c17"> Bibtex </button>
+  <button id="b_pos_c17"> Poster </button>
+  <p id="abs_c17"> <i> We consider the following multi-component sparse PCA problem:
+   given a set of data points, we seek to extract a small number of sparse components with 
+   disjoint supports that jointly capture the maximum possible variance.
+   Such components can be computed one by one, repeatedly solving the single-component problem 
+   and deflating the input data matrix, but this greedy procedure is suboptimal.
+   We present a novel algorithm for sparse PCA that jointly optimizes multiple disjoint components. 
+   The extracted features capture variance that lies within a multiplicative factor 
+   arbitrarily close to $1$ from the optimal.
+   Our algorithm is combinatorial and computes the desired components by solving multiple 
+   instances of the bipartite maximum weight matching problem.
+   Its complexity grows as a low order polynomial in the ambient dimension of the input data, 
+   but exponentially in its rank.
+   However, it can be effectively applied on a low-dimensional sketch of the input data.
+   We evaluate our algorithm on real datasets and empirically demonstrate that 
+   in many cases it outperforms existing, deflation-based approaches.
+  </i> </p>
+ 
+  <pre id="bib_c17"><samp>
+  		@inproceedings{asteris2015sparse,
+  			title={Sparse pca via bipartite matchings},
+  			author={Asteris, Megasthenis and Papailiopoulos, Dimitris and Kyrillidis, Anastasios and Dimakis, Alexandros G},
+  			booktitle={Advances in Neural Information Processing Systems},
+  			pages={766--774},
+  			year={2015}
+		}
+  </samp></pre>
+
 + Megasthenis Asteris, Anastasios Kyrillidis, Alex Dimakis, Han-Gyol Yi and Bharath Chandrasekaran, [*``Stay on path: PCA along graph paths"*](/pubs/Conferences/Stay_on_path.pdf),  International Conference on Machine Learning (ICML), 2015.
 + Michail Vlachos, Francesco Fusco, Harry Mavroforakis, Anastasios Kyrillidis and Vassilis Vasileiadis, [*``Scalable and robust co-clustering of large customer-product graphs"*](/pubs/Conferences/km0049-vlachosA.pdf), ACM CIKM International Conference on Information and Knowledge Management, 2014.
 + Dimitris Papailiopoulos, Anastasios Kyrillidis and Christos Boutsidis, [*``Provable deterministic leverage scores sampling"*](/pubs/Conferences/frp0826.pdf), ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2014.
