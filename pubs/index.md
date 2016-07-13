@@ -422,7 +422,7 @@ validate our theoretical findings.
 
   <button id="b_abs_c16"> Abstract </button>
   <button id="b_bib_c16"> Bibtex </button>
-  <button id="b_pre_c16"> Presentation </button>  
+  <button id="b_pre_c16"> Presentation </button>
   <button id="b_pos_c16"> Poster </button>
   <p id="abs_c16"> <i> We introduce a variant of (sparse) PCA
 	in which the set of feasible support sets is determined by a graph.
