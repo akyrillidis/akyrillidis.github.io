@@ -361,6 +361,8 @@ validate our theoretical findings.
 
   <button id="b_abs_c18"> Abstract </button>
   <button id="b_bib_c18"> Bibtex </button>
+  <button id="b_pos_c18"> Poster </button>
+  <button id="b_sof_c18"> Link to software </button>
   <p id="abs_c18"> <i> In Bipartite Correlation Clustering (BCC) we are given a complete bipartite graph 
   G with `+' and `-' edges, and we seek a vertex clustering that maximizes the number of agreements: 
   the number of all `+' edges within clusters plus all `-' edges cut across clusters. BCC is known to be NP-hard. 

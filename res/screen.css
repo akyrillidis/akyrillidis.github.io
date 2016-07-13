@@ -1437,9 +1437,9 @@ margin-left:1.5em;
     display: none;
 }
 
-#sof_j6, #sof_j4, #sof_j3, #sof_j2, #sof_j1{
+/*#sof_j6, #sof_j4, #sof_j3, #sof_j2, #sof_j1{
 	display: none;
-}
+}*/
 
 #bib_j7, #bib_j6, #bib_j5, #bib_j4, #bib_j3, #bib_j2, #bib_j1 {
     display: none;

@@ -20,6 +20,19 @@ fb_comments: 3
    settings, etc.   
     </i> </p>
 
++ A simple, but yet efficient, algorithm for Bipartite Correlation Clustering (Matlab)
+  
+  <!---<button id="b_des_s10"> Description </button>-->
+  <button id="b_dow_s10"> Download </button>
+  <button id="b_pap_s10"> Paper </button>
+   <p id="des_s10"> <i> In this code, we implement a simple, yet efficient, algorithm for the problem
+   of Bipartite Correlation Clustering (BCC). Our algorithm solves a more generalized problem of 
+   maximizing a bilinear form, a specific instance of which is the BCC problem. In the demo included,
+   we run our algorithm on a small movie lense dataset, in order to automatically extract useful clusters
+   between users that have similar movie preferences.
+    </i> </p>
+
+
 + ALgebraic PursuitS (ALPS) for sparse signal recovery (Matlab)
   
   <!---<button id="b_des_s1"> Description </button>-->
