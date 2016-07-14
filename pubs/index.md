@@ -454,7 +454,45 @@ validate our theoretical findings.
 		}	
   </samp></pre>
 
-+ Michail Vlachos, Francesco Fusco, Harry Mavroforakis, Anastasios Kyrillidis and Vassilis Vasileiadis, [*``Scalable and robust co-clustering of large customer-product graphs"*](/pubs/Conferences/km0049-vlachosA.pdf), ACM CIKM International Conference on Information and Knowledge Management, 2014.
++ Michail Vlachos, Francesco Fusco, Harry Mavroforakis, Anastasios Kyrillidis and Vassilis Vasileiadis, [*``Improving Co-Cluster Quality with Application to Product Recommendations"*](/pubs/Conferences/km0049-vlachosA.pdf), ACM CIKM International Conference on Information and Knowledge Management, 2014.
+
+  <button id="b_abs_c15"> Abstract </button>
+  <button id="b_bib_c15"> Bibtex </button>
+  <p id="abs_c15"> <i> Businesses store an ever increasing amount of historical customer
+	sales data. Given the availability of such information, it is advantageous
+	to analyze past sales, both for revealing dominant buying patterns,
+	and for providing more targeted recommendations to clients.
+	In this context, co-clustering has proved to be an important datamodeling
+	primitive for revealing latent connections between two
+	sets of entities, such as customers and products.
+
+
+	In this work, we introduce a new algorithm for co-clustering that
+	is both scalable and highly resilient to noise. Our method is inspired
+	by $k$-Means and agglomerative hierarchical clustering approaches:
+	$(i)$ first it searches for elementary co-clustering structures and $(ii)$
+	then combines them into a better, more compact, solution. The
+	algorithm is flexible as it does not require an explicit number of
+	co-clusters as input, and is directly applicable on large data graphs.
+	We apply our methodology on real sales data to analyze and visualize
+	the connections between clients and products. We showcase
+	a real deployment of the system, and how it has been used
+	for driving a recommendation engine. Finally, we demonstrate that
+	the new methodology can discover co-clusters of better quality and
+	relevance than state-of-the-art co-clustering techniques.
+  </i> </p>
+ 
+  <pre id="bib_c15"><samp>
+  		@inproceedings{vlachos2014improving,
+  			title={Improving co-cluster quality with application to product recommendations},
+			author={Vlachos, Michail and Fusco, Francesco and Mavroforakis, Charalambos and Kyrillidis, Anastasios and Vassiliadis, Vassilios G},
+  			booktitle={Proceedings of the 23rd ACM International Conference on Conference on Information and Knowledge Management},
+  			pages={679--688},
+  			year={2014},
+  			organization={ACM}
+		}	
+  </samp></pre>
+  
 + Dimitris Papailiopoulos, Anastasios Kyrillidis and Christos Boutsidis, [*``Provable deterministic leverage scores sampling"*](/pubs/Conferences/frp0826.pdf), ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2014.
 + Anastasios Kyrillidis, Rabeeh Karimi Mahabadi, Quoc Tran-Dinh and Volkan Cevher, [*``Scalable sparse covariance estimation via self-concordance"*](/pubs/Conferences/covselect_final.pdf), AAAI Conference on Artificial Intelligence (AAAI-14), 2014.
 + Anastasios Kyrillidis, Michail Vlachos and Anastasios Zouzias, [*``Approximate matrix multiplication with application to linear embeddings"*](/pubs/Conferences/ApproxMM_arxiv.pdf), IEEE ISIT Symposium, 2014.
