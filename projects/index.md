@@ -78,6 +78,19 @@ fb_comments: 3
    composite convex minimization problems involving self-concordant and self-concordant-like functions.
     </i> </p>
     
++ Provable deterministic leverage scores sampling (Matlab)
+
+  <!---<button id="b_des_s11"> Description </button>-->
+  <button id="b_dow_s11"> Download </button>
+  <button id="b_pap_s11"> Paper </button>
+   <p id="des_s11"> <i> Here, we explain in practice the curious empirical phenomenon: 
+    “Approximating a matrix by deterministically selecting a subset of its columns with 
+    the corresponding largest leverage scores results in a good low-rank matrix surrogate”. 
+    In this demo, we demonstrate empirically the 
+    performance of deterministic leverage score sampling, which many times
+    matches or outperforms the state-of-the-art techniques.
+    </i> </p>
+    
 + Generalized Sparse Additive Models (GSPAM) with interactions in high-dimensions (Matlab)
 
   <!---<button id="b_des_s9"> Description </button>-->
