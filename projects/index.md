@@ -72,7 +72,8 @@ fb_comments: 3
   
   <!---<button id="b_des_s4"> Description </button>-->
   <button id="b_dow_s4"> Link to software </button>
-  <button id="b_pap_s4"> Paper </button>
+  <button id="b_pap_s4a"> Paper #1</button>
+  <button id="b_pap_s4b"> Paper #2</button>
    <p id="des_s4"> <i> SCOPT is a MATLAB implementation of the proximal gradient, proximal 
    quasi-Newton, proximal Newton, and path-following interior-point algorithms for solving 
    composite convex minimization problems involving self-concordant and self-concordant-like functions.
