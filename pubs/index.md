@@ -520,7 +520,33 @@ validate our theoretical findings.
   			organization={ACM}
 		}
   </samp></pre>
+  
 + Anastasios Kyrillidis, Rabeeh Karimi Mahabadi, Quoc Tran-Dinh and Volkan Cevher, [*``Scalable sparse covariance estimation via self-concordance"*](/pubs/Conferences/covselect_final.pdf), AAAI Conference on Artificial Intelligence (AAAI-14), 2014.
+
+  <button id="b_abs_c13"> Abstract </button>
+  <button id="b_bib_c13"> Bibtex </button>
+  <button id="b_pos_c13"> Poster </button>
+  <button id="b_sof_c13"> Link to software </button>
+  <p id="abs_c13"> <i> We explain theoretically a curious empirical phenomenon: 
+    “Approximating a matrix by deterministically selecting a subset of its columns with 
+    the corresponding largest leverage scores results in a good low-rank matrix surrogate”. 
+    In this work, we provide a novel theoretical analysis of deterministic leverage score 
+    sampling. We show that such sampling can be provably as accurate as its randomized 
+    counterparts, if the leverage scores follow a moderately steep power-law decay. We 
+    support this power-law assumption by providing empirical evidence that such decay 
+    laws are abundant in real-world data sets. We then demonstrate empirically the 
+    performance of deterministic leverage score sampling, which many times
+    matches or outperforms the state-of-the-art techniques.
+  </i> </p>
+ 
+  <pre id="bib_c13"><samp>
+  		@inproceedings{kyrillidis2014scalable,
+  			title={Scalable Sparse Covariance Estimation via Self-Concordance},
+  			author={Kyrillidis, Anastasios and Mahabadi, Rabeeh Karimi and Dinh, Quoc Tran and Cevher, Volkan},
+  			booktitle={Twenty-Eighth AAAI Conference on Artificial Intelligence},
+  			year={2014}
+		}
+  </samp></pre>
 + Anastasios Kyrillidis, Michail Vlachos and Anastasios Zouzias, [*``Approximate matrix multiplication with application to linear embeddings"*](/pubs/Conferences/ApproxMM_arxiv.pdf), IEEE ISIT Symposium, 2014.
 + Anastasios Kyrillidis and Anastasios Zouzias, [*``Non-uniform feature sampling in decision tree ensembles"*](/pubs/Conferences/RandDecisionTrees_arxiv.pdf), IEEE ICASSP, 2014.
 + George Skoumas, Dieter Pfoser and Anastasios Kyrillidis, [*``On quantifying qualitative geospatial data: A probabilistic approach"*](/pubs/Conferences/geocrowd.pdf), ACM GEOCROWD, 2013.
