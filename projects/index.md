@@ -20,7 +20,7 @@ fb_comments: 3
    settings, etc.   
     </i> </p>
 
-+ A simple, but yet efficient, algorithm for Bipartite Correlation Clustering (Matlab)
++ **A simple, but yet efficient, algorithm for Bipartite Correlation Clustering (Matlab)**
   
   <!---<button id="b_des_s10"> Description </button>-->
   <button id="b_dow_s10"> Download </button>
@@ -33,7 +33,7 @@ fb_comments: 3
     </i> </p>
 
 
-+ ALgebraic PursuitS (ALPS) for sparse signal recovery (Matlab)
++ **ALgebraic PursuitS (ALPS) for sparse signal recovery (Matlab)**
   
   <!---<button id="b_des_s1"> Description </button>-->
   <button id="b_dow_s1"> Download </button>
@@ -45,7 +45,7 @@ fb_comments: 3
     </i> </p>
    
    
-+ Matrix ALgebraic PursuitS (Matrix ALPS) for low rank recovery (Matlab)
++ **Matrix ALgebraic PursuitS (Matrix ALPS) for low rank recovery (Matlab)**
   
   <!---<button id="b_des_s2"> Description </button>-->
   <button id="b_dow_s2"> Download </button>
@@ -59,7 +59,7 @@ fb_comments: 3
     </i> </p>
    
 
-+ Matrix ALgebraic PursuitS (Matrix ALPS) for low rank + sparse recovery (Matlab)
++ **Matrix ALgebraic PursuitS (Matrix ALPS) for low rank + sparse recovery (Matlab)**
   
   <!---<button id="b_des_s3"> Description </button>-->
   <button id="b_dow_s3"> Download </button>
@@ -68,7 +68,7 @@ fb_comments: 3
    low rank and sparse recovery. Applications include background video subtraction and robust PCA, among others.
     </i> </p>
     
-+ Self-Concordant OPTimization (SCOPT) for composite convex problems (Matlab)
++ **Self-Concordant OPTimization (SCOPT) for composite convex problems (Matlab)**
   
   <!---<button id="b_des_s4"> Description </button>-->
   <button id="b_dow_s4"> Link to software </button>
@@ -79,7 +79,7 @@ fb_comments: 3
    composite convex minimization problems involving self-concordant and self-concordant-like functions.
     </i> </p>
     
-+ Provable deterministic leverage scores sampling (Matlab)
++ **Provable deterministic leverage scores sampling (Matlab)**
 
   <!---<button id="b_des_s11"> Description </button>-->
   <button id="b_dow_s11"> Download </button>
@@ -92,7 +92,7 @@ fb_comments: 3
     matches or outperforms the state-of-the-art techniques.
     </i> </p>
     
-+ Generalized Sparse Additive Models (GSPAM) with interactions in high-dimensions (Matlab)
++ **Generalized Sparse Additive Models (GSPAM) with interactions in high-dimensions (Matlab)**
 
   <!---<button id="b_des_s9"> Description </button>-->
   <button id="b_dow_s9"> Download </button>
@@ -102,7 +102,7 @@ fb_comments: 3
    The code follows the steps indicated by the main algorithm, described in the conference paper.
     </i> </p>
     
-+ Expanders and group sparse recovery (Matlab)
++ **Expanders and group sparse recovery (Matlab)**
 
   <!---<button id="b_des_s5"> Description </button>-->
   <button id="b_dow_s5"> Download </button>
@@ -112,7 +112,7 @@ fb_comments: 3
    The experiments include both synthetic and real data settings. 
     </i> </p>
     
-+ Finding the M-PSK vector that maximizes a rank-deficient complex quadratic form (Matlab - to be updated)
++ **Finding the M-PSK vector that maximizes a rank-deficient complex quadratic form (Matlab - to be updated)**
 
   <!---<button id="b_des_s6"> Description </button>-->
   <button id="b_dow_s6"> Download </button>
@@ -122,7 +122,7 @@ fb_comments: 3
    optimal M-PSK vector --that maximizes the rank-deficient quadratic form-- lies. 
   </i> </p>
   
-+ Multiway (tensor) compressed sensing for sparse and low rank tensors (Matlab)
++ **Multiway (tensor) compressed sensing for sparse and low rank tensors (Matlab)**
 
   <!---<button id="b_des_s7"> Description </button>-->
   <button id="b_dow_s7"> Download </button>
