@@ -600,6 +600,43 @@ validate our theoretical findings.
   </samp></pre>
   
 + George Skoumas, Dieter Pfoser and Anastasios Kyrillidis, [*``On quantifying qualitative geospatial data: A probabilistic approach"*](/pubs/Conferences/geocrowd.pdf), ACM GEOCROWD, 2013.
+
+  <button id="b_abs_c10"> Abstract </button>
+  <button id="b_bib_c10"> Bibtex </button>
+  <p id="abs_c10"> <i> Living in the era of data deluge, we have witnessed a web content explosion,
+largely due to the massive availability of User-Generated Content
+(UGC). In this work, we specifically consider the problem of geospatial
+information extraction and representation, where one can exploit diverse
+sources of information (such as image and audio data, text data, etc), going
+beyond traditional volunteered geographic information. Our ambition
+is to include available narrative information in an effort to better explain
+geospatial relationships: with spatial reasoning being a basic form of human
+cognition, narratives expressing such experiences typically contain
+qualitative spatial data, i.e., spatial objects and spatial relationships.
+To this end, we formulate a quantitative approach for the representation
+of qualitative spatial relations extracted from UGC in the form
+of texts. The proposed method quantifies such relations based on multiple
+text observations. Such observations provide distance and orientation
+features which are utilized by a greedy Expectation Maximization-based
+(EM) algorithm to infer a probability distribution over predefined spatial
+relationships; the latter represent the quantified relationships under
+user-defined probabilistic assumptions. We evaluate the applicability and
+quality of the proposed approach using real UGC data originating from
+an actual travel blog text corpus. To verify the result quality, we generate
+grid-based “maps” visualizing the spatial extent of the various relations.
+  </i> </p>
+  
+  <pre id="bib_c10"><samp>
+  		@inproceedings{skoumas2013quantifying,
+  			title={On quantifying qualitative geospatial data: a probabilistic approach},
+  			author={Skoumas, Georgios and Pfoser, Dieter and Kyrillidis, Anastasios},
+  			booktitle={Proceedings of the Second ACM SIGSPATIAL International Workshop on Crowdsourced and Volunteered Geographic Information},
+  			pages={71--78},
+  			year={2013},
+  			organization={ACM}
+		}
+  </samp></pre>
+  
 + Stephen Becker, Volkan Cevher and Anastasios Kyrillidis, [*``Randomized low-memory singular value projection"*](/pubs/Conferences/RandomizedSVP_fixed.pdf), 10th International Conference on Sampling Theory and Applications (SampTA), 2013. *(Authors listed in alphabetical order.)*
 + Anastasios Kyrillidis, Stephen Becker, Volkan Cevher and Christoph Koch, [*``Sparse projections onto the simplex"*](http://jmlr.org/proceedings/papers/v28/kyrillidis13.pdf), International Conference on Machine Learning (ICML), 2013.
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``A proximal Newton framework for composite minimization: Graph learning without Cholesky decompositions and matrix inversions"*](http://jmlr.csail.mit.edu/proceedings/papers/v28/trandinh13.pdf), International Conference on Machine Learning (ICML), 2013.
