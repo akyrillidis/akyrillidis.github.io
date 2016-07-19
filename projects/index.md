@@ -5,7 +5,7 @@ fb_comments: 3
 
 ## Code packages 
 
-+ ** (Bi-) Factored Gradient Descent algorithm for low-rank recovery (Matlab - to be updated)**
++ (Bi-) Factored Gradient Descent algorithm for low-rank recovery (Matlab - to be updated)
   
   <!---<button id="b_des_s8"> Description </button>-->
   <button id="b_dow_s8"> Download </button>
