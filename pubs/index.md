@@ -572,11 +572,33 @@ validate our theoretical findings.
   			booktitle={2014 IEEE International Symposium on Information Theory},
   			pages={2182--2186},
   			year={2014},
-  			organization={Ieee}
+  			organization={IEEE}
 		}
   </samp></pre>
   
 + Anastasios Kyrillidis and Anastasios Zouzias, [*``Non-uniform feature sampling in decision tree ensembles"*](/pubs/Conferences/RandDecisionTrees_arxiv.pdf), IEEE ICASSP, 2014.
+
+  <button id="b_abs_c11"> Abstract </button>
+  <button id="b_bib_c11"> Bibtex </button>
+  <p id="abs_c11"> <i> We study the effectiveness of non-uniform randomized feature selection
+   in decision tree classification. We experimentally evaluate two feature selection 
+   methodologies, based on information extracted from the provided dataset: $(i)$ leverage scores-based 
+   and $(ii)$ norm-based feature selection. Experimental evaluation of the proposed
+   feature selection techniques indicate that such approaches might be more effective compared to naive uniform
+   feature selection and moreover having comparable performance to the random forest algorithm.
+  </i> </p>
+  
+  <pre id="bib_c11"><samp>
+  		@inproceedings{kyrillidis2014non,
+  			title={Non-uniform feature sampling for decision tree ensembles},
+  			author={Kyrillidis, Anastasios and Zouzias, Anastasios},
+  			booktitle={2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  			pages={4548--4552},
+  			year={2014},
+  			organization={IEEE}
+		}
+  </samp></pre>
+  
 + George Skoumas, Dieter Pfoser and Anastasios Kyrillidis, [*``On quantifying qualitative geospatial data: A probabilistic approach"*](/pubs/Conferences/geocrowd.pdf), ACM GEOCROWD, 2013.
 + Stephen Becker, Volkan Cevher and Anastasios Kyrillidis, [*``Randomized low-memory singular value projection"*](/pubs/Conferences/RandomizedSVP_fixed.pdf), 10th International Conference on Sampling Theory and Applications (SampTA), 2013. *(Authors listed in alphabetical order.)*
 + Anastasios Kyrillidis, Stephen Becker, Volkan Cevher and Christoph Koch, [*``Sparse projections onto the simplex"*](http://jmlr.org/proceedings/papers/v28/kyrillidis13.pdf), International Conference on Machine Learning (ICML), 2013.
