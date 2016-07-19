@@ -547,7 +547,35 @@ validate our theoretical findings.
   			year={2014}
 		}
   </samp></pre>
+  
 + Anastasios Kyrillidis, Michail Vlachos and Anastasios Zouzias, [*``Approximate matrix multiplication with application to linear embeddings"*](/pubs/Conferences/ApproxMM_arxiv.pdf), IEEE ISIT Symposium, 2014.
+
+  <button id="b_abs_c12"> Abstract </button>
+  <button id="b_bib_c12"> Bibtex </button>
+  <p id="abs_c12"> <i> In this paper, we study the problem of approximately computing the 
+    product of two real matrices. In particular, we analyze a dimensionality-reduction-based 
+    approximation algorithm due to Sarlos, introducing the notion of nuclear rank as the ratio
+    of the nuclear norm over the spectral norm. The presented bound has improved dependence 
+    with respect to the approximation error (as compared to previous approaches), whereas 
+    the subspace – on which we project the input matrices – has dimensions proportional to 
+    the maximum of their nuclear rank and it is independent of the input dimensions.
+    In addition, we provide an application of this result to linear low-dimensional embeddings. 
+    Namely, we show that any Euclidean point-set with bounded nuclear rank is amenable to 
+    projection onto number of dimensions that is independent of the
+    input dimensionality, while achieving additive error guarantees.
+  </i> </p>
+  
+  <pre id="bib_c12"><samp>
+  		@inproceedings{kyrillidis2014approximate,
+  			title={Approximate matrix multiplication with application to linear embeddings},
+  			author={Kyrillidis, Anastasios and Vlachos, Michail and Zouzias, Anastasios},
+  			booktitle={2014 IEEE International Symposium on Information Theory},
+  			pages={2182--2186},
+  			year={2014},
+  			organization={Ieee}
+		}
+  </samp></pre>
+  
 + Anastasios Kyrillidis and Anastasios Zouzias, [*``Non-uniform feature sampling in decision tree ensembles"*](/pubs/Conferences/RandDecisionTrees_arxiv.pdf), IEEE ICASSP, 2014.
 + George Skoumas, Dieter Pfoser and Anastasios Kyrillidis, [*``On quantifying qualitative geospatial data: A probabilistic approach"*](/pubs/Conferences/geocrowd.pdf), ACM GEOCROWD, 2013.
 + Stephen Becker, Volkan Cevher and Anastasios Kyrillidis, [*``Randomized low-memory singular value projection"*](/pubs/Conferences/RandomizedSVP_fixed.pdf), 10th International Conference on Sampling Theory and Applications (SampTA), 2013. *(Authors listed in alphabetical order.)*
