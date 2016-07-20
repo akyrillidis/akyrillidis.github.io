@@ -638,6 +638,31 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
   
 + Stephen Becker, Volkan Cevher and Anastasios Kyrillidis, [*``Randomized low-memory singular value projection"*](/pubs/Conferences/RandomizedSVP_fixed.pdf), 10th International Conference on Sampling Theory and Applications (SampTA), 2013. *(Authors listed in alphabetical order.)*
+ 
+  <button id="b_abs_c09"> Abstract </button>
+  <button id="b_bib_c09"> Bibtex </button>
+  <button id="b_pos_c09"> Poster </button>
+  <p id="abs_c09"> <i> Affine rank minimization algorithms typically rely on calculating 
+    the gradient of a data error followed by a singular value decomposition at every iteration. 
+    Because these two steps are expensive, heuristic approximations are often used to reduce 
+    computational burden. To this end, we propose a recovery scheme that merges the two 
+    steps with randomized approximations, and as a result, operates on space proportional 
+    to the degrees of freedom in the problem. We theoretically establish the estimation 
+    guarantees of the algorithm as a function of approximation tolerance. While the theoretical 
+    approximation requirements are overly pessimistic, we demonstrate that
+    in practice the algorithm performs well on the quantum tomography recovery problem.
+  </i> </p>
+  
+  <pre id="bib_c09"><samp>
+  		@inproceedings{becker2013randomized,
+  			title={Randomized Low-Memory Singular Value Projection},
+  			author={Becker, Stephen and Cevher, Volkan and Kyrillidis, Anastasios},
+  			booktitle={10th International Conference on Sampling Theory and Applications (Sampta)},
+  			year={2013}
+		}
+  </samp></pre>
+
+
 + Anastasios Kyrillidis, Stephen Becker, Volkan Cevher and Christoph Koch, [*``Sparse projections onto the simplex"*](http://jmlr.org/proceedings/papers/v28/kyrillidis13.pdf), International Conference on Machine Learning (ICML), 2013.
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``A proximal Newton framework for composite minimization: Graph learning without Cholesky decompositions and matrix inversions"*](http://jmlr.csail.mit.edu/proceedings/papers/v28/trandinh13.pdf), International Conference on Machine Learning (ICML), 2013.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Fast proximal algorithms for self-concordant minimization with application to sparse graph selection"*](/pubs/Conferences/FirstOrderCovSel.pdf), IEEE ICASSP, 2013.
