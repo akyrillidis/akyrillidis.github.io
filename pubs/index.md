@@ -664,6 +664,38 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 
 + Anastasios Kyrillidis, Stephen Becker, Volkan Cevher and Christoph Koch, [*``Sparse projections onto the simplex"*](http://jmlr.org/proceedings/papers/v28/kyrillidis13.pdf), International Conference on Machine Learning (ICML), 2013.
+
+  <button id="b_abs_c08"> Abstract </button>
+  <button id="b_bib_c08"> Bibtex </button>
+  <button id="b_pre_c08"> Presentation </button>
+  <button id="b_pos_c08"> Poster </button>
+  <button id="b_sof_c08"> Link to software </button>
+  <p id="abs_c08"> <i> Most learning methods with rank or sparsity
+    constraints use convex relaxations, which
+    lead to optimization with the nuclear norm
+	or the $\ell_1$-norm. However, several important
+    learning applications cannot benefit from this
+    approach as they feature these convex norms
+    as constraints in addition to the non-convex
+    rank and sparsity constraints. In this setting,
+    we derive efficient sparse projections onto
+    the simplex and its extension, and illustrate
+    how to use them to solve high-dimensional
+    learning problems in quantum tomography,
+    sparse density estimation and portfolio selection
+    with non-convex constraints.
+  </i> </p>
+  
+  <pre id="bib_c08"><samp>
+  		@inproceedings{kyrillidis2013sparse,
+  			title={Sparse projections onto the simplex},
+  			author={Kyrillidis, Anastasios and Becker, Stephen and Cevher, Volkan and Koch, Christoph},
+  			booktitle={Proceedings of The 30th International Conference on Machine Learning},
+  			pages={235--243},
+  			year={2013}
+			}
+  </samp></pre>
+  
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``A proximal Newton framework for composite minimization: Graph learning without Cholesky decompositions and matrix inversions"*](http://jmlr.csail.mit.edu/proceedings/papers/v28/trandinh13.pdf), International Conference on Machine Learning (ICML), 2013.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Fast proximal algorithms for self-concordant minimization with application to sparse graph selection"*](/pubs/Conferences/FirstOrderCovSel.pdf), IEEE ICASSP, 2013.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix ALPS: Accelerated low rank and sparse matrix reconstruction"*](/pubs/Conferences/lowrank_sparse_v2.pdf), IEEE SSP, 2012.

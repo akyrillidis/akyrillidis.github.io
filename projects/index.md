@@ -79,6 +79,18 @@ fb_comments: 3
    composite convex minimization problems involving self-concordant and self-concordant-like functions.
     </i> </p>
     
++ **Sparse projections onto the simplex (Matlab - to be updated)**
+    
+   <!---<button id="b_des_s12"> Description </button>-->
+  <button id="b_dow_s12"> Download </button>
+  <button id="b_pap_s12"> Paper </button>
+   <p id="des_s12"> <i> In this snippet of code, we compute sparse projections onto the simplex.
+   Our approach is greedy, i.e., sequentially and greedily we construct the solution that $(i)$
+   minimizes the euclidean distance to an anchor given point, $(ii)$ "lives" on the simplex and, 
+   $(iii)$ is $k$-sparse. (The code is to be updated with some demo files).
+    </i> </p>
+    
+     
 + **Provable deterministic leverage scores sampling (Matlab)**
 
   <!---<button id="b_des_s11"> Description </button>-->
