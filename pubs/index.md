@@ -697,6 +697,37 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
   
 + Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``A proximal Newton framework for composite minimization: Graph learning without Cholesky decompositions and matrix inversions"*](http://jmlr.csail.mit.edu/proceedings/papers/v28/trandinh13.pdf), International Conference on Machine Learning (ICML), 2013.
+
+  <button id="b_abs_c07"> Abstract </button>
+  <button id="b_bib_c07"> Bibtex </button>
+  <button id="b_sof_c07"> Link to software </button>
+  <p id="abs_c07"> <i> We propose an algorithmic framework for
+    convex minimization problems of composite
+    functions with two terms: a self-concordant
+    part and a possibly nonsmooth regularization
+    part. Our method is a new proximal Newton
+    algorithm with local quadratic convergence
+    rate. As a specific problem instance,
+    we consider sparse precision matrix estimation
+    problems in graph learning. Via a careful
+    dual formulation and a novel analytic stepsize
+    selection, we instantiate an algorithm
+    within our framework for graph learning that
+    avoids Cholesky decompositions and matrix
+    inversions, making it attractive for parallel
+    and distributed implementations.
+  </i> </p>
+  
+  <pre id="bib_c07"><samp>
+  		@inproceedings{dinh2013proximal,
+  			title={A proximal Newton framework for composite minimization: Graph learning without Cholesky decompositions and matrix inversions},
+  			author={Dinh, Quoc T and Kyrillidis, Anastasios and Cevher, Volkan},
+  			booktitle={Proceedings of the 30th International Conference on Machine Learning (ICML-13)},
+  			pages={271--279},
+  			year={2013}
+				}
+  </samp></pre>
+
 + Anastasios Kyrillidis and Volkan Cevher, [*``Fast proximal algorithms for self-concordant minimization with application to sparse graph selection"*](/pubs/Conferences/FirstOrderCovSel.pdf), IEEE ICASSP, 2013.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix ALPS: Accelerated low rank and sparse matrix reconstruction"*](/pubs/Conferences/lowrank_sparse_v2.pdf), IEEE SSP, 2012.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Combinatorial selection and least absolute shrinkage via the CLASH algorithm"*](/pubs/Conferences/CLASH_ISIT.pdf), IEEE ISIT, 2012.
