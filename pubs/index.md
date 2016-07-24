@@ -729,6 +729,33 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
 
 + Anastasios Kyrillidis and Volkan Cevher, [*``Fast proximal algorithms for self-concordant minimization with application to sparse graph selection"*](/pubs/Conferences/FirstOrderCovSel.pdf), IEEE ICASSP, 2013.
+
+  <button id="b_abs_c06"> Abstract </button>
+  <button id="b_bib_c06"> Bibtex </button>
+  <button id="b_pos_c06"> Poster </button>  
+  <p id="abs_c06"> <i> The convex $\ell_1$-regularized log det divergence criterion has been
+    shown to produce theoretically consistent graph learning. However,
+   	this objective function is challenging since the $\ell_1$-regularization is
+	nonsmooth, the log det objective is not globally Lipschitz gradient
+	function, and the problem is high-dimensional. Using the selfconcordant
+	property of the objective, we propose a new adaptive
+	step size selection and present the (F)PS ((F)ast Proximal algorithms
+	for Self-concordant functions) algorithmic framework which
+	has linear convergence and exhibits superior empirical results as
+	compared to state-of-the-art first order methods.
+  </i> </p>
+  
+  <pre id="bib_c06"><samp>
+  		@inproceedings{kyrillidis2013fast,
+  			title={Fast proximal algorithms for self-concordant function minimization with application to sparse graph selection},
+  			author={Kyrillidis, Anastasios and Cevher, Volkan},
+  			booktitle={2013 IEEE International Conference on Acoustics, Speech and Signal Processing},
+  			pages={6585--6589},
+  			year={2013},
+  			organization={IEEE}
+			}
+  </samp></pre>
+  
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix ALPS: Accelerated low rank and sparse matrix reconstruction"*](/pubs/Conferences/lowrank_sparse_v2.pdf), IEEE SSP, 2012.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Combinatorial selection and least absolute shrinkage via the CLASH algorithm"*](/pubs/Conferences/CLASH_ISIT.pdf), IEEE ISIT, 2012.
 + Anastasios Kyrillidis, Gilles Puy and Volkan Cevher, [*``Hard thresholding with norm constraints"*](/pubs/Conferences/HardThreshNormCon.pdf), IEEE ICASSP, 2012.
