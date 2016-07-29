@@ -760,7 +760,7 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
   <button id="b_abs_c05"> Abstract </button>
   <button id="b_bib_c05"> Bibtex </button>
-  <button id="b_pos_c05"> Poster </button>  
+  <button id="b_pos_c05"> Poster </button>
   <button id="b_sof_c05"> Link to software </button>
   <p id="abs_c05"> <i> We propose Matrix ALPS for recovering a sparse plus low-rank 
   	decomposition of a matrix given its corrupted and incomplete linear measurements. 
