@@ -757,6 +757,32 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
   
 + Anastasios Kyrillidis and Volkan Cevher, [*``Matrix ALPS: Accelerated low rank and sparse matrix reconstruction"*](/pubs/Conferences/lowrank_sparse_v2.pdf), IEEE SSP, 2012.
+
+  <button id="b_abs_c05"> Abstract </button>
+  <button id="b_bib_c05"> Bibtex </button>
+  <button id="b_pos_c05"> Poster </button>  
+  <button id="b_sof_c05"> Link to software </button>
+  <p id="abs_c05"> <i> We propose Matrix ALPS for recovering a sparse plus low-rank 
+  	decomposition of a matrix given its corrupted and incomplete linear measurements. 
+  	Our approach is a first-order projected gradient method over non-convex sets, and it 
+  	exploits a well-known memory-based acceleration technique. We theoretically characterize 
+  	the convergence properties of Matrix ALPS using the stable embedding properties of the
+  	linear measurement operator. We then numerically illustrate that our algorithm 
+  	outperforms the existing convex as well as non-convex state-of-the-art algorithms in 
+  	computational efficiency without sacrificing stability.
+  </i> </p>
+  
+  <pre id="bib_c05"><samp>
+  		@inproceedings{kyrillidis2012matrix,
+  			title={Matrix {ALPS}: {A}ccelerated low rank and sparse matrix reconstruction},
+  			author={Kyrillidis, Anastasios and Cevher, Volkan},
+  			booktitle={2012 IEEE Statistical Signal Processing Workshop (SSP)},
+  			pages={185--188},
+  			year={2012},
+ 	 		organization={IEEE}
+			}
+  </samp></pre>
+  
 + Anastasios Kyrillidis and Volkan Cevher, [*``Combinatorial selection and least absolute shrinkage via the CLASH algorithm"*](/pubs/Conferences/CLASH_ISIT.pdf), IEEE ISIT, 2012.
 + Anastasios Kyrillidis, Gilles Puy and Volkan Cevher, [*``Hard thresholding with norm constraints"*](/pubs/Conferences/HardThreshNormCon.pdf), IEEE ICASSP, 2012.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Recipes on hard thresholding methods"*](/pubs/Conferences/CAMSAP_Recipes_for_HTM.pdf), 4th IEEE CAMSAP, 2011.
