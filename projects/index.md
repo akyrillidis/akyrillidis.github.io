@@ -79,6 +79,21 @@ fb_comments: 3
    composite convex minimization problems involving self-concordant and self-concordant-like functions.
     </i> </p>
     
++ **CLASH and Normed Pursuits: Hard thresholding with norm constraints (Matlab)**
+  
+  <!---<button id="b_des_s13"> Description </button>-->
+  <button id="b_dow_s13"> Download </button>
+  <button id="b_pap_s13a"> Paper #1</button>
+  <button id="b_pap_s13b"> Paper #2</button>
+   <p id="des_s13"> <i> CLASH (Combinatorial selection and Least Absolute SHrinkage) and 
+      Normed Pursuits are new sparse signal approximation algorithm that leverages prior 
+      information beyond sparsity to obtain approximate solutions to the Lasso problem. 
+      These algorithms alters the selection process of Lasso algorithm by exploiting 
+      additional signal structure, dubbed as combinatorial sparsity model, and introduces 
+      approximate combinatorial selection with provable convergence guarantees.
+    </i> </p>    
+    
+    
 + **Sparse projections onto the simplex (Matlab - to be updated)**
     
    <!---<button id="b_des_s12"> Description </button>-->

@@ -784,6 +784,35 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
   
 + Anastasios Kyrillidis and Volkan Cevher, [*``Combinatorial selection and least absolute shrinkage via the CLASH algorithm"*](/pubs/Conferences/CLASH_ISIT.pdf), IEEE ISIT, 2012.
+
+  <button id="b_abs_c04"> Abstract </button>
+  <button id="b_bib_c04"> Bibtex </button>
+  <button id="b_pre_c04"> Presentation </button>
+  <button id="b_sof_c04"> Link to software </button>
+  <p id="abs_c04"> <i> The least absolute shrinkage and selection operator (LASSO) for 
+     linear regression exploits the geometric interplay of the $\ell_2$-data error objective 
+     and the $\ell_1$-norm constraint to arbitrarily select sparse models. Guiding this 
+     uninformed selection process with sparsity models has been precisely the center of 
+     attention over the last decade in order to improve learning performance. To this end, 
+     we alter the selection process of LASSO to explicitly leverage combinatorial sparsity 
+     models (CSMs) via the combinatorial selection and least absolute shrinkage (CLASH) operator. 
+     We provide concrete guidelines how to leverage combinatorial constraints within CLASH, 
+     and characterize CLASH’s guarantees as a function of the set restricted isometry constants 
+     of the sensing matrix. Finally, our experimental results show that CLASH can outperform 
+     both LASSO and model-based compressive sensing in sparse estimation.
+  </i> </p>
+  
+  <pre id="bib_c04"><samp>
+  		@inproceedings{kyrillidis2012combinatorial,
+  			title={Combinatorial selection and least absolute shrinkage via the {CLASH} algorithm},
+  			author={Kyrillidis, Anastasios and Cevher, Volkan},
+  			booktitle={Information Theory Proceedings (ISIT), 2012 IEEE International Symposium on},
+  			pages={2216--2220},
+  			year={2012},
+  			organization={IEEE}
+				}
+  </samp></pre>
+
 + Anastasios Kyrillidis, Gilles Puy and Volkan Cevher, [*``Hard thresholding with norm constraints"*](/pubs/Conferences/HardThreshNormCon.pdf), IEEE ICASSP, 2012.
 + Anastasios Kyrillidis and Volkan Cevher, [*``Recipes on hard thresholding methods"*](/pubs/Conferences/CAMSAP_Recipes_for_HTM.pdf), 4th IEEE CAMSAP, 2011.
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Rank-deficient quadratic-form maximization over M-phase alphabet: Polynomial-complexity solvability and algorithmic developments"*](/pubs/Conferences/RankD_Conf_v1.pdf), IEEE ICASSP, 2011.
