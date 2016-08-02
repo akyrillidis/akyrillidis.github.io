@@ -4,6 +4,39 @@ fb_comments: 3
 ---
 
 ## Journals
+
++ Luca Baldassarre, Nirav Bhan, Volkan Cevher, Anastasios Kyrillidis and Siddhartha Satpathi, [*``Group-sparse model selection: Hardness and relaxations"*](/pubs/Journals/GroupSparse-IT.pdf), Accepted in IEEE Trans. on Information Theory, 2016. *(Authors listed in alphabetical order.)*
+  
+  <button id="b_abs_j8"> Abstract </button>
+  <button id="b_bib_j8"> Bibtex </button>
+   <p id="abs_j8"> <i> Group-based sparsity models are instrumental in linear and non-linear
+		regression problems. The main premise of these models is the recovery of “interpretable” 
+		signals through the identification of their constituent groups, which can also 
+		provably translate in substantial savings in the number of measurements for linear 
+		models in compressive sensing. In this paper, we establish a combinatorial framework 
+		for group-model selection problems and highlight the underlying tractability issues. 
+		In particular, we show that the group-model selection problem is equivalent to the 
+		well-known NP-hard weighted maximum coverage problem (WMC). Leveraging a graph-based 
+		understanding of group models, we describe group structures which enable correct model 
+		selection in polynomial time via dynamic programming. Furthermore, we show that 
+		popular groups structures can be explained by linear inequalities involving totally 
+		unimodular matrices, which afford other polynomial time algorithms based on relaxations. 
+		We also present a generalization of the group-model that allows for within group sparsity, 
+		which can be used to model hierarchical sparsity. Finally, we study the Pareto frontier 
+		between approximation error and sparsity budget of group- sparse approximations for two 
+		tractable models, among which the tree sparsity model, and illustrate selection and 
+		computation trade-offs between our framework and the existing convex relaxations. 
+		</i> </p>
+   
+   <pre id="bib_j8"><samp>
+   		@article{baldassarre2013group,
+  			title={Group-sparse model selection: Hardness and relaxations},
+  			author={Baldassarre, Luca and Bhan, Nirav and Cevher, Volkan and Kyrillidis, Anastasios and Satpathi, Siddhartha},
+  			journal={arXiv preprint arXiv:1303.3207},
+		  	year={2013}
+				}
+   </samp></pre>
+
 + Georgios Skoumas, Dieter Pfoser, Anastasios Kyrillidis and Timos Sellis, [*``Location estimation using crowdsourced spatial relations"*](/pubs/Journals/LocationEstimation.pdf), ACM Transactions on Spatial Algorithms and Systems, vol. 2, issue 2, 2016. 
   
   <button id="b_abs_j7"> Abstract </button>
