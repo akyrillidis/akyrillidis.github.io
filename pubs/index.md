@@ -814,6 +814,30 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
 
 + Anastasios Kyrillidis, Gilles Puy and Volkan Cevher, [*``Hard thresholding with norm constraints"*](/pubs/Conferences/HardThreshNormCon.pdf), IEEE ICASSP, 2012.
+
+  <button id="b_abs_c03"> Abstract </button>
+  <button id="b_bib_c03"> Bibtex </button>
+  <button id="b_pos_c03"> Poster </button>
+  <button id="b_sof_c03"> Link to software </button>
+  <p id="abs_c03"> <i> We introduce a new sparse recovery paradigm, called Normed
+	Pursuits, where efficient algorithms from combinatorial and convex
+	optimization interface for interpretable and model-based solutions.
+	Synthetic and real data experiments illustrate that Normed
+	Pursuits can significantly enhance the performance of both hard
+	thresholding methods and convex solvers in sparse recovery.
+  </i> </p>
+  
+  <pre id="bib_c03"><samp>
+  		@inproceedings{kyrillidis2012hard,
+  			title={Hard thresholding with norm constraints},
+  			author={Kyrillidis, Anastasios and Puy, Gilles and Cevher, Volkan},
+  			booktitle={2012 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  			pages={3645--3648},
+  			year={2012},
+  			organization={IEEE}
+				}
+  </samp></pre>
+  
 + Anastasios Kyrillidis and Volkan Cevher, [*``Recipes on hard thresholding methods"*](/pubs/Conferences/CAMSAP_Recipes_for_HTM.pdf), 4th IEEE CAMSAP, 2011.
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Rank-deficient quadratic-form maximization over M-phase alphabet: Polynomial-complexity solvability and algorithmic developments"*](/pubs/Conferences/RankD_Conf_v1.pdf), IEEE ICASSP, 2011.
 
