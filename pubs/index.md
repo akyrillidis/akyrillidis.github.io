@@ -872,6 +872,33 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
   
 + Anastasios Kyrillidis and Volkan Cevher, [*``Recipes on hard thresholding methods"*](/pubs/Conferences/CAMSAP_Recipes_for_HTM.pdf), 4th IEEE CAMSAP, 2011.
+
+  <button id="b_abs_c02"> Abstract </button>
+  <button id="b_bib_c02"> Bibtex </button>
+  <button id="b_pre_c02"> Presentation </button>
+  <button id="b_sof_c02"> Link to software </button>
+  <p id="abs_c02"> <i> Compressive sensing (CS) is a data acquisition and recovery
+	technique for finding sparse solutions to linear inverse problems from
+	sub-Nyquist measurements. CS features a wide range of computationally
+	efficient and robust signal recovery methods, based on sparsity
+	seeking optimization. In this paper, we present and analyze a class
+	of sparse recovery algorithms, known as hard thresholding methods.
+	We provide optimal strategies on how to set up these algorithms via
+	basic “ingredients” for different configurations to achieve complexity vs.
+	accuracy tradeoffs. Simulation results demonstrate notable performance
+	improvements compared to state-of-the-art algorithms both in terms of
+	data reconstruction and computational complexity.
+  </i> </p>
+  
+  <pre id="bib_c02"><samp>
+  		@inproceedings{kyrillidis2011recipes,
+  			title={Recipes on hard thresholding methods},
+  			author={Kyrillidis, Anastasios and Cevher, Volkan},
+  			booktitle={4th IEEE International Workshop on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP)},
+  			year={2011}
+				}
+  </samp></pre>
+  
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Rank-deficient quadratic-form maximization over M-phase alphabet: Polynomial-complexity solvability and algorithmic developments"*](/pubs/Conferences/RankD_Conf_v1.pdf), IEEE ICASSP, 2011.
 
 ## Book chapters
