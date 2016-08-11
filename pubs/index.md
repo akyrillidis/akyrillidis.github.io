@@ -877,6 +877,7 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   <button id="b_bib_c02"> Bibtex </button>
   <button id="b_pre_c02"> Presentation </button>
   <button id="b_sof_c02"> Link to software </button>
+  <button id="b_med_c02"> ALPS in GAGA </button>
   <p id="abs_c02"> <i> Compressive sensing (CS) is a data acquisition and recovery
 	technique for finding sparse solutions to linear inverse problems from
 	sub-Nyquist measurements. CS features a wide range of computationally
