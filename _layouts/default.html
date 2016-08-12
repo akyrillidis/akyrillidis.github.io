@@ -641,11 +641,15 @@
       {{ content }}
     <!--/div-->
     
+    <header>
+      <h2>Test</h2>
+    </header>
+    
     {% if page.fb_comments or page.comments %}
-    <div class="content sub">
+    <!--div class="content sub">
       <h2 id="comments">Comments</h2>
       <div class="fb-comments" data-href="http://rsms.me{{ page.url }}" data-num-posts="{{ page.fb_comments }}" data-width="550" data-font="arial"></div>
-    </div>
+    </div-->
     {% endif %}
     
     {% if paginator.page %}
