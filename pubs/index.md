@@ -902,6 +902,36 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   
 + Anastasios Kyrillidis and George. N. Karystinos, [*``Rank-deficient quadratic-form maximization over M-phase alphabet: Polynomial-complexity solvability and algorithmic developments"*](/pubs/Conferences/RankD_Conf_v1.pdf), IEEE ICASSP, 2011.
 
+  <button id="b_abs_c01"> Abstract </button>
+  <button id="b_bib_c01"> Bibtex </button>
+  <button id="b_pre_c01"> Presentation </button>
+  <button id="b_sof_c01"> Link to software </button>
+  <p id="abs_c01"> <i> The maximization of a positive (semi)definite complex
+	quadratic form over a finite alphabet is NP-hard and
+	achieved through exhaustive search when the form has full rank.
+	However, if the form is rank-deficient, the optimal solution can
+	be computed with only polynomial complexity in the length $N$ of
+	the maximizing vector. In this work, we consider the general case
+	of a rank-$D$ positive (semi)definite complex quadratic form and
+	develop a method that maximizes the form with respect to a $M$-phase
+	vector with polynomial complexity. The proposed method
+	efficiently reduces the size of the feasible set from exponential
+	to polynomial. We also develop an algorithm that constructs the
+	polynomial-size candidate set in polynomial time and observe
+	that it is fully parallelizable and rank-scalable.
+  </i> </p>
+  
+  <pre id="bib_c01"><samp>
+  		@inproceedings{kyrillidis2011rank,
+  			title={Rank-deficient quadratic-form maximization over $M$-phase alphabet: Polynomial-complexity solvability and algorithmic developments},
+  			author={Kyrillidis, Anastasios and Karystinos, George},
+  			booktitle={2011 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  			pages={3856--3859},
+  			year={2011},
+  			organization={IEEE}
+				}
+  </samp></pre>
+
 ## Book chapters
 + Volkan Cevher, Sina Jafarpour and Anastasios Kyrillidis, [*``Linear inverse problems with norm and sparsity constraints"*](), in Practical Applications of Sparse Modeling, Sept. 2014, MIT Press, *(Authors listed in alphabetical order)*.
 + Anastasios Kyrillidis, Luca Baldassarre, Marwa El-Halabi, Quoc Tran-Dinh and Volkan Cevher, [*``Structured sparsity: discrete and convex approaches"*](), submitted as book chapter to ``Compressed sensing and its application", Springer, 2014.
