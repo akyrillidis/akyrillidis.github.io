@@ -958,7 +958,7 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 				}
   </samp></pre>
   
-+ Anastasios Kyrillidis, Luca Baldassarre, Marwa El-Halabi, Quoc Tran-Dinh and Volkan Cevher, [*``Structured sparsity: discrete and convex approaches"*](/pubs/Journals/CS_Book_StructSparse.pdf), submitted as book chapter to Compressed sensing and its application, Springer, 2014.
++ Anastasios Kyrillidis, Luca Baldassarre, Marwa El-Halabi, Quoc Tran-Dinh and Volkan Cevher, [*``Structured sparsity: discrete and convex approaches"*](/pubs/Journals/CS_Book_StructSparse.pdf), in Compressed sensing and its application, Springer, 2014.
 
   <button id="b_abs_b01"> Abstract </button>
   <button id="b_bib_b01"> Bibtex </button>
