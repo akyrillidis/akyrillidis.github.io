@@ -1441,6 +1441,14 @@ margin-left:1.5em;
 	display: none;
 }*/
 
+#abs_b02, #abs_b01 {
+	display: none;
+}
+
+#bib_b02, #bib_b01 {
+	display: none;
+}
+
 #bib_j8, #bib_j7, #bib_j6, #bib_j5, #bib_j4, #bib_j3, #bib_j2, #bib_j1 {
     display: none;
 }

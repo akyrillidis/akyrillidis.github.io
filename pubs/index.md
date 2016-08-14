@@ -933,9 +933,67 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
 
 ## Book chapters
-+ Volkan Cevher, Sina Jafarpour and Anastasios Kyrillidis, [*``Linear inverse problems with norm and sparsity constraints"*](), in Practical Applications of Sparse Modeling, Sept. 2014, MIT Press, *(Authors listed in alphabetical order)*.
-+ Anastasios Kyrillidis, Luca Baldassarre, Marwa El-Halabi, Quoc Tran-Dinh and Volkan Cevher, [*``Structured sparsity: discrete and convex approaches"*](), submitted as book chapter to ``Compressed sensing and its application", Springer, 2014.
++ Volkan Cevher, Sina Jafarpour and Anastasios Kyrillidis, [*``Linear inverse problems with norm and sparsity constraints"*](/pubs/Journals/LIP.pdf), in Practical Applications of Sparse Modeling, Sept. 2014, MIT Press, *(Authors listed in alphabetical order)*.
 
+  <button id="b_abs_b02"> Abstract </button>
+  <button id="b_bib_b02"> Bibtex </button>
+  <button id="b_med_b02"> Link to book </button>
+  <p id="abs_b02"> <i> We describe two nonconventional algorithms for linear regression, 
+  	called GAME and CLASH. The salient characteristics of these approaches is that they 
+  	exploit the convex $\ell_1$-ball and non-convex $\ell_0$-sparsity constraints jointly 
+  	in sparse recovery. To establish the theoretical approximation guarantees of GAME and 
+  	CLASH, we cover an interesting range of topics from game theory, convex and combinatorial 
+  	optimization. We illustrate that these approaches lead to improved theoretical 
+  	guarantees and empirical performance beyond convex and non-convex solvers alone.
+  </i> </p>
+  
+  <pre id="bib_b02"><samp>
+  		@article{cevher2014linear,
+  			title={Linear inverse problems with norm and sparsity constraints},
+  			author={Cevher, Volkan and Jafarpour, Sina and Kyrillidis, Anastasios},
+  			journal={Practical Applications of Sparse Modeling},
+  			pages={179},
+  			year={2014},
+  			publisher={MIT Press}
+				}
+  </samp></pre>
+  
++ Anastasios Kyrillidis, Luca Baldassarre, Marwa El-Halabi, Quoc Tran-Dinh and Volkan Cevher, [*``Structured sparsity: discrete and convex approaches"*](/pubs/Journals/CS_Book_StructSparse.pdf), submitted as book chapter to ``Compressed sensing and its application", Springer, 2014.
+
+  <button id="b_abs_b01"> Abstract </button>
+  <button id="b_bib_b01"> Bibtex </button>
+  <button id="b_med_b01"> Link to book </button>
+  <p id="abs_b01"> <i> Compressive sensing (CS) exploits sparsity to recover sparse or compressible 
+  	signals from dimensionality reducing, non-adaptive sensing mechanisms. Sparsity is also 
+  	used to enhance interpretability in machine learning and statistics applications: While 
+  	the ambient dimension is vast in modern data analysis problems, the relevant information 
+  	therein typically resides in a much lower dimensional space. However, many solutions 
+  	proposed nowadays do not leverage the true underlying structure. Recent results in CS 
+  	extend the simple sparsity idea to more sophisticated structured sparsity models, which 
+  	describe the interdependency between the nonzero components of a signal, allowing to 
+  	increase the interpretability of the results and lead to better recovery performance. 
+  	In order to better understand the impact of structured sparsity, in this chapter we analyze 
+  	the connections between the discrete models and their convex relaxations, highlighting 
+  	their relative advantages. We start with the general group sparse model and then elaborate 
+  	on two important special cases: the dispersive and the hierarchical models. For each, we 
+  	present the models in their discrete nature, discuss how to solve the ensuing discrete 
+  	problems and then describe convex relaxations. We also consider more general structures 
+  	as defined by set functions and present their convex proxies. Further, we discuss efficient 
+  	optimization solutions for structured sparsity problems and illustrate structured sparsity 
+  	in action via three applications.
+  </i> </p>
+  
+  <pre id="bib_b01"><samp>
+  		@incollection{kyrillidis2015structured,
+  			title={Structured sparsity: Discrete and convex approaches},
+  			author={Kyrillidis, Anastasios and Baldassarre, Luca and El Halabi, Marwa and Tran-Dinh, Quoc and Cevher, Volkan},
+  			booktitle={Compressed Sensing and its Applications},
+  			pages={341--387},
+  			year={2015},
+  			publisher={Springer}
+				}
+  </samp></pre>
+  
 ## Theses
 + Anastasios Kyrillidis, [*``Rigorous optimization recipes for sparse and low rank inverse problems with applications in data sciences"*](/pubs/Theses/Rigorous_optimization_recipes.pdf), Ph.D. Thesis, School of Computer and Communications, EPFL, September 2014.
 + Anastasios Kyrillidis, [*``Polynomial-complexity computation of the M-phase vector that maximizes a rank-deficient quadratic form"*](/pubs/Theses/RankD_Thesis.pdf), M.Sc. Thesis, Dept. Electronic Engineering and Computer Science, Technical University of Crete, July 2010.
