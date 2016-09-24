@@ -18,12 +18,12 @@ hosted by [Animashree Anandkumar](https://newport.eecs.uci.edu/anandkumar/),
 [Sewoong Oh](http://web.engr.illinois.edu/~swoh/),
 [Zhaoran Wang](http://www.princeton.edu/~zhaoran/), and 
 [me](http://akyrillidis.github.io/about/).
+
 Our motivation for organizing this workshop was to highlight some of the very recent 
 developments on non-convex analysis and optimization.
 We were lucky to have a great line-up of speakers, coming from diverse research fields: from machine learning and statistics, 
 to learning theory and theoretical computer science. 
-In what follows, I will try to summarize key points raised by the speakers; discussion 
-can be facilitated at the "Comments" section.
+In what follows, I will try to summarize key points raised by the speakers.
 
 ## Improved linear algebra algorithms for the Big Data regime
 
