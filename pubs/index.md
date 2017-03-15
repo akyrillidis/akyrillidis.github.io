@@ -261,6 +261,28 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
++ Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi, [*``Non-square matrix sensing without spurious local minima via the Burer-Monteiro approach"*](/pubs/Conferences/MSLocalMinima.pdf), AI & Statistics Conference (AISTATS), 2017.
+
+  <button id="b_abs_c23"> Abstract </button>
+  <button id="b_bib_c23"> Bibtex </button>
+  <button id="b_pos_c23"> Poster </button>
+  <p id="abs_c23"> <i> We consider the non-square matrix sensing problem, under restricted isometry property (RIP) assumptions. 
+We focus on the non-convex formulation, where any rank-$r$ matrix $X \in \mathbb{R}^{m \times n}$ is represented 
+as $UV^\top$, where $U \in \mathbb{R}^{m \times r}$ and $V \in \mathbb{R}^{n \times r}$. 
+In this paper, we complement recent findings on the non-convex geometry of the analogous PSD setting [5], 
+and show that matrix factorization does not introduce any spurious local minima, under RIP.
+  </i> </p>
+ 
+  <pre id="bib_c23"><samp>
+  		@article{park2017non,
+  				title={Non-square matrix sensing without spurious local minima via the Burer-Monteiro approach},
+				author={Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi},
+				journal={AI & Statistics Conference (AISTATS)},
+		    	year={2017}
+				}
+  </samp></pre>
+
+
 + Srinadh Bhojanapalli, Anastasios Kyrillidis, and Sujay Sanghavi, [*``Dropping convexity for faster semi-definite optimization"*](/pubs/Conferences/FGD.pdf), Conference on Learning Theory (COLT), 2016.
 
   <button id="b_abs_c22"> Abstract </button>
