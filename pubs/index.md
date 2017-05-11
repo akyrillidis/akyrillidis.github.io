@@ -9,6 +9,7 @@ fb_comments: 3
   
   <button id="b_abs_j9"> Abstract </button>
   <button id="b_bib_j9"> Bibtex </button>
+  <button id="b_sof_j9"> Link to software </button>
    <p id="abs_j9"> <i>   A function $f: \mathbb{R}^d \rightarrow \mathbb{R}$ is a Sparse Additive Model (SPAM), if it 
    		is of the form $f(\mathbf{x}) = \sum_{l \in \mathcal{S}}\phi_{l}(x_l)$ where $\mathcal{S} \subset [d]$, $|\mathcal{S}| \ll d$. 
    		Assuming $\phi$'s, $\mathcal{S}$ to be unknown, there exists extensive work for estimating $f$ from its samples. 
