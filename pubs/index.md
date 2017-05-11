@@ -5,7 +5,38 @@ fb_comments: 3
 
 ## Journals
 
-+ Luca Baldassarre, Nirav Bhan, Volkan Cevher, Anastasios Kyrillidis and Siddhartha Satpathi, [*``Group-sparse model selection: Hardness and relaxations"*](/pubs/Journals/GroupSparse-IT.pdf), Accepted in IEEE Trans. on Information Theory, 2016. *(Authors listed in alphabetical order.)*
++ Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Algorithms for Learning Sparse Additive Models with Interactions in High Dimensions"*](/pubs/Journals/GSPAM.pdf), Information and Inference: A journal of the IMA, 2017. 
+  
+  <button id="b_abs_j9"> Abstract </button>
+  <button id="b_bib_j9"> Bibtex </button>
+   <p id="abs_j9"> <i>   A function $f: \mathbb{R}^d \rightarrow \mathbb{R}$ is a Sparse Additive Model (SPAM), if it 
+   		is of the form $f(\mathbf{x}) = \sum_{l \in \mathcal{S}}\phi_{l}(x_l)$ where $\mathcal{S} \subset [d]$, $|\mathcal{S}| \ll d$. 
+   		Assuming $\phi$'s, $\mathcal{S}$ to be unknown, there exists extensive work for estimating $f$ from its samples. 
+   		In this work, we consider a generalized version of SPAMs, that also allows for the presence of a sparse number of 
+   		second order interaction terms. For some $\mathcal{S}_1 \subset [d], \mathcal{S}_2 \subset {[d] \choose 2}$, 
+   		with $|\mathcal{S}_1| \ll d, |\mathcal{S}_2| \ll d^2$, the function $f$ is now assumed to be of the form:
+		$\sum_{p \in \mathcal{S}_1}\phi_{p} (x_p) + \sum_{(l,l^{\prime}) \in \mathcal{S}_2}\phi_{(l,l^{\prime})} (x_l,x_{l^{\prime}})$. 
+		Assuming we have the freedom to query $f$ anywhere in its domain, we derive efficient algorithms that provably 
+		recover $\mathcal{S}_1,\mathcal{S}_2$ with finite sample bounds. Our analysis covers the noiseless setting where 
+		exact samples of $f$ are obtained, and also extends to the noisy setting where the queries are corrupted with noise. 
+		For the noisy setting in particular, we consider two noise models namely: i.i.d Gaussian noise and arbitrary but 
+		bounded noise. Our main methods for identification of $\mathcal{S}_2$ essentially rely on estimation of sparse 
+		Hessian matrices, for which we provide two novel compressed sensing based schemes. Once 
+		$\mathcal{S}_1, \mathcal{S}_2$ are known, we show how the individual components $\phi_p$, $\phi_{(l,l^{\prime})}$ 
+		can be estimated via additional queries of $f$, with uniform error bounds. Lastly, we provide simulation results 
+		on synthetic data that validate our theoretical findings.
+	</i> </p>
+   
+   <pre id="bib_j9"><samp>
+   		@article{tyagi2017algorithms,
+  			title={Algorithms for Learning Sparse Additive Models with Interactions in High Dimensions},
+  			author={Tyagi, Hemant and Kyrillidis, Anastasios and G{\"a}rtner, Bernd and Krause, Andreas},
+  			journal={Information and Inference: A journal of the IMA},
+  			year={2017}
+		}
+   </samp></pre>
+
++ Luca Baldassarre, Nirav Bhan, Volkan Cevher, Anastasios Kyrillidis and Siddhartha Satpathi, [*``Group-sparse model selection: Hardness and relaxations"*](/pubs/Journals/GroupSparse-IT.pdf), IEEE Trans. on Information Theory, 2016. *(Authors listed in alphabetical order.)*
   
   <button id="b_abs_j8"> Abstract </button>
   <button id="b_bib_j8"> Bibtex </button>
