@@ -12,6 +12,7 @@ Prior to that, I was a Simons Foundation PostDoc member of the [Wireless Network
 at [the University of Texas at Austin](http://www.utexas.edu/), working with 
 [Constantine Caramanis](http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html), 
 [Alex Dimakis](http://users.ece.utexas.edu/~dimakis/) and [Sujay Sanghavi](http://users.ece.utexas.edu/~sanghavi/). 
+I finished my PhD at the CS Department of EPFL (Swtizerland), under the supervision of [Volkan Cevher](lions.epfl.ch).
 
 My research interests include (but are not limited to) convex and non-convex analysis and optimization, 
 data analysis and machine learning.
