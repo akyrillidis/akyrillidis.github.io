@@ -5,6 +5,33 @@ fb_comments: 3
 
 ## Journals
 
++ Quoc Tran Dinh, Anastasios Kyrillidis, and Volkan Cevher, [*``A single-phase, proximal path-following framework"*](/pubs/Journals/TranDinhKyrillidisCevher_PathFollowing_Alg.pdf), Mathematics of Operations Research, 2017. 
+  
+  <button id="b_abs_j10"> Abstract </button>
+  <button id="b_bib_j10"> Bibtex </button>
+   <p id="abs_j10"> <i>   We propose a new proximal, path-following framework for a class of constrained convex problems. 
+   		We consider settings where the nonlinear—and possibly non-smooth—objective part is endowed with a proximity operator, 
+   		and the constraint set is equipped with a self-concordant barrier. Our approach relies on the following two main ideas.
+   		 First, we re-parameterize the optimality condition as an auxiliary problem, such that a good initial point is 
+   		 available; by doing so, a family of alternative paths towards the optimum is generated. Second, we combine the 
+   		 proximal operator with path-following ideas to design a single-phase, proximal, path-following algorithm. We prove 
+   		 that our scheme has the same $O(\sqrt{\nu} \log(1/\varepsilon))$ worst-case iteration-complexity with standard 
+   		 approaches [34, 38] without requiring an initial phase, where $\nu$ is the barrier parameter and $\varepsilon$ is 
+   		 a desired accuracy. Our framework allows errors in the calculation of proximal- Newton directions, 
+   		 without sacrificing the worst-case iteration complexity. We demonstrate the merits of our algorithm 
+   		 via three numerical examples, where proximal operators play a key role.
+	</i> </p>
+   
+   <pre id="bib_j10"><samp>
+   		@article{tran2016single,
+  			title={A single-phase, proximal path-following framework},
+  			author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
+  			journal={arXiv preprint arXiv:1603.01681},
+  			year={2016}
+		}
+   </samp></pre>
+
+
 + Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Algorithms for Learning Sparse Additive Models with Interactions in High Dimensions"*](/pubs/Journals/GSPAM.pdf), Information and Inference: A journal of the IMA, 2017. 
   
   <button id="b_abs_j9"> Abstract </button>

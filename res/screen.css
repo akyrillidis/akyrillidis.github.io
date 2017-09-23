@@ -1433,7 +1433,7 @@ margin-left:1.5em;
   content: "- ";
 }
 
-#abs_j9, #abs_j8, #abs_j7, #abs_j6, #abs_j5, #abs_j4, #abs_j3, #abs_j2, #abs_j1 {
+#abs_j10, #abs_j9, #abs_j8, #abs_j7, #abs_j6, #abs_j5, #abs_j4, #abs_j3, #abs_j2, #abs_j1 {
     display: none;
 }
 
@@ -1449,7 +1449,7 @@ margin-left:1.5em;
 	display: none;
 }
 
-#bib_j9, #bib_j8, #bib_j7, #bib_j6, #bib_j5, #bib_j4, #bib_j3, #bib_j2, #bib_j1 {
+#bib_j10, #bib_j9, #bib_j8, #bib_j7, #bib_j6, #bib_j5, #bib_j4, #bib_j3, #bib_j2, #bib_j1 {
     display: none;
 }
 
