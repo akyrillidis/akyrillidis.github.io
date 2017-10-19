@@ -1,4 +1,10 @@
-# Setting up a nVidia GPU-equipped computer
+---
+layout:     post
+title:      Setting up a Nvidia GPU-equipped computer
+date:       2017-10-18 9:00:00
+disqus_comments: false
+summary:    Setting up a Nvidia GPU-equipped computer
+---
 
 Very roughly, there are two trends in deep learning research: 
 one is on applications (check the vast volume of new papers in the ArXiv RSS feeds of Learning Theory, Machine Learning; even Optimization).
