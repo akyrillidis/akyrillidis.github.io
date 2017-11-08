@@ -320,6 +320,33 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
++ Tianyang Li, Liu Liu, Anastasios Kyrillidis, and Constantine Caramanis, [*``Statistical inference using SGD"*](/pubs/Conferences/StatSGD.pdf), Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18), 2018.
+
+  <button id="b_abs_c24"> Abstract </button>
+  <button id="b_bib_c24"> Bibtex </button>
+  <button id="b_pos_c24"> Poster </button>
+  <p id="abs_c24"> <i> We present a novel method for frequentist statistical inference in 
+  	$M$-estimation problems, based on stochastic gradient descent (SGD) with a fixed step size: 
+  	we demonstrate that the average of such SGD sequences can be used for statistical inference, 
+  	after proper scaling. An intuitive analysis using the Ornstein-Uhlenbeck process suggests 
+  	that such averages are asymptotically normal. From a practical perspective, our SGD-based 
+  	inference procedure is a first order method, and is well-suited for large scale problems. 
+  	To show its merits, we apply it to both synthetic and real datasets, and demonstrate that its 
+  	accuracy is comparable to classical statistical methods, while requiring potentially far 
+  	less computation.
+  </i> </p>
+ 
+  <pre id="bib_c24"><samp>
+  		@article{park2017non,
+  				title={Statistical inference using SGD},
+				author={Tianyang Li, Liu Liu, Anastasios Kyrillidis, and Constantine Caramanis},
+				journal={Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18)},
+		    	year={2018}
+				}
+  </samp></pre>
+
+
+
 + Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi, [*``Non-square matrix sensing without spurious local minima via the Burer-Monteiro approach"*](/pubs/Conferences/MSLocalMinima.pdf), AI & Statistics Conference (AISTATS), 2017.
 
   <button id="b_abs_c23"> Abstract </button>
