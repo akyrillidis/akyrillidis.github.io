@@ -324,7 +324,6 @@ synthetic and real data. </i> </p>
 
   <button id="b_abs_c24"> Abstract </button>
   <button id="b_bib_c24"> Bibtex </button>
-  <button id="b_pos_c24"> Poster </button>
   <p id="abs_c24"> <i> We present a novel method for frequentist statistical inference in 
   	$M$-estimation problems, based on stochastic gradient descent (SGD) with a fixed step size: 
   	we demonstrate that the average of such SGD sequences can be used for statistical inference, 
