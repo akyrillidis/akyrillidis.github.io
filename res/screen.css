@@ -272,7 +272,7 @@ a.post-excerpt {
       padding:10px 40px;
       font-size: 150%;
       font-weight: 100;
-	  font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	  font-family: Ubuntu; /*'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;*/
       color: #fff5cc;
       
       /*background:rgba(255,200,0,0.1);*/
