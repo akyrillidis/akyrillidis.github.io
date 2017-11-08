@@ -22,7 +22,7 @@
 body {
   background:#ddd;
   color:#444;
-  font:10px Bitter;
+  font:12px Bitter;
   line-height:1.5;
   font-weight: lighter;
   margin: 0 auto;
@@ -43,7 +43,7 @@ pre, code, tt {
   /*'Ubuntu Mono', 'Consolas', monospace;*/
   font-family: Bitter; /*Century Gothic, sans-serif*/
   font-weight:300;
-  font-size: 10px;
+  font-size: 12px;
 }
 img { border:none; vertical-align:bottom; }
 strong { font-weight:bold; }
