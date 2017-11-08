@@ -41,9 +41,9 @@ pre, code, tt {
   /*-webkit-font-smoothing: subpixel-antialiased;*/
   /*font-family: 'M+ 1mn', 'Consolas', monospace;*/
   /*'Ubuntu Mono', 'Consolas', monospace;*/
-  font-family: Century Gothic, sans-serif
+  font-family: Charter /*Century Gothic, sans-serif*/
   font-weight:300;
-  font-size: 12px;
+  font-size: 10px;
 }
 img { border:none; vertical-align:bottom; }
 strong { font-weight:bold; }
