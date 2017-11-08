@@ -51,7 +51,7 @@ hr { height:1px; border:none; background-color:#ddd; }
 
 h1,h2,h3,h4,h5,h6 {
   /* 'Poly', helvetica, sans-serif; */
-  font-family: 'Poly', helvetica, sans-serif;
+  font-family: Ubuntu; /*'Poly', helvetica, sans-serif;*/
   font-weight:normal;
   color:#040404;
   margin: 1.618em 0 0.7em 0;
