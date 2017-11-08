@@ -22,7 +22,7 @@
 body {
   background:#ddd;
   color:#444;
-  font:10px Charter;
+  font:10px Bitter;
   line-height:1.5;
   font-weight: lighter;
   margin: 0 auto;
@@ -41,7 +41,7 @@ pre, code, tt {
   /*-webkit-font-smoothing: subpixel-antialiased;*/
   /*font-family: 'M+ 1mn', 'Consolas', monospace;*/
   /*'Ubuntu Mono', 'Consolas', monospace;*/
-  font-family: Charter; /*Century Gothic, sans-serif*/
+  font-family: Bitter; /*Century Gothic, sans-serif*/
   font-weight:300;
   font-size: 10px;
 }
@@ -114,7 +114,7 @@ header {
     line-height: 50px;
     margin-top: 35px;
     /* helvetica, sans-serif; */
-    font-family: Charter; /*Century Gothic, sans-serif*/
+    font-family: Bitter; /*Century Gothic, sans-serif*/
   }
   header ul.navigation li {
     display: inline-block;
@@ -162,7 +162,7 @@ div.content.photo {
   
   div.content blockquote {
     /* 'Poly', georgia; */
-    font-family: Charter; /*Century Gothic, sans-serif;*/
+    font-family: Bitter; /*Century Gothic, sans-serif;*/
     font-style:italic;
     line-height:1.618;
     background:transparent url(quotation-mark.png) no-repeat scroll 25px 1.4em;
