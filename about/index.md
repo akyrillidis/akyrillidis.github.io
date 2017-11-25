@@ -9,7 +9,7 @@ title: About
 My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname 'Tasos' ('Τάσος'). Currently, I'm a Goldstine
 Fellow at IBM T. J. Watson Research Center (NY).
 
-Prior to that, I was a Simons Foundation PostDoc member at [the University of Texas at Austin](http://www.utexas.edu/). 
+Prior to that, I was a Simons Foundation PostDoc member at the University of Texas at Austin. 
 I finished my PhD at the CS Department of EPFL (Swtizerland).
 
 My research interests include (but not limited to):
