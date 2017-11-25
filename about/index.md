@@ -16,7 +16,7 @@ My research interests include (but not limited to):
 * Optimization for machine learning
 * Convex and non-convex algorithms and analysis
 * Large-scale optimization
-* Every problem that includes a math-inspired criterion and needs an efficient way for its solution.
+* Any problem that includes a math-driven criterion and requires an efficient method for its solution.
 
 <button id="b_CV"> CV </button>
 <button id="b_scholar"> Scholar </button>
