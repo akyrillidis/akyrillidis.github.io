@@ -10,7 +10,7 @@ My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), bu
 Fellow at IBM T. J. Watson Research Center (NY).
 
 Prior to that, I was a Simons Foundation PostDoc member at the University of Texas at Austin. 
-I finished my PhD at the CS Department of EPFL (Swtizerland).
+I finished my PhD at the CS Department of EPFL (Switzerland).
 
 My research interests include (but not limited to):
 * Optimization for machine learning
