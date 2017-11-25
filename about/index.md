@@ -8,14 +8,15 @@ title: About
 
 My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname 'Tasos' ('Τάσος'). Currently, I'm a Goldstine
 Fellow at IBM T. J. Watson Research Center (NY).
-Prior to that, I was a Simons Foundation PostDoc member of the [Wireless Networking & Communications Group](https://wncg.org/) (WNCG) 
-at [the University of Texas at Austin](http://www.utexas.edu/), working with 
-[Constantine Caramanis](http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html), 
-[Alex Dimakis](http://users.ece.utexas.edu/~dimakis/) and [Sujay Sanghavi](http://users.ece.utexas.edu/~sanghavi/). 
-I finished my PhD at the CS Department of EPFL (Swtizerland), under the supervision of [Volkan Cevher](lions.epfl.ch).
 
-My research interests include (but are not limited to) convex and non-convex analysis and optimization, 
-data analysis and machine learning.
+Prior to that, I was a Simons Foundation PostDoc member at [the University of Texas at Austin](http://www.utexas.edu/). 
+I finished my PhD at the CS Department of EPFL (Swtizerland).
+
+My research interests include (but not limited to):
+* Optimization for machine learning
+* Convex and non-convex algorithms and analysis
+* Large-scale optimization
+* Every problem that includes a math-inspired criterion and needs an efficient way for its solution.
 
 <button id="b_CV"> CV </button>
 <button id="b_scholar"> Scholar </button>
