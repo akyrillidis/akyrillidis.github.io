@@ -1,5 +1,5 @@
 ---
-layout: dirindex
+layout: post
 fb_comments: 3
 ---
 
