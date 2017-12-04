@@ -4,20 +4,20 @@ fb_comments: 3
 title: A short note on the Adagrad algorithm.
 ---
 
-### The AdaGrad algorithm
+## The AdaGrad algorithm
 
 In this note, I briefly describe the main points of the [AdaGrad algorithm](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf). 
 
 *Disclaimer: These notes assume that the reader can build up the story by just looking into the mathematical expressions.*
 
-#### Problem setting
+### Problem setting
 
 The original Adagrad algorithm was designed for convex objectives with an empirical loss form:
 
 $$
 \begin{equation*}
 \begin{aligned}
-\underset{x}{\text{min}} F(x) := \sum_{i = 1}^n f_i(x)
+\underset{x}{\text{min}} ~F(x) := \sum_{i = 1}^n f_i(x)
 \end{aligned}
 \end{equation*}
 $$
@@ -38,7 +38,7 @@ $$
 
 where the difference lies in the gradient calculation (*i.e.*, using all $f_i(\cdot)$ or a subset of them).
 
-#### Using preconditioners in gradient descent
+### Using preconditioners in gradient descent
 
 Another method, that is usually deprecated due to its increased computational complexity, is Newton's method.
 Newton's method favors a much faster convergence rate (number of iterations) at the cost of being more expensive per iteration (trade-off).
@@ -47,19 +47,22 @@ For convex problems, the recursion is similar to GD:
 $$
 x_{t+1} = x_{t} - \eta H^{-1} \nabla F(x_{t}),
 $$
+
 where $\eta$ is often close to one (damped-Newton) or one, and $H^{-1}$ denotes the Hessian of $F$ at the current point.
 
 The above suggest a general rule in optimization: find any preconditioner (in convex optimization it has to be positive semi-definite) that improves --at least in practice-- the performance of gradient descent (in terms of iterations to get to an $\varepsilon$-close solution), but without wasting too much "energy" to compute that precoditioner. 
 The above result into:
+
 $$
 x_{t+1} = x_{t} - \eta B^{-1} \nabla F(x_{t}),
 $$
+
 where preconditioner = $B$.
 
 These ideas date back to 50's; look for the DFP method, the BFGS method and the Dennis and More analysis.
 
 
-#### The AdaGrad variation
+### The AdaGrad variation
 
 The AdaGrad algorithm is just a variant of preconditioned stochastic gradient descent, where $B$ is cleverly selected and updated regularly, and the gradient calculation follows SGD.
 
@@ -77,9 +80,10 @@ The above lead to the recursion:
 $$
 x_{t+1} = x_{t} - \eta B_t^{-1} \nabla f_{i_t}(x_{t}) = x_{t} - \frac{\eta}{(B_t)_{jj}} \odot \nabla f_{i_t}(x_{t}),
 $$
+
 where $(B_t)_{jj}$ is when we focus only the diagonal elements of the matrix.
 
-##### Practical variant
+#### Practical variant
 
 In order to avoid divisions with zeros, one adds a very small quantity $\zeta > 0$ in the denominator (with a slight abuse of notation):
 
