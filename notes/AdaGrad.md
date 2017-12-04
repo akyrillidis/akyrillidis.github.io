@@ -1,6 +1,7 @@
 ---
 layout: post
 fb_comments: 3
+title: AdaGrad
 ---
 
 # The AdaGrad algorithm
