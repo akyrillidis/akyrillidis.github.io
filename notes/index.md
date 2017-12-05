@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 fb_comments: 3
 ---
 
