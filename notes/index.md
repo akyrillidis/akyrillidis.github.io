@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: category_index
 fb_comments: 3
 ---
 
