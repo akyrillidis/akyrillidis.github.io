@@ -2,3 +2,5 @@
 layout: dirindex
 fb_comments: 3
 ---
+
+[Test](/notes/AdaGrad.md)
