@@ -1,5 +1,5 @@
 ---
-layout: dirindex
+layout: default
 fb_comments: 3
 ---
 
