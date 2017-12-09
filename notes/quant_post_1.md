@@ -150,7 +150,11 @@ $$c_{1} \cdot c_{1}^\dagger = |c_{1}|^2$$.
 Since complex numbers can be represented in the $\mathbb{R}^2$ plane, we can also represent them via the polar coordinates. 
 These are the modulus $\rho$ and the angle $\theta$ of a vector; also called magnitude and phase of a complex vector.
 
-Given a complex number $c = a + i b$, we can compute the transformation $(a, b) \mapsto (\rho, \theta)$, where $\rho = \sqrt{a^2 + b^2}$ and $ \theta = \tan^{-1}\left(\frac{b}{a}\right)$. We can go back to cartesian coordinates by using: $a = \rho \cos(\theta)$ and $b = \rho \sin(\theta)$.
+Given a complex number $c = a + i b$, we can compute the transformation 
+$(a, b) \mapsto (\rho, \theta)$, where $\rho = \sqrt{a^2 + b^2}$ and 
+$ \theta = \tan^{-1}\left(\frac{b}{a}\right)$. 
+We can go back to cartesian coordinates by using: 
+$a = \rho \cos(\theta)$ and $b = \rho \sin(\theta)$.
 Thus, a complex number can be written as:
 
 $$c = \rho \cdot (\cos(\theta) + i \sin(\theta))$$,
