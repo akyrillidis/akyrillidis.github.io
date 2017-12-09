@@ -139,9 +139,11 @@ We will also use $\bar{\cdot}$ to denote conjugation.
 
 Some properties for $c_i \in \mathbb{C}$:
 
-* $c_1^\dagger + c_2^\dagger = (c_1 + c_2)^\dagger$.
-* $c_1^\dagger \cdot c_2^\dagger = (c_1 \cdot c_2)^\dagger$.
-* $c_{1} \cdot c_{1}^\dagger = |c_{1}|^2$.
+$$c_{1}^\dagger + c_{2}^\dagger = (c_{1} + c_{2})^\dagger$$
+
+$$c_{1}^\dagger \cdot c_{2}^\dagger = (c_{1} \cdot c_{2})^\dagger$$.
+
+$$c_{1} \cdot c_{1}^\dagger = |c_{1}|^2$$.
 
 #### **Polar representation of complex numbers**
 
