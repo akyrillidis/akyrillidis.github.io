@@ -62,7 +62,7 @@ where preconditioner = $B$.
 These ideas date back to 50's; look for the DFP method, the BFGS method and the Dennis and More analysis.
 
 
-### The AdaGrad variation
+### **The AdaGrad variation**
 
 The AdaGrad algorithm is just a variant of preconditioned stochastic gradient descent, where $B$ is cleverly selected and updated regularly, and the gradient calculation follows SGD.
 
