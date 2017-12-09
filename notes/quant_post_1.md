@@ -117,7 +117,9 @@ It is easy to verify that, for $c\_1, c\_2 \in \mathbb{C}$:
 
 $$|c_1| \cdot |c_2| = |c_1 \cdot c_2|$$
 
-and $|c_1 + c_2| \ll |c_1| + |c_2|$.
+and 
+
+$$|c\_1 + c\_2| \ll |c\_1| + |c_2|.$$
 
 (The last one, not so obvious).
 
