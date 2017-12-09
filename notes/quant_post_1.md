@@ -104,20 +104,20 @@ y = \frac{a_2 b_1 - a_1 b_2}{a_2^2 + b_2^2}.$
 The absolute value of a real number denotes its distance from the origin. 
 So, 
 
-<!--$|a| := \sqrt{a^2}$ -->
+$|a| := \sqrt{a^2}$
 
 denotes the number of units we need to traverse in order 
 to get to the point 0 (either we start from a negative or a positive point). 
 Similarly for complex numbers, 
 
-<!--$|a + ib| := \sqrt{a^2 + b^2},$-->
+$|a + ib| := \sqrt{a^2 + b^2},$
 
 *i.e.*, the distance we have to traverse to get to the point zero $(0 + 0i)$ is the "norm" of the two dimensional representation in the reals $(a, b)$.
 
-It is easy to verify that, for $c\_1, c\_2 \in \mathbb{C}$:
+It is easy to verify that, for $c_1, c_2 \in \mathbb{C}$:
 
-* $|c\_1| \cdot |c\_2| = |c_1 \cdot c_2|$
-* $|c\_1 + c\_2| \leq |c_1| + |c_2|$ (not so obvious).
+* $|c_1| \cdot |c_2| = |c_1 \cdot c_2|,$
+* $|c_1 + c_2| \leq |c_1| + |c_2|$ (not so obvious).
 
 #### Changing signs and complex conjugation
 
