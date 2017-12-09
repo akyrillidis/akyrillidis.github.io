@@ -4,7 +4,7 @@ fb_comments: 3
 title: Introduction to quantum computing: Complex numbers.
 ---
 
-## Introduction to quantum computing: Complex numbers
+## **Introduction to quantum computing: Complex numbers.**
 
 > Sources: "Quantum computing for computer scientists", N. Yanofsky and M. Mannucci, Cambridge Press, 2008.
 
