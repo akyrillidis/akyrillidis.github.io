@@ -113,10 +113,8 @@ $$ |a + ib| := \sqrt{a^2 + b^2},$$
 
 *i.e.*, the distance we have to traverse to get to the point zero $(0 + 0i)$ is the "norm" of the two dimensional representation in the reals $(a, b)$.
 
-It is easy to verify that, for $c_1, c_2 \in \mathbb{C}$: 
-
-1. asdasd $|c_1| \cdot |c_2| = |c_1 \cdot c_2|$
-2. asdasd $|c_1 + c_2| \leq |c_1| + |c_2|$ (not so obvious).
+It is easy to verify that, for $c_1, c_2 \in \mathbb{C}$: $(i) |c_1| \cdot |c_2| = |c_1 \cdot c_2|$, and
+$(ii) |c_1 + c_2| \leq |c_1| + |c_2|$ (not so obvious).
 
 #### **Changing signs and complex conjugation**
 
