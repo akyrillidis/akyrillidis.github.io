@@ -4,13 +4,13 @@ fb_comments: 3
 title: A short note on the Adagrad algorithm.
 ---
 
-## The AdaGrad algorithm
+## **The AdaGrad algorithm**
 
 In this note, I briefly describe the main points of the [AdaGrad algorithm](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf). 
 
 *Disclaimer: These notes assume that the reader can build up the story by just looking into the mathematical expressions.*
 
-### Problem setting
+### **Problem setting**
 
 The original Adagrad algorithm was designed for convex objectives with an empirical loss form:
 
@@ -38,7 +38,7 @@ $$
 
 where the difference lies in the gradient calculation (*i.e.*, using all $f_i(\cdot)$ or a subset of them).
 
-### Using preconditioners in gradient descent
+### **Using preconditioners in gradient descent**
 
 Another method, that is usually deprecated due to its increased computational complexity, is Newton's method.
 Newton's method favors a much faster convergence rate (number of iterations) at the cost of being more expensive per iteration (trade-off).
@@ -83,7 +83,7 @@ $$
 
 where $(B_t)_{jj}$ is when we focus only the diagonal elements of the matrix.
 
-#### Practical variant
+#### **Practical variant**
 
 In order to avoid divisions with zeros, one adds a very small quantity $\zeta > 0$ in the denominator (with a slight abuse of notation):
 

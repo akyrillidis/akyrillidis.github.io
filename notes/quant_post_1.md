@@ -15,7 +15,7 @@ Currently, my knowledge of quantum information and processing starts and ends wi
 
 *Disclaimer: while the material below might seem too simple, I suggest not skimming over this post - personally, I always enjoy reading something that I believe I own, as επαναληψη μητηρ πασης μαθησεως (repetition is the mother of any knowledge)*
 
-### The magical world of imaginary numbers
+### **The magical world of imaginary numbers**
 
 Complex numbers appeared (maybe, among other reasons) due to the eager to find solutions to polynomial equations that do not seem to have a solution in the "real world". *E.g.*, 
 
@@ -41,14 +41,14 @@ where 1 is the real part and $3i$ is the imaginary part.
 
 The combination of real and imaginary parts constitutes the number a complex one. We denote the set of complex, one-dimensional, numbers with the symbol $\mathbb{C}$.
 
-#### Fundamental theorem in algebra
+#### **Fundamental theorem in algebra**
 
 While our focus is not per se on solving polynomials, it turns out that using complex numbers:
 > Every unit-variable polynomial with complex coefficients has a complex solution.
 
 *I.e.*, the set of complex numbers is algebraically complete.
 
-#### Adding and multiplying complex numbers
+#### **Adding and multiplying complex numbers**
 
 Some examples of adding and multiplying complex numbers follow:
 
@@ -74,7 +74,7 @@ This further result to the fundamental representation of $i$:
 
 $ i \in \mathbb{C} \leftrightarrow i \mapsto (0, 1) \in \mathbb{R}^2.$
 
-#### Properties of scalar complex numbers
+#### **Properties of scalar complex numbers**
 
 Complex numbers are 
 
@@ -83,7 +83,7 @@ Complex numbers are
 * distributive: $(c_1 + c_2) \cdot c_3 = c_1 \cdot c_3 + c_2 \cdot c_3$, for $c_i \in \mathbb{C}$.
 
 
-#### Dividing complex numbers
+#### **Dividing complex numbers**
 
 While subtraction of complex numbers is easily inferred by addition, division needs some more work. Let $(a_1, b_1)$ and $(a_2, b_2)$ be two complex numbers and we are interested in computing their ration: $\frac{(a_1, b_1)}{(a_2, b_2)}$.
 
@@ -100,12 +100,11 @@ This leads to a system of two unknowns with two variables, where the solution is
 $x = \frac{a_1a_2 + b_1b_2}{a_2^2 + b_2^2}, \quad 
 y = \frac{a_2 b_1 - a_1 b_2}{a_2^2 + b_2^2}.$
 
-#### Magnitude (or modulus or norm) of complex numbers
+#### **Magnitude (or modulus or norm) of complex numbers**
 
 The absolute value of a real number denotes its distance from the origin. 
 So, 
 
-$|a| := \sqrt{a^2}$ 
 
 denotes the number of units we need to traverse in order 
 to get to the point 0 (either we start from a negative or a positive point). 
