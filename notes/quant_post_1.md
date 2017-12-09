@@ -119,7 +119,7 @@ $$|c_1| \cdot |c_2| = |c_1 \cdot c_2|$$
 
 and 
 
-$$|c\_1 + c\_2| \ll |c\_1| + |c_2|.$$
+$$|c_{1} + c_{2}| \leq |c_{1}| + |c_{2}|.$$
 
 (The last one, not so obvious).
 
