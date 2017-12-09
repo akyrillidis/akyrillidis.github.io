@@ -119,7 +119,9 @@ $$|c_1| \cdot |c_2| = |c_1 \cdot c_2|$$
 
 and
 
-$$|c\_1+c\_2|\leq|c\_1|+|c_2|$$ (not so obvious).
+$$|c_1 + c_2| \leq |c_1| + |c_2|$$.
+
+(The last one, not so obvious).
 
 #### **Changing signs and complex conjugation**
 
