@@ -115,7 +115,7 @@ $$ |a + ib| := \sqrt{a^2 + b^2},$$
 
 It is easy to verify that, for $c_1, c_2 \in \mathbb{C}$:
 
-* $|c_1| \cdot |c_2| = |c_1 \cdot c_2|,$
+* $$|c_1| \cdot |c_2| = |c_1 \cdot c_2|,$$
 * $|c_1 + c_2| \leq |c_1| + |c_2|$ (not so obvious).
 
 #### **Changing signs and complex conjugation**
@@ -136,7 +136,7 @@ Some properties for $c_i \in \mathbb{C}$:
 
 * $ c_1^\dagger + c_2^\dagger = (c_1 + c_2)^\dagger$.
 * $ c_1^\dagger \cdot c_2^\dagger = (c_1 \cdot c_2)^\dagger$.
-* $ c_1 \cdot c_1^\dagger = |c_1|^2$.
+* $ c\_1 \cdot c_1^\dagger = |c_1|^2$.
 
 #### **Polar representation of complex numbers**
 
@@ -146,9 +146,9 @@ These are the modulus $\rho$ and the angle $\theta$ of a vector; also called mag
 Given a complex number $c = a + i b$, we can compute the transformation $(a, b) \mapsto (\rho, \theta)$, where $\rho = \sqrt{a^2 + b^2}$ and $ \theta = \tan^{-1}\left(\frac{b}{a}\right)$. We can go back to cartesian coordinates by using: $a = \rho \cos(\theta)$ and $b = \rho \sin(\theta)$.
 Thus, a complex number can be written as:
 
-$ c = \rho \cdot (\cos(\theta) + i \sin(\theta))$,
+$$ c = \rho \cdot (\cos(\theta) + i \sin(\theta))$$,
 
 or using Euler's formula:
 
-$ c = \rho \cdot e^{i\theta}$.
+$$ c = \rho \cdot e^{i\theta}$$.
 
