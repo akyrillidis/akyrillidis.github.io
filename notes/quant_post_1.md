@@ -68,7 +68,7 @@ $$(a_1, b_1) + (a_2, b_2) = (a_1 + b_1, a_2 + b_2), $$
 
 and 
 
-$$(a_1, b_1) \cdot (a_2, b_2) = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1).$$
+$$(a_1, b_1) \cdot (a_2, b_2) = (a_1 a_2 - b_1 b_2, a_1 b_2 + a_2 b_1).$$
 
 This further result to the fundamental representation of $i$:
 
@@ -137,13 +137,8 @@ $$
 where here we use $\cdot^\dagger$ to denote the conjugation.
 We will also use $\bar{\cdot}$ to denote conjugation.
 
-Some properties for $c_i \in \mathbb{C}$:
-
-$$c_{1}^\dagger + c_{2}^\dagger = (c_{1} + c_{2})^\dagger$$
-
-$$c_{1}^\dagger \cdot c_{2}^\dagger = (c_{1} \cdot c_{2})^\dagger$$.
-
-$$c_{1} \cdot c_{1}^\dagger = |c_{1}|^2$$.
+Some properties for $c_i \in \mathbb{C}$: $c_{1}^\dagger + c_{2}^\dagger = (c_{1} + c_{2})^\dagger,$ $c_{1}^\dagger \cdot c_{2}^\dagger = (c_{1} \cdot c_{2})^\dagger,$
+and $c_{1} \cdot c_{1}^\dagger = |c_{1}|^2$.
 
 #### **Polar representation of complex numbers**
 
