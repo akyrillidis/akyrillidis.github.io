@@ -102,7 +102,14 @@ y = \frac{a_2 b_1 - a_1 b_2}{a_2^2 + b_2^2}.$
 
 #### Magnitude (or modulus or norm) of complex numbers
 
-The absolute value of a real number denotes its distance from the origin. So, $|a| := \sqrt{a^2}$ denotes the number of units we need to traverse in order to get to the point 0 (either we start from a negative $a$ or a positive $a$). Similarly for complex numbers, 
+The absolute value of a real number denotes its distance from the origin. 
+So, 
+
+$|a| := \sqrt{a^2}$ 
+
+denotes the number of units we need to traverse in order 
+to get to the point 0 (either we start from a negative or a positive point). 
+Similarly for complex numbers, 
 
 $|a + ib| := \sqrt{a^2 + b^2},$
 
