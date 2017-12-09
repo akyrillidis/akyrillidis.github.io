@@ -115,13 +115,11 @@ $$ |a + ib| := \sqrt{a^2 + b^2},$$
 
 It is easy to verify that, for $c\_1, c\_2 \in \mathbb{C}$: 
 
-$$(i) |c\_1| \cdot |c\_2| = |c\_1 \cdot c\_2|$$, 
+$|c_1| \cdot |c_2| = |c_1 \cdot c_2|$
 
 and
 
-$$(ii) |c\_1+c\_2|\leq|c\_1|+|c_2|$$ 
-
-(not so obvious).
+* $|c\_1+c\_2|\leq|c\_1|+|c_2|$ (not so obvious).
 
 #### **Changing signs and complex conjugation**
 
