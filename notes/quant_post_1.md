@@ -99,25 +99,40 @@ This leads to a system of two unknowns with two variables, where the solution is
 $x = \frac{a_1a_2 + b_1b_2}{a_2^2 + b_2^2}, \quad 
 y = \frac{a_2 b_1 - a_1 b_2}{a_2^2 + b_2^2}.$
 
+#### Polar representation of complex numbers
+
+Since complex numbers can be represented in the $\mathbb{R}^2$ plane, we can also represent them via the polar coordinates. 
+These are the modulus $\rho$ and the angle $\theta$ of a vector; also called magnitude and phase of a complex vector.
+
+Given a complex number $c = a + i b$, we can compute the transformation $(a, b) \mapsto (\rho, \theta)$, where $\rho = \sqrt{a^2 + b^2}$ and $ \theta = \tan^{-1}\left(\frac{b}{a}\right)$. We can go back to cartesian coordinates by using: $a = \rho \cos(\theta)$ and $b = \rho \sin(\theta)$.
+Thus, a complex number can be written as:
+
+$ c = \rho \cdot (\cos(\theta) + i \sin(\theta))$,
+
+or using Euler's formula:
+
+$ c = \rho \cdot e^{i\theta}$.
+
+
 #### **Magnitude (or modulus or norm) of complex numbers**
 
 The absolute value of a real number denotes its distance from the origin. 
 So, 
 
-$|a| := \sqrt{a^2}$
+$ |a| := \sqrt{a^2}$
 
 denotes the number of units we need to traverse in order 
 to get to the point 0 (either we start from a negative or a positive point). 
 Similarly for complex numbers, 
 
-$|a + ib| := \sqrt{a^2 + b^2},$
+$ |a + ib| := \sqrt{a^2 + b^2},$
 
 *i.e.*, the distance we have to traverse to get to the point zero $(0 + 0i)$ is the "norm" of the two dimensional representation in the reals $(a, b)$.
 
 It is easy to verify that, for $c_1, c_2 \in \mathbb{C}$:
 
-* $|c_1| \cdot |c_2| = |c_1 \cdot c_2|,$
-* $|c_1 + c_2| \leq |c_1| + |c_2|$ (not so obvious).
+* $ |c_1| \cdot |c_2| = |c_1 \cdot c_2|,$
+* $ |c_1 + c_2| \leq |c_1| + |c_2|$ (not so obvious).
 
 #### Changing signs and complex conjugation
 
@@ -135,21 +150,8 @@ We will also use $\bar{\cdot}$ to denote conjugation.
 
 Some properties for $c_i \in \mathbb{C}$:
 
-* $c_1^\dagger + c_2^\dagger = (c_1 + c_2)^\dagger$.
-* $c_1^\dagger \cdot c_2^\dagger = (c_1 \cdot c_2)^\dagger$.
-* $c_1 \cdot c_1^\dagger = |c_1|^2$.
+* $ c_1^\dagger + c_2^\dagger = (c_1 + c_2)^\dagger$.
+* $ c_1^\dagger \cdot c_2^\dagger = (c_1 \cdot c_2)^\dagger$.
+* $ c_1 \cdot c_1^\dagger = |c_1|^2$.
 
-#### Polar representation of complex numbers
-
-Since complex numbers can be represented in the $\mathbb{R}^2$ plane, we can also represent them via the polar coordinates. 
-These are the modulus $\rho$ and the angle $\theta$ of a vector; also called magnitude and phase of a complex vector.
-
-Given a complex number $c = a + i b$, we can compute the transformation $(a, b) \mapsto (\rho, \theta)$, where $\rho = \sqrt{a^2 + b^2}$ and $ \theta = \tan^{-1}\left(\frac{b}{a}\right)$. We can go back to cartesian coordinates by using: $a = \rho \cos(\theta)$ and $b = \rho \sin(\theta)$.
-Thus, a complex number can be written as:
-
-$ c = \rho \cdot (\cos(\theta) + i \sin(\theta))$,
-
-or using Euler's formula:
-
-$ c = \rho \cdot e^{i\theta}$.
 
