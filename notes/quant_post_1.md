@@ -19,23 +19,23 @@ Currently, my knowledge of quantum information and processing starts and ends wi
 
 Complex numbers appeared (maybe, among other reasons) due to the eager to find solutions to polynomial equations that do not seem to have a solution in the "real world". *E.g.*, 
 
-$x^2 + 1 = 0,$
+$$x^2 + 1 = 0,$$
 
 or 
 
-$x^4 + 2x^2 + 1 = 0 \Rightarrow (x^2 + 1)(x^2 + 1) = 0.$
+$$x^4 + 2x^2 + 1 = 0 \Rightarrow (x^2 + 1)(x^2 + 1) = 0.$$
 
 Imaginary numbers appear when we assume that there is a solution of the following form:
 
-$x^2 = -1 \Rightarrow x = i := \sqrt{-1},$
+$$x^2 = -1 \Rightarrow x = i := \sqrt{-1},$$
 
 where $i$ denotes the imaginary part of a number. Its name justifies its purpose: to represent numbers that do not exist in known (*i.e.*, real) numbers. Other than this weird assumption, $i$ behaves like any other number, when we add it or multiply it:
 
-$i^4 = (i^2) \cdot (i^2) = (-1) \cdot (-1) = 1.$
+$$i^4 = (i^2) \cdot (i^2) = (-1) \cdot (-1) = 1.$$
 
 or, when we combine it with real numbers:
 
-$1 + 3i$, 
+$$1 + 3i$$, 
 
 where 1 is the real part and $3i$ is the imaginary part.
 
@@ -52,27 +52,27 @@ While our focus is not per se on solving polynomials, it turns out that using co
 
 Some examples of adding and multiplying complex numbers follow:
 
-$(3 - i) + (1 + 4i) = 4 - 3i,$
+$$(3 - i) + (1 + 4i) = 4 - 3i,$$
 
 and 
 
-$(-3 + i) \cdot (2 - 4i) = -6 + 12i + 2i -4i^2 = -2 + 14i.$
+$$(-3 + i) \cdot (2 - 4i) = -6 + 12i + 2i -4i^2 = -2 + 14i.$$
 
 The above reveal a different way of seeing complex numbers: one can stack a scalar complex number as a 2-dimensional real vector. *E.g.*, 
 
-$ c = a + bi \in \mathbb{C} \Leftrightarrow c \mapsto (a, b) \in \mathbb{R}^2.$
+$$ c = a + bi \in \mathbb{C} \Leftrightarrow c \mapsto (a, b) \in \mathbb{R}^2.$$
 
 Then, adding and multiplying leads to the following rules:
 
-$(a_1, b_1) + (a_2, b_2) = (a_1 + b_1, a_2 + b_2), $
+$$(a_1, b_1) + (a_2, b_2) = (a_1 + b_1, a_2 + b_2), $$
 
 and 
 
-$(a_1, b_1) \cdot (a_2, b_2) = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1).$
+$$(a_1, b_1) \cdot (a_2, b_2) = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1).$$
 
 This further result to the fundamental representation of $i$:
 
-$ i \in \mathbb{C} \leftrightarrow i \mapsto (0, 1) \in \mathbb{R}^2.$
+$$ i \in \mathbb{C} \leftrightarrow i \mapsto (0, 1) \in \mathbb{R}^2.$$
 
 #### **Properties of scalar complex numbers**
 
@@ -88,16 +88,15 @@ While subtraction of complex numbers is easily inferred by addition, division ne
 
 Starting from parameterizing the result with unknown variables $x, y$:
 
-$(x, y) = \frac{(a_1, b_1)}{(a_2, b_2)},$
+$$(x, y) = \frac{(a_1, b_1)}{(a_2, b_2)},$$
 
 we solve w.r.t. $(x, y)$:
 
-$(a_1, b_1) = (x, y) \cdot (a_2, b_2)$.
+$$(a_1, b_1) = (x, y) \cdot (a_2, b_2)$$.
 
 This leads to a system of two unknowns with two variables, where the solution is given by the following expressions:
 
-$x = \frac{a_1a_2 + b_1b_2}{a_2^2 + b_2^2}, \quad 
-y = \frac{a_2 b_1 - a_1 b_2}{a_2^2 + b_2^2}.$
+$$x = \frac{a_1a_2 + b_1b_2}{a_2^2 + b_2^2}, \quad  y = \frac{a_2 b_1 - a_1 b_2}{a_2^2 + b_2^2}.$$
 
 #### **Magnitude (or modulus or norm) of complex numbers**
 
@@ -116,8 +115,8 @@ $$ |a + ib| := \sqrt{a^2 + b^2},$$
 
 It is easy to verify that, for $c_1, c_2 \in \mathbb{C}$:
 
-* $ |c_1| \cdot |c_2| = |c_1 \cdot c_2|,$
-* $ |c_1 + c_2| \leq |c_1| + |c_2|$ (not so obvious).
+* $|c_1| \cdot |c_2| = |c_1 \cdot c_2|,$
+* $|c_1 + c_2| \leq |c_1| + |c_2|$ (not so obvious).
 
 #### **Changing signs and complex conjugation**
 
