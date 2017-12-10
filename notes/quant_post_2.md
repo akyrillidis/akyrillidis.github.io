@@ -76,9 +76,17 @@ $\left\langle \mathbf{c}_1, x \cdot \mathbf{c}_2 \right \rangle = x \cdot \left\
 
 The above rules naturally generalize to matrix complex spaces $\mathbb{C}^{m \times n}$. Beyond the above:
 
-* Transpose of a : Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its transpose is a matrix $\mathbf{C}^\top \in \mathbb{C}^{n \times m}$, where $(\mathbf{C}^\top)_{jk} = (\mathbf{C})_{kj}$.
-* Conjugate: *Disclaimer: Here, we slightly abuse our notation of conjugation.* Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its conjugate is a matrix $\overline{\mathbf{C}} \in \mathbb{C}^{m \times n}$, where $(\overline{\mathbf{C}})_{jk} = \overline{(\mathbf{C})_{jk}}$.
-* Adjoint: Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its adjoint is a matrix $\mathbf{C}^\dagger\in \mathbb{C}^{n \times m}$, where $(\mathbf{C}^\dagger)_{jk} = \overline{(\mathbf{C})_{kj}}$.
+* Transpose of a : Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its transpose is a matrix $\mathbf{C}^\top \in \mathbb{C}^{n \times m}$, where 
+
+$$(\mathbf{C}^\top)_{jk} = (\mathbf{C})_{kj}$$.
+
+* Conjugate: *Disclaimer: Here, we slightly abuse our notation of conjugation.* Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its conjugate is a matrix $\overline{\mathbf{C}} \in \mathbb{C}^{m \times n}$, where 
+
+$$(\overline{\mathbf{C}})_{jk} = \overline{(\mathbf{C})_{jk}}$$.
+
+* Adjoint: Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its adjoint is a matrix $\mathbf{C}^\dagger\in \mathbb{C}^{n \times m}$, where 
+
+$$(\mathbf{C}^\dagger)_{jk} = \overline{(\mathbf{C})_{kj}}$$.
 
 Some other properties (the following hold also for conjugate operations):
 
@@ -103,7 +111,11 @@ Matrix multiplication satisfies (beyond the standard associative, distributive, 
 * $\overline{\mathbf{A} \cdot \mathbf{B}} = \overline{\mathbf{A}} \cdot \overline{\mathbf{B}}$.
 * $\left(\mathbf{A} \cdot \mathbf{B}\right)^{\dagger} = \mathbf{B}^{\dagger} \cdot \mathbf{A}^{\dagger}$.
 
-Let us consider the square case $\mathbb{C}^{n \times n}$. Then, a matrix $\mathbf{C} \in \mathbb{C}^{n \times n}$ is called Hermitian if $\mathbf{C} = \mathbf{C}^\dagger$; this translates into an entrywise rule that $(\mathbf{C})_{jk} = \overline{(\mathbf{C})_{kj}}$. By definition, the entries on the diagonal of a Hermitian matrix are real. 
+Let us consider the square case $\mathbb{C}^{n \times n}$. Then, a matrix $\mathbf{C} \in \mathbb{C}^{n \times n}$ is called Hermitian if $\mathbf{C} = \mathbf{C}^\dagger$; this translates into an entrywise rule that 
+
+$$(\mathbf{C})_{jk} = \overline{(\mathbf{C})_{kj}}$$. 
+
+By definition, the entries on the diagonal of a Hermitian matrix are real. 
 
 If $\mathbf{C}$ is a Hermitian matrix, then all its eigenvalues are real.
 To see this, let $(\lambda, \mathbf{v})$ be an eigenvalue-eigenvector pair of $\mathbf{C}$. Then:
@@ -152,6 +164,7 @@ And, because unitary matrices preserve inner products, they also preserve norms.
 > $$
 > w_1 \mathbf{c}_1 + w_2 \mathbf{c}_2 + \dots + w_n \mathbf{c}_n = 0,
 > $$
+>
 > implies that $w_i = 0, ~\forall i$.
 
 In other words, any vector on that set cannot be described as a linear combination of the other vectors in that set. 
