@@ -92,54 +92,113 @@ x_{t+1} = x_{t} - \eta B_t^{-1} \nabla f_{i_t}(x_{t}) = x_{t} - \frac{\eta}{(B_t
 $$
 
 
-<!--## Some experiments
+### **Some experiments**
 
+Recently, I started revisiting the zoo of neural network training algorithms 
+(that's the reason of this post: to have it reminding me the performance of each algorithm).
+I will follow both a "modern" and an "ancient" point of view of comparing algorithm. 
+Which are these algorithms and what I mean by "modern and "ancient"?
 
-Recently, I started revisiting the zoo of neural network training algorithms, but from an "ancient" point of view. 
-Which are these algorithms and what I mean by "ancient"?
+#### **"Modern" and "ancient" point of view**
 
-### "Ancient" point of view
 Let me start reverse-wise and explain what I mean by "ancient" point of view. 
 
-Machine learning has evolved over the past 2 decades with great pace, so that many things evolved: Theory became stronger and wider, new algorithms have been developed and new problem settings have emerged.
+Machine learning has evolved over the past 2 decades with great pace, 
+so that many things have been (re)invented and changed: Theory became stronger and wider, 
+new algorithms have been developed, and new problem settings have emerged.
 
-The "ancient" point of view has to do with the last part.
-Writing a paper with just linear regression as an application was ok for research: one could get in NIPS/ICML with some theory + algorithms, and with experiments on real data and boilerplate ordinary least-squares objectives.
-Nowadays, any paper that just has least-squares experiments most probably is going to be criticized as weak since this does not "...mirror current advances and real-world problems"[the last part implies that it is just not neural networks].
+The "modern" vs. "ancient" point of view has to do with the last part.
+Writing a paper with just linear regression as an application was ok for research a decade ago: 
+one could get in NIPS/ICML with some theory + algorithms, and with experiments on real data 
+and boilerplate ordinary least-squares objectives.
+Nowadays, any paper that just has least-squares experiments most probably 
+is going to be criticized as weak since this does not "...mirror current advances 
+and real-world problems". The last part implies in most cases that it is just not neural networks.
 
-Nevertheless, I will here follow a more "ancient" route: I will use linear regression to compare some of the recent algorithms used in neural networks.
+Nevertheless, here, I will follow both "ancient" and "modern" routes: I will use linear/logistic
+regression to compare some of the recent algorithms used in neural networks, since 
+we have to understand the strengths and weaknesses of each algorithm, even for simple settings.
+Later on, I will consider simple settings of neural networks and apply the same algorithms there.
 
-The setting is given in the code below - it is written in Maltab (another deprecated choice but personally I believe Matlab is still at the top for algorithmic protoyping...)
+#### **Well-conditioned linear regression**
 
-### A zoo full of algorithms
+Let $x^\star$ be the unknown vector in $\mathbb{R}^p$, assuming $\|x^\star\|_2 = 1$.
+In standard linear regression, we observe $x^\star$ via the linear mapping:
 
-I finished my Ph.D. when Nesterov acceleration was the method of choice in large-scale optimization, and stochastic algorithms were (almost) just starting to become the norm for machine learning problems.
-
-Since 2010-2011, there are several variants of Gradient Descent/Stochastic Gradient Descent, that have attracted A LOT of attention, mostly due to their reported performance in training neural networks. Here, we will test their ability in simple problems, such as Linear Regression and Logistic Regression.
-The settings are going to be synthetic (random data), but with properties that we can control.
-
-In the discussion below, I assume that you understand this expression:
 $$
-x_{t+1} = x_{t} - \eta \cdot \nabla f(x_{t}).
+y = A x^\star + w,
 $$
 
-Let's start:
+where $A \in \mathbb{R}^{n \times p}$ is the set of features, and $w \in \mathbb{R}^n$ is an additive noise term. 
+For simplicity we can assume that $w$ is i.i.d. according to a Gaussian distribution, with mean zero and standard deviation $\sigma$.
 
-* AdaGrad
+Given the above, the problem we want to solve is:
 
-*Describe algorithm succinctly*
+$$
+\begin{equation} \begin{aligned} \underset{x}{\text{min}} ~F(x) := \sum_{i = 1}^n \frac{1}{2} \left(y_i - a_i^\top x \right)^2 \end{aligned} \end{equation}
+$$
 
-*Describe the setting where the step size increases and maybe then decreases, because G_t is actually <= 1*
+for $a_i^\top$ being the rows of the matrix $A$. 
 
-*Describe that actually you need a parameter to tune - maybe it is less prone to errors than GD or SGD.*
+It is well known that a key component for characterizing the convergence of an algorithm on such problems is the *condition number* $\kappa(F)$ of the problem. By definition, the condition number is the ratio:
 
-*Provide plots for different condition numbers, and different alpha*
+$$
+\kappa(F) = \frac{L(F)}{\mu(F)} := \frac{L}{\mu}.
+$$
 
-* Adagrad with plain Nesterov acceleration
+Here, $L$ is the Lipschitz gradient constant of $F$ and $\mu$ its strong convexity parameter (afterall, we are still in the convex world). The largest the condition number, the harder (=more number of iterations to get a specific error tolerance $\|\widehat{x} - x^\star\|_2 \leq \varepsilon$) the problem is. For the case of least squares, the condition number of the problem is proportional to the condition number of $A^\top A$: 
 
-One of the simplest extensions to algorithms one can have is to rely on Nesterov acceleration: it will most probably give a great boost in your algorithm; the difficult part is to prove that your algorithm:
+$$
+\kappa(A) = \frac{\lambda_{\max}(A^\top A)}{\lambda_{\min}(A^\top A)} = \frac{\sigma_{\max}^2(A)}{\sigma_{\min}^2(A)}.
+$$
 
-1. converges: for some cases, especially in non-convex settings, proving convergence is a major step.
-2. converges faster than the algorithm without the acceleration.
--->
+The setting is given in the code below - it is written in Maltab 
+(another deprecated choice but personally I believe Matlab is still at 
+the top of the list for algorithmic protoyping...).
 
+
+
+```
+%% Problem setting
+p = 50;                           	 % Dimension
+n = 200;                             % Number of measurements
+sigma = 1e-3;                  	     % Noise std
+kappa = 10^2;					  	 % This will vary below.
+log_smin = -1;
+log_smax = log10(sqrt(kappa) * 10^log_smin);
+
+% Generative model
+A = 1/sqrt(n) * randn(n, p);         % Measurement matrix
+[U, ~, V] = svd(A, 'econ');
+S = logspace(log_smin, log_smax, p);
+S = S(end:-1:1); 					 % Force condition number be kappa
+A = U * diag(S) * V';
+
+x_star = randn(p, 1);                % Ground truth
+x_star = x_star./norm(x_star);
+
+w = randn(n, 1);                     % Noise
+w = sigma * w./norm(w); 
+
+y = A*x_star + w;                    % Measurements in y
+```
+
+* AdaGrad vs. plain Gradient Descent with step size $\tfrac{1}{L}$.
+
+For gradient descent, we use the recursion:
+
+$$
+x_{t+1} = x_{t} - \frac{1}{L} \nabla F(x_{t}), 
+$$
+
+and we compare it to:
+
+$$
+x_{t+1} = x_{t} - \frac{\tfrac{1}{L}}{(B_t)_{jj} + \zeta} \odot \nabla F(x_{t}).
+$$
+
+where $\zeta$ is set to a small number (say, $10^{-10}$).
+
+The result looks something like this:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad.pdf)
