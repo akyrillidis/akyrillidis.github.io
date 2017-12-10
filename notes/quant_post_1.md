@@ -152,9 +152,13 @@ We can go back to cartesian coordinates by using:
 $a = \rho \cos(\theta)$ and $b = \rho \sin(\theta)$.
 Thus, a complex number can be written as:
 
-$$c = \rho \cdot (\cos(\theta) + i \sin(\theta))$$,
+$$
+c = \rho \cdot (\cos(\theta) + i \sin(\theta)),
+$$
 
 or using Euler's formula:
 
-$$c = \rho \cdot e^{i\theta}$$.
+$$
+c = \rho \cdot e^{i\theta}.
+$$
 

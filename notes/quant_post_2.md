@@ -4,7 +4,7 @@ fb_comments: 3
 title: Introduction to quantum computing: Complex vector space.
 ---
 
-## Introduction to quantum computing: Complex vector space
+## Introduction to quantum computing: Complex vector space.
 
 > Sources: "Quantum computing for computer scientists", N. Yanofsky and M. Mannucci, Cambridge Press, 2008.
 
@@ -78,15 +78,15 @@ The above rules naturally generalize to matrix complex spaces $\mathbb{C}^{m \ti
 
 * Transpose of a : Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its transpose is a matrix $\mathbf{C}^\top \in \mathbb{C}^{n \times m}$, where 
 
-$$(\mathbf{C}^\top)_{jk} = (\mathbf{C})_{kj}$$.
+$$(\mathbf{C}^\top)\_{jk} = (\mathbf{C})_{kj}$$.
 
 * Conjugate: *Disclaimer: Here, we slightly abuse our notation of conjugation.* Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its conjugate is a matrix $\overline{\mathbf{C}} \in \mathbb{C}^{m \times n}$, where 
 
-$$(\overline{\mathbf{C}})_{jk} = \overline{(\mathbf{C})_{jk}}$$.
+$$(\overline{\mathbf{C}})\_{jk} = \overline{(\mathbf{C})_{jk}}$$.
 
 * Adjoint: Given a matrix $\mathbf{C} \in \mathbb{C}^{m \times n}$, its adjoint is a matrix $\mathbf{C}^\dagger\in \mathbb{C}^{n \times m}$, where 
 
-$$(\mathbf{C}^\dagger)_{jk} = \overline{(\mathbf{C})_{kj}}$$.
+$$(\mathbf{C}^\dagger)\_{jk} = \overline{(\mathbf{C})_{kj}}$$.
 
 Some other properties (the following hold also for conjugate operations):
 
@@ -113,7 +113,7 @@ Matrix multiplication satisfies (beyond the standard associative, distributive, 
 
 Let us consider the square case $\mathbb{C}^{n \times n}$. Then, a matrix $\mathbf{C} \in \mathbb{C}^{n \times n}$ is called Hermitian if $\mathbf{C} = \mathbf{C}^\dagger$; this translates into an entrywise rule that 
 
-$$(\mathbf{C})_{jk} = \overline{(\mathbf{C})_{kj}}$$. 
+$$(\mathbf{C})\_{jk} = \overline{(\mathbf{C})_{kj}}$$. 
 
 By definition, the entries on the diagonal of a Hermitian matrix are real. 
 
