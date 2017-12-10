@@ -160,27 +160,42 @@ the top of the list for algorithmic protoyping...).
 
 ```
 %% Problem setting
-p = 50;								% Dimension
-n = 200;							% Number of measurements
-sigma = 1e-3;						% Noise std
-kappa = 10^2;						% This will vary below.
+
+% Dimension
+p = 50;								
+
+% Number of measurements
+n = 200;							
+
+% Noise std
+sigma = 1e-3;						
+
+% This will vary below.
+kappa = 10^2;						
+
 log_smin = -1;
 log_smax = log10(sqrt(kappa) * 10^log_smin);
 
-% Generative model
-A = 1/sqrt(n) * randn(n, p); 		% Measurement matrix
+% Measurement matrix
+A = 1/sqrt(n) * randn(n, p); 		
 [U, ~, V] = svd(A, 'econ');
+
+% Force condition number be kappa
 S = logspace(log_smin, log_smax, p);
-S = S(end:-1:1);					% Force condition number be kappa
+S = S(end:-1:1);					
+
 A = U * diag(S) * V';
 
-x_star = randn(p, 1);				% Ground truth
+% Ground truth
+x_star = randn(p, 1);				
 x_star = x_star./norm(x_star);
 
-w = randn(n, 1);					% Noise
+% Noise
+w = randn(n, 1);					
 w = sigma * w./norm(w); 
 
-y = A*x_star + w;					% Measurements in y
+% Measurements in y
+y = A*x_star + w;					
 ```
 
 * AdaGrad vs. plain Gradient Descent with step size $\tfrac{1}{L}$.
@@ -201,4 +216,4 @@ where $\zeta$ is set to a small number (say, $10^{-10}$).
 
 The result looks something like this:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad.pdf)
+![alt text](/notes/AdaGrad/GDvsAdaGrad.png)
