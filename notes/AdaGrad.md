@@ -122,7 +122,7 @@ Later on, I will consider simple settings of neural networks and apply the same 
 
 #### **Well-conditioned linear regression**
 
-Let $x^\star$ be the unknown vector in $\mathbb{R}^p$, assuming $\|x^\star\|_2 = 1$.
+Let $x^\star$ be the unknown vector in $\mathbb{R}^p$, assuming $|| x^\star ||_2 = 1$.
 In standard linear regression, we observe $x^\star$ via the linear mapping:
 
 $$
@@ -135,7 +135,7 @@ For simplicity we can assume that $w$ is i.i.d. according to a Gaussian distribu
 Given the above, the problem we want to solve is:
 
 $$
-\begin{equation} \begin{aligned} \underset{x}{\text{min}} ~F(x) := \sum_{i = 1}^n \frac{1}{2} \left(y_i - a_i^\top x \right)^2 \end{aligned} \end{equation}
+\begin{equation} \begin{aligned} \underset{x}{\text{min}} ~\left\{F(x) := \sum_{i = 1}^n \frac{1}{2} \left(y_i - a_i^\top x \right)^2\right\} \end{aligned} \end{equation}
 $$
 
 for $a_i^\top$ being the rows of the matrix $A$. 
@@ -217,3 +217,16 @@ where $\zeta$ is set to a small number (say, $10^{-10}$).
 The result looks something like this:
 
 ![alt text](/notes/AdaGrad/GDvsAdaGrad.png)
+
+Both algorithms start at the same all-zero starting point; AdaGrad diverges the first 
+couple of iterations, but then it "covers" quickly the lost ground.
+There are also cases that plain gradient descent is slightly better than AdaGrad, but overall
+with this step size, $\text{AdaGrad} > \text{Gradient Descent}$.
+
+Let us try another standard step size: $\eta = 0.1$.
+
+> *Selecting step size is one of the most important subroutines in optimization. Claiming that one algorithm is better than another, for a given problem, is a very strong statement: we need to push the boundaries of $\eta$ values, until the point the algorithm starts "harming" itself, and pick that step size as the step size for comparison. Each algorithm has a different range of $\eta$ values that best works for them. However, since this is often an expensive search, people rely on standard selected step sizes, such as $\eta = 0.1$.*
+
+The result looks something like this:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad2.png)
