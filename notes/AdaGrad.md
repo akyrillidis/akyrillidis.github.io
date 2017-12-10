@@ -230,3 +230,11 @@ Let us try another standard step size: $\eta = 0.1$.
 The result looks something like this:
 
 ![alt text](/notes/AdaGrad/GDvsAdaGrad2.png)
+
+This also justifies that AdaGrad is kind-of immune to the $\eta$ selection: after a few iterations, the weights from the gradient calculation in $B$ pay-off.
+
+But, what if we jack up the step size a bit, to find the boundaries of the algorithms. For this particular setting, step size $\eta = 1.9$ works pretty well for gradient descent; step size $\eta \in [0.1, 0.2] $ also works the best for AdaGrad. The result is as follows:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad3.png)
+
+*I.e.*, the secret sauce of AdaGrad is not on necessarily accelerating gradient descent with a better step size selection, but making gradient descent more stable to not-so-good $\eta$ choices.
