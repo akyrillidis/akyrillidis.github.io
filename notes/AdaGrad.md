@@ -258,6 +258,6 @@ For $\eta = 0.1$, we get:
 
 where Gradient Descent diverges (and this is expected since guaranteed convergence is attained if the step size is less than $\approx \frac{2}{L} \approx 2 \cdot 10^{-4}$); and finally:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad6.png){:height="36px" width="36px"}.
+![alt text](/notes/AdaGrad/GDvsAdaGrad6.png){:height="200px" width="200px"}.
 
 for carefully selected step sizes. In the last part, I want to stress out that, for ill-conditioned problems, AdaGrad is not that "immune" of the $\eta$ selection: various $\eta$'s lead to various behaviors, with most of them being inferior of gradient descent, and few of them leading to superior performance.
