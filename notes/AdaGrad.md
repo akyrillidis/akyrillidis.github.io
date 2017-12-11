@@ -149,7 +149,7 @@ $$
 Here, $L$ is the Lipschitz gradient constant of $F$ and $\mu$ its strong convexity parameter (afterall, we are still in the convex world). The largest the condition number, the harder (=more number of iterations to get a specific error tolerance $\|\widehat{x} - x^\star\|_2 \leq \varepsilon$) the problem is. For the case of least squares, the condition number of the problem is proportional to the condition number of $A^\top A$: 
 
 $$
-\kappa(A) = \frac{\lambda_{\max}(A^\top A)}{\lambda_{\min}(A^\top A)} = \frac{\sigma_{\max}^2(A)}{\sigma_{\min}^2(A)}.
+\kappa(A^\top A) = \frac{\lambda_{\max}(A^\top A)}{\lambda_{\min}(A^\top A)} = \frac{\sigma_{\max}^2(A)}{\sigma_{\min}^2(A)}.
 $$
 
 The setting is given in the code below - it is written in Maltab 
@@ -238,3 +238,26 @@ But, what if we jack up the step size a bit, to find the boundaries of the algor
 ![alt text](/notes/AdaGrad/GDvsAdaGrad3.png)
 
 *I.e.*, the secret sauce of AdaGrad is not on necessarily accelerating gradient descent with a better step size selection, but making gradient descent more stable to not-so-good $\eta$ choices.
+
+#### **Ill-conditioned linear regression**
+
+Let us repeat the above experiment for $\kappa(A^\top A)$ much larger.
+
+```
+% New condition number
+kappa = 10^6;						
+```
+
+Following the same steps, for $\eta = \frac{1}{L}$ we get:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad4.png)
+
+For $\eta = 0.1$, we get:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad5.png)
+
+where Gradient Descent diverges (and this is expected since guaranteed convergence is attained if the step size is less than $\approx \frac{2}{L} \approx 2 \cdot 10^{-4}$); and finally:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad6.png)
+
+for carefully selected step sizes. In the last part, I want to stress out that, for ill-conditioned problems, AdaGrad is not that "immune" of the $\eta$ selection: various $\eta$'s lead to various behaviors, with most of them being inferior of gradient descent, and few of them leading to superior performance.
