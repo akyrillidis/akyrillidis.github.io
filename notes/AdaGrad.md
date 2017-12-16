@@ -223,7 +223,7 @@ couple of iterations, but then it "covers" quickly the lost ground.
 There are also cases that plain gradient descent is slightly better than AdaGrad, but overall
 with this step size, $\text{AdaGrad} > \text{Gradient Descent}$.
 
-Let us try another standard step size: $\eta = 0.1$.
+* AdaGrad vs. plain Gradient Descent with step size $\eta = 0.1$.
 
 > *Selecting step size is one of the most important subroutines in optimization. Claiming that one algorithm is better than another, for a given problem, is a very strong statement: we need to push the boundaries of $\eta$ values, until the point the algorithm starts "harming" itself, and pick that step size as the step size for comparison. Each algorithm has a different range of $\eta$ values that best works for them. However, since this is often an expensive search, people rely on standard selected step sizes, such as $\eta = 0.1$.*
 
@@ -233,11 +233,14 @@ The result looks something like this:
 
 This also justifies that AdaGrad is kind-of immune to the $\eta$ selection: after a few iterations, the weights from the gradient calculation in $B$ pay-off.
 
+* AdaGrad vs. plain Gradient Descent with carefully selected step size.
+
 But, what if we jack up the step size a bit, to find the boundaries of the algorithms. For this particular setting, step size $\eta = 1.9$ works pretty well for gradient descent; step size $\eta \in [0.1, 0.2] $ also works the best for AdaGrad. The result is as follows:
 
 ![alt text](/notes/AdaGrad/GDvsAdaGrad3.png)
 
 *I.e.*, the secret sauce of AdaGrad is not on necessarily accelerating gradient descent with a better step size selection, but making gradient descent more stable to not-so-good $\eta$ choices.
+It is important to remember that both plain gradient descent and AdaGrad use the same information per iteration (*i.e.*, the gradient information), which further means that practically there is a step size in gradient descent that can make it (more or less) the same efficient to AdaGrad.
 
 #### **Ill-conditioned linear regression**
 
@@ -261,3 +264,132 @@ where Gradient Descent diverges (and this is expected since guaranteed convergen
 ![alt text](/notes/AdaGrad/GDvsAdaGrad6.png)
 
 for carefully selected step sizes. In the last part, I want to stress out that, for ill-conditioned problems, AdaGrad is not that "immune" of the $\eta$ selection: various $\eta$'s lead to various behaviors, with most of them being inferior of gradient descent, and few of them leading to superior performance.
+
+
+#### **Logistic regression**
+
+So far, we considered a convex --both having Lipschitz continuous gradients and being strongly convex-- problem. 
+A less strict class of functions is that of problems that just satisfy the Lipschitz gradient continuity: dropping strong convexity by itself is (was?) enough to generate a new set of research papers where the algorithms remain more or less the same, but the theory had to change, since we cannot use any more the nice properties of strong convexity.
+A more important consequence is that usually one has to be content with slower rates (it is the difference between sublinear and linear convergence rates).
+
+Let us now compare AdaGrad with Gradient Descent in such a setting.
+The most classical scenario is that of logistic regression: instead of regressing with real values (this is what we do in least-squares: we try to find the solution to a linear problem, by not restricting the output $y$), we have binary or multi-valued outputs, in order to model well the task of classification.
+
+Consider the following setting: let $x^\star$ be the unknown vector in $\mathbb{R}^p$, assuming $|| x^\star ||_2 = 1$.
+In our simplistic logistic regression setting, we observe $x^\star$ via the sequence of linear + non-linear mappings:
+
+$$
+y = \texttt{sign}\left(A x^\star + w\right),
+$$
+
+where $A \in \mathbb{R}^{n \times p}$ is the set of features, and $w \in \mathbb{R}^n$ is an additive noise term. 
+Observe that we no longer observe the output of the linear system per-se: we observe only the signs of that operation, modeling in a way the classication problem of two classes.
+
+One way to model this problem in math is by using the logistic function. Thus:
+
+$$
+\begin{equation} 
+\begin{aligned} 
+	\underset{x}{\text{min}} ~\left\{F(x) := \sum_{i = 1}^n \log \left(1 + e^{-y_i \left(a_i^\top x + b_i\right)}\right)\right\} 
+\end{aligned} 
+\end{equation}
+$$
+
+for $a_i^\top$ being the rows of the matrix $A$, and $b$ being the bias term. 
+
+Globally, over the whole domain, logistic function as defined above has strong convexity paramter $\mu(F) := \mu = 0$. Thus, the condition number of the function in this case is not well-defined. Nevertheless, the condition number of $A^\top A$ still plays important role in the behavior of the algorithms: the bigger the condition number, the more difficult the problem is.
+
+The setting is given in the code below.
+
+
+```
+%% Problem setting
+
+% Dimension
+p = 50;								
+
+% Number of measurements
+n = 200;							
+
+% Noise std
+sigma = 1e-3;						
+
+% This will vary below.
+kappa = 10^2;						
+
+log_smin = -1;
+log_smax = log10(sqrt(kappa) * 10^log_smin);
+
+% Measurement matrix
+A = 1/sqrt(n) * randn(n, p); 		
+[U, ~, V] = svd(A, 'econ');
+
+% Force condition number be kappa
+S = logspace(log_smin, log_smax, p);
+S = S(end:-1:1);					
+
+A = U * diag(S) * V';
+
+% Ground truth
+x_star = randn(p, 1);				
+x_star = x_star./norm(x_star);
+
+% Bias vector
+b = randn(n, 1);                     
+b = 0.1 * b./norm(b); 
+
+% Noise
+w = randn(n, 1);					
+w = sigma * w./norm(w); 
+
+% Measurements in y
+y = sign(A*x_star + b + w); 				
+```
+
+* AdaGrad vs. plain Gradient Descent with step size $\tfrac{1}{L}$.
+
+The story is the same.
+For gradient descent, we use the recursion:
+
+$$
+x_{t+1} = x_{t} - \frac{1}{L} \nabla F(x_{t}), 
+$$
+
+and we compare it to:
+
+$$
+x_{t+1} = x_{t} - \frac{\tfrac{1}{L}}{(B_t)_{jj} + \zeta} \odot \nabla F(x_{t}).
+$$
+
+where $\zeta$ is set to a small number (say, $10^{-10}$).
+
+The result looks something like this:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad_log.png)
+
+Both algorithms start at the same all-zero starting point; overall
+with this step size, in this setting $\text{AdaGrad} < \text{Gradient Descent}$.
+
+* AdaGrad vs. plain Gradient Descent with carefully selected step size.
+
+For a wide range of values (I tried $\eta \in [1, 40]$), the result looks something like this, where as the step size increases, AdaGrad catches-up the performance of Gradient Descent:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad_log2.png)
+
+One can say that AdaGrad and Gradient Descent perform similarly for these cases. 
+
+Repeating the above experiment for $\kappa(A^\top A)$ much larger:
+
+```
+% New condition number
+kappa = 10^6;						
+```
+
+we get for $\eta = \frac{1}{L}$:
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad_log3.png)
+
+When we start jacking-up the step size, Gradient Desccent stops being superior to AdaGrad: the latter better approximates the ill-curvature of the problem, and performs better (the following plot is for $\eta = 10$ and the same behavior is observed when we keep increasing $\eta$):
+
+![alt text](/notes/AdaGrad/GDvsAdaGrad_log4.png)
+
