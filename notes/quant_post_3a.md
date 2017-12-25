@@ -1,4 +1,10 @@
-# Introduction to quantum computing: From classical to quantum (part I)
+---
+layout: page
+fb_comments: 3
+title: Introduction to quantum computing: From classical to quantum (part I).
+---
+
+## Introduction to quantum computing: From classical to quantum (part I).
 
 > Sources: "Quantum computing for computer scientists", N. Yanofsky and M. Mannucci, Cambridge Press, 2008.
 
