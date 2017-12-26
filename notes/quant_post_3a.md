@@ -13,7 +13,7 @@ This is part of a (probably) long list of posts regarding quantum computing. In 
 
 *Disclaimer: while the material below might seem too simple for some scientists, I suggest not skimming over this post - personally, I always enjoy reading something that I believe I own, as επαναληψη μητηρ πασης μαθησεως (repetition is the mother of any knowledge)*
 
-### A rough description of a quantum system
+### **A rough description of a quantum system**
 
 We will start a bit abruptly by defining what a quantum system is. I will try not to use math yet in this first description of a quantum system and its state.
 
@@ -35,11 +35,11 @@ When we say *quantum computing*, we (very very very) roughly mean that:
 
 <sup>1</sup> This reminds me of an excellent saying/quote I read in a CS book: *"Recipe for the best dragon soup: first, find a dragon..."*.
 
-### The analogy with the dynamics of a graph
+### **The analogy with the dynamics of a graph**
 
 Here, following the book of Yanofsky and Mannucci, we make the analogy between a quantum system and the evolution of a Markov chain in action over a graph.
 
-#### Probabilistic system
+#### **Probabilistic system**
 Let us borrow the following example from [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain#Example).
 Consider the following state diagram. 
 
@@ -122,7 +122,7 @@ Overall:
 * Operation matrices are interconnected with the actual dynamics of the system (how we change from one state to another).
 * Operations can be simulated as sequential matrix multiplications.
 
-### Complex probabilistic system
+### **Complex probabilistic system**
 
 Now, let us make a further step towads quantum systems.
 Quantum states are represented as complex vectors. While in the graph analogy, states are real vectors, with entries representing probabilities that sum up to one, in quantum systems, states are complex vectors, where the *sum of modulus values squared sum up to one*.

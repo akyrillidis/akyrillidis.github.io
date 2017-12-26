@@ -21,11 +21,11 @@ This is part of a (probably) long list of posts regarding quantum computing. In 
 This post follows the perspective in Feynman's lecture:
 > *"We cannot make the mystery go away by “explaining” how it works. We will just tell you how it works. In telling you how it works we will have told you about the basic peculiarities of all quantum mechanics."*
 
-### The double-slit experiment - simplified version
+### **The double-slit experiment - simplified version**
 
 Here, we will describe a simplified version of the double-slit experiment - we will make an effort to describe the physical phenomenon of the double-slit experiment later on in the text.
 
-#### Macroscopic world: The archery analog
+#### **Macroscopic world: The archery analog**
 
 Let us make the following hypothetical scenario. 
 An archer throws arrows over a wall with two slits that are far apart.
@@ -85,7 +85,7 @@ $$
 Important observation for our discussion below is that the arrow might get to the node 5 with probability $\tfrac{1}{3}$: half comes from the positibility the arrow to pass the upper slit and the other half from the lower slit.
 
 
-#### Microscopic world: The photon analog
+#### **Microscopic world: The photon analog**
 
 Let us re-describe the experiment in the microspopic world. Instead of archers and arrows, we have a photon generator and photon packets. The experiment is very similar, where we still have two slits on a wall and (abstractly) 5 detectors behind the wall.
 
@@ -143,6 +143,6 @@ Quoting Yanofsky and Mannucci:
 
 >It is exactly this superposition of states that is the real power behind quantum computing. Classical computers are in one state at every moment. Imagine putting a computer in many different classical states simultaneously and then processing with all the states at once. This is the ultimate in parallel processing! Such a computer can only be conceived of in the quantum world.
 
-#### Some links about the true double-slit experiment
+#### **Some links about the true double-slit experiment**
 
 I strongly recommend watching the [PBS video](https://www.youtube.com/watch?v=p-MNSLsjjdo) on double-slit experiment and what it means.
