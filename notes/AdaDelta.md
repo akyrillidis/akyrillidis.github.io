@@ -173,7 +173,7 @@ The result looks something like this:
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest1.png)
 
 All algorithms start at the same all-zero starting point.
-While AdaGrad and GD perform similarly with fast convergence rate, AdaDelta has slow convergence and does not achieve a distance $\|\hat{x} - x^\star\|_2$ less than $10^{-1}$. Inspecting the intermediate weights, for suggested initial conditions $\mathbb{E}[g^2]_0 = \mathbb{E}[\Delta x^2]_0 = 0$, we observed that often the gradient might have small (in magnitude) entries, and, thus, with a parameter $\rho$ close to one, forces the term $-\frac{\sqrt{\mathbb{E}[\Delta x^2]_t + \varepsilon}}{\sqrt{\mathbb{E}[g^2]_t + \varepsilon}} \odot \nabla f_{i_t}(x_{t})$ be small and with equal weights. This, in turn, makes $\mathbb{E}[\Delta x^2]_t$ not vary much, leading to overall slow convergence.
+While AdaGrad and GD perform similarly with fast convergence rate, AdaDelta has slow convergence and does not achieve a distance $||\hat{x} - x^\star ||_2$ less than $10^{-1}$. Inspecting the intermediate weights, for suggested initial conditions $\mathbb{E}[g^2]_0 = \mathbb{E}[\Delta x^2]_0 = 0$, we observed that often the gradient might have small (in magnitude) entries, and, thus, with a parameter $\rho$ close to one, forces the term $-\frac{\sqrt{\mathbb{E}[\Delta x^2]_t + \varepsilon}}{\sqrt{\mathbb{E}[g^2]_t + \varepsilon}} \odot \nabla f_{i_t}(x_{t})$ be small and with equal weights. This, in turn, makes $\mathbb{E}[\Delta x^2]_t$ not vary much, leading to overall slow convergence.
 
 Actually, even if we set $\rho = 0$ (no running average), the result looks often like:
 
@@ -187,7 +187,7 @@ but also to:
 
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest4.png)
 
-Since still $\mathbb{E}[g^2]_t$ and $\mathbb{E}[\Delta x_t^2]_t$ remain constant, we will make sure when this happens to *restart* the procedure. *I.e.*, we check when $\|\mathbb{E}[g^2]_t - \mathbb{E}[g^2]_{t-1}\|_2$ or $\|\mathbb{E}[\Delta x_t^2]_t - \mathbb{E}[\Delta x_{t-1}^2]_{t-1}\|_2$ are small; in that case, we reset $\mathbb{E}[g^2]_0 \in [0, 1]^p $ and $\mathbb{E}[\Delta x^2]_0 \in [0, 1]^p$. We use as closeness parameter $10^{-3}$. In the worst case, the result looks like:
+Since still $\mathbb{E}[g^2]_t$ and $\mathbb{E}[\Delta x_t^2]_t$ remain constant, we will make sure when this happens to *restart* the procedure. *I.e.*, we check when $||\mathbb{E}[g^2]_t - \mathbb{E}[g^2]_{t-1}||_2$ or $||\mathbb{E}[\Delta x_t^2]_t - \mathbb{E}[\Delta x_{t-1}^2]_{t-1}||_2$ are small; in that case, we reset $\mathbb{E}[g^2]_0 \in [0, 1]^p $ and $\mathbb{E}[\Delta x^2]_0 \in [0, 1]^p$. We use as closeness parameter $10^{-3}$. In the worst case, the result looks like:
 
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest5.png)
 
@@ -195,13 +195,13 @@ Since still $\mathbb{E}[g^2]_t$ and $\mathbb{E}[\Delta x_t^2]_t$ remain constant
 
 * AdaDelta vs. AdaGrad vs. plain Gradient Descent with step size $\eta = 0.1$.
 
-Let us first rename AdaDelta with random initialization as \texttt{AdaDelta + RI}, and AdaDelta with random initialization and restart as \texttt{AdaDelta + RI + R}.
+Let us first rename AdaDelta with random initialization as $\texttt{AdaDelta + RI}$, and AdaDelta with random initialization and restart as $\texttt{AdaDelta + RI + R}$.
 
 The result looks something like this:
 
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest6.png)
 
-Remember, there are always runs of the code where \texttt{AdaDelta + RI} does not converge.
+Remember, there are always runs of the code where $\texttt{AdaDelta + RI}$ does not converge.
 
 * AdaDelta vs. AdaGrad vs. plain Gradient Descent with carefully selected step size.
 
