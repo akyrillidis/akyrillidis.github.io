@@ -146,7 +146,7 @@ $$
 \kappa(F) = \frac{L(F)}{\mu(F)} := \frac{L}{\mu}.
 $$
 
-Here, $L$ is the Lipschitz gradient constant of $F$ and $\mu$ its strong convexity parameter (afterall, we are still in the convex world). The largest the condition number, the harder (=more number of iterations to get a specific error tolerance $\| \widehat{x} - x^\star \|\_2 \leq \varepsilon$) the problem is. For the case of least squares, the condition number of the problem is proportional to the condition number of $A^\top A$: 
+Here, $L$ is the Lipschitz gradient constant of $F$ and $\mu$ its strong convexity parameter (afterall, we are still in the convex world). The largest the condition number, the harder (=more number of iterations to get a specific error tolerance $| \widehat{x} - x^\star |_2 \leq \varepsilon$) the problem is. For the case of least squares, the condition number of the problem is proportional to the condition number of $A^\top A$: 
 
 $$
 \kappa(A^\top A) = \frac{\lambda_{\max}(A^\top A)}{\lambda_{\min}(A^\top A)} = \frac{\sigma_{\max}^2(A)}{\sigma_{\min}^2(A)}.
