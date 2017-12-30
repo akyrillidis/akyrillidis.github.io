@@ -157,7 +157,6 @@ The setting is given in the code below - it is written in Maltab
 the top of the list for algorithmic protoyping...).
 
 
-
 ```
 %% Problem setting
 
