@@ -393,3 +393,7 @@ When we start jacking-up the step size, Gradient Desccent stops being superior t
 
 ![alt text](/notes/AdaGrad/GDvsAdaGrad_log4.png)
 
+
+#### **Feedforward Neural Network (FNN) training**
+
+To be written...
