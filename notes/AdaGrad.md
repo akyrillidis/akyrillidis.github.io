@@ -198,7 +198,7 @@ w = sigma * w./norm(w);
 y = A*x_star + w;					
 ```
 
-* AdaGrad vs. plain Gradient Descent with step size $\tfrac{1}{L}$.
+* AdaDelta vs. AdaGrad vs. plain Gradient Descent with step size $\tfrac{1}{L}$.
 
 For gradient descent, we use the recursion:
 
