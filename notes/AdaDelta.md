@@ -98,7 +98,7 @@ $$
 \kappa(F) = \frac{L(F)}{\mu(F)} := \frac{L}{\mu}.
 $$
 
-Here, $L$ is the Lipschitz gradient constant of $F$ and $\mu$ its strong convexity parameter (afterall, we are still in the convex world). The largest the condition number, the harder (=more number of iterations to get a specific error tolerance $\|\widehat{x} - x^\star\|_2 \leq \varepsilon$) the problem is. For the case of least squares, the condition number of the problem is proportional to the condition number of $A^\top A$: 
+Here, $L$ is the Lipschitz gradient constant of $F$ and $\mu$ its strong convexity parameter (afterall, we are still in the convex world). The largest the condition number, the harder (=more number of iterations to get a specific error tolerance $|| \widehat{x} - x^\star ||_2 \leq \varepsilon$) the problem is. For the case of least squares, the condition number of the problem is proportional to the condition number of $A^\top A$: 
 
 $$
 \kappa(A^\top A) = \frac{\lambda_{\max}(A^\top A)}{\lambda_{\min}(A^\top A)} = \frac{\sigma_{\max}^2(A)}{\sigma_{\min}^2(A)}.
@@ -173,7 +173,7 @@ The result looks something like this:
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest1.png)
 
 All algorithms start at the same all-zero starting point.
-While AdaGrad and GD perform similarly with fast convergence rate, AdaDelta has slow convergence and does not achieve a distance $||\hat{x} - x^\star ||_2$ less than $10^{-1}$. Inspecting the intermediate weights, for suggested initial conditions $\mathbb{E}[g^2]_0 = \mathbb{E}[\Delta x^2]_0 = 0$, we observed that often the gradient might have small (in magnitude) entries, and, thus, with a parameter $\rho$ close to one, forces the term $-\frac{\sqrt{\mathbb{E}[\Delta x^2]_t + \varepsilon}}{\sqrt{\mathbb{E}[g^2]_t + \varepsilon}} \odot \nabla f_{i_t}(x_{t})$ be small and with equal weights. This, in turn, makes $\mathbb{E}[\Delta x^2]_t$ not vary much, leading to overall slow convergence.
+While AdaGrad and GD perform similarly with fast convergence rate, AdaDelta has slow convergence and does not achieve a distance $|| \hat{x} - x^\star ||_2$ less than $10^{-1}$. Inspecting the intermediate weights, for suggested initial conditions $\mathbb{E}[g^2]_0 = \mathbb{E}[\Delta x^2]_0 = 0$, we observed that often the gradient might have small (in magnitude) entries, and, thus, with a parameter $\rho$ close to one, forces the term $-\frac{\sqrt{\mathbb{E}[\Delta x^2]_t + \varepsilon}}{\sqrt{\mathbb{E}[g^2]_t + \varepsilon}} \odot \nabla f_{i_t}(x_{t})$ be small and with equal weights. This, in turn, makes $\mathbb{E}[\Delta x^2]_t$ not vary much, leading to overall slow convergence.
 
 Actually, even if we set $\rho = 0$ (no running average), the result looks often like:
 
@@ -187,7 +187,7 @@ but also to:
 
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest4.png)
 
-Since still $\mathbb{E}[g^2]_t$ and $\mathbb{E}[\Delta x_t^2]_t$ remain constant, we will make sure when this happens to *restart* the procedure. *I.e.*, we check when $||\mathbb{E}[g^2]_t - \mathbb{E}[g^2]_{t-1}||_2$ or $||\mathbb{E}[\Delta x_t^2]_t - \mathbb{E}[\Delta x_{t-1}^2]_{t-1}||_2$ are small; in that case, we reset $\mathbb{E}[g^2]_0 \in [0, 1]^p $ and $\mathbb{E}[\Delta x^2]_0 \in [0, 1]^p$. We use as closeness parameter $10^{-3}$. In the worst case, the result looks like:
+Since still $\mathbb{E}[g^2]_t$ and $\mathbb{E}[\Delta x_t^2]_t$ remain constant, we will make sure when this happens to *restart* the procedure. *I.e.*, we check when $|| \mathbb{E}[g^2]_t - \mathbb{E}[g^2]_{t-1} ||_2$ or $|| \mathbb{E}[\Delta x_t^2]_t - \mathbb{E}[\Delta x_{t-1}^2]_{t-1} ||_2$ are small; in that case, we reset $\mathbb{E}[g^2]_0 \in [0, 1]^p $ and $\mathbb{E}[\Delta x^2]_0 \in [0, 1]^p$. We use as closeness parameter $10^{-3}$. In the worst case, the result looks like:
 
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest5.png)
 
