@@ -93,30 +93,55 @@ $$
 
 Some properties:
 
-* $$\langle \varphi |^\dagger = | \varphi \rangle$ and $| \varphi \rangle^\dagger = \langle \varphi |$$.
+* 
+
+$$\langle \varphi |^\dagger = | \varphi \rangle$ and $| \varphi \rangle^\dagger = \langle \varphi |$$.
+
 * Bras and kets can added: if 
+
 $| \mathbf{\psi} \rangle = c_0 |\mathbf{x}_0 \rangle + c_1 |\mathbf{x}_1 \rangle + \dots + c_{n-1} |\mathbf{x}_{n-1} \rangle$ 
+
 and 
+
 $| \mathbf{\psi}' \rangle = c_0' |\mathbf{x}_0 \rangle + c_1' |\mathbf{x}_1 \rangle + \dots + c_{n-1}' |\mathbf{x}_{n-1} \rangle$, 
+
 then 
+
 $| \mathbf{\psi} \rangle + | \mathbf{\psi}' \rangle = \left(c_0 + c_0'\right) |\mathbf{x}_0 \rangle + \left(c_1 + c_1'\right)|\mathbf{x}_1 \rangle + \dots + \left(c_{n-1} + c_{n-1}'\right)|\mathbf{x}_{n-1} \rangle$.
+
 * Bras and kets can be multiplied by scalars (not shown here).
 
 #### **Transition amplitudes**
 
-To close this chapter, we will introduce the notion of transition amplitudes. Assume we have a collection of kets that form a basis in $\mathbb{C}^n$: *e.g.*, $\left\{ |\mathbf{b}_0 \rangle, \dots |\mathbf{b}_{n-1} \rangle \right\}$. Then, any ket in $\mathbb{C}^n$ can be written as a linear combination of these basis vectors:
+To close this chapter, we will introduce the notion of transition amplitudes. 
+Assume we have a collection of kets that form a basis in $\mathbb{C}^n$: *e.g.*, 
+$\left\{ |\mathbf{b}_0 \rangle, \dots |\mathbf{b}_{n-1} \rangle \right\}$. 
+Then, any ket in $\mathbb{C}^n$ can be written as a linear combination of these basis vectors:
 
 $$
 |\mathbf{\psi} \rangle = c_0 | \mathbf{b}_0 \rangle + \dots + c_{n-1} |\mathbf{b}_{n-1} \rangle.
 $$
 
-*(In our discussion so far, we used the coordinate bases where $| \mathbf{b}_i \rangle = |\mathbf{x}_i \rangle$, with the latter having 1 in the $i$-th position, and the rest are zeros)*
+*(In our discussion so far, we used the coordinate bases where 
+$| \mathbf{b}_i \rangle = |\mathbf{x}_i \rangle$, 
+with the latter having 1 in the $i$-th position, and the rest are zeros)*
 
-When we *observe* the state $| \mathbf{\psi} \rangle$, then the following scheme happens:
+When we *observe* the state 
+$| \mathbf{\psi} \rangle$, 
+then the following scheme happens:
 
 ![Transition amplitudes](/notes/quant_4/transition.png)
 
-Here, the state, after measuring/observing, ends in any of the basis states $| \mathbf{b}_i \rangle$, where the probability is given by (assuming appropriate normalization): $|c_i|^2$. The transition from $|\mathbf{\psi} \rangle $ to $| \mathbf{b}_i \rangle$ is denoted by the inner product $\langle \mathbf{b}_i | \mathbf{\psi} \rangle$.
+Here, the state, after measuring/observing, ends in any of the basis states 
+$| \mathbf{b}_i \rangle$, 
+where the probability is given by (assuming appropriate normalization): 
+$|c_i|^2$. 
+The transition from 
+$|\mathbf{\psi} \rangle $ 
+to 
+$| \mathbf{b}_i \rangle$ 
+is denoted by the inner product 
+$\langle \mathbf{b}_i | \mathbf{\psi} \rangle$.
 
 To wrap it up:
 
@@ -128,9 +153,17 @@ To wrap it up:
 
 What we have discussed so far is the collection of states a system could be at. Observables correspond to the physical quantities that can be observed in each state of the state space.
 
->Each observable may be thought of as a specific question we pose to the system: assuming it is in state $|\mathbf{\psi} \rangle$, what values/quantities can we possible observe?
+>Each observable may be thought of as a specific question we pose to the system: 
+>assuming it is in state 
+>$|\mathbf{\psi} \rangle$, what values/quantities can we possible observe?
 
-An observable corresponds to an linear operator: given a state $| \mathbf{\psi} \rangle \in \mathbb{C}^n$, let us define an observable $\mathbf{\Omega} \in \mathbb{C}^{n \times n}$. The action of the observable is denoted as $\mathbf{\Omega} | \mathbf{\psi} \rangle$ and it is by itself a state. 
+An observable corresponds to an linear operator: given a state 
+$| \mathbf{\psi} \rangle \in \mathbb{C}^n$, 
+let us define an observable 
+$\mathbf{\Omega} \in \mathbb{C}^{n \times n}$. 
+The action of the observable is denoted as 
+$\mathbf{\Omega} | \mathbf{\psi} \rangle$ 
+and it is by itself a state. 
 
 In quantum mechanics, each observable-linear operator is hermitian. We know that each hermitian matrix has real eigenvalues. Then, the eigenvalues of an observable are the only possible values the observable can take, as a result of measuring it on a given state.
 In other words, given a state and assuming the observable is seen as a question made, the eigenvalues of the observable are the possible answers.
@@ -169,7 +202,17 @@ Here, $h$ is the reduced Planck constant; in our discussion, it can be safely ig
 These operators are also known as the Pauli operators and play a key role in quantum state tomography. 
 Each of these matrices are equipped with an orthonormal basis (eigenbasis) and the corresponding eigenvalues (eigenstates).
 
-By definition, for a hermitian matrix $\mathbf{\Omega}$ and a state $| \mathbf{\psi} \rangle$, the quantity $\langle \mathbf{\psi} | \mathbf{\Omega} | \mathbf{\psi} \rangle$ is real. Let us denote this number as: $\langle \mathbf{\Omega} \rangle_{\mathbf{\psi}}$, and it will denote the expected value of observing $\mathbf{\Omega}$ repeatedly on the same state $\mathbf{\psi}$.
+By definition, for a hermitian matrix 
+$\mathbf{\Omega}$ 
+and a state 
+$| \mathbf{\psi} \rangle$, 
+the quantity 
+$\langle \mathbf{\psi} | \mathbf{\Omega} | \mathbf{\psi} \rangle$ 
+is real. Let us denote this number as: 
+$\langle \mathbf{\Omega} \rangle_{\mathbf{\psi}}$, 
+and it will denote the expected value of observing 
+$\mathbf{\Omega}$ 
+repeatedly on the same state $\mathbf{\psi}$.
 
 Let us conduct an experiment: assume we have a quantum system at a state $|\mathbf{\psi} \rangle$. We want to observe the value of an observable $\mathbf{\Omega}$. Assume the eigenvalues of $\mathbf{\Omega}$: $\lambda_0, \dots, \lambda_{n-1}$. By definition, we will observe one of its eigenvalues. Let us now repeat this experiment $m$ times. At the end of the experiment, we will observe each $\lambda_i$, $p_i$ times, such that $\sum_{i = 1}^n p_i = m$. 
 If we compute:
