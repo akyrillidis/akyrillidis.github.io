@@ -104,7 +104,7 @@ Bras and kets can be multiplied by scalars (not shown here).
 
 To close this chapter, we will introduce the notion of transition amplitudes. 
 Assume we have a collection of kets that form a basis in $\mathbb{C}^n$: *e.g.*, 
-$\left\{ |\mathbf{b}_0 \rangle, \dots |\mathbf{b}_{n-1} \rangle \right\}$. 
+$\{ |\mathbf{b}_0 \rangle, \dots |\mathbf{b}_{n-1} \rangle \}$. 
 Then, any ket in $\mathbb{C}^n$ can be written as a linear combination of these basis 
 vectors:
 
