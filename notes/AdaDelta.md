@@ -174,7 +174,10 @@ The result looks something like this:
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest1.png)
 
 All algorithms start at the same all-zero starting point.
-While AdaGrad and GD perform similarly with fast convergence rate, AdaDelta has slow convergence and does not achieve a distance $\hat{x} - x^\star$ less than $10^{-1}$. Inspecting the intermediate weights, for suggested initial conditions $\mathbb{E}[g^2]_0 = \mathbb{E}[\Delta x^2]_0 = 0$, we observed that often the gradient might have small (in magnitude) entries, and, thus, with a parameter $\rho$ close to one, forces the term $-\frac{\sqrt{\mathbb{E}[\Delta x^2]_t + \varepsilon}}{\sqrt{\mathbb{E}[g^2]_t + \varepsilon}} \odot \nabla f_{i_t}(x_{t})$ be small and with equal weights. This, in turn, makes $\mathbb{E}[\Delta x^2]_t$ not vary much, leading to overall slow convergence.
+While AdaGrad and GD perform similarly with fast convergence rate, AdaDelta has 
+slow convergence and does not achieve a distance $\hat{x} - x^\star$ less than $10^{-1}$. 
+Inspecting the intermediate weights, for suggested initial conditions $\mathbb{E}[g^2]\_0 = \mathbb{E}[\Delta x^2]\_0 = 0$, 
+we observed that often the gradient might have small (in magnitude) entries, and, thus, with a parameter $\rho$ close to one, forces the term $-\frac{\sqrt{\mathbb{E}[\Delta x^2]_t + \varepsilon}}{\sqrt{\mathbb{E}[g^2]_t + \varepsilon}} \odot \nabla f_{i_t}(x_{t})$ be small and with equal weights. This, in turn, makes $\mathbb{E}[\Delta x^2]_t$ not vary much, leading to overall slow convergence.
 
 Actually, even if we set $\rho = 0$ (no running average), the result looks often like:
 
