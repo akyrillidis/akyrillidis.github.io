@@ -5,7 +5,7 @@ title: Introduction to quantum computing: From classical to quantum (part II).
 ---
 
 
-## Introduction to quantum computing: From classical to quantum (part II).
+## **Introduction to quantum computing: From classical to quantum (part II).**
 
 > Sources: 
 > 
