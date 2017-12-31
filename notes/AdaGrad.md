@@ -148,7 +148,7 @@ $$
 
 Here, $L$ is the Lipschitz gradient constant of $F$ and $\mu$ its strong convexity parameter (afterall, we are still in the convex world). 
 The largest the condition number, the harder (=more number of iterations to get a specific error tolerance 
-$|| \widehat{x} - x^\star ||^2 \leq \varepsilon$
+$|| \widehat{x} - x^\star ||_2 \leq \varepsilon$
 ) the problem is. For the case of least squares, 
 the condition number of the problem is proportional to the condition number of $A^\top A$: 
 
