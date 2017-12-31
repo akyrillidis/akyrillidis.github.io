@@ -37,7 +37,7 @@ $$
 From the classical mechanics perspective, this is what we all need in order to explain a "system" like the above: we can characterize in the macroscopic world the state where the particle lies exactly, by observing it!
 However, the same does not hold for the microscopic quantum world: we need to define all posible combinations of states as possible states!
 
-In particular, let $ | \mathbf{\psi} \rangle $ be an arbitrary state, *that can be described as a linear combination of all the above states*. For suitable known complex weights $c_0, c_1, \dots, c_{n-1}$, $| \mathbf{\psi} \rangle$ can be written as:
+In particular, let $$ | \mathbf{\psi} \rangle $$ be an arbitrary state, *that can be described as a linear combination of all the above states*. For suitable known complex weights $c_0, c_1, \dots, c_{n-1}$, $| \mathbf{\psi} \rangle$ can be written as:
 
 $$
 | \mathbf{\psi} \rangle = c_0 |\mathbf{x}_0 \rangle + 
