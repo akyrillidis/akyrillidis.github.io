@@ -92,20 +92,13 @@ $$
 $$
 
 Some properties:
-
-1. 
-
-$$\langle \varphi |^\dagger = | \varphi \rangle$ and $| \varphi \rangle^\dagger = \langle \varphi |$$.
-
-2. Bras and kets can added: if 
+$\langle \varphi |^\dagger = | \varphi \rangle$ and $| \varphi \rangle^\dagger = \langle \varphi |$;
+Bras and kets can added: if 
 $| \mathbf{\psi} \rangle = c_0 |\mathbf{x}_0 \rangle + c_1 |\mathbf{x}_1 \rangle + \dots + c_{n-1} |\mathbf{x}_{n-1} \rangle$ 
-
-3.
 $| \mathbf{\psi}' \rangle = c_0' |\mathbf{x}_0 \rangle + c_1' |\mathbf{x}_1 \rangle + \dots + c_{n-1}' |\mathbf{x}_{n-1} \rangle$, 
 then 
-$| \mathbf{\psi} \rangle + | \mathbf{\psi}' \rangle = \left(c_0 + c_0'\right) |\mathbf{x}_0 \rangle + \left(c_1 + c_1'\right)|\mathbf{x}_1 \rangle + \dots + \left(c_{n-1} + c_{n-1}'\right)|\mathbf{x}_{n-1} \rangle$.
-
-4. Bras and kets can be multiplied by scalars (not shown here).
+$| \mathbf{\psi} \rangle + | \mathbf{\psi}' \rangle = \left(c_0 + c_0'\right) |\mathbf{x}_0 \rangle + \left(c_1 + c_1'\right)|\mathbf{x}_1 \rangle + \dots + \left(c_{n-1} + c_{n-1}'\right)|\mathbf{x}_{n-1} \rangle$;
+Bras and kets can be multiplied by scalars (not shown here).
 
 #### **Transition amplitudes**
 
