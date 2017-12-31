@@ -94,10 +94,10 @@ $$
 Some properties:
 $\langle \varphi |^\dagger = | \varphi \rangle$ and $| \varphi \rangle^\dagger = \langle \varphi |$;
 Bras and kets can added: if 
-$| \mathbf{\psi} \rangle = c_0 |\mathbf{x}_0 \rangle + c_1 |\mathbf{x}_1 \rangle + \dots + c_{n-1} |\mathbf{x}_{n-1} \rangle$ 
-$| \mathbf{\psi}' \rangle = c_0' |\mathbf{x}_0 \rangle + c_1' |\mathbf{x}_1 \rangle + \dots + c_{n-1}' |\mathbf{x}_{n-1} \rangle$, 
+$| \mathbf{\psi} \rangle = c\_0 |\mathbf{x}\_0 \rangle + c\_1 |\mathbf{x}\_1 \rangle + \dots + c\_{n-1} |\mathbf{x}\_{n-1} \rangle$ 
+$| \mathbf{\psi}' \rangle = c\_0' |\mathbf{x}\_0 \rangle + c\_1' |\mathbf{x}\_1 \rangle + \dots + c\_{n-1}' |\mathbf{x}\_{n-1} \rangle$, 
 then 
-$| \mathbf{\psi} \rangle + | \mathbf{\psi}' \rangle = \left(c_0 + c_0'\right) |\mathbf{x}_0 \rangle + \left(c_1 + c_1'\right)|\mathbf{x}_1 \rangle + \dots + \left(c_{n-1} + c_{n-1}'\right)|\mathbf{x}_{n-1} \rangle$;
+$| \mathbf{\psi} \rangle + | \mathbf{\psi}' \rangle = \left(c\_0 + c\_0'\right) |\mathbf{x}\_0 \rangle + \left(c\_1 + c\_1'\right)|\mathbf{x}\_1 \rangle + \dots + \left(c\_{n-1} + c\_{n-1}'\right)|\mathbf{x}\_{n-1} \rangle$;
 Bras and kets can be multiplied by scalars (not shown here).
 
 #### **Transition amplitudes**
