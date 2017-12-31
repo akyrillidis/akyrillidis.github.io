@@ -48,9 +48,15 @@ $$
 
 In this case, given that we know the "basis" w.r.t. $\mathbf{x}_i$'s, we can represent the state 
 $|\mathbf{\psi} \rangle$ 
-by just knowing the coefficients $c_i$. This state is in *superposition* of all the basic states $| \mathbf{x}_i \rangle$. You can say that $| \mathbf{\psi} \rangle$ lies on all states simultaneously; however, when we observe it, the state will collapse to one of the basic states. Which state? The one selected with probability $\tfrac{|c_i|^2}{\| | \mathbf{\psi} \rangle \|_2}$, for some $i$. In other words, the (normalized) modulus squares of the complex numbers $c_i$ play the role of the probabilities of the state being collapsed to that basic state.
+by just knowing the coefficients $c_i$. This state is in *superposition* of all 
+the basic states $| \mathbf{x}_i \rangle$. You can say that 
+$| \mathbf{\psi} \rangle$ 
+lies on all states simultaneously; however, when we observe it, the state will collapse to one of the basic states. 
+Which state? The one selected with probability $\tfrac{|c_i|^2}{\| | \mathbf{\psi} \rangle \|_2}$, for some $i$. In other words, the (normalized) modulus squares of the complex numbers $c_i$ play the role of the probabilities of the state being collapsed to that basic state.
 
-It is basic to remember that by the time we observe $| \mathbf{\psi} \rangle$, it collapses to that state.
+It is basic to remember that by the time we observe 
+$| \mathbf{\psi} \rangle$, 
+it collapses to that state.
 
 #### **Some facts about the bra-ket notation**
 
