@@ -69,7 +69,7 @@ The AdaGrad algorithm is just a variant of preconditioned stochastic gradient de
 In particular, $B_t$ is selected to be a *diagonal* preconditioner matrix and is updated using the stochastic gradient information, as follows:
 
 $$
-B_t := \texttt{diag}\left(\sum_{j = 1}^j \nabla f_{i_j}(x_{j}) \cdot \nabla f_{i_j}(x_{j})^\top \right)^{1/2};
+B_t := \texttt{diag}\left(\sum_{j = 1}^t \nabla f_{i_j}(x_{j}) \cdot \nabla f_{i_j}(x_{j})^\top \right)^{1/2};
 $$
 
 *i.e.*, it is the diagonal approximation of the inverse of the square roots of gradient outer products, until the $t$-th iteration. 
