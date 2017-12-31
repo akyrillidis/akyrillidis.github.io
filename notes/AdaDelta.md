@@ -193,7 +193,13 @@ but also to:
 
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest4.png)
 
-Since still $\mathbb{E}[g^2]_t$ and $\mathbb{E}[\Delta x_t^2]_t$ remain constant, we will make sure when this happens to *restart* the procedure. *I.e.*, we check when the distances $\mathbb{E}[g^2]_t - \mathbb{E}[g^2]_{t-1}$ or $\mathbb{E}[\Delta x_t^2]_t - \mathbb{E}[\Delta x_{t-1}^2]_{t-1}$ are small; in that case, we reset $\mathbb{E}[g^2]_0 \in [0, 1]^p $ and $\mathbb{E}[\Delta x^2]_0 \in [0, 1]^p$. We use as closeness parameter $10^{-3}$. In the worst case, the result looks like:
+Since still $\mathbb{E}[g^2]\_t$ and $\mathbb{E}[\Delta x_t^2]\_t$ remain constant, 
+we will make sure when this happens to *restart* the procedure. *I.e.*, we check 
+when the distances $\mathbb{E}[g^2]\_t - \mathbb{E}[g^2]\_{t-1}$ or 
+$\mathbb{E}[\Delta x_t^2]\_t - \mathbb{E}[\Delta x_{t-1}^2]\_{t-1}$ 
+are small; in that case, we reset $\mathbb{E}[g^2]\_0 \in [0, 1]^p $ 
+and $\mathbb{E}[\Delta x^2]\_0 \in [0, 1]^p$. We use as closeness parameter $10^{-3}$. 
+In the worst case, the result looks like:
 
 ![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest5.png)
 
