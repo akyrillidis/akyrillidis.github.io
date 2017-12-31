@@ -104,7 +104,7 @@ Bras and kets can be multiplied by scalars (not shown here).
 
 To close this chapter, we will introduce the notion of transition amplitudes. 
 Assume we have a collection of kets that form a basis in $\mathbb{C}^n$: *e.g.*, 
-$\left\{ |\mathbf{b}_0 \rangle, \dots |\mathbf{b}_{n-1} \rangle \right\}$. 
+$\left\{ |\mathbf{b}\_0 \rangle, \dots |\mathbf{b}\_{n-1} \rangle \right\}$. 
 Then, any ket in $\mathbb{C}^n$ can be written as a linear combination of these basis vectors:
 
 $$
@@ -216,21 +216,58 @@ As we defined the *mean/expected* value of an observable, one can define the var
 
 ### **Measurements**
 
-So far, we discussed about asking questions to the system, which are translated as hermitian operators applied on quantum states. The act of measuring is about *asking a question and receiving a definite answer* (you can see it as building our discussion one module at a time).
+So far, we discussed about asking questions to the system, which are translated as 
+hermitian operators applied on quantum states. The act of measuring is about 
+*asking a question and receiving a definite answer* (you can see it as building our 
+discussion one module at a time).
 
-So far, through observables, we can only assume that one of the eigenvalues will be the result of an observable (but internally in the system - we never discussed about actually *seeing* one of these eigenvalues...). Further, even for this case, we are not sure which of the eigenvalues we will observe (we can compute expected values and variances of each observable). Finally, our framework so far does not tell us anything about what happens if we actually observe the eigenvalues.
+So far, through observables, we can only assume that one of the eigenvalues will be 
+the result of an observable (but internally in the system - we never discussed about 
+actually *seeing* one of these eigenvalues...). Further, even for this case, we are 
+not sure which of the eigenvalues we will observe (we can compute expected values 
+and variances of each observable). Finally, our framework so far does not tell 
+us anything about what happens if we actually observe the eigenvalues.
 
-In contrast to the macroscopic world, quantum systems do get perturbed and modified by the time we measure them. Further, only the probability of observing specific values can be calculated. 
+In contrast to the macroscopic world, quantum systems do get perturbed and modified 
+by the time we measure them. Further, only the probability of observing specific 
+values can be calculated. 
 
-It turns out that the following holds: Let $\mathbf{\Omega}$ be an observable and $| \mathbf{\psi} \rangle$ be a state of the system. If the result of measuring $\mathbf{\Omega}$ is its eigenvalue $\lambda$, then the state, after the measurement, has collapsed to the eigenvector of $\mathbf{\Omega}$ that corresponds to the eigenvalue $\lambda$. The probability that we will "land" (as the next state) to the specific eigenvector $|\mathbf{e} \rangle$ is given by $| \langle \mathbf{e}_i | \mathbf{\psi} \rangle |^2$ (*i.e*, the projection between the two vectors).
+It turns out that the following holds: Let 
+$\mathbf{\Omega}$ 
+be an observable and 
+$| \mathbf{\psi} \rangle$ 
+be a state of the system. If the result of measuring 
+$\mathbf{\Omega}$ 
+is its eigenvalue $\lambda$, then the state, after the measurement, has 
+collapsed to the eigenvector of $\mathbf{\Omega}$ that corresponds to 
+the eigenvalue $\lambda$. The probability that we will "land" 
+(as the next state) to the specific eigenvector 
+$|\mathbf{e} \rangle$ 
+is given by 
+$| \langle \mathbf{e}_i | \mathbf{\psi} \rangle |^2$ 
+(*i.e*, the projection between the two vectors).
 
-To close this section, we would like to note that the order we apply the observables matters. Assume that we are at a state $|\mathbf{\psi} \rangle$ and we ask a specific question (=observable). We get as an answer the eigenvalue $\lambda$. Also, by our discussion so far, the system will collapse to the corresponding eigenvector. Assume now that we re-ask the same question. What would then happen? The answer will still be $\lambda$, since the current state (=eigenvector of the observable) is orthogonal to all eigenvectors, except itself. Now, how do we get out of this state? By asking a different question (=observable). Asking many questions in a different order might lead to different intermediate and final states.
+To close this section, we would like to note that the order we apply the observables 
+matters. Assume that we are at a state 
+$|\mathbf{\psi} \rangle$ 
+and we ask a specific question (=observable). We get as an answer the eigenvalue 
+$\lambda$. Also, by our discussion so far, the system will collapse to the 
+corresponding eigenvector. Assume now that we re-ask the same question. 
+What would then happen? The answer will still be $\lambda$, since the 
+current state (=eigenvector of the observable) is orthogonal to all 
+eigenvectors, except itself. Now, how do we get out of this state? 
+By asking a different question (=observable). Asking many questions 
+in a different order might lead to different intermediate and final states.
 
 ### **Dynamics of a quantum system**
 
 Let us introduce the notion of time in a quantum system, through the sequence of operators we apply to it. We will represent the evolution of a quantum system over time through unitary transformations (*Note: could be also hermitian operators; however, we differentiate the notion of observables from the notion of evolution of a quantum system*).
 
-Just to give an example: if our system lies at state $|\mathbf{\psi}_t \rangle$ at the time $t$ and at state $|\mathbf{\psi}_{t+1} \rangle$ at the time $t+1$, this transition can be described as:
+Just to give an example: if our system lies at state 
+$|\mathbf{\psi}\_t \rangle$ 
+at the time $t$ and at state 
+$|\mathbf{\psi}_{t+1} \rangle$ 
+at the time $t+1$, this transition can be described as:
 
 $$
 |\mathbf{\psi}_{t+1} \rangle = \mathbf{U} |\mathbf{\psi}_{t} \rangle
@@ -243,7 +280,11 @@ The difference between observables and generic unitary transformations is that t
 * the product of two unitary matrices is always unitary (in any order);
 * the inverse of a unitary matrix is unitary.
 
-These proporties are important because they allow "traversing" the quantum system states over time. That is, we can apply sequentially $\mathbf{U}_0 | \mathbf{\psi} \rangle, ~\mathbf{U}_1 \mathbf{U}_0 | \mathbf{\psi} \rangle, \dots, ~\prod_{i = 0}^t \mathbf{U}_i | \mathbf{\psi} \rangle$ to get the evolution. Key property of unitary transformations is that they *preserve the energy of the quantum system*. 
+These proporties are important because they allow "traversing" the quantum system 
+states over time. That is, we can apply sequentially 
+$\mathbf{U}\_0 | \mathbf{\psi} \rangle, ~\mathbf{U}\_1 \mathbf{U}\_0 | \mathbf{\psi} \rangle, \dots, ~\prod\_{i = 0}^t \mathbf{U}\_i | \mathbf{\psi} \rangle$ 
+to get the evolution. Key property of unitary transformations is that they 
+*preserve the energy of the quantum system*. 
 
 Let us revisit the (very very very) rough description of quantum computing: we start at a state and we apply a sequence of carefully selected unitary transformations that (somehow) reflects the algorithm we want to implement. Then, when we are done, we measure the output to get the final state. 
 
