@@ -60,7 +60,18 @@ it collapses to that state.
 
 #### **Some facts about the bra-ket notation**
 
-The bra-ket notation is (more or less) the quantum-mechanics-way to describe vectors and inner products of vectors. Let $ \langle \mathbf{\varphi} |$ and $| \mathbf{\psi} \rangle $ be two vectors in $\mathbb{C}^n$. The difference between the two vectors is the orientation: $| \mathbf{\psi} \rangle $ is called the *ket* and represents column vectors; $ \langle \mathbf{\varphi} |$ is called the *bra* and represents a Hermitian conjugate of a ket, and thus it is a row vector.
+The bra-ket notation is (more or less) the quantum-mechanics-way to describe vectors 
+and inner products of vectors. Let 
+$ \langle \mathbf{\varphi} |$ 
+and 
+$| \mathbf{\psi} \rangle $ 
+be two vectors in $\mathbb{C}^n$. The difference between the two vectors is the 
+orientation: 
+$| \mathbf{\psi} \rangle $ 
+is called the *ket* and represents column vectors; 
+$ \langle \mathbf{\varphi} |$ 
+is called the *bra* and represents a Hermitian conjugate of a ket, and thus it 
+is a row vector.
 
 The standard notation for inner product in the bra-ket notation is:
 
@@ -82,8 +93,13 @@ $$
 
 Some properties:
 
-* $\langle \varphi |^\dagger = | \varphi \rangle$ and $| \varphi \rangle^\dagger = \langle \varphi |$.
-* Bras and kets can added: if $| \mathbf{\psi} \rangle = c_0 |\mathbf{x}_0 \rangle + c_1 |\mathbf{x}_1 \rangle + \dots + c_{n-1} |\mathbf{x}_{n-1} \rangle$ and $| \mathbf{\psi}' \rangle = c_0' |\mathbf{x}_0 \rangle + c_1' |\mathbf{x}_1 \rangle + \dots + c_{n-1}' |\mathbf{x}_{n-1} \rangle$, then $| \mathbf{\psi} \rangle + | \mathbf{\psi}' \rangle = \left(c_0 + c_0'\right) |\mathbf{x}_0 \rangle + \left(c_1 + c_1'\right)|\mathbf{x}_1 \rangle + \dots + \left(c_{n-1} + c_{n-1}'\right)|\mathbf{x}_{n-1} \rangle$.
+* $$\langle \varphi |^\dagger = | \varphi \rangle$ and $| \varphi \rangle^\dagger = \langle \varphi |$$.
+* Bras and kets can added: if 
+$| \mathbf{\psi} \rangle = c_0 |\mathbf{x}_0 \rangle + c_1 |\mathbf{x}_1 \rangle + \dots + c_{n-1} |\mathbf{x}_{n-1} \rangle$ 
+and 
+$| \mathbf{\psi}' \rangle = c_0' |\mathbf{x}_0 \rangle + c_1' |\mathbf{x}_1 \rangle + \dots + c_{n-1}' |\mathbf{x}_{n-1} \rangle$, 
+then 
+$| \mathbf{\psi} \rangle + | \mathbf{\psi}' \rangle = \left(c_0 + c_0'\right) |\mathbf{x}_0 \rangle + \left(c_1 + c_1'\right)|\mathbf{x}_1 \rangle + \dots + \left(c_{n-1} + c_{n-1}'\right)|\mathbf{x}_{n-1} \rangle$.
 * Bras and kets can be multiplied by scalars (not shown here).
 
 #### **Transition amplitudes**
