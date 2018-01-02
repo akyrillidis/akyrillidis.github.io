@@ -40,6 +40,7 @@ $$
 \vdots \\
 | \mathbf{x}_{n-1} \rangle \otimes | \mathbf{y}_{m-1} \rangle.
 $$
+
 Ηere, $| \mathbf{x}_i \rangle \otimes | \mathbf{y}_j \rangle $ means that the first particle is in state $i$  of $\mathcal{X}$ and the second particle is in state $j$ of $\mathcal{Y}$.
 
 Using all possible combinations, we can write down the state of two particles as a superposition of basic states such as:
