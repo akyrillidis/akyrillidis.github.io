@@ -41,7 +41,12 @@ $$
 | \mathbf{x}_{n-1} \rangle \otimes | \mathbf{y}_{m-1} \rangle.
 $$
 
-Ηere, $| \mathbf{x}_i \rangle \otimes | \mathbf{y}_j \rangle $ means that the first particle is in state $i$  of $\mathcal{X}$ and the second particle is in state $j$ of $\mathcal{Y}$.
+Ηere, 
+$| \mathbf{x}_i \rangle \otimes | \mathbf{y}_j \rangle $ 
+means that the first particle is in state $i$  of 
+$\mathcal{X}$ 
+and the second particle is in state $j$ of 
+$\mathcal{Y}$.
 
 Using all possible combinations, we can write down the state of two particles as a superposition of basic states such as:
 
@@ -49,7 +54,9 @@ $$
 | \mathbf{\psi} \rangle = c_{0, 0} \cdot | \mathbf{x}_0 \rangle \otimes | \mathbf{y}_0 \rangle + \cdots + c_{n-1, m-1} \cdot | \mathbf{x}_{n-1} \rangle \otimes | \mathbf{y}_{m-1} \rangle.
 $$
 
-As an example, consider $n = m = 2$ and assume that we can describe the state $| \mathbf{\psi} \rangle$ as:
+As an example, consider $n = m = 2$ and assume that we can describe the state 
+$| \mathbf{\psi} \rangle$ 
+as:
 
 $$
 | \mathbf{\psi} \rangle = i \cdot | \mathbf{x}_0 \rangle \otimes | \mathbf{y}_0 \rangle + (1-i) \cdot | \mathbf{x}_0 \rangle \otimes | \mathbf{y}_1 \rangle + 2 \cdot | \mathbf{x}_1 \rangle \otimes | \mathbf{y}_0 \rangle + (-1 -i) \cdot | \mathbf{x}_1 \rangle \otimes | \mathbf{y}_1 \rangle.
@@ -93,7 +100,9 @@ $$
  c_0 c_0' \cdot | \mathbf{x}_0 \rangle \otimes | \mathbf{y}_0 \rangle + c_0 c_1' \cdot | \mathbf{x}_0 \rangle \otimes | \mathbf{y}_1 \rangle + c_1 c_0' \cdot | \mathbf{x}_1 \rangle \otimes | \mathbf{y}_0 \rangle + c_1 c_1' \cdot | \mathbf{x}_1 \rangle \otimes | \mathbf{y}_1 \rangle.
 $$
 
-We need to choose the coefficients in order to create $| \mathbf{\psi} \rangle$. However, this means that $c_0 c_0' = c_1 c_1' = 1$ and $c_0 c_1' = c_1 c_0' = 0$. These two equations have no solution: *we cannot use the basic states and the tensor product to generate the state*. In this case, we say that the two particles are *entangled*.
+We need to choose the coefficients in order to create 
+$| \mathbf{\psi} \rangle$. 
+However, this means that $c_0 c_0' = c_1 c_1' = 1$ and $c_0 c_1' = c_1 c_0' = 0$. These two equations have no solution: *we cannot use the basic states and the tensor product to generate the state*. In this case, we say that the two particles are *entangled*.
 
 To see what it means in practice, let us consider the following: Assume we measure the first particle and we find it in position $\mathbf{x}_0$. Can we use this information to infer the state of the other particle? Yes! We can see that the component $|\mathbf{x}_0 \rangle \otimes | \mathbf{y}_1 \rangle$ has coefficient 0 in the expression of the state of the two particles. This means that, if we found first particle in $\mathbf{x}_0$, we will find the second particle in state $\mathbf{y}_0$.
 The surprising fact is that the two particles could be light years away and we can still infer the state of the individual particles by observing one of them!
