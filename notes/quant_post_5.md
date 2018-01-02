@@ -62,7 +62,9 @@ $$
 | \mathbf{\psi} \rangle = i \cdot | \mathbf{x}_0 \rangle \otimes | \mathbf{y}_0 \rangle + (1-i) \cdot | \mathbf{x}_0 \rangle \otimes | \mathbf{y}_1 \rangle + 2 \cdot | \mathbf{x}_1 \rangle \otimes | \mathbf{y}_0 \rangle + (-1 -i) \cdot | \mathbf{x}_1 \rangle \otimes | \mathbf{y}_1 \rangle.
 $$
 
-Then, we can compute the probability of being at the state $| \mathbf{x}_1 \rangle \otimes | \mathbf{y}_1 \rangle$ as:
+Then, we can compute the probability of being at the state 
+$| \mathbf{x}_1 \rangle \otimes | \mathbf{y}_1 \rangle$
+ as:
 
 $$
 \mathbb{P}[| \mathbf{x}_1 \rangle \otimes | \mathbf{y}_1 \rangle] = \frac{| -1 - i|^2}{|i|^2 + |1 - i|^2 + |2|^2 + |-1 - i|^2} = 0.2222.
