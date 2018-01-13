@@ -40,7 +40,7 @@ $$
 where $r_i$ are the amplitudes and $\varphi_i$ are the angles. 
 Thus, each individual number $c_i$ can be represented with a unit imaginary circle.
 
-![Imaginary circle](/notes/quant_7/imagcircle.jpg)
+![Imaginary circle](/notes/quant_7/imagcircle.jpg | width=50)
 
 Thus, given we have two components $c_i$, one can conclude that we have 4 unknowns (2 phases and 2 amplitudes) that uniquely determine components.
 Using the above, our state can be re-written as:
