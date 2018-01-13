@@ -34,7 +34,7 @@ However, the arrow, given that passes through one of the slits, can hit at most 
 
 The above can be described via the following transition diagram.
 
-![Arrow state diagram](/notes/quant_3b/MarkovChain1.png)
+![Arrow state diagram](/notes/quant_3b/MarkovChain1.png){:height="50%" width="50%" align="center"}
 
 Here, node 0 is where the archer is; nodes 1 and 2 are the two slits on the wall (the archer every time passes an arrow through the slits - which slit is not certain but has 50% possibility); nodes 3-7 are the targets, with assigned probabilities that the arrow will end on each target.
 
@@ -91,7 +91,7 @@ Let us re-describe the experiment in the microspopic world. Instead of archers a
 
 The major change we will make is the transition probabilities from one node to the other: we will assume that the probabilities are computed as the modulus of complex numbers. The graph is as follows:
 
-![Photon state diagram](/notes/quant_3b/MarkovChain2.png)
+![Photon state diagram](/notes/quant_3b/MarkovChain2.png){:height="50%" width="50%" align="center"}
 
 As an example, the modulus squared of $\tfrac{1}{\sqrt{2}}$ is $\tfrac{1}{2}$, which corresponds to the fact that there is half probability that the photon will pass through either slit. Similarly, one can figure out what the other "probabilities" correspond to.
 

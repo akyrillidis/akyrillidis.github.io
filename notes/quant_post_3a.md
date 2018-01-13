@@ -43,7 +43,7 @@ Here, following the book of Yanofsky and Mannucci, we make the analogy between a
 Let us borrow the following example from [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain#Example).
 Consider the following state diagram. 
 
-![Dynamics of stock market](/notes/quant_3a/MarkovChain1.png)
+![Dynamics of stock market](/notes/quant_3a/MarkovChain1.png){:height="50%" width="50%" align="center"}
 
 The states represent whether a hypothetical stock market is exhibiting a bull market, bear market, or stagnant market trend during a given week. According to the figure, a bull week is followed by another bull week 90% of the time, a bear week 7.5% of the time, and a stagnant week the other 2.5% of the time. 
 
@@ -150,7 +150,7 @@ However, if we add the two events $c_k = c_i + c_j$, the corresponding "probabil
 
 Let's consider an example; see the following transition graph.
 
-![Dynamics of quantum graph](/notes/quant_3a/MarkovChain2.png)
+![Dynamics of quantum graph](/notes/quant_3a/MarkovChain2.png){:height="50%" width="50%" align="center"}
 
 Consider a graph with 3 nodes and a transition matrix as follows:
 

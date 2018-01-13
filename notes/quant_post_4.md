@@ -21,7 +21,7 @@ This is part of a (probably) long list of posts regarding quantum computing. In 
 Let us introduce the following simplistic scenario.
 Consider a line with discrete points as possible positions of particles. See for example:
 
-![Particles on a line](/notes/quant_4/line.png)
+![Particles on a line](/notes/quant_4/line.png){:height="50%" width="50%" align="center"}
 
 Each position (bold dot) on the line corresponds to a state of the particle (let's say that the particle "lies" in one/some of these states).
 The particple being in state $\mathbf{x}_i$ is going to be denoted with the Dirac *ket* notation (*no worries, it is nothing but a different way to define vectors in space*): $|\mathbf{x}_i \rangle$.
@@ -121,7 +121,7 @@ When we *observe* the state
 $| \mathbf{\psi} \rangle$, 
 then the following scheme happens:
 
-![Transition amplitudes](/notes/quant_4/transition.png)
+![Transition amplitudes](/notes/quant_4/transition.png){:height="50%" width="50%" align="center"}
 
 Here, the state, after measuring/observing, ends in any of the basis states 
 $| \mathbf{b}_i \rangle$, 
