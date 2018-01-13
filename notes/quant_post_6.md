@@ -76,7 +76,7 @@ $|c_0|^2 + |c_1|^2 = 1$.
 Remember that while $|c_i|^2$ represents probability, when we measure 
 the quantum bit, it "collapses" to a classical bit. We visualize this as:
 
-![Qubit collapse to bit](/notes/quant_6/collapse.png)
+![Qubit collapse to bit](/notes/quant_6/collapse.png){:height="50%" width="50%" align="center"}
 
 Observe that, before measuring it, any qubit can be written as a linear 
 combination of classical bits:
@@ -163,7 +163,7 @@ Also, gates in parallel can be represented as kronecker products of matrices.
 
 As an example consider the following sequence of gates:
 
-![Sequence of gates](/notes/quant_6/gatesequence.png)
+![Sequence of gates](/notes/quant_6/gatesequence.png){:height="50%" width="50%" align="center"}
 
 This can be described as OR(NOT, AND).
 Let us first compute the parallel set of gates NOT and AND.
@@ -226,7 +226,7 @@ quantum computing; purely quantum gates will be described later on.
 The controlled-NOT gate takes two inputs and gives back two outputs.
 The schematic representation of it is as follows:
 
-![Controlled-NOT gate](/notes/quant_6/controllednot.png)
+![Controlled-NOT gate](/notes/quant_6/controllednot.png){:height="50%" width="50%" align="center"}
 
 This gate operates as follows: the top input goes through the gate as it is, 
 and we observe it at the output.
@@ -246,7 +246,7 @@ The Toffoli gate is similar to the controlled-NOT gate, but has
 three input signals, two of which "decide" about the output of the 
 last input. Its schema is as follows:
 
-![Toffoli gate](/notes/quant_6/toffoli.png)
+![Toffoli gate](/notes/quant_6/toffoli.png){:height="50%" width="50%" align="center"}
 
 Here, the bottom signal flips *only* if both the top two inputs are equal to 
 $|1\rangle$.
@@ -260,7 +260,7 @@ itself is known to be an universal gate).
 Another universal gate is the Fredkin gate.
 Similar to the Toffoli gate, this gate has three inputs and three outputs:
 
-![Fredkin gate](/notes/quant_6/fredkin.png)
+![Fredkin gate](/notes/quant_6/fredkin.png){:height="50%" width="50%" align="center"}
 
 Only the top input operates as a controller: if it is 
 $|0\rangle$, 
