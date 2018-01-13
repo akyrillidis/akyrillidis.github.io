@@ -83,7 +83,7 @@ The above result into the *Bloch sphere representation*, named after Felix Bloch
 This representaiton is a unit 2-sphere, where at the north and south poles lie two mutually 
 This representation has a nice geometric perspective:
 
-![Bloch sphere](/notes/quant_7/bloch.png)
+![Bloch sphere](/notes/quant_7/bloch.png){:height="50%" width="50%" align="center"}
 
 Due to equivalent representations of states via the Bloch diagram, any state can be written as:
 $$
