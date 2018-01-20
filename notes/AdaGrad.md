@@ -397,7 +397,7 @@ When we start jacking-up the step size, Gradient Desccent stops being superior t
 ![alt text](/notes/AdaGrad/GDvsAdaGrad_log4.png)
 
 
-#### **Feedforward Neural Network (FNN) training**
+#### **Feedforward Neural Network (FNN) training - MNIST**
 
 Here, we consider a small feed forward neural network arcitecture.
 The task is the classical MNIST classification problem. 
