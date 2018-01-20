@@ -399,4 +399,116 @@ When we start jacking-up the step size, Gradient Desccent stops being superior t
 
 #### **Feedforward Neural Network (FNN) training**
 
-To be written...
+Here, we consider a small feed forward neural network arcitecture.
+The task is the classical MNIST classification problem. 
+The setting is pretty much well-known and standard (specs of dataset, size of training/validation/testing sets, etc.), so we will skip that part; for more information see [here](http://yann.lecun.com/exdb/mnist/).
+
+The network architecture includes three hidden layers with ReLU activation functions.
+
+* The input is 
+$ 28 \times 28 $ 
+images of digits in the range 
+$\{0, \dots, 9\}$. 
+As usual, we flatten out the inputs into a $784$-dimensional vector.
+* The first layer takes as input $784$-dimensional vectors (say, 
+$\beta \in \mathbb{R}^{784}$), 
+multiplies it with a *variable* weight vector $W_1$ of dimension 
+$784 \times 384$ 
+(say, 
+$W_1 \in \mathbb{R}^{384 \times 784}$), 
+and adds a *variable* bias term of size $384$ (say, 
+$b_1 \in \mathbb{R}^{384}$). 
+Finally, the result is passed through a entry-wise ReLU function 
+$g_1: \mathbb{R}^{384} \rightarrow \mathbb{R}^{384}$ 
+such that: 
+
+$$
+(g_1(y))_i = \max\{y_i, 0 \}.
+$$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alltogether this leads to: 
+
+$$
+z_1 = g_1(W_1 \beta + b_1) \in \mathbb{R}^{384}.
+$$
+
+* The second layer is no different than the first layer: the input is the $384$-dimensional vector created in the previous layer, the output is further squeezed to a $256$-dimensional vector.
+The idea is similar: we define a --different-- *variable* weight matrix 
+$W_2 \in \mathbb{R}^{256 \times 384}$, 
+a --different-- *variable* bias variable 
+$b_2 \in \mathbb{R}^{256}$, 
+and the final output satisfies:
+
+$$
+z_2 = g_2(W_2 z_1 + b_2) \in \mathbb{R}^{256}.
+$$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe that $g_1$ is identical to $g_2$, but now we have a different sized input vector.
+
+* The third layer is similar to the above: The input is a $256$-dimensional vector, the output is a $10$-dimensional vector (= number of classes to classify). We define again a -different-- *variable* weight vector 
+$W_3 \in \mathbb{R}^{10 \times 256}$ 
+and a --different-- *variable* bias vector 
+$b_3 \in \mathbb{R}^{10}$. 
+The final layer includes no ReLU functions, but the output is passed through a softmax function. The softmax function operates as a probability distribution "creator", giving highest probabilities to the largest entries of the $10$-dimensional vector:
+
+$$
+\hat{y}_i = \texttt{softmax}_i(z_3) = \frac{e^{(z_3)_i}}{\sum_j e^{(z_3)_j}}, ~~\text{where}~ z_3 = W_3 z_2 + b_3.
+$$
+
+The final objective over the unknown *variables* 
+$x := \{W_1, W_2, W_3, b_1, b_2, b_3\}$
+is the cross-entropy objective. 
+In particular, denoting our dataset with $\beta_i$s (these are the $n$ training images), and the corresponding labels with $y_i$s (these are encoded as $10$-dimensional, one-hot vectors, with $1$ at the corresponding class, and the rest zero), we have:
+
+$$
+\underset{x}{min} ~\left[\tfrac{1}{n} \cdot \sum_{i=1}^n f_i(x; \{\beta_i, y_i\})\right] = \underset{x}{min} ~\left[\tfrac{1}{n} \cdot \sum_{i=1}^n \sum_{j = 1}^{10} -(y_i)_j \log \left(\hat{y}_i(x; \beta_i)\right)_j\right].
+$$
+
+Given the above simplistic network, and its objective, we test the efficiency of AdaGrad versus:
+
+* Plain stochastic gradient descent with constant step size:
+
+$$
+x_{t+1} = x_{t} - \eta \nabla f_{i_t}(x_{t}).
+$$
+
+* Stochastic gradient descent with Nesterov momentum:
+
+$$
+x_{t+1} = q_{t} - \eta \nabla f_{i_t}(q_{t}),\\
+q_{t+1} = x_{t+1} + \mu (x_{t+1} - x_{t})
+$$
+
+
+and for settings where:
+
+* The batch size (*i.e.*, we talked above for a single input 
+$\beta \in \mathbb{R}^{784}$; 
+now think of an input of size 
+$\mathbb{R}^{784 \times B}$, 
+where $B$ is the batch size). We consider $B = 1000$ (relatively small batch size) and $B = 50000$ (full batch). We also plot the case of SGD with a small batch size $B = 50$.
+* The step size is set constant to $\eta = 0.25$ for AdaGrad, $\eta = 0.25$ for SGD with Nesterov momentum, and $\eta = 0.5$ for SGD. These values were selected after checking several values for this hyperparameter. We try not to be conservative (thereby, the increased step size compared to the classical $\eta = 0.1$); at the same time, we want a relatively stable performance over different realizations.
+* By realizations, we mean mostly the initialization of parameters, as well as the randomness of shuffling the input dataset. For the former, we use standard random initialization (using truncated normal distributions).
+* We use no other regularization techniques. Our purpose is to test algorithms on the simplest objective scenaria to understand their power; thus, we are not interested in state of the art test error performance.
+
+The results look like the following; the same behavior has been observed over several runs of the same code. The vertical axis represents accuracy error on the testing set; the horizontal axis shows the actual gradient calculations required.
+
+![FNN with adagrad](/notes/AdaGrad/FNN_adagrad.gif)
+
+The algorithms are encoded as:
+
+* AdaGrad2: $B = 1000$
+* AdaGrad3: $B = 50000$
+* Nesterov2: $B = 1000$
+* Nesterov3: $B = 50000$
+* SGD1: $B = 50$
+* SGD2: $B = 1000$
+* (Neglect SGD1/.)  
+
+Some comments:
+
+* SGD and SGD with momentum seems to work quite efficiently without adaptive techniques: constant step size, and classic routines for momentum seem to be robust. We will continue working along these lines in the future posts also.
+* Adagrad has a good performance; nevertheless, there is no clear advantage compared to SGD2, when we set $B = 1000$ for both cases.
+* We observe that large batch training can be beneficial: while AdaGrad3 has a slow convergence, Nesterov3 seems to achieve a very good performance: while slower, it is more stable (there are no blurred "ups-downs" - remember the plot is smoothed). On the contrary, methods with smaller batches have a lot of "jumps".
+* Introducing momentum in Adagrad might be interesting; this will lead us to algorithms like Adam and RMSProp.
+
