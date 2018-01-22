@@ -491,7 +491,7 @@ where $B$ is the batch size). We consider $B = 1000$ (relatively small batch siz
 * By realizations, we mean mostly the initialization of parameters, as well as the randomness of shuffling the input dataset. For the former, we use standard random initialization (using truncated normal distributions).
 * We use no other regularization techniques. Our purpose is to test algorithms on the simplest objective scenaria to understand their power; thus, we are not interested in state of the art test error performance.
 
-The results look like the following; the same behavior has been observed over several runs of the same code. The vertical axis represents accuracy error on the testing set; the horizontal axis shows the actual gradient calculations required.
+The results look like the following; the same behavior has been observed over several runs of the same code. The vertical axis represents accuracy error on the training/validation set; the horizontal axis shows the actual gradient calculations required.
 
 ![FNN with adagrad](/notes/AdaGrad/FNN_adagrad.gif)
 
