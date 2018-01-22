@@ -172,7 +172,7 @@ For AdaDelta, according to the [source paper](https://arxiv.org/abs/1212.5701), 
 
 The result looks something like this:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest1.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest1.png){:height="50%" width="50%" align="center"}
 
 All algorithms start at the same all-zero starting point.
 While AdaGrad and GD perform similarly with fast convergence rate, AdaDelta has 
@@ -186,15 +186,15 @@ be small and with equal weights. This, in turn, makes $\mathbb{E}[\Delta x^2]\_t
 
 Actually, even if we set $\rho = 0$ (no running average), the result looks often like:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest2.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest2.png){:height="50%" width="50%" align="center"}
 
 Let us try to modify AdaDelta a bit: it will be apparent that often "innocent" parameters or choices lead to tremendous differences. First, let's see whether changing the current initialization $\mathbb{E}[g^2]_0 = \mathbb{E}[\Delta x^2]_0 = 0$ will change things: we force $\mathbb{E}[g^2]_0 \in [0, 1]^p $ and $\mathbb{E}[\Delta x^2]_0 \in [0, 1]^p$, randomly chosen. Fortunately, this might lead to (keeping $\rho = 0.95$):
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest3.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest3.png){:height="50%" width="50%" align="center"}
 
 but also to:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest4.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest4.png){:height="50%" width="50%" align="center"}
 
 Since still $\mathbb{E}[g^2]\_t$ and $\mathbb{E}[\Delta x_t^2]\_t$ remain constant, 
 we will make sure when this happens to *restart* the procedure. *I.e.*, we check 
@@ -205,7 +205,7 @@ are small; in that case, we reset $\mathbb{E}[g^2]\_0 \in [0, 1]^p $
 and $\mathbb{E}[\Delta x^2]\_0 \in [0, 1]^p$. We use as closeness parameter $10^{-3}$. 
 In the worst case, the result looks like:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest5.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest5.png){:height="50%" width="50%" align="center"}
 
 *I.e.*, the algorithm had three failling initializations, while the last initialization led to faster convergence. 
 
@@ -215,7 +215,7 @@ Let us first rename AdaDelta with random initialization as $\texttt{AdaDelta + R
 
 The result looks something like this:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest6.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest6.png){:height="50%" width="50%" align="center"}
 
 Remember, there are always runs of the code where $\texttt{AdaDelta + RI}$ does not converge.
 
@@ -234,11 +234,11 @@ kappa = 10^6;
 
 Following the same steps, for $\eta = \frac{1}{L}$ we get:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest7.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest7.png){:height="50%" width="50%" align="center"}
 
 For $\eta = 0.1$, we get:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest8.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest8.png){:height="50%" width="50%" align="center"}
 
 where Adagrad and AdaDelta still converge (with the latter being faster) and GD diverging.
 
@@ -248,11 +248,11 @@ Overall, for ill-conditioned problems, random initialization and restarts were u
 
 Almost similar behavior was observed for the case of logistic regression. Let us assume for all cases that the step size for GD and AdaGrad is $\frac{1}{L}$. For condition number of the measurement matric $\kappa = 10^2$, we get:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest9.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest9.png){:height="50%" width="50%" align="center"}
 
 The surprising behavior is for ill-conditioned where $\kappa = 10^6$. We observe:
 
-![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest10.png)
+![AdaDelta behavior](/notes/AdaDelta/AdaDeltavsRest10.png){:height="50%" width="50%" align="center"}
 
 #### **Feedforward Neural Network (FNN) training**
 

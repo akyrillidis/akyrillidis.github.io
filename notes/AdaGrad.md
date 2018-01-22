@@ -219,7 +219,7 @@ where $\zeta$ is set to a small number (say, $10^{-10}$).
 
 The result looks something like this:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad.png){:height="50%" width="50%" align="center"}
 
 Both algorithms start at the same all-zero starting point; AdaGrad diverges the first 
 couple of iterations, but then it "covers" quickly the lost ground.
@@ -232,7 +232,7 @@ with this step size, $\text{AdaGrad} > \text{Gradient Descent}$.
 
 The result looks something like this:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad2.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad2.png){:height="50%" width="50%" align="center"}
 
 This also justifies that AdaGrad is kind-of immune to the $\eta$ selection: after a few iterations, the weights from the gradient calculation in $B$ pay-off.
 
@@ -240,7 +240,7 @@ This also justifies that AdaGrad is kind-of immune to the $\eta$ selection: afte
 
 But, what if we jack up the step size a bit, to find the boundaries of the algorithms. For this particular setting, step size $\eta = 1.9$ works pretty well for gradient descent; step size $\eta \in [0.1, 0.2] $ also works the best for AdaGrad. The result is as follows:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad3.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad3.png){:height="50%" width="50%" align="center"}
 
 *I.e.*, the secret sauce of AdaGrad is not on necessarily accelerating gradient descent with a better step size selection, but making gradient descent more stable to not-so-good $\eta$ choices.
 It is important to remember that both plain gradient descent and AdaGrad use the same information per iteration (*i.e.*, the gradient information), which further means that practically there is a step size in gradient descent that can make it (more or less) the same efficient to AdaGrad.
@@ -256,15 +256,15 @@ kappa = 10^6;
 
 Following the same steps, for $\eta = \frac{1}{L}$ we get:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad4.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad4.png){:height="50%" width="50%" align="center"}
 
 For $\eta = 0.1$, we get:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad5.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad5.png){:height="50%" width="50%" align="center"}
 
 where Gradient Descent diverges (and this is expected since guaranteed convergence is attained if the step size is less than $\approx \frac{2}{L} \approx 2 \cdot 10^{-4}$); and finally:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad6.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad6.png){:height="50%" width="50%" align="center"}
 
 for carefully selected step sizes. In the last part, I want to stress out that, for ill-conditioned problems, AdaGrad is not that "immune" of the $\eta$ selection: various $\eta$'s lead to various behaviors, with most of them being inferior of gradient descent, and few of them leading to superior performance.
 
@@ -368,7 +368,7 @@ where $\zeta$ is set to a small number (say, $10^{-10}$).
 
 The result looks something like this:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad_log.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad_log.png){:height="50%" width="50%" align="center"}
 
 Both algorithms start at the same all-zero starting point; overall
 with this step size, in this setting $\text{AdaGrad} < \text{Gradient Descent}$.
@@ -377,7 +377,7 @@ with this step size, in this setting $\text{AdaGrad} < \text{Gradient Descent}$.
 
 For a wide range of values (I tried $\eta \in [1, 40]$), the result looks something like this, where as the step size increases, AdaGrad catches-up the performance of Gradient Descent:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad_log2.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad_log2.png){:height="50%" width="50%" align="center"}
 
 One can say that AdaGrad and Gradient Descent perform similarly for these cases. 
 
@@ -390,11 +390,11 @@ kappa = 10^6;
 
 we get for $\eta = \frac{1}{L}$:
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad_log3.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad_log3.png){:height="50%" width="50%" align="center"}
 
 When we start jacking-up the step size, Gradient Desccent stops being superior to AdaGrad: the latter better approximates the ill-curvature of the problem, and performs better (the following plot is for $\eta = 10$ and the same behavior is observed when we keep increasing $\eta$):
 
-![alt text](/notes/AdaGrad/GDvsAdaGrad_log4.png)
+![alt text](/notes/AdaGrad/GDvsAdaGrad_log4.png){:height="50%" width="50%" align="center"}
 
 
 #### **Feedforward Neural Network (FNN) training - MNIST**
