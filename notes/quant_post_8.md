@@ -78,7 +78,7 @@ But we will pretend we do not know that this is $f$; similar logic can be derive
 The above behavior --assuming we represent bits as vectors
 
 $$
-|0 \rangle = \begin{bmatrix} 0 \\ 1 \end{bmatrix} ~\text{and}~ |1\rangle = \begin{bmatrix} 1 \\ 0 \end{bmatrix}\text{--}
+|0 \rangle = \begin{bmatrix} 0 \\ 1 \end{bmatrix} ~\text{and}~ |1\rangle = \begin{bmatrix} 1 \\ 0 \end{bmatrix},
 $$
 
 can be represented as:
@@ -102,7 +102,7 @@ respectively.
 
 We define the following quantum circuit:
 
-![First attempt](/notes/quant_8/firstattempt.png){:height="50%" width="50%" align="center"}
+![First attempt](/notes/quant_8/firstattempt.png){:height="75%" width="75%" align="center"}
 
 Let us describe what we see in the picture.
 Initially, the system is as state:
@@ -153,7 +153,7 @@ But, we will soon see how we can use this combined with the next subsection.
 
 Let us now consider a different setting for our problem.
 
-![Second attempt](/notes/quant_8/secondattempt.png){:height="50%" width="50%" align="center"}
+![Second attempt](/notes/quant_8/secondattempt.png){:height="75%" width="75%" align="center"}
 
 Here, we leave the top input as it is, but we transform the bottom input -- which we set to
 $|1\rangle$ --
