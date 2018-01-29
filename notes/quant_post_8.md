@@ -141,7 +141,7 @@ $|\mathbf{\varphi}_2\rangle$
 becomes:
 
 $$
-|\mathbf{\varphi}_2\rangle \left(= \frac{|x, y \oplus f(x)\rangle + |x, y \oplus f(x)\rangle}{\sqrt{2}}\right) = \frac{|0, 0 \oplus f(0)\rangle + |1, 0 \oplus f(1)\rangle}{\sqrt{2}} = \frac{|0, 0 \oplus 1\rangle + |1, 0 \oplus 0\rangle}{\sqrt{2}} = \frac{|01\rangle + |1 0\rangle}{\sqrt{2}}
+|\mathbf{\varphi}_2\rangle \left(= \frac{|x, y \oplus f(x)\rangle + |x, y \oplus f(x)\rangle}{\sqrt{2}}\right) = \frac{|0, 0 \oplus f(0)\rangle + |1, 0 \oplus f(1)\rangle}{\sqrt{2}} \\ = \frac{|0, 0 \oplus 1\rangle + |1, 0 \oplus 0\rangle}{\sqrt{2}} = \frac{|01\rangle + |1 0\rangle}{\sqrt{2}}
 $$
 
 
