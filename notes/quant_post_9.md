@@ -214,7 +214,8 @@ The possible states are:
 Our function $f$ is equal to one only at the state "101".
 Following the algorithm above we have:
 
-* $|\mathbf{\varphi}_1 \rangle = [0 ~0 ~0 ~0 ~0 ~0 ~0 ~0]^\top$.
+* Initially:
+$|\mathbf{\varphi}_1 \rangle = [0 ~0 ~0 ~0 ~0 ~0 ~0 ~0]^\top$.
 * After applying the Hadamard transfrom, we get:
 $|\mathbf{\varphi}_2 \rangle = \left[\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}}\right]^\top$.
 * In the inner loop:
