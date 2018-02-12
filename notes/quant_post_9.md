@@ -216,17 +216,17 @@ Following the algorithm above we have:
 
 * $|\mathbf{\varphi}_1 \rangle = [0 ~0 ~0 ~0 ~0 ~0 ~0 ~0]^\top$.
 * After applying the Hadamard transfrom, we get:
-$\mathbf{\varphi}_2 \rangle = \left[\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}}\right]^\top$.
+$|\mathbf{\varphi}_2 \rangle = \left[\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}}\right]^\top$.
 * In the inner loop:
 	* The phase inversion gives:
-	$\mathbf{\varphi}_{3a} \rangle = \left[\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~-\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}}\right]^\top$.
+	$|\mathbf{\varphi}_{3a} \rangle = \left[\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~-\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}} ~\tfrac{1}{\sqrt{8}}\right]^\top$.
 	* The mean of the vector of probabilities is: 
 	$\frac{7\cdot \tfrac{1}{\sqrt{8}} -\tfrac{1}{\sqrt{8}}}{\sqrt{8}} = \frac{3}{4 \sqrt{8}}$.
 	* After inversion around the mean, our vector of probabilities becomes:
-	$\mathbf{\varphi}_{3b} \rangle = \left[\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{5}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}}\right]^\top$.
+	$|\mathbf{\varphi}_{3b} \rangle = \left[\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{5}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}} ~\tfrac{1}{2\sqrt{8}}\right]^\top$.
 	* ... (after one more iteration in the inner loop).
 * Measuring the top output, we get:
-$\mathbf{\varphi}_{3b} \rangle = \left[-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~\tfrac{11}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}}\right]^\top$.
+$|\mathbf{\varphi}_{3b} \rangle = \left[-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~\tfrac{11}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}} ~-\tfrac{1}{4\sqrt{8}}\right]^\top$.
 
 Observe that the probability to measure "101" is:
 $|\tfrac{11}{4\sqrt{8}}|^2 = 0.9453125$, while any other entry appears in the output with probability:
