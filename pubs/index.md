@@ -322,6 +322,30 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
++ Anastasios Kyrillidis, [*``IHT dies hard: Provable accelerated Iterative Hard Thresholding"*](/pubs/Conferences/AccIHT.pdf), Twenty-first International Conference on Artificial Intelligence and Statistics (AISTATS-18), 2018.
+
+  <button id="b_abs_c25"> Abstract </button>
+  <button id="b_bib_c25"> Bibtex </button>
+  <p id="abs_c25"> <i> We study --both in theory and practice-- the use of momentum motions 
+    in classic iterative hard thresholding (IHT) methods. By simply modifying plain IHT, 
+    we investigate its convergence behavior on convex optimization criteria with non-convex 
+    constraints, under standard assumptions. In diverse scenaria, we observe that 
+    acceleration in IHT leads to significant improvements, compared to state of the 
+    art projected gradient descent and Frank-Wolfe variants. As a byproduct of our 
+    inspection, we study the impact of selecting the momentum parameter: similar to 
+    convex settings, two modes of behavior are observed --"rippling" and linear-- 
+    depending on the level of momentum.
+  </i> </p>
+ 
+  <pre id="bib_c25"><samp>
+  		@article{khanna2018IHT,
+  				title={IHT dies hard: Provable accelerated Iterative Hard Thresholding},
+				author={Rajiv Khanna and Anastasios Kyrillidis},
+				journal={Twenty-first International Conference on Artificial Intelligence and Statistics (AISTATS-18)},
+		    	year={2018}
+				}
+  </samp></pre>
+
 + Rajiv Khanna and Anastasios Kyrillidis, [*``IHT dies hard: Provable accelerated Iterative Hard Thresholding"*](/pubs/Conferences/AccIHT.pdf), Twenty-first International Conference on Artificial Intelligence and Statistics (AISTATS-18), 2018.
 
   <button id="b_abs_c25"> Abstract </button>

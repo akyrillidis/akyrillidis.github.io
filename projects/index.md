@@ -3,9 +3,9 @@ layout: dirindex
 fb_comments: 3
 ---
 
-## Code packages 
+## Code packages (*before moving to Github*)
 
-+ **(Bi-) Factored Gradient Descent algorithm for low-rank recovery (Matlab - to be updated)**
++ **(Bi-) Factored Gradient Descent algorithm for low-rank recovery (Matlab)**
   
   <!---<button id="b_des_s8"> Description </button>-->
   <button id="b_dow_s8"> Download </button>
@@ -94,7 +94,7 @@ fb_comments: 3
     </i> </p>    
     
     
-+ **Sparse projections onto the simplex (Matlab - to be updated)**
++ **Sparse projections onto the simplex (Matlab)**
     
    <!---<button id="b_des_s12"> Description </button>-->
   <button id="b_dow_s12"> Download </button>
@@ -139,7 +139,7 @@ fb_comments: 3
    The experiments include both synthetic and real data settings. 
     </i> </p>
     
-+ **Finding the M-PSK vector that maximizes a rank-deficient complex quadratic form (Matlab - to be updated)**
++ **Finding the M-PSK vector that maximizes a rank-deficient complex quadratic form (Matlab)**
 
   <!---<button id="b_des_s6"> Description </button>-->
   <button id="b_dow_s6"> Download </button>
