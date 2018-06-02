@@ -322,26 +322,26 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
-+ Anastasios Kyrillidis, [*``IHT dies hard: Provable accelerated Iterative Hard Thresholding"*](/pubs/Conferences/AccIHT.pdf), Twenty-first International Conference on Artificial Intelligence and Statistics (AISTATS-18), 2018.
++ Anastasios Kyrillidis, [*``Simple and practical algorithms for $\ell_p$-norm low-rank approximation"*](/pubs/Conferences/LpLR.pdf), Conference on Uncertainty in Artificial Intelligence (UAI-18), 2018.
 
-  <button id="b_abs_c25"> Abstract </button>
-  <button id="b_bib_c25"> Bibtex </button>
-  <p id="abs_c25"> <i> We study --both in theory and practice-- the use of momentum motions 
-    in classic iterative hard thresholding (IHT) methods. By simply modifying plain IHT, 
-    we investigate its convergence behavior on convex optimization criteria with non-convex 
-    constraints, under standard assumptions. In diverse scenaria, we observe that 
-    acceleration in IHT leads to significant improvements, compared to state of the 
-    art projected gradient descent and Frank-Wolfe variants. As a byproduct of our 
-    inspection, we study the impact of selecting the momentum parameter: similar to 
-    convex settings, two modes of behavior are observed --"rippling" and linear-- 
-    depending on the level of momentum.
+  <button id="b_abs_c26"> Abstract </button>
+  <button id="b_bib_c26"> Bibtex </button>
+  <p id="abs_c26"> <i> We propose practical algorithms for entrywise $\ell_p$-norm low-rank approximation, 
+for $p = 1$ or $p = \infty$. The proposed framework, which is non-convex and gradient-based, 
+is easy to implement and typically attains better approximations, faster, than state of 
+the art. From a theoretical standpoint, we show that the proposed scheme can attain 
+$(1 + \varepsilon)$-OPT approximations. Our algorithms are not hyperparameter-free: they 
+achieve the desiderata only assuming algorithm's hyperparameters are known a priori---or 
+are at least approximable. I.e., our theory indicates what problem quantities need to 
+be known, in order to get a good solution within polynomial time, and does not contradict to
+ recent inapproximabilty results. 
   </i> </p>
  
-  <pre id="bib_c25"><samp>
-  		@article{khanna2018IHT,
-  				title={IHT dies hard: Provable accelerated Iterative Hard Thresholding},
-				author={Rajiv Khanna and Anastasios Kyrillidis},
-				journal={Twenty-first International Conference on Artificial Intelligence and Statistics (AISTATS-18)},
+  <pre id="bib_c26"><samp>
+  		@article{kyrillidis2018simple,
+  				title={Simple and practical algorithms for $\ell_p$-norm low-rank approximation},
+				author={Anastasios Kyrillidis},
+				journal={Conference on Uncertainty in Artificial Intelligence (UAI-18)},
 		    	year={2018}
 				}
   </samp></pre>
