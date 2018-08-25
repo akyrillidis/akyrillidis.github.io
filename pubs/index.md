@@ -11,7 +11,7 @@ fb_comments: 3
   
   <button id="b_abs_j11"> Abstract </button>
   <button id="b_bib_j11"> Bibtex </button>
-   <p id="abs_j10"> <i>   With nowadays steadily growing quantum processors, it is required to 
+   <p id="abs_j11"> <i>   With nowadays steadily growing quantum processors, it is required to 
    develop new quantum tomography tools that are tailored for high-dimensional systems. In this 
    work, we describe such a computational tool, based on recent ideas from non-convex optimization. 
    The algorithm excels in the compressed sensing setting, where only a few data points are 
