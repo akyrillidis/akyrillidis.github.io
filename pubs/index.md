@@ -7,6 +7,35 @@ fb_comments: 3
 
 ## Journals
 
++ Anastasios Kyrillidis, Amir Kalev, Dohyung Park, Srinadh Bhojanapalli, Constantine Caramanis and Sujay Sanghavi, [*``Provable compressed sensing quantum state tomography via non-convex methods"*](/pubs/Journals/QST.pdf), Nature Journal on Quantum Information, 2018. 
+  
+  <button id="b_abs_j11"> Abstract </button>
+  <button id="b_bib_j11"> Bibtex </button>
+   <p id="abs_j10"> <i>   With nowadays steadily growing quantum processors, it is required to 
+   develop new quantum tomography tools that are tailored for high-dimensional systems. In this 
+   work, we describe such a computational tool, based on recent ideas from non-convex optimization. 
+   The algorithm excels in the compressed sensing setting, where only a few data points are 
+   measured from a low-rank or highly-pure quantum state of a high-dimensional system. We show 
+   that the algorithm can practically be used in quantum tomography problems that are beyond 
+   the reach of convex solvers, and, moreover, is faster and more accurate than other state-of-the-art 
+   non-convex approaches. Crucially, we prove that, despite being a non-convex program, under 
+   mild conditions, the algorithm is guaranteed to converge to the global minimum of the quantum 
+   state tomography problem; thus, it constitutes a provable quantum state tomography protocol.
+	</i> </p>
+   
+   <pre id="bib_j11"><samp>
+   		@article{kyrillidis2018provable,
+  			title={Provable compressed sensing quantum state tomography via non-convex methods},
+  			author={Kyrillidis, Anastasios and Kalev, Amir and Park, Dohyung and Bhojanapalli, Srinadh and Caramanis, Constantine and Sanghavi, Sujay},
+  			journal={npj Quantum Information},
+  			volume={4},
+  			number={1},
+  			pages={36},
+  			year={2018},
+  			publisher={Nature Publishing Group}
+		}
+   </samp></pre>
+
 + Quoc Tran Dinh, Anastasios Kyrillidis, and Volkan Cevher, [*``A single-phase, proximal path-following framework"*](/pubs/Journals/TranDinhKyrillidisCevher_PathFollowing_Alg.pdf), Mathematics of Operations Research, 2017. 
   
   <button id="b_abs_j10"> Abstract </button>

@@ -6,10 +6,11 @@ title: About
 
 <img src="/public/me2.jpg" width="132" height="180" align="right">
 
-My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname 'Tasos' ('Τάσος'). Currently, I'm a Goldstine
-PostDoctoral Fellow at IBM T. J. Watson Research Center (NY).
+My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname 'Tasos' ('Τάσος'). 
+Currently, I'm a Noah Harding Assistant Professor at the Computer Science department at Rice University. 
 
-Prior to that, I was a Simons Foundation PostDoc member at the University of Texas at Austin. 
+Prior to that, I was a Goldstine
+PostDoctoral Fellow at IBM T. J. Watson Research Center (NY), and a Simons Foundation PostDoc member at the University of Texas at Austin. 
 I finished my PhD at the CS Department of EPFL (Switzerland).
 
 My research interests include (but not limited to):
@@ -22,4 +23,4 @@ My research interests include (but not limited to):
 <button id="b_scholar"> Scholar </button>
 <button id="b_LinkedIn"> LinkedIn </button>
 
-Contact: anastasios.kyrillidis@ibm.com, anastasios@rice.edu
+Contact: anastasios@rice.edu
