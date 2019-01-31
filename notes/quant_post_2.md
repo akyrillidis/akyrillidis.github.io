@@ -69,7 +69,7 @@ Some properties of the inner product are as follows:
 * $\left\langle \mathbf{c}_1, \mathbf{c}_2 + \mathbf{c}_3 \right \rangle = \left\langle \mathbf{c}_1, \mathbf{c}_2 \right \rangle + \left\langle \mathbf{c}_1, \mathbf{c}_3 \right \rangle $. Similarly, when we have $\left\langle \mathbf{c}_1 + \mathbf{c}_3, \mathbf{c}_2 \right \rangle$.
 * $\left\langle x \cdot \mathbf{c}_1, \mathbf{c}_2 \right \rangle = \bar{x} \cdot \left\langle \mathbf{c}_1, \mathbf{c}_2 \right \rangle,$ and 
 $\left\langle \mathbf{c}_1, x \cdot \mathbf{c}_2 \right \rangle = x \cdot \left\langle \mathbf{c}_1, \mathbf{c}_2 \right \rangle.$
-* $\left\langle \mathbf{c}_1, \mathbf{c}_2 \right \rangle = \mathbf{c}_1^\dagger \cdot \mathbf{c}_2 = \left(\mathbf{c}_2^\dagger \cdot \mathbf{c}_1\right)^\dagger = \left(\left\langle \mathbf{c}_1, \mathbf{c}_2 \right \rangle\right)^\dagger$.
+* $\left\langle \mathbf{c}_1, \mathbf{c}_2 \right \rangle = \mathbf{c}_1^\dagger \cdot \mathbf{c}_2$.
 * Orthogonal vectors: two complex vectors $\mathbf{c}_1, \mathbf{c}_2$ are orthogonal iff $\left\langle \mathbf{c}_1, \mathbf{c}_2 \right \rangle = 0$.
 
 ### **The space of $\mathbb{C}^{m \times n}$**
