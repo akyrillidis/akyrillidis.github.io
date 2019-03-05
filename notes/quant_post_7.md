@@ -46,7 +46,7 @@ Thus, given we have two components $c_i$, one can conclude that we have 4 unknow
 Using the above, our state can be re-written as:
 
 $$
-| \mathbf{\psi} \rangle = r_0 e^{j\varphi_0} \cdot | \mathbf{0} \rangle + r_1 e^{j\varphi_1} \cdot | \mathbf{0} \rangle
+| \mathbf{\psi} \rangle = r_0 e^{j\varphi_0} \cdot | \mathbf{0} \rangle + r_1 e^{j\varphi_1} \cdot | \mathbf{1} \rangle
 $$
 
 However, in the case of quantum bits, we know that a quantum state does not change if we multiply it with any number of unit norm; *i.e.*,
@@ -54,7 +54,7 @@ $| \mathbf{\psi} \rangle = e^{j \xi}| \mathbf{\psi} \rangle$
 Let's set $\xi = -\varphi_0$. Then, our (equivalent) state is:
 
 $$
-e^{-j \varphi_0} \cdot |\mathbf{\psi} \rangle = e^{-j \varphi_0} \cdot \left( r_0 e^{j\varphi_0} \cdot | \mathbf{0} \rangle + r_1 e^{j\varphi_1} \cdot | \mathbf{0} \rangle \right) = r_0 \cdot | \mathbf{0} \rangle + r_1 e^{j(\varphi_1 - \varphi_0)} \cdot | \mathbf{0} \rangle
+e^{-j \varphi_0} \cdot |\mathbf{\psi} \rangle = e^{-j \varphi_0} \cdot \left( r_0 e^{j\varphi_0} \cdot | \mathbf{0} \rangle + r_1 e^{j\varphi_1} \cdot | \mathbf{1} \rangle \right) = r_0 \cdot | \mathbf{0} \rangle + r_1 e^{j(\varphi_1 - \varphi_0)} \cdot | \mathbf{1} \rangle
 $$
 
 From 4 parameters, now we end up with 3 parameters! 
