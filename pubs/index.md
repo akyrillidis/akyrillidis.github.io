@@ -418,6 +418,23 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
++ Ryan Spring, Anastasios Kyrillidis, Vijai Mohan, Anshumali Shrivastava, [*``Compressing Gradient Optimizers via Count-Sketches"*](/pubs/Conferences/count_sketch.pdf), International Conference on Machine Learning (ICML-19), 2019.
+
+  <button id="b_abs_c27"> Abstract </button>
+  <button id="b_bib_c27"> Bibtex </button>
+  <p id="abs_c27"> <i> Many popular first-order optimization methods (eg, Momentum, AdaGrad, Adam) accelerate the convergence rate of deep learning models. However, these algorithms require auxiliary parameters, which cost additional memory proportional to the number of parameters in the model. The problem is becoming more severe as deep learning models continue to grow larger in order to learn from complex, large-scale datasets. Our proposed solution is to maintain a linear sketch to compress the auxiliary variables. We demonstrate that our technique has the same performance as the full-sized baseline, while using significantly less space for the auxiliary variables. Theoretically, we prove that count-sketch optimization maintains the SGD convergence rate, while gracefully reducing memory usage for large-models. On the large-scale 1-Billion Word dataset, we save 25% of the memory used during training (8.6 GB instead of 11.7 GB) by compressing the Adam optimizer in the Embedding and Softmax layers with negligible accuracy and performance loss.
+  </i> </p>
+ 
+  <pre id="bib_c27"><samp>
+  		@article{spring2019compressing,
+  title={Compressing Gradient Optimizers via Count-Sketches},
+  author={Spring, Ryan and Kyrillidis, Anastasios and Mohan, Vijai and Shrivastava, Anshumali},
+  journal={arXiv preprint arXiv:1902.00179},
+  year={2019}
+}				}
+  </samp></pre>
+
+
 + Anastasios Kyrillidis, [*``Simple and practical algorithms for $\ell_p$-norm low-rank approximation"*](/pubs/Conferences/LpLR.pdf), Conference on Uncertainty in Artificial Intelligence (UAI-18), 2018.
 
   <button id="b_abs_c26"> Abstract </button>
@@ -492,7 +509,7 @@ be known, in order to get a good solution within polynomial time, and does not c
 
 
 
-+ Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi, [*``Non-square matrix sensing without spurious local minima via the Burer-Monteiro approach"*](/pubs/Conferences/MSLocalMinima.pdf), AI & Statistics Conference (AISTATS), 2017.
++ Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi, [*``Non-square matrix sensing without spurious local minima via the Burer-Monteiro approach"*](/pubs/Conferences/MSLocalMinima.pdf), AI & Statistics Conference (AISTATS-17), 2017.
 
   <button id="b_abs_c23"> Abstract </button>
   <button id="b_bib_c23"> Bibtex </button>
@@ -514,7 +531,7 @@ and show that matrix factorization does not introduce any spurious local minima,
   </samp></pre>
 
 
-+ Srinadh Bhojanapalli, Anastasios Kyrillidis, and Sujay Sanghavi, [*``Dropping convexity for faster semi-definite optimization"*](/pubs/Conferences/FGD.pdf), Conference on Learning Theory (COLT), 2016.
++ Srinadh Bhojanapalli, Anastasios Kyrillidis, and Sujay Sanghavi, [*``Dropping convexity for faster semi-definite optimization"*](/pubs/Conferences/FGD.pdf), Conference on Learning Theory (COLT-16), 2016.
 
   <button id="b_abs_c22"> Abstract </button>
   <button id="b_bib_c22"> Bibtex </button>
@@ -548,7 +565,7 @@ and show that matrix factorization does not introduce any spurious local minima,
 				}
   </samp></pre>
 
-+ Megasthenis Asteris, Anastasios Kyrillidis, Oluwasanmi Koyejo, and Russell Poldrack, [*``A simple and provable algorithm for sparse diagonal CCA"*](/pubs/Conferences/cca.pdf), International Conference on Machine Learning (ICML), 2016.
++ Megasthenis Asteris, Anastasios Kyrillidis, Oluwasanmi Koyejo, and Russell Poldrack, [*``A simple and provable algorithm for sparse diagonal CCA"*](/pubs/Conferences/cca.pdf), International Conference on Machine Learning (ICML-16), 2016.
 
   <button id="b_abs_c21"> Abstract </button>
   <button id="b_bib_c21"> Bibtex </button>
@@ -583,7 +600,7 @@ and show that matrix factorization does not introduce any spurious local minima,
 		}
   </samp></pre>
 
-+ Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](/pubs/Conferences/cvx_block_expanders.pdf), AI & Statistics Conference (AISTATS), 2016.
++ Anastasios Kyrillidis, Bubacarr Bah, Rouzbeh Hasheminezhad, Quoc Tran-Dinh, Luca Baldassarre, and Volkan Cevher, [*``Convex block-sparse linear regression with expanders, provably"*](/pubs/Conferences/cvx_block_expanders.pdf), AI & Statistics Conference (AISTATS-16), 2016.
 
   <button id="b_abs_c20"> Abstract </button>
   <button id="b_bib_c20"> Bibtex </button>
@@ -614,7 +631,7 @@ and show that matrix factorization does not introduce any spurious local minima,
 		}
   </samp></pre>
   
-+ Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Learning sparse additive models with interactions in high dimensions"*](/pubs/Conferences/GSPAM.pdf), AI & Statistics Conference (AISTATS), 2016.
++ Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Learning sparse additive models with interactions in high dimensions"*](/pubs/Conferences/GSPAM.pdf), AI & Statistics Conference (AISTATS-16), 2016.
 
   <button id="b_abs_c19"> Abstract </button>
   <button id="b_bib_c19"> Bibtex </button>
@@ -643,7 +660,7 @@ validate our theoretical findings.
 		}
   </samp></pre>
 
-+ Megasthenis Asteris, Anastasios Kyrillidis, Dimitris Papailiopoulos, and Alex Dimakis, [*``Bipartite correlation clustering: Maximizing agreements"*](/pubs/Conferences/BCC.pdf), AI & Statistics Conference (AISTATS), 2016.
++ Megasthenis Asteris, Anastasios Kyrillidis, Dimitris Papailiopoulos, and Alex Dimakis, [*``Bipartite correlation clustering: Maximizing agreements"*](/pubs/Conferences/BCC.pdf), AI & Statistics Conference (AISTATS-16), 2016.
 
   <button id="b_abs_c18"> Abstract </button>
   <button id="b_bib_c18"> Bibtex </button>
@@ -672,7 +689,7 @@ validate our theoretical findings.
 		}
   </samp></pre>
 
-+ Megasthenis Asteris, Dimitris Papailiopoulos, Anastasios Kyrillidis, and Alex Dimakis, [*``Space PCA via bipartite matchings"*](/pubs/Conferences/Sparse_PCA_Bipartite.pdf), Neural Information Processing Systems (NIPS), 2015.
++ Megasthenis Asteris, Dimitris Papailiopoulos, Anastasios Kyrillidis, and Alex Dimakis, [*``Space PCA via bipartite matchings"*](/pubs/Conferences/Sparse_PCA_Bipartite.pdf), Neural Information Processing Systems (NIPS-15), 2015.
 
   <button id="b_abs_c17"> Abstract </button>
   <button id="b_bib_c17"> Bibtex </button>
@@ -704,7 +721,7 @@ validate our theoretical findings.
 		}
   </samp></pre>
 
-+ Megasthenis Asteris, Anastasios Kyrillidis, Alex Dimakis, Han-Gyol Yi and Bharath Chandrasekaran, [*``Stay on path: PCA along graph paths"*](/pubs/Conferences/Stay_on_path.pdf),  International Conference on Machine Learning (ICML), 2015.
++ Megasthenis Asteris, Anastasios Kyrillidis, Alex Dimakis, Han-Gyol Yi and Bharath Chandrasekaran, [*``Stay on path: PCA along graph paths"*](/pubs/Conferences/Stay_on_path.pdf),  International Conference on Machine Learning (ICML-15), 2015.
 
   <button id="b_abs_c16"> Abstract </button>
   <button id="b_bib_c16"> Bibtex </button>
@@ -779,7 +796,7 @@ validate our theoretical findings.
 		}	
   </samp></pre>
   
-+ Dimitris Papailiopoulos, Anastasios Kyrillidis and Christos Boutsidis, [*``Provable deterministic leverage scores sampling"*](/pubs/Conferences/frp0826.pdf), ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2014.
++ Dimitris Papailiopoulos, Anastasios Kyrillidis and Christos Boutsidis, [*``Provable deterministic leverage scores sampling"*](/pubs/Conferences/frp0826.pdf), ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD-14), 2014.
 
   <button id="b_abs_c14"> Abstract </button>
   <button id="b_bib_c14"> Bibtex </button>
@@ -949,7 +966,7 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
 
 
-+ Anastasios Kyrillidis, Stephen Becker, Volkan Cevher and Christoph Koch, [*``Sparse projections onto the simplex"*](http://jmlr.org/proceedings/papers/v28/kyrillidis13.pdf), International Conference on Machine Learning (ICML), 2013.
++ Anastasios Kyrillidis, Stephen Becker, Volkan Cevher and Christoph Koch, [*``Sparse projections onto the simplex"*](http://jmlr.org/proceedings/papers/v28/kyrillidis13.pdf), International Conference on Machine Learning (ICML-13), 2013.
 
   <button id="b_abs_c08"> Abstract </button>
   <button id="b_bib_c08"> Bibtex </button>
@@ -982,7 +999,7 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 			}
   </samp></pre>
   
-+ Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``A proximal Newton framework for composite minimization: Graph learning without Cholesky decompositions and matrix inversions"*](http://jmlr.csail.mit.edu/proceedings/papers/v28/trandinh13.pdf), International Conference on Machine Learning (ICML), 2013.
++ Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``A proximal Newton framework for composite minimization: Graph learning without Cholesky decompositions and matrix inversions"*](http://jmlr.csail.mit.edu/proceedings/papers/v28/trandinh13.pdf), International Conference on Machine Learning (ICML-13), 2013.
 
   <button id="b_abs_c07"> Abstract </button>
   <button id="b_bib_c07"> Bibtex </button>
