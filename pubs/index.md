@@ -32,6 +32,48 @@ fb_comments: 3
 		} 
    </samp></pre>
 
+
++ Ya-Ping Hsieh, Yu-Chun Kao, Rabeeh Karimi Mahabadi, Yurtsever Alp, Anastasios Kyrillidis, Volkan Cevher, [*``A Non-Euclidean Gradient Descent Framework for Non-Convex Matrix Factorization"*](/pubs/Journals/non_euclidean_noncvx.pdf), IEEE Transactions on Signal Processing, 2018. 
+  
+  <button id="b_abs_j14"> Abstract </button>
+  <button id="b_bib_j14"> Bibtex </button>
+   <p id="abs_j14"> <i>   We study convex optimization problems that feature low-rank matrix solutions. In such scenarios, non-convex methods offer significant advantages over convex methods due to their lower space complexity, as well as practical faster convergence. Under mild assumptions, these methods feature global convergence guarantees. In this paper, we extend the results on this matter by following a different path. We derive a non-Euclidean optimization framework in the non-convex setting that takes nonlinear gradient steps on the factors. Our framework enables the possibility to further exploit the underlying problem structures, such as sparsity or low-rankness on the factorized domain, or better dimensional dependence of the smoothness parameters of the objectives. We prove that the non-Euclidean methods enjoy the same rigorous guarantees as their Euclidean counterparts under appropriate assumptions. Numerical evidence with Fourier ptychography and FastText applications, using real data, shows that our approach can enhance solution quality, as well as convergence speed over the standard non-convex approaches.
+	</i> </p>
+   
+   <pre id="bib_j14"><samp>
+   		@article{hsieh2018non,
+  title={A non-Euclidean gradient descent framework for non-convex matrix factorization},
+  author={Hsieh, Ya-Ping and Kao, Yu-Chun and Mahabadi, Rabeeh Karimi and Yurtsever, Alp and Kyrillidis, Anastasios and Cevher, Volkan},
+  journal={IEEE Transactions on Signal Processing},
+  volume={66},
+  number={22},
+  pages={5917--5926},
+  year={2018},
+  publisher={IEEE}
+}   
+  </samp></pre>
+
++ Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi, [*``Finding low-rank solutions via non-convex matrix factorization, efficiently and provably"*](/pubs/Journals/finding_low_rank.pdf), SIAM Journal on Imaging Sciences, 2018. 
+  
+  <button id="b_abs_j13"> Abstract </button>
+  <button id="b_bib_j13"> Bibtex </button>
+   <p id="abs_j13"> <i>   A rank-$r$ matrix $X \in \mathbb{R}^{m \times n}$ can be written as a product $U V^\top$, where $U \in \mathbb{R}^{m \times r}$ and $V \in \mathbb{R}^{n \times r}$. One could exploit this observation in optimization: e.g., consider the minimization of a convex function $f(X)$ over rank-$r$ matrices, where the set of low-rank matrices is modeled via $UV^\top$. Though such parameterization reduces the number of variables and is more computationally efficient (of particular interest is the case $r \ll \min\{m, n\}$), it comes at a cost: $f(U V^\top)$ becomes a nonconvex function w.r.t. $U$ and $V$. We study such parameterization on generic convex objectives $f$ and focus on first-order, gradient descent algorithms. We propose the bifactored gradient descent (BFGD) algorithm, an efficient first-order method that operates directly on the $U, V$ factors. We show that when $f$ is (restricted) smooth, BFGD has local sublinear convergence; when $f$ is both (restricted) smooth and (restricted) strongly convex, it has local linear convergence. For several applications, we provide simple and efficient initialization schemes that provide initial conditions, good enough for the above convergence results to hold, globally. Extensive experimental results support our arguments that BFGD is an efficient and accurate nonconvex method, compared to state-of-the-art approaches.
+	</i> </p>
+   
+   <pre id="bib_j13"><samp>
+   		@article{park2018finding,
+  title={Finding low-rank solutions via nonconvex matrix factorization, efficiently and provably},
+  author={Park, Dohyung and Kyrillidis, Anastasios and Caramanis, Constantine and Sanghavi, Sujay},
+  journal={SIAM Journal on Imaging Sciences},
+  volume={11},
+  number={4},
+  pages={2165--2204},
+  year={2018},
+  publisher={SIAM}
+}
+   </samp></pre>
+
+
 + Anastasios Kyrillidis, Amir Kalev, Dohyung Park, Srinadh Bhojanapalli, Constantine Caramanis and Sujay Sanghavi, [*``Provable compressed sensing quantum state tomography via non-convex methods"*](/pubs/Journals/QST.pdf), Nature Journal on Quantum Information, 2018. 
   
   <button id="b_abs_j11"> Abstract </button>
