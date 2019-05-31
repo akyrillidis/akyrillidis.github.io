@@ -15,7 +15,8 @@ fb_comments: 3
      The scheme involves a measurement of $n$ Pauli observables, a priori determined from the stabilizer state and which can be realized using single-qubit gates. 
      Based on the proposed validation scheme, we derive an explicit expression for the worst-case fidelity, i.e., the minimum fidelity between the stabilizer 
      state and any other state consistent with the measured data. We also show that the worst-case fidelity can be certified, with high probability, using $O(n^2)$
-     copies of the state.	</i> </p>
+     copies of the state.	
+   </i> </p>
    
    <pre id="bib_j12"><samp>
    		@article{PhysRevA.99.042337,
