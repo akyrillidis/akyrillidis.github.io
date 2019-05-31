@@ -431,7 +431,7 @@ synthetic and real data. </i> </p>
   author={Spring, Ryan and Kyrillidis, Anastasios and Mohan, Vijai and Shrivastava, Anshumali},
   journal={arXiv preprint arXiv:1902.00179},
   year={2019}
-}				}
+}
   </samp></pre>
 
 
