@@ -7,6 +7,31 @@ fb_comments: 3
 
 ## Journals
 
++ Amir Kalev, Anastasios Kyrillidis, and Norbert M Linke, [*``Validating and certifying stabilizer states"*](/pubs/Journals/stabilizer_states.pdf), Physical Review A, 2019. 
+  
+  <button id="b_abs_j12"> Abstract </button>
+  <button id="b_bib_j12"> Bibtex </button>
+   <p id="abs_j12"> <i>  We propose a measurement scheme that validates the preparation of an $n$-qubit stabilizer state. 
+     The scheme involves a measurement of $n$ Pauli observables, a priori determined from the stabilizer state and which can be realized using single-qubit gates. 
+     Based on the proposed validation scheme, we derive an explicit expression for the worst-case fidelity, i.e., the minimum fidelity between the stabilizer 
+     state and any other state consistent with the measured data. We also show that the worst-case fidelity can be certified, with high probability, using $O(n^2)$
+     copies of the state.	</i> </p>
+   
+   <pre id="bib_j12"><samp>
+   		@article{PhysRevA.99.042337,
+  			title = {Validating and certifying stabilizer states},
+  			author = {Kalev, Amir and Kyrillidis, Anastasios and Linke, Norbert M.},
+  			journal = {Phys. Rev. A},
+  			volume = {99},
+  			issue = {4},
+  			pages = {042337},
+  			numpages = {6},
+  			year = {2019},
+  			month = {Apr},
+  			publisher = {American Physical Society}
+		} 
+   </samp></pre>
+
 + Anastasios Kyrillidis, Amir Kalev, Dohyung Park, Srinadh Bhojanapalli, Constantine Caramanis and Sujay Sanghavi, [*``Provable compressed sensing quantum state tomography via non-convex methods"*](/pubs/Journals/QST.pdf), Nature Journal on Quantum Information, 2018. 
   
   <button id="b_abs_j11"> Abstract </button>
