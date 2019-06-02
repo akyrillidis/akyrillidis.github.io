@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Panic attacks while during public speaking
+title: Panic attacks during public speaking
 date: 2019-06-02 12:00:00 UTC
 disqus_comments: false
-summary: Panic attacks while during public speaking
+summary: Panic attacks during public speaking
 ---
 
 This blog post is about panic attacks during public speaking.
