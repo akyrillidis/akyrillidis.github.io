@@ -12,7 +12,7 @@ I decided to write about this, since this somewhat happened during one of my lec
 If someone suffers from something similar, I believe it is relieving to know that there are people with similar experiences,
 and there is a way out of it (not to overcome it once and for all, but to be bold and ask permission for a small break when this happens).
 
-*The recent event.* Mid-way through the semester, I felt the urge to leave the classroom in the middle of the lecture to drink water. What did I feel? 
+**The recent event.** Mid-way through the semester, I felt the urge to leave the classroom in the middle of the lecture to drink water. What did I feel? 
 I started losing my line of thoughts, I had to breathe deeper and with more difficulty in almost every sentence I was saying.
 While these could happen to anyone (if you are excited about teaching :)), and usually we escape this situation by "regrouping" ourselves,
 when you suffer from panic attacks, another thought triggers a series of questions that interrupts your "regular" thoughts:
@@ -23,7 +23,7 @@ to "regroup".
 
 If you don't understand exactly what I mean, see [*this*](https://www.youtube.com/watch?v=DeClZfVwOk4).
 
-*The past.* I've always been a person with anxiety. During my middle- and high-school days, giving a test at school was a nightmare, especially the days before. 
+**The past.** I've always been a person with anxiety. During my middle- and high-school days, giving a test at school was a nightmare, especially the days before. 
 Sure, that made me be productive and perfectionist, but certainly I could have saved some spare time, by being more efficient
 and not being controlled by my anxiety. I have experienced this through classes as a student (not an easy thing to deal with when this happens in the classroom and when you are a (and being surrounded by) teenager.
 Of course, there were periods (half a year to a year, approximately) where you feel that you have escaped from it, but it comes back viciously to remind itself to you.
@@ -56,7 +56,7 @@ You need to fight it (remember, after that my interview invites were in line, wa
 I didn't explain to the audience what happened to me: after a 10 minutes break, I continued my talk, skipped some slides to stay on time
 and conveyed the main message of my research.
 
-*Going back to the recent event.*
+**Going back to the recent event.**
 The same thing happened at Rice University. But I felt that there is nothing to hide: I thought "you should describe 
 to the students what is the situation: maybe someone deals with the same issue". And so I did: I said that the reason I left
 the classroom was a panic attack, it is the worst feeling in the world for those that experience it, and there is nothing
