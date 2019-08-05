@@ -12,12 +12,9 @@ for ML has been [*accepted*](https://medium.com/@NeurIPSConf/2019workshops-ec820
 Please visit the [*official website*](https://sites.google.com/site/optneurips19/) for more information.
 
 ## Description
-
 Higher-order methods, such as Newton, quasi-Newton and adaptive gradient descent methods, are extensively used in many scientific and engineering domains. At least in theory, these methods possess several nice features: they exploit local curvature information to mitigate the effects of ill-conditioning, they avoid or diminish the need for hyper-parameter tuning, and they have enough concurrency to take advantage of distributed computing environments. Researchers have even developed stochastic versions of  higher-order methods, that feature speed and scalability by incorporating curvature information in an economical and judicious manner. However, often higher-order methods are “undervalued.”
 
-
 This workshop will attempt to shed light on this statement. Topics of interest include --but are not limited to-- second-order methods, adaptive gradient descent methods, regularization techniques, as well as techniques based on higher-order derivatives. This workshop can bring machine learning and optimization researchers closer, in order to facilitate a discussion with regards to underlying questions such as the following:
-
 
 - Why are they not omnipresent?
 - Why are higher-order methods important in machine learning, and what advantages can they offer?
@@ -25,8 +22,6 @@ This workshop will attempt to shed light on this statement. Topics of interest i
 - How should (or could) they be implemented in practice? 
 
 ## Call for Papers
-
-
 We welcome submissions to the workshop under the general theme of “Beyond First-Order Optimization Methods in Machine Learning”. Topics of interest include, but are not limited to,
 
 - Second-order methods
@@ -38,11 +33,8 @@ We welcome submissions to the workshop under the general theme of “Beyond Firs
 
 We encourage submissions that are theoretical, empirical or both.
 
-
 Submissions should be up to 4 pages excluding references, acknowledgements, and supplementary material, and should follow NeurIPS format. The CMT-based review process will be double-blind to avoid potential conflicts of interests; submit at [*https://cmt3.research.microsoft.com/OPTNeurIPS2019/*](https://cmt3.research.microsoft.com/OPTNeurIPS2019/).
 Accepted submissions will be presented as posters.
-
-
 
 *Important Dates*: 
 
