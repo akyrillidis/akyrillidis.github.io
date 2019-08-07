@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2019-08-05 12:00:00 UTC
-title: Workshop on optimization methods got accepted at NeurIPS!
+title: Workshop on optimization methods got accepted at NeurIPS 2019!
 photo_url: "/public/noncvx2.png"
 ---
 
