@@ -60,6 +60,7 @@ I didn't explain to the audience what happened to me: after a 10 minutes break, 
 and conveyed the main message of my research.
 
 **Going back to the recent event.**
+
 The same thing happened at Rice University. But I felt that there is nothing to hide: I thought "you should describe 
 to the students what is the situation: maybe someone deals with the same issue". And so I did: I said that the reason I left
 the classroom was a panic attack, it is the worst feeling in the world for those that experience it, and there is nothing
