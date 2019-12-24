@@ -419,7 +419,7 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
-+  Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y. Vardi, Zhiwei Zhang, [*``FourierSAT: A Fourier Expansion-Based Algebraic Framework for Solving Hybrid Boolean Constraints"*](/pubs/Conferences/FourierSAT.pdf), Advances in Neural Information Processing Systems (NIPS-2019), 2019.
++  Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y. Vardi, Zhiwei Zhang, [*``FourierSAT: A Fourier Expansion-Based Algebraic Framework for Solving Hybrid Boolean Constraints"*](/pubs/Conferences/FourierSAT.pdf), AAAI Conference on Artificial Intelligence (AAAI-20), 2020.
 
   <button id="b_abs_c29"> Abstract </button>
   <button id="b_bib_c29"> Bibtex </button>
