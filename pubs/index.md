@@ -419,6 +419,40 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
++  Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y. Vardi, Zhiwei Zhang, [*``FourierSAT: A Fourier Expansion-Based Algebraic Framework for Solving Hybrid Boolean Constraints"*](/pubs/Conferences/FourierSAT.pdf), Advances in Neural Information Processing Systems (NIPS-2019), 2019.
+
+  <button id="b_abs_c29"> Abstract </button>
+  <button id="b_bib_c29"> Bibtex </button>
+  <p id="abs_c29"> <i> The Boolean SATisfiability problem (SAT) is of central importance in computer science. Although SAT is known to be NP-complete, progress on the engineering side, especially that of Conflict-Driven Clause Learning (CDCL) and Local Search SAT solvers, has been remarkable. Yet, while SAT solvers aimed at solving industrial-scale benchmarks in Conjunctive Normal Form (CNF) have become quite mature, SAT solvers that are effective on other types of constraints, e.g., cardinality constraints and XORs, are less well studied; a general approach to handling non-CNF constraints is still lacking. In addition, previous work indicated that for specific classes of benchmarks, the running time of extant SAT solvers depends heavily on properties of the formula and details of encoding, instead of the scale of the benchmarks, which adds uncertainty to expectations of running time.
+To address the issues above, we design FourierSAT, an incomplete SAT solver based on Fourier analysis of Boolean functions, a technique to represent Boolean functions by multilinear polynomials. By such a reduction to continuous optimization, we propose an algebraic framework for solving systems consisting of different types of constraints. The idea is to leverage gradient information to guide the search process in the direction of local improvements. Empirical results demonstrate that FourierSAT is more robust than other solvers on certain classes of benchmarks
+  </i> </p>
+ 
+  <pre id="bib_c29"><samp>
+  		@article{kyrillidis2019fouriersat,
+  title={FourierSAT: A Fourier Expansion-Based Algebraic Framework for Solving Hybrid Boolean Constraints},
+  author={Kyrillidis, Anastasios and Shrivastava, Anshumali and Vardi, Moshe Y and Zhang, Zhiwei},
+  journal={arXiv preprint arXiv:1912.01032},
+  year={2019}
+}
+  </samp></pre>
+
++  Jacky Y. Zhang, Rajiv Khanna, Anastasios Kyrillidis, Oluwasanmi O. Koyejo, [*``Learning Sparse Distributions using Iterative Hard Thresholding"*](/pubs/Conferences/SparseDist.pdf), Advances in Neural Information Processing Systems (NIPS-2019), 2019.
+
+  <button id="b_abs_c28"> Abstract </button>
+  <button id="b_bib_c28"> Bibtex </button>
+  <p id="abs_c28"> <i> Iterative hard thresholding (IHT) is a projected gradient descent algorithm, known to achieve state of the art performance for a wide range of structured estimation problems, such as sparse inference. In this work, we consider IHT as a solution to the problem of learning sparse discrete distributions. We study the hardness of using IHT on the space of measures. As a practical alternative, we propose a greedy approximate projection which simultaneously captures appropriate notions of sparsity in distributions, while satisfying the simplex constraint, and investigate the convergence behavior of the resulting procedure in various settings. Our results show, both in theory and practice, that IHT can achieve state of the art results for learning sparse distributions.
+  </i> </p>
+ 
+  <pre id="bib_c28"><samp>
+  		@inproceedings{zhang2019learning,
+  title={Learning Sparse Distributions using Iterative Hard Thresholding},
+  author={Zhang, Jacky Y and Khanna, Rajiv and Kyrillidis, Anastasios and Koyejo, Oluwasanmi O},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={6757--6766},
+  year={2019}
+}
+  </samp></pre>
+
 + Ryan Spring, Anastasios Kyrillidis, Vijai Mohan, Anshumali Shrivastava, [*``Compressing Gradient Optimizers via Count-Sketches"*](/pubs/Conferences/count_sketch.pdf), International Conference on Machine Learning (ICML-19), 2019.
 
   <button id="b_abs_c27"> Abstract </button>
