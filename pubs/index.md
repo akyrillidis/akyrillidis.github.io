@@ -419,8 +419,9 @@ synthetic and real data. </i> </p>
   
 ## Conference papers
 
-+  Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y. Vardi, Zhiwei Zhang, [*``FourierSAT: A Fourier Expansion-Based Algebraic Framework for Solving Hybrid Boolean Constraints"*](/pubs/Conferences/FourierSAT.pdf), AAAI Conference on Artificial Intelligence (AAAI-20), 2020.
-
++ Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y. Vardi, Zhiwei Zhang, [*``FourierSAT: A Fourier Expansion-Based Algebraic Framework for Solving Hybrid Boolean Constraints"*](/pubs/Conferences/FourierSAT.pdf), AAAI Conference on Artificial Intelligence (AAAI-20), 2020.
+  
+  
   <button id="b_abs_c29"> Abstract </button>
   <button id="b_bib_c29"> Bibtex </button>
   <p id="abs_c29"> <i> The Boolean SATisfiability problem (SAT) is of central importance in computer science. Although SAT is known to be NP-complete, progress on the engineering side, especially that of Conflict-Driven Clause Learning (CDCL) and Local Search SAT solvers, has been remarkable. Yet, while SAT solvers aimed at solving industrial-scale benchmarks in Conjunctive Normal Form (CNF) have become quite mature, SAT solvers that are effective on other types of constraints, e.g., cardinality constraints and XORs, are less well studied; a general approach to handling non-CNF constraints is still lacking. In addition, previous work indicated that for specific classes of benchmarks, the running time of extant SAT solvers depends heavily on properties of the formula and details of encoding, instead of the scale of the benchmarks, which adds uncertainty to expectations of running time.
@@ -436,7 +437,7 @@ To address the issues above, we design FourierSAT, an incomplete SAT solver base
 }
   </samp></pre>
 
-+  Jacky Y. Zhang, Rajiv Khanna, Anastasios Kyrillidis, Oluwasanmi O. Koyejo, [*``Learning Sparse Distributions using Iterative Hard Thresholding"*](/pubs/Conferences/SparseDist.pdf), Advances in Neural Information Processing Systems (NIPS-2019), 2019.
++ Jacky Y. Zhang, Rajiv Khanna, Anastasios Kyrillidis, Oluwasanmi O. Koyejo, [*``Learning Sparse Distributions using Iterative Hard Thresholding"*](/pubs/Conferences/SparseDist.pdf), Advances in Neural Information Processing Systems (NIPS-2019), 2019.
 
   <button id="b_abs_c28"> Abstract </button>
   <button id="b_bib_c28"> Bibtex </button>
