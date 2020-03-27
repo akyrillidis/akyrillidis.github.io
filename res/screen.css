@@ -1483,7 +1483,15 @@ margin-left:1.5em;
 
 .center {
   display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 50%;
+}
+
+.center1 {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
+
