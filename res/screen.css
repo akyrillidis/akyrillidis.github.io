@@ -1480,3 +1480,10 @@ margin-left:1.5em;
 /*#des_s1, #des_s2, #des_s3, #des_s4, #des_s5, #des_s6, #des_s7, #des_s8 {
     display: none;
 }*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
