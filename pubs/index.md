@@ -5,418 +5,6 @@ fb_comments: 3
 
 *(Only peer-reviewed and accepted papers; for the most recent drafts, please check my [Google Scholar](https://scholar.google.com/citations?user=TEGzkZMAAAAJ&hl=en&oi=ao) profile)*
 
-## Journals
-
-+ Amir Kalev, Anastasios Kyrillidis, and Norbert M Linke, [*``Validating and certifying stabilizer states"*](/pubs/Journals/stabilizer_states.pdf), Physical Review A, 2019. 
-  
-  <button id="b_abs_j12"> Abstract </button>
-  <button id="b_bib_j12"> Bibtex </button>
-   <p id="abs_j12"> <i>  We propose a measurement scheme that validates the preparation of an $n$-qubit stabilizer state. 
-     The scheme involves a measurement of $n$ Pauli observables, a priori determined from the stabilizer state and which can be realized using single-qubit gates. 
-     Based on the proposed validation scheme, we derive an explicit expression for the worst-case fidelity, i.e., the minimum fidelity between the stabilizer 
-     state and any other state consistent with the measured data. We also show that the worst-case fidelity can be certified, with high probability, using $O(n^2)$
-     copies of the state.	
-   </i> </p>
-   
-   <pre id="bib_j12"><samp>
-   		@article{PhysRevA.99.042337,
-  			title = {Validating and certifying stabilizer states},
-  			author = {Kalev, Amir and Kyrillidis, Anastasios and Linke, Norbert M.},
-  			journal = {Phys. Rev. A},
-  			volume = {99},
-  			issue = {4},
-  			pages = {042337},
-  			numpages = {6},
-  			year = {2019},
-  			month = {Apr},
-  			publisher = {American Physical Society}
-		} 
-   </samp></pre>
-
-
-+ Ya-Ping Hsieh, Yu-Chun Kao, Rabeeh Karimi Mahabadi, Yurtsever Alp, Anastasios Kyrillidis, Volkan Cevher, [*``A Non-Euclidean Gradient Descent Framework for Non-Convex Matrix Factorization"*](/pubs/Journals/non_euclidean_noncvx.pdf), IEEE Transactions on Signal Processing, 2018. 
-  
-  <button id="b_abs_j14"> Abstract </button>
-  <button id="b_bib_j14"> Bibtex </button>
-   <p id="abs_j14"> <i>   We study convex optimization problems that feature low-rank matrix solutions. In such scenarios, non-convex methods offer significant advantages over convex methods due to their lower space complexity, as well as practical faster convergence. Under mild assumptions, these methods feature global convergence guarantees. In this paper, we extend the results on this matter by following a different path. We derive a non-Euclidean optimization framework in the non-convex setting that takes nonlinear gradient steps on the factors. Our framework enables the possibility to further exploit the underlying problem structures, such as sparsity or low-rankness on the factorized domain, or better dimensional dependence of the smoothness parameters of the objectives. We prove that the non-Euclidean methods enjoy the same rigorous guarantees as their Euclidean counterparts under appropriate assumptions. Numerical evidence with Fourier ptychography and FastText applications, using real data, shows that our approach can enhance solution quality, as well as convergence speed over the standard non-convex approaches.
-	</i> </p>
-   
-   <pre id="bib_j14"><samp>
-   		@article{hsieh2018non,
-  title={A non-Euclidean gradient descent framework for non-convex matrix factorization},
-  author={Hsieh, Ya-Ping and Kao, Yu-Chun and Mahabadi, Rabeeh Karimi and Yurtsever, Alp and Kyrillidis, Anastasios and Cevher, Volkan},
-  journal={IEEE Transactions on Signal Processing},
-  volume={66},
-  number={22},
-  pages={5917--5926},
-  year={2018},
-  publisher={IEEE}
-}   
-  </samp></pre>
-
-+ Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi, [*``Finding low-rank solutions via non-convex matrix factorization, efficiently and provably"*](/pubs/Journals/finding_low_rank.pdf), SIAM Journal on Imaging Sciences, 2018. 
-  
-  <button id="b_abs_j13"> Abstract </button>
-  <button id="b_bib_j13"> Bibtex </button>
-   <p id="abs_j13"> <i>   A rank-$r$ matrix $X \in \mathbb{R}^{m \times n}$ can be written as a product $U V^\top$, where $U \in \mathbb{R}^{m \times r}$ and $V \in \mathbb{R}^{n \times r}$. One could exploit this observation in optimization: e.g., consider the minimization of a convex function $f(X)$ over rank-$r$ matrices, where the set of low-rank matrices is modeled via $UV^\top$. Though such parameterization reduces the number of variables and is more computationally efficient (of particular interest is the case $r \ll \min\{m, n\}$), it comes at a cost: $f(U V^\top)$ becomes a nonconvex function w.r.t. $U$ and $V$. We study such parameterization on generic convex objectives $f$ and focus on first-order, gradient descent algorithms. We propose the bifactored gradient descent (BFGD) algorithm, an efficient first-order method that operates directly on the $U, V$ factors. We show that when $f$ is (restricted) smooth, BFGD has local sublinear convergence; when $f$ is both (restricted) smooth and (restricted) strongly convex, it has local linear convergence. For several applications, we provide simple and efficient initialization schemes that provide initial conditions, good enough for the above convergence results to hold, globally. Extensive experimental results support our arguments that BFGD is an efficient and accurate nonconvex method, compared to state-of-the-art approaches.
-	</i> </p>
-   
-   <pre id="bib_j13"><samp>
-   		@article{park2018finding,
-  title={Finding low-rank solutions via nonconvex matrix factorization, efficiently and provably},
-  author={Park, Dohyung and Kyrillidis, Anastasios and Caramanis, Constantine and Sanghavi, Sujay},
-  journal={SIAM Journal on Imaging Sciences},
-  volume={11},
-  number={4},
-  pages={2165--2204},
-  year={2018},
-  publisher={SIAM}
-}
-   </samp></pre>
-
-
-+ Anastasios Kyrillidis, Amir Kalev, Dohyung Park, Srinadh Bhojanapalli, Constantine Caramanis and Sujay Sanghavi, [*``Provable compressed sensing quantum state tomography via non-convex methods"*](/pubs/Journals/QST.pdf), Nature Journal on Quantum Information, 2018. 
-  
-  <button id="b_abs_j11"> Abstract </button>
-  <button id="b_bib_j11"> Bibtex </button>
-   <p id="abs_j11"> <i>   With nowadays steadily growing quantum processors, it is required to 
-   develop new quantum tomography tools that are tailored for high-dimensional systems. In this 
-   work, we describe such a computational tool, based on recent ideas from non-convex optimization. 
-   The algorithm excels in the compressed sensing setting, where only a few data points are 
-   measured from a low-rank or highly-pure quantum state of a high-dimensional system. We show 
-   that the algorithm can practically be used in quantum tomography problems that are beyond 
-   the reach of convex solvers, and, moreover, is faster and more accurate than other state-of-the-art 
-   non-convex approaches. Crucially, we prove that, despite being a non-convex program, under 
-   mild conditions, the algorithm is guaranteed to converge to the global minimum of the quantum 
-   state tomography problem; thus, it constitutes a provable quantum state tomography protocol.
-	</i> </p>
-   
-   <pre id="bib_j11"><samp>
-   		@article{kyrillidis2018provable,
-  			title={Provable compressed sensing quantum state tomography via non-convex methods},
-  			author={Kyrillidis, Anastasios and Kalev, Amir and Park, Dohyung and Bhojanapalli, Srinadh and Caramanis, Constantine and Sanghavi, Sujay},
-  			journal={npj Quantum Information},
-  			volume={4},
-  			number={1},
-  			pages={36},
-  			year={2018},
-  			publisher={Nature Publishing Group}
-		}
-   </samp></pre>
-
-+ Quoc Tran Dinh, Anastasios Kyrillidis, and Volkan Cevher, [*``A single-phase, proximal path-following framework"*](/pubs/Journals/TranDinhKyrillidisCevher_PathFollowing_Alg.pdf), Mathematics of Operations Research, 2017. 
-  
-  <button id="b_abs_j10"> Abstract </button>
-  <button id="b_bib_j10"> Bibtex </button>
-   <p id="abs_j10"> <i>   We propose a new proximal, path-following framework for a class of constrained convex problems. 
-   		We consider settings where the nonlinear—and possibly non-smooth—objective part is endowed with a proximity operator, 
-   		and the constraint set is equipped with a self-concordant barrier. Our approach relies on the following two main ideas.
-   		 First, we re-parameterize the optimality condition as an auxiliary problem, such that a good initial point is 
-   		 available; by doing so, a family of alternative paths towards the optimum is generated. Second, we combine the 
-   		 proximal operator with path-following ideas to design a single-phase, proximal, path-following algorithm. We prove 
-   		 that our scheme has the same $O(\sqrt{\nu} \log(1/\varepsilon))$ worst-case iteration-complexity with standard 
-   		 approaches [34, 38] without requiring an initial phase, where $\nu$ is the barrier parameter and $\varepsilon$ is 
-   		 a desired accuracy. Our framework allows errors in the calculation of proximal- Newton directions, 
-   		 without sacrificing the worst-case iteration complexity. We demonstrate the merits of our algorithm 
-   		 via three numerical examples, where proximal operators play a key role.
-	</i> </p>
-   
-   <pre id="bib_j10"><samp>
-   		@article{tran2016single,
-  			title={A single-phase, proximal path-following framework},
-  			author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
-  			journal={arXiv preprint arXiv:1603.01681},
-  			year={2016}
-		}
-   </samp></pre>
-
-
-+ Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Algorithms for Learning Sparse Additive Models with Interactions in High Dimensions"*](/pubs/Journals/GSPAM.pdf), Information and Inference: A journal of the IMA, 2017. 
-  
-  <button id="b_abs_j9"> Abstract </button>
-  <button id="b_bib_j9"> Bibtex </button>
-  <button id="b_sof_j9"> Link to software </button>
-   <p id="abs_j9"> <i>   A function $f: \mathbb{R}^d \rightarrow \mathbb{R}$ is a Sparse Additive Model (SPAM), if it 
-   		is of the form $f(\mathbf{x}) = \sum_{l \in \mathcal{S}}\phi_{l}(x_l)$ where $\mathcal{S} \subset [d]$, $|\mathcal{S}| \ll d$. 
-   		Assuming $\phi$'s, $\mathcal{S}$ to be unknown, there exists extensive work for estimating $f$ from its samples. 
-   		In this work, we consider a generalized version of SPAMs, that also allows for the presence of a sparse number of 
-   		second order interaction terms. For some $\mathcal{S}_1 \subset [d], \mathcal{S}_2 \subset {[d] \choose 2}$, 
-   		with $|\mathcal{S}_1| \ll d, |\mathcal{S}_2| \ll d^2$, the function $f$ is now assumed to be of the form:
-		$\sum_{p \in \mathcal{S}_1}\phi_{p} (x_p) + \sum_{(l,l^{\prime}) \in \mathcal{S}_2}\phi_{(l,l^{\prime})} (x_l,x_{l^{\prime}})$. 
-		Assuming we have the freedom to query $f$ anywhere in its domain, we derive efficient algorithms that provably 
-		recover $\mathcal{S}_1,\mathcal{S}_2$ with finite sample bounds. Our analysis covers the noiseless setting where 
-		exact samples of $f$ are obtained, and also extends to the noisy setting where the queries are corrupted with noise. 
-		For the noisy setting in particular, we consider two noise models namely: i.i.d Gaussian noise and arbitrary but 
-		bounded noise. Our main methods for identification of $\mathcal{S}_2$ essentially rely on estimation of sparse 
-		Hessian matrices, for which we provide two novel compressed sensing based schemes. Once 
-		$\mathcal{S}_1, \mathcal{S}_2$ are known, we show how the individual components $\phi_p$, $\phi_{(l,l^{\prime})}$ 
-		can be estimated via additional queries of $f$, with uniform error bounds. Lastly, we provide simulation results 
-		on synthetic data that validate our theoretical findings.
-	</i> </p>
-   
-   <pre id="bib_j9"><samp>
-   		@article{tyagi2017algorithms,
-  			title={Algorithms for Learning Sparse Additive Models with Interactions in High Dimensions},
-  			author={Tyagi, Hemant and Kyrillidis, Anastasios and G{\"a}rtner, Bernd and Krause, Andreas},
-  			journal={Information and Inference: A journal of the IMA},
-  			year={2017}
-		}
-   </samp></pre>
-
-+ Luca Baldassarre, Nirav Bhan, Volkan Cevher, Anastasios Kyrillidis and Siddhartha Satpathi, [*``Group-sparse model selection: Hardness and relaxations"*](/pubs/Journals/GroupSparse-IT.pdf), IEEE Trans. on Information Theory, 2016. *(Authors listed in alphabetical order.)*
-  
-  <button id="b_abs_j8"> Abstract </button>
-  <button id="b_bib_j8"> Bibtex </button>
-   <p id="abs_j8"> <i> Group-based sparsity models are instrumental in linear and non-linear
-		regression problems. The main premise of these models is the recovery of “interpretable” 
-		signals through the identification of their constituent groups, which can also 
-		provably translate in substantial savings in the number of measurements for linear 
-		models in compressive sensing. In this paper, we establish a combinatorial framework 
-		for group-model selection problems and highlight the underlying tractability issues. 
-		In particular, we show that the group-model selection problem is equivalent to the 
-		well-known NP-hard weighted maximum coverage problem (WMC). Leveraging a graph-based 
-		understanding of group models, we describe group structures which enable correct model 
-		selection in polynomial time via dynamic programming. Furthermore, we show that 
-		popular groups structures can be explained by linear inequalities involving totally 
-		unimodular matrices, which afford other polynomial time algorithms based on relaxations. 
-		We also present a generalization of the group-model that allows for within group sparsity, 
-		which can be used to model hierarchical sparsity. Finally, we study the Pareto frontier 
-		between approximation error and sparsity budget of group- sparse approximations for two 
-		tractable models, among which the tree sparsity model, and illustrate selection and 
-		computation trade-offs between our framework and the existing convex relaxations. 
-		</i> </p>
-   
-   <pre id="bib_j8"><samp>
-   		@article{baldassarre2013group,
-  			title={Group-sparse model selection: Hardness and relaxations},
-  			author={Baldassarre, Luca and Bhan, Nirav and Cevher, Volkan and Kyrillidis, Anastasios and Satpathi, Siddhartha},
-  			journal={arXiv preprint arXiv:1303.3207},
-		  	year={2013}
-				}
-   </samp></pre>
-
-+ Georgios Skoumas, Dieter Pfoser, Anastasios Kyrillidis and Timos Sellis, [*``Location estimation using crowdsourced spatial relations"*](/pubs/Journals/LocationEstimation.pdf), ACM Transactions on Spatial Algorithms and Systems, vol. 2, issue 2, 2016. 
-  
-  <button id="b_abs_j7"> Abstract </button>
-  <button id="b_bib_j7"> Bibtex </button>
-   <p id="abs_j7"> <i> The “crowd” has become a very important geospatial data provider. 
-   Specifically, nonexpert users have been providing a wealth of quantitative geospatial data 
-   (e.g., geotagged tweets or photos, online). With spatial reasoning being a basic form of 
-   human cognition, textual narratives expressing user travel experiences (e.g., travel blogs) 
-   would provide an even bigger source of geospatial data. Narratives typically contain 
-   qualitative geospatial data in the form of objects and spatial relations (e.g., “St. John’s 
-   church is to the North of the Acropolis museum.” The scope of this work is (i) to extract 
-   these spatial relations from textual narratives, (ii) to quantify (model) them, and (iii) 
-   to reason about object locations based only on the quantified spatial relations. We use 
-   information extraction methods to identify toponyms and spatial relations, and we formulate 
-   a quantitative approach based on distance and orientation features to represent the latter. 
-   Probability density functions (PDFs) for spatial relations are determined by means of a 
-   greedy expectation maximization (EM)-based algorithm. These PDFs are then used to estimate 
-   unknown object locations. Experiments using a text corpus harvested from travel blog sites 
-   establish the considerable location estimation accuracy of the proposed approach on synthetic 
-   and real-world scenarios. </i> </p>
-   
-   <pre id="bib_j7"><samp>
-   		@article{skoumas2016location,
- 			author = {Skoumas, Georgios and Pfoser, Dieter and Kyrillidis, Anastasios and Sellis, Timos},
- 			title = {Location Estimation Using Crowdsourced Spatial Relations},
- 			journal = {ACM Trans. Spatial Algorithms Syst.},
- 			volume = {2},
- 			number = {2}, 		
-			year = {2016},
- 			pages = {5:1--5:23},
- 			publisher = {ACM},
-		} 
-   </samp></pre>
-
-+ Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``Composite self-concordant minimization"*](/pubs/Journals/TranDinhKyrillidisCevher_ComSelfMin2013.pdf), Journal of Machine Learning Research, 16(Mar):371−416, 2015.
-  
-  <button id="b_abs_j6"> Abstract </button>
-  <button id="b_bib_j6"> Bibtex </button>
-  <button id="b_pre_j6"> Presentation </button>
-  <button id="b_pos_j6"> Poster </button>
-  <button id="b_sof_j6"> Link to software </button>
-   <p id="abs_j6"> <i> We propose a variable metric framework for minimizing the sum of a self-concordant function and a possibly non-smooth convex 
-function, endowed with an easily computable proximal operator. We theoretically establish the convergence of our framework 
-without relying on the usual Lipschitz gradient assumption on the smooth part. An important highlight of our work is a new 
-set of analytic step-size selection and correction procedures based on the structure of the problem. We describe concrete 
-algorithmic instances of our framework for several interesting applications and demonstrate them numerically on both 
-synthetic and real data. </i> </p>
-   
-   <pre id="bib_j6"><samp>
-   		@article{tran2015composite,
-  		  	title={Composite Self-Concordant Minimization},
-		  	author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
-	    	journal={Journal of Machine Learning Research},
-			volume={16},
-			pages={371--416},
-			year={2015}
-		}
-   </samp></pre>
-   
-+ Michail Vlachos, Nikolaos Freris and Anastasios Kyrillidis, [*``Compressive mining: fast and optimal data mining in the compressed domain"*](/pubs/Journals/optimalBounds_VLDB.pdf), Very Large Data Bases (VLDB) Journal, Volume 24 Issue 1, February 2015.
-
-  <button id="b_abs_j5"> Abstract </button>
-  <button id="b_bib_j5"> Bibtex </button>
-  <p id="abs_j5"> <i> Real-world data typically contain repeated and periodic patterns. This suggests that they 
-  can be effectively represented and compressed using only a few coefficients of an appropriate basis (e.g., 
-  Fourier and wavelets). However, distance estimation when the data are represented using different sets of 
-  coefficients is still a largely unexplored area. This work studies the optimization problems related to 
-  obtaining the tightest lower/upper bound on Euclidean distances when each data object is potentially compressed 
-  using a different set of orthonormal coefficients. Our technique leads to tighter distance estimates, which 
-  translates into more accurate search, learning and mining operations directly in the compressed domain. We 
-  formulate the problem of estimating lower/upper distance bounds as an optimization problem. We establish 
-  the properties of optimal solutions and leverage the theoretical analysis to develop a fast algorithm to 
-  obtain an exact solution to the problem. The suggested solution provides the tightest estimation of the 
-  Euclidean norm or the correlation. We show that typical data analysis operations, such as nearest-neighbor 
-  search or k-Means clustering, can operate more accurately using the proposed compression 
-  and distance reconstruction technique. We compare it with many other prevalent compression and 
-  reconstruction techniques, including random projections and PCA-based techniques. We highlight a 
-  surprising result, namely that when the data are highly sparse in some basis, our technique may 
-  even outperform PCA-based compression. The contributions of this work are generic as our methodology 
-  is applicable to any sequential or high-dimensional data as well as to any orthogonal data transformation 
-  used for the underlying data compression scheme. </i> </p>
-   
-   <pre id="bib_j5"><samp>
-   		@article{vlachos2015compressive,
-  			title={Compressive mining: fast and optimal data mining in the compressed domain},
-  			author={Vlachos, Michail and Freris, Nikolaos M and Kyrillidis, Anastasios},
-			journal={The VLDB Journal—The International Journal on Very Large Data Bases},
-  			volume={24},
-  			number={1},
-  			pages={1--24},
-  			year={2015},
-  			publisher={Springer-Verlag New York, Inc.}
-		}
-   </samp></pre>
-
-+ Quoc Tran-Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``An inexact proximal path-following algorithm for constrained convex minimization"*](/pubs/Journals/TranDinh_etal_PFPN_2013.pdf), SIAM Journal on Optimization (SIOPT), vol. 24, num. 4, p. 1718-1745, 2014.
-
-  <button id="b_abs_j4"> Abstract </button>
-  <button id="b_bib_j4"> Bibtex </button>
-  <button id="b_pre_j4"> Presentation </button>
-  <button id="b_sof_j4"> Link to software </button>
-  <p id="abs_j4"> <i> Many scientific and engineering applications feature nonsmooth convex minimization 
-  problems over convex sets. In this paper, we address an important instance of this broad class where we 
-  assume that the nonsmooth objective is equipped with a tractable proximity operator and that the convex 
-  constraint set affords a self-concordant barrier. We provide a new joint treatment of proximal and 
-  self-concordant barrier concepts and illustrate that such problems can be efficiently solved, without 
-  the need of lifting the problem dimensions, as in disciplined convex optimization approach. We propose 
-  an inexact path-following algorithmic framework and theoretically characterize the worst-case analytical 
-  complexity of this framework when the proximal subproblems are solved inexactly. To show the merits 
-  of our framework, we apply its instances to both synthetic and real-world applications, where it shows 
-  advantages over standard interior point methods. As a byproduct, we describe how our framework can 
-  obtain points on the Pareto frontier of regularized problems with self-concordant objectives in a 
-  tuning free fashion. </i> </p>
-
-  <pre id="bib_j4"><samp>
-   		@article{tran2014inexact,
-  			title={An inexact proximal path-following algorithm for constrained convex minimization},
-			author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
- 			journal={SIAM Journal on Optimization},
- 			volume={24},
- 			number={4},
- 			pages={1718--1745},
- 			year={2014},
- 			publisher={SIAM}
-		}
-   </samp></pre>
-   
-+ Anastasios Kyrillidis and George. N. Karystinos, [*``Fixed-rank Rayleigh quotient maximization by an M-PSK sequence"*](/pubs/Journals/05_journal_rankDcomplex_final_v21.pdf), IEEE Trans. on Communications, Volume:62, Issue:3, pages 961-975, 2014.
-
-  <button id="b_abs_j3"> Abstract </button>
-  <button id="b_bib_j3"> Bibtex </button>
-  <button id="b_pre_j3"> Presentation </button>
-  <button id="b_sof_j3"> Link to software </button>
-  <p id="abs_j3"> <i> Certain optimization problems in communication systems, such as limited-feedback 
-  constant-envelope beamforming or noncoherent M-ary phase-shift keying (MPSK) sequence detection, result 
-  in the maximization of a fixed-rank positive semidefinite quadratic form over the MPSK alphabet. 
-  This form is a special case of the Rayleigh quotient of a matrix and, in general, its maximization 
-  by an MPSK sequence is NP-hard. However, if the rank of the matrix is not a function of its size, then 
-  the optimal solution can be computed with polynomial complexity in the matrix size. In this work, 
-  we develop a new technique to efficiently solve this problem by utilizing auxiliary continuous-valued 
-  angles and partitioning the resulting continuous space of solutions into a polynomial-size set of 
-  regions, each of which corresponds to a distinct MPSK sequence. The sequence that maximizes the 
-  Rayleigh quotient is shown to belong to this polynomial-size set of sequences, thus efficiently 
-  reducing the size of the feasible set from exponential to polynomial. Based on this analysis, we 
-  also develop an algorithm that constructs this set in polynomial time and show that it is fully 
-  parallelizable, memory efficient, and rank scalable. The proposed algorithm compares favorably with 
-  other solvers for this problem that have appeared recently in the literature. </i> </p>
-    
-  <pre id="bib_j3"><samp>
-  		@article{kyrillidis2014fixed,
-  			title={Fixed-rank Rayleigh quotient maximization by an MPSK sequence},
- 			author={Kyrillidis, Anastasios and Karystinos, George N},
- 			journal={Communications, IEEE Transactions on},
- 			volume={62},
- 			number={3},
- 			pages={961--975},
- 			year={2014},
- 			publisher={IEEE}
-		}
-  </samp></pre>
-  
-+ Anastasios Kyrillidis and Volkan Cevher, [*``Matrix recipes for hard thresholding methods"*](/pubs/Journals/MatrixALPS_JMVI_v2.pdf), Journal of Mathematical Imaging and Vision (JMIV), April 2013, Springer.
-
-  <button id="b_abs_j2"> Abstract </button>
-  <button id="b_bib_j2"> Bibtex </button>
-  <button id="b_sof_j2"> Link to software </button>
-  <p id="abs_j2"> <i> In this paper, we present and analyze a new set of low-rank recovery algorithms for 
-  linear inverse problems within the class of hard thresholding methods. We provide strategies on how 
-  to set up these algorithms via basic ingredients for different configurations to achieve complexity 
-  vs. accuracy tradeoffs. Moreover, we study acceleration schemes via memory-based techniques and 
-  randomized, ϵ-approximate matrix projections to decrease the computational costs in the recovery 
-  process. For most of the configurations, we present theoretical analysis that guarantees convergence 
-  under mild problem conditions. Simulation results demonstrate notable performance improvements as 
-  compared to state-of-the-art algorithms both in terms of reconstruction accuracy and computational 
-  complexity. </i> </p>
-    
-  <pre id="bib_j2"><samp>
-  		@article{kyrillidis2014matrix,
-  			title={Matrix recipes for hard thresholding methods},
- 			author={Kyrillidis, Anastasios and Cevher, Volkan},
- 			journal={Journal of mathematical imaging and vision},
- 			volume={48},
- 			number={2},
- 			pages={235--265},
- 			year={2014},
-	 		publisher={Springer}
-		}
-  </samp></pre>
-  
-+ Nikolaos D. Sidiropoulos and Anastasios Kyrillidis, [*``Multi-way compressed sensing for sparse low rank tensors"*](/pubs/Journals/MWCSR1twocol.pdf), IEEE Signal Processing Letters, 19(11):757-760, Oct. 2012.
-
-  <button id="b_abs_j1"> Abstract </button>
-  <button id="b_bib_j1"> Bibtex </button>
-  <button id="b_pre_j1"> Presentation (by Mr. Nikos) </button>
-  <button id="b_sof_j1"> Link to software </button>
-  <p id="abs_j1"> <i> For linear models, compressed sensing theory and methods enable recovery of 
-  sparse signals of interest from few measurements - in the order of the number of nonzero
-  entries as opposed to the length of the signal of interest. Results of similar flavor have more 
-  recently emerged for bilinear models, but no results are available for multilinear models of 
-  tensor data. In this contribution, we consider compressed sensing for sparse and low-rank 
-  tensors. More specifically, we consider low-rank tensors synthesized as sums of outer products 
-  of sparse loading vectors, and a special class of linear dimensionality-reducing transformations 
-  that reduce each mode individually. We prove interesting `oracle' properties showing that it 
-  is possible to identify the uncompressed sparse loadings directly from the compressed tensor 
-  data. The proofs naturally suggest a two-step recovery process: fitting a low-rank model 
-  in compressed domain, followed by per-mode $\ell_0$ / $\ell_1$ de-compression. This two-step
-  process is also appealing from a computational complexity and memory capacity point of view, 
-  especially for big tensor datasets. </i> </p>
- 
-  <pre id="bib_j1"><samp>
-  		@article{sidiropoulos2012multi,
- 			title={Multi-way compressed sensing for sparse low-rank tensors},
- 			author={Sidiropoulos, Nicholas D and Kyrillidis, Anastasios},
- 			journal={Signal Processing Letters, IEEE},
- 			volume={19},
- 			number={11},
- 			pages={757--760},
- 			year={2012},
- 			publisher={IEEE}
-		}
-  </samp></pre>
-  
 ## Conference papers
 
 + Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y. Vardi, Zhiwei Zhang, [*``FourierSAT: A Fourier Expansion-Based Algebraic Framework for Solving Hybrid Boolean Constraints"*](/pubs/Conferences/FourierSAT.pdf), AAAI Conference on Artificial Intelligence (AAAI-20), 2020.
@@ -1238,6 +826,419 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 				}
   </samp></pre>
 
+## Journals
+
++ Amir Kalev, Anastasios Kyrillidis, and Norbert M Linke, [*``Validating and certifying stabilizer states"*](/pubs/Journals/stabilizer_states.pdf), Physical Review A, 2019. 
+  
+  <button id="b_abs_j12"> Abstract </button>
+  <button id="b_bib_j12"> Bibtex </button>
+   <p id="abs_j12"> <i>  We propose a measurement scheme that validates the preparation of an $n$-qubit stabilizer state. 
+     The scheme involves a measurement of $n$ Pauli observables, a priori determined from the stabilizer state and which can be realized using single-qubit gates. 
+     Based on the proposed validation scheme, we derive an explicit expression for the worst-case fidelity, i.e., the minimum fidelity between the stabilizer 
+     state and any other state consistent with the measured data. We also show that the worst-case fidelity can be certified, with high probability, using $O(n^2)$
+     copies of the state.	
+   </i> </p>
+   
+   <pre id="bib_j12"><samp>
+   		@article{PhysRevA.99.042337,
+  			title = {Validating and certifying stabilizer states},
+  			author = {Kalev, Amir and Kyrillidis, Anastasios and Linke, Norbert M.},
+  			journal = {Phys. Rev. A},
+  			volume = {99},
+  			issue = {4},
+  			pages = {042337},
+  			numpages = {6},
+  			year = {2019},
+  			month = {Apr},
+  			publisher = {American Physical Society}
+		} 
+   </samp></pre>
+
+
++ Ya-Ping Hsieh, Yu-Chun Kao, Rabeeh Karimi Mahabadi, Yurtsever Alp, Anastasios Kyrillidis, Volkan Cevher, [*``A Non-Euclidean Gradient Descent Framework for Non-Convex Matrix Factorization"*](/pubs/Journals/non_euclidean_noncvx.pdf), IEEE Transactions on Signal Processing, 2018. 
+  
+  <button id="b_abs_j14"> Abstract </button>
+  <button id="b_bib_j14"> Bibtex </button>
+   <p id="abs_j14"> <i>   We study convex optimization problems that feature low-rank matrix solutions. In such scenarios, non-convex methods offer significant advantages over convex methods due to their lower space complexity, as well as practical faster convergence. Under mild assumptions, these methods feature global convergence guarantees. In this paper, we extend the results on this matter by following a different path. We derive a non-Euclidean optimization framework in the non-convex setting that takes nonlinear gradient steps on the factors. Our framework enables the possibility to further exploit the underlying problem structures, such as sparsity or low-rankness on the factorized domain, or better dimensional dependence of the smoothness parameters of the objectives. We prove that the non-Euclidean methods enjoy the same rigorous guarantees as their Euclidean counterparts under appropriate assumptions. Numerical evidence with Fourier ptychography and FastText applications, using real data, shows that our approach can enhance solution quality, as well as convergence speed over the standard non-convex approaches.
+	</i> </p>
+   
+   <pre id="bib_j14"><samp>
+   		@article{hsieh2018non,
+  title={A non-Euclidean gradient descent framework for non-convex matrix factorization},
+  author={Hsieh, Ya-Ping and Kao, Yu-Chun and Mahabadi, Rabeeh Karimi and Yurtsever, Alp and Kyrillidis, Anastasios and Cevher, Volkan},
+  journal={IEEE Transactions on Signal Processing},
+  volume={66},
+  number={22},
+  pages={5917--5926},
+  year={2018},
+  publisher={IEEE}
+}   
+  </samp></pre>
+
++ Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi, [*``Finding low-rank solutions via non-convex matrix factorization, efficiently and provably"*](/pubs/Journals/finding_low_rank.pdf), SIAM Journal on Imaging Sciences, 2018. 
+  
+  <button id="b_abs_j13"> Abstract </button>
+  <button id="b_bib_j13"> Bibtex </button>
+   <p id="abs_j13"> <i>   A rank-$r$ matrix $X \in \mathbb{R}^{m \times n}$ can be written as a product $U V^\top$, where $U \in \mathbb{R}^{m \times r}$ and $V \in \mathbb{R}^{n \times r}$. One could exploit this observation in optimization: e.g., consider the minimization of a convex function $f(X)$ over rank-$r$ matrices, where the set of low-rank matrices is modeled via $UV^\top$. Though such parameterization reduces the number of variables and is more computationally efficient (of particular interest is the case $r \ll \min\{m, n\}$), it comes at a cost: $f(U V^\top)$ becomes a nonconvex function w.r.t. $U$ and $V$. We study such parameterization on generic convex objectives $f$ and focus on first-order, gradient descent algorithms. We propose the bifactored gradient descent (BFGD) algorithm, an efficient first-order method that operates directly on the $U, V$ factors. We show that when $f$ is (restricted) smooth, BFGD has local sublinear convergence; when $f$ is both (restricted) smooth and (restricted) strongly convex, it has local linear convergence. For several applications, we provide simple and efficient initialization schemes that provide initial conditions, good enough for the above convergence results to hold, globally. Extensive experimental results support our arguments that BFGD is an efficient and accurate nonconvex method, compared to state-of-the-art approaches.
+	</i> </p>
+   
+   <pre id="bib_j13"><samp>
+   		@article{park2018finding,
+  title={Finding low-rank solutions via nonconvex matrix factorization, efficiently and provably},
+  author={Park, Dohyung and Kyrillidis, Anastasios and Caramanis, Constantine and Sanghavi, Sujay},
+  journal={SIAM Journal on Imaging Sciences},
+  volume={11},
+  number={4},
+  pages={2165--2204},
+  year={2018},
+  publisher={SIAM}
+}
+   </samp></pre>
+
+
++ Anastasios Kyrillidis, Amir Kalev, Dohyung Park, Srinadh Bhojanapalli, Constantine Caramanis and Sujay Sanghavi, [*``Provable compressed sensing quantum state tomography via non-convex methods"*](/pubs/Journals/QST.pdf), Nature Journal on Quantum Information, 2018. 
+  
+  <button id="b_abs_j11"> Abstract </button>
+  <button id="b_bib_j11"> Bibtex </button>
+   <p id="abs_j11"> <i>   With nowadays steadily growing quantum processors, it is required to 
+   develop new quantum tomography tools that are tailored for high-dimensional systems. In this 
+   work, we describe such a computational tool, based on recent ideas from non-convex optimization. 
+   The algorithm excels in the compressed sensing setting, where only a few data points are 
+   measured from a low-rank or highly-pure quantum state of a high-dimensional system. We show 
+   that the algorithm can practically be used in quantum tomography problems that are beyond 
+   the reach of convex solvers, and, moreover, is faster and more accurate than other state-of-the-art 
+   non-convex approaches. Crucially, we prove that, despite being a non-convex program, under 
+   mild conditions, the algorithm is guaranteed to converge to the global minimum of the quantum 
+   state tomography problem; thus, it constitutes a provable quantum state tomography protocol.
+	</i> </p>
+   
+   <pre id="bib_j11"><samp>
+   		@article{kyrillidis2018provable,
+  			title={Provable compressed sensing quantum state tomography via non-convex methods},
+  			author={Kyrillidis, Anastasios and Kalev, Amir and Park, Dohyung and Bhojanapalli, Srinadh and Caramanis, Constantine and Sanghavi, Sujay},
+  			journal={npj Quantum Information},
+  			volume={4},
+  			number={1},
+  			pages={36},
+  			year={2018},
+  			publisher={Nature Publishing Group}
+		}
+   </samp></pre>
+
++ Quoc Tran Dinh, Anastasios Kyrillidis, and Volkan Cevher, [*``A single-phase, proximal path-following framework"*](/pubs/Journals/TranDinhKyrillidisCevher_PathFollowing_Alg.pdf), Mathematics of Operations Research, 2017. 
+  
+  <button id="b_abs_j10"> Abstract </button>
+  <button id="b_bib_j10"> Bibtex </button>
+   <p id="abs_j10"> <i>   We propose a new proximal, path-following framework for a class of constrained convex problems. 
+   		We consider settings where the nonlinear—and possibly non-smooth—objective part is endowed with a proximity operator, 
+   		and the constraint set is equipped with a self-concordant barrier. Our approach relies on the following two main ideas.
+   		 First, we re-parameterize the optimality condition as an auxiliary problem, such that a good initial point is 
+   		 available; by doing so, a family of alternative paths towards the optimum is generated. Second, we combine the 
+   		 proximal operator with path-following ideas to design a single-phase, proximal, path-following algorithm. We prove 
+   		 that our scheme has the same $O(\sqrt{\nu} \log(1/\varepsilon))$ worst-case iteration-complexity with standard 
+   		 approaches [34, 38] without requiring an initial phase, where $\nu$ is the barrier parameter and $\varepsilon$ is 
+   		 a desired accuracy. Our framework allows errors in the calculation of proximal- Newton directions, 
+   		 without sacrificing the worst-case iteration complexity. We demonstrate the merits of our algorithm 
+   		 via three numerical examples, where proximal operators play a key role.
+	</i> </p>
+   
+   <pre id="bib_j10"><samp>
+   		@article{tran2016single,
+  			title={A single-phase, proximal path-following framework},
+  			author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
+  			journal={arXiv preprint arXiv:1603.01681},
+  			year={2016}
+		}
+   </samp></pre>
+
+
++ Hemant Tyagi, Anastasios Kyrillidis, Bernd Gartner, and Andreas Krause, [*``Algorithms for Learning Sparse Additive Models with Interactions in High Dimensions"*](/pubs/Journals/GSPAM.pdf), Information and Inference: A journal of the IMA, 2017. 
+  
+  <button id="b_abs_j9"> Abstract </button>
+  <button id="b_bib_j9"> Bibtex </button>
+  <button id="b_sof_j9"> Link to software </button>
+   <p id="abs_j9"> <i>   A function $f: \mathbb{R}^d \rightarrow \mathbb{R}$ is a Sparse Additive Model (SPAM), if it 
+   		is of the form $f(\mathbf{x}) = \sum_{l \in \mathcal{S}}\phi_{l}(x_l)$ where $\mathcal{S} \subset [d]$, $|\mathcal{S}| \ll d$. 
+   		Assuming $\phi$'s, $\mathcal{S}$ to be unknown, there exists extensive work for estimating $f$ from its samples. 
+   		In this work, we consider a generalized version of SPAMs, that also allows for the presence of a sparse number of 
+   		second order interaction terms. For some $\mathcal{S}_1 \subset [d], \mathcal{S}_2 \subset {[d] \choose 2}$, 
+   		with $|\mathcal{S}_1| \ll d, |\mathcal{S}_2| \ll d^2$, the function $f$ is now assumed to be of the form:
+		$\sum_{p \in \mathcal{S}_1}\phi_{p} (x_p) + \sum_{(l,l^{\prime}) \in \mathcal{S}_2}\phi_{(l,l^{\prime})} (x_l,x_{l^{\prime}})$. 
+		Assuming we have the freedom to query $f$ anywhere in its domain, we derive efficient algorithms that provably 
+		recover $\mathcal{S}_1,\mathcal{S}_2$ with finite sample bounds. Our analysis covers the noiseless setting where 
+		exact samples of $f$ are obtained, and also extends to the noisy setting where the queries are corrupted with noise. 
+		For the noisy setting in particular, we consider two noise models namely: i.i.d Gaussian noise and arbitrary but 
+		bounded noise. Our main methods for identification of $\mathcal{S}_2$ essentially rely on estimation of sparse 
+		Hessian matrices, for which we provide two novel compressed sensing based schemes. Once 
+		$\mathcal{S}_1, \mathcal{S}_2$ are known, we show how the individual components $\phi_p$, $\phi_{(l,l^{\prime})}$ 
+		can be estimated via additional queries of $f$, with uniform error bounds. Lastly, we provide simulation results 
+		on synthetic data that validate our theoretical findings.
+	</i> </p>
+   
+   <pre id="bib_j9"><samp>
+   		@article{tyagi2017algorithms,
+  			title={Algorithms for Learning Sparse Additive Models with Interactions in High Dimensions},
+  			author={Tyagi, Hemant and Kyrillidis, Anastasios and G{\"a}rtner, Bernd and Krause, Andreas},
+  			journal={Information and Inference: A journal of the IMA},
+  			year={2017}
+		}
+   </samp></pre>
+
++ Luca Baldassarre, Nirav Bhan, Volkan Cevher, Anastasios Kyrillidis and Siddhartha Satpathi, [*``Group-sparse model selection: Hardness and relaxations"*](/pubs/Journals/GroupSparse-IT.pdf), IEEE Trans. on Information Theory, 2016. *(Authors listed in alphabetical order.)*
+  
+  <button id="b_abs_j8"> Abstract </button>
+  <button id="b_bib_j8"> Bibtex </button>
+   <p id="abs_j8"> <i> Group-based sparsity models are instrumental in linear and non-linear
+		regression problems. The main premise of these models is the recovery of “interpretable” 
+		signals through the identification of their constituent groups, which can also 
+		provably translate in substantial savings in the number of measurements for linear 
+		models in compressive sensing. In this paper, we establish a combinatorial framework 
+		for group-model selection problems and highlight the underlying tractability issues. 
+		In particular, we show that the group-model selection problem is equivalent to the 
+		well-known NP-hard weighted maximum coverage problem (WMC). Leveraging a graph-based 
+		understanding of group models, we describe group structures which enable correct model 
+		selection in polynomial time via dynamic programming. Furthermore, we show that 
+		popular groups structures can be explained by linear inequalities involving totally 
+		unimodular matrices, which afford other polynomial time algorithms based on relaxations. 
+		We also present a generalization of the group-model that allows for within group sparsity, 
+		which can be used to model hierarchical sparsity. Finally, we study the Pareto frontier 
+		between approximation error and sparsity budget of group- sparse approximations for two 
+		tractable models, among which the tree sparsity model, and illustrate selection and 
+		computation trade-offs between our framework and the existing convex relaxations. 
+		</i> </p>
+   
+   <pre id="bib_j8"><samp>
+   		@article{baldassarre2013group,
+  			title={Group-sparse model selection: Hardness and relaxations},
+  			author={Baldassarre, Luca and Bhan, Nirav and Cevher, Volkan and Kyrillidis, Anastasios and Satpathi, Siddhartha},
+  			journal={arXiv preprint arXiv:1303.3207},
+		  	year={2013}
+				}
+   </samp></pre>
+
++ Georgios Skoumas, Dieter Pfoser, Anastasios Kyrillidis and Timos Sellis, [*``Location estimation using crowdsourced spatial relations"*](/pubs/Journals/LocationEstimation.pdf), ACM Transactions on Spatial Algorithms and Systems, vol. 2, issue 2, 2016. 
+  
+  <button id="b_abs_j7"> Abstract </button>
+  <button id="b_bib_j7"> Bibtex </button>
+   <p id="abs_j7"> <i> The “crowd” has become a very important geospatial data provider. 
+   Specifically, nonexpert users have been providing a wealth of quantitative geospatial data 
+   (e.g., geotagged tweets or photos, online). With spatial reasoning being a basic form of 
+   human cognition, textual narratives expressing user travel experiences (e.g., travel blogs) 
+   would provide an even bigger source of geospatial data. Narratives typically contain 
+   qualitative geospatial data in the form of objects and spatial relations (e.g., “St. John’s 
+   church is to the North of the Acropolis museum.” The scope of this work is (i) to extract 
+   these spatial relations from textual narratives, (ii) to quantify (model) them, and (iii) 
+   to reason about object locations based only on the quantified spatial relations. We use 
+   information extraction methods to identify toponyms and spatial relations, and we formulate 
+   a quantitative approach based on distance and orientation features to represent the latter. 
+   Probability density functions (PDFs) for spatial relations are determined by means of a 
+   greedy expectation maximization (EM)-based algorithm. These PDFs are then used to estimate 
+   unknown object locations. Experiments using a text corpus harvested from travel blog sites 
+   establish the considerable location estimation accuracy of the proposed approach on synthetic 
+   and real-world scenarios. </i> </p>
+   
+   <pre id="bib_j7"><samp>
+   		@article{skoumas2016location,
+ 			author = {Skoumas, Georgios and Pfoser, Dieter and Kyrillidis, Anastasios and Sellis, Timos},
+ 			title = {Location Estimation Using Crowdsourced Spatial Relations},
+ 			journal = {ACM Trans. Spatial Algorithms Syst.},
+ 			volume = {2},
+ 			number = {2}, 		
+			year = {2016},
+ 			pages = {5:1--5:23},
+ 			publisher = {ACM},
+		} 
+   </samp></pre>
+
++ Quoc Tran Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``Composite self-concordant minimization"*](/pubs/Journals/TranDinhKyrillidisCevher_ComSelfMin2013.pdf), Journal of Machine Learning Research, 16(Mar):371−416, 2015.
+  
+  <button id="b_abs_j6"> Abstract </button>
+  <button id="b_bib_j6"> Bibtex </button>
+  <button id="b_pre_j6"> Presentation </button>
+  <button id="b_pos_j6"> Poster </button>
+  <button id="b_sof_j6"> Link to software </button>
+   <p id="abs_j6"> <i> We propose a variable metric framework for minimizing the sum of a self-concordant function and a possibly non-smooth convex 
+function, endowed with an easily computable proximal operator. We theoretically establish the convergence of our framework 
+without relying on the usual Lipschitz gradient assumption on the smooth part. An important highlight of our work is a new 
+set of analytic step-size selection and correction procedures based on the structure of the problem. We describe concrete 
+algorithmic instances of our framework for several interesting applications and demonstrate them numerically on both 
+synthetic and real data. </i> </p>
+   
+   <pre id="bib_j6"><samp>
+   		@article{tran2015composite,
+  		  	title={Composite Self-Concordant Minimization},
+		  	author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
+	    	journal={Journal of Machine Learning Research},
+			volume={16},
+			pages={371--416},
+			year={2015}
+		}
+   </samp></pre>
+   
++ Michail Vlachos, Nikolaos Freris and Anastasios Kyrillidis, [*``Compressive mining: fast and optimal data mining in the compressed domain"*](/pubs/Journals/optimalBounds_VLDB.pdf), Very Large Data Bases (VLDB) Journal, Volume 24 Issue 1, February 2015.
+
+  <button id="b_abs_j5"> Abstract </button>
+  <button id="b_bib_j5"> Bibtex </button>
+  <p id="abs_j5"> <i> Real-world data typically contain repeated and periodic patterns. This suggests that they 
+  can be effectively represented and compressed using only a few coefficients of an appropriate basis (e.g., 
+  Fourier and wavelets). However, distance estimation when the data are represented using different sets of 
+  coefficients is still a largely unexplored area. This work studies the optimization problems related to 
+  obtaining the tightest lower/upper bound on Euclidean distances when each data object is potentially compressed 
+  using a different set of orthonormal coefficients. Our technique leads to tighter distance estimates, which 
+  translates into more accurate search, learning and mining operations directly in the compressed domain. We 
+  formulate the problem of estimating lower/upper distance bounds as an optimization problem. We establish 
+  the properties of optimal solutions and leverage the theoretical analysis to develop a fast algorithm to 
+  obtain an exact solution to the problem. The suggested solution provides the tightest estimation of the 
+  Euclidean norm or the correlation. We show that typical data analysis operations, such as nearest-neighbor 
+  search or k-Means clustering, can operate more accurately using the proposed compression 
+  and distance reconstruction technique. We compare it with many other prevalent compression and 
+  reconstruction techniques, including random projections and PCA-based techniques. We highlight a 
+  surprising result, namely that when the data are highly sparse in some basis, our technique may 
+  even outperform PCA-based compression. The contributions of this work are generic as our methodology 
+  is applicable to any sequential or high-dimensional data as well as to any orthogonal data transformation 
+  used for the underlying data compression scheme. </i> </p>
+   
+   <pre id="bib_j5"><samp>
+   		@article{vlachos2015compressive,
+  			title={Compressive mining: fast and optimal data mining in the compressed domain},
+  			author={Vlachos, Michail and Freris, Nikolaos M and Kyrillidis, Anastasios},
+			journal={The VLDB Journal—The International Journal on Very Large Data Bases},
+  			volume={24},
+  			number={1},
+  			pages={1--24},
+  			year={2015},
+  			publisher={Springer-Verlag New York, Inc.}
+		}
+   </samp></pre>
+
++ Quoc Tran-Dinh, Anastasios Kyrillidis and Volkan Cevher, [*``An inexact proximal path-following algorithm for constrained convex minimization"*](/pubs/Journals/TranDinh_etal_PFPN_2013.pdf), SIAM Journal on Optimization (SIOPT), vol. 24, num. 4, p. 1718-1745, 2014.
+
+  <button id="b_abs_j4"> Abstract </button>
+  <button id="b_bib_j4"> Bibtex </button>
+  <button id="b_pre_j4"> Presentation </button>
+  <button id="b_sof_j4"> Link to software </button>
+  <p id="abs_j4"> <i> Many scientific and engineering applications feature nonsmooth convex minimization 
+  problems over convex sets. In this paper, we address an important instance of this broad class where we 
+  assume that the nonsmooth objective is equipped with a tractable proximity operator and that the convex 
+  constraint set affords a self-concordant barrier. We provide a new joint treatment of proximal and 
+  self-concordant barrier concepts and illustrate that such problems can be efficiently solved, without 
+  the need of lifting the problem dimensions, as in disciplined convex optimization approach. We propose 
+  an inexact path-following algorithmic framework and theoretically characterize the worst-case analytical 
+  complexity of this framework when the proximal subproblems are solved inexactly. To show the merits 
+  of our framework, we apply its instances to both synthetic and real-world applications, where it shows 
+  advantages over standard interior point methods. As a byproduct, we describe how our framework can 
+  obtain points on the Pareto frontier of regularized problems with self-concordant objectives in a 
+  tuning free fashion. </i> </p>
+
+  <pre id="bib_j4"><samp>
+   		@article{tran2014inexact,
+  			title={An inexact proximal path-following algorithm for constrained convex minimization},
+			author={Tran-Dinh, Quoc and Kyrillidis, Anastasios and Cevher, Volkan},
+ 			journal={SIAM Journal on Optimization},
+ 			volume={24},
+ 			number={4},
+ 			pages={1718--1745},
+ 			year={2014},
+ 			publisher={SIAM}
+		}
+   </samp></pre>
+   
++ Anastasios Kyrillidis and George. N. Karystinos, [*``Fixed-rank Rayleigh quotient maximization by an M-PSK sequence"*](/pubs/Journals/05_journal_rankDcomplex_final_v21.pdf), IEEE Trans. on Communications, Volume:62, Issue:3, pages 961-975, 2014.
+
+  <button id="b_abs_j3"> Abstract </button>
+  <button id="b_bib_j3"> Bibtex </button>
+  <button id="b_pre_j3"> Presentation </button>
+  <button id="b_sof_j3"> Link to software </button>
+  <p id="abs_j3"> <i> Certain optimization problems in communication systems, such as limited-feedback 
+  constant-envelope beamforming or noncoherent M-ary phase-shift keying (MPSK) sequence detection, result 
+  in the maximization of a fixed-rank positive semidefinite quadratic form over the MPSK alphabet. 
+  This form is a special case of the Rayleigh quotient of a matrix and, in general, its maximization 
+  by an MPSK sequence is NP-hard. However, if the rank of the matrix is not a function of its size, then 
+  the optimal solution can be computed with polynomial complexity in the matrix size. In this work, 
+  we develop a new technique to efficiently solve this problem by utilizing auxiliary continuous-valued 
+  angles and partitioning the resulting continuous space of solutions into a polynomial-size set of 
+  regions, each of which corresponds to a distinct MPSK sequence. The sequence that maximizes the 
+  Rayleigh quotient is shown to belong to this polynomial-size set of sequences, thus efficiently 
+  reducing the size of the feasible set from exponential to polynomial. Based on this analysis, we 
+  also develop an algorithm that constructs this set in polynomial time and show that it is fully 
+  parallelizable, memory efficient, and rank scalable. The proposed algorithm compares favorably with 
+  other solvers for this problem that have appeared recently in the literature. </i> </p>
+    
+  <pre id="bib_j3"><samp>
+  		@article{kyrillidis2014fixed,
+  			title={Fixed-rank Rayleigh quotient maximization by an MPSK sequence},
+ 			author={Kyrillidis, Anastasios and Karystinos, George N},
+ 			journal={Communications, IEEE Transactions on},
+ 			volume={62},
+ 			number={3},
+ 			pages={961--975},
+ 			year={2014},
+ 			publisher={IEEE}
+		}
+  </samp></pre>
+  
++ Anastasios Kyrillidis and Volkan Cevher, [*``Matrix recipes for hard thresholding methods"*](/pubs/Journals/MatrixALPS_JMVI_v2.pdf), Journal of Mathematical Imaging and Vision (JMIV), April 2013, Springer.
+
+  <button id="b_abs_j2"> Abstract </button>
+  <button id="b_bib_j2"> Bibtex </button>
+  <button id="b_sof_j2"> Link to software </button>
+  <p id="abs_j2"> <i> In this paper, we present and analyze a new set of low-rank recovery algorithms for 
+  linear inverse problems within the class of hard thresholding methods. We provide strategies on how 
+  to set up these algorithms via basic ingredients for different configurations to achieve complexity 
+  vs. accuracy tradeoffs. Moreover, we study acceleration schemes via memory-based techniques and 
+  randomized, ϵ-approximate matrix projections to decrease the computational costs in the recovery 
+  process. For most of the configurations, we present theoretical analysis that guarantees convergence 
+  under mild problem conditions. Simulation results demonstrate notable performance improvements as 
+  compared to state-of-the-art algorithms both in terms of reconstruction accuracy and computational 
+  complexity. </i> </p>
+    
+  <pre id="bib_j2"><samp>
+  		@article{kyrillidis2014matrix,
+  			title={Matrix recipes for hard thresholding methods},
+ 			author={Kyrillidis, Anastasios and Cevher, Volkan},
+ 			journal={Journal of mathematical imaging and vision},
+ 			volume={48},
+ 			number={2},
+ 			pages={235--265},
+ 			year={2014},
+	 		publisher={Springer}
+		}
+  </samp></pre>
+  
++ Nikolaos D. Sidiropoulos and Anastasios Kyrillidis, [*``Multi-way compressed sensing for sparse low rank tensors"*](/pubs/Journals/MWCSR1twocol.pdf), IEEE Signal Processing Letters, 19(11):757-760, Oct. 2012.
+
+  <button id="b_abs_j1"> Abstract </button>
+  <button id="b_bib_j1"> Bibtex </button>
+  <button id="b_pre_j1"> Presentation (by Mr. Nikos) </button>
+  <button id="b_sof_j1"> Link to software </button>
+  <p id="abs_j1"> <i> For linear models, compressed sensing theory and methods enable recovery of 
+  sparse signals of interest from few measurements - in the order of the number of nonzero
+  entries as opposed to the length of the signal of interest. Results of similar flavor have more 
+  recently emerged for bilinear models, but no results are available for multilinear models of 
+  tensor data. In this contribution, we consider compressed sensing for sparse and low-rank 
+  tensors. More specifically, we consider low-rank tensors synthesized as sums of outer products 
+  of sparse loading vectors, and a special class of linear dimensionality-reducing transformations 
+  that reduce each mode individually. We prove interesting `oracle' properties showing that it 
+  is possible to identify the uncompressed sparse loadings directly from the compressed tensor 
+  data. The proofs naturally suggest a two-step recovery process: fitting a low-rank model 
+  in compressed domain, followed by per-mode $\ell_0$ / $\ell_1$ de-compression. This two-step
+  process is also appealing from a computational complexity and memory capacity point of view, 
+  especially for big tensor datasets. </i> </p>
+ 
+  <pre id="bib_j1"><samp>
+  		@article{sidiropoulos2012multi,
+ 			title={Multi-way compressed sensing for sparse low-rank tensors},
+ 			author={Sidiropoulos, Nicholas D and Kyrillidis, Anastasios},
+ 			journal={Signal Processing Letters, IEEE},
+ 			volume={19},
+ 			number={11},
+ 			pages={757--760},
+ 			year={2012},
+ 			publisher={IEEE}
+		}
+  </samp></pre>
+  
+  
 ## Book chapters
 + Volkan Cevher, Sina Jafarpour and Anastasios Kyrillidis, [*``Linear inverse problems with norm and sparsity constraints"*](/pubs/Journals/LIP.pdf), in Practical Applications of Sparse Modeling, Sept. 2014, MIT Press, *(Authors listed in alphabetical order)*.
 
