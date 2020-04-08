@@ -4,7 +4,7 @@ fb_comments: 3
 title: Teaching
 ---
 
-* COMP 545 - Advanced topics in optimization: From simple to complex ML systems (*Spring '19*)
+* COMP 545 - Advanced topics in optimization: From simple to complex ML systems (*Spring '19*, *Spring '20*)
 
 <button id="COMP545"> Website </button>
 
