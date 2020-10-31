@@ -7,6 +7,43 @@ fb_comments: 3
 
 ## Conference papers
 
++ John Chen, Vatsal Shah and Anastasios Kyrillidis, [*``Negative sampling in semi-supervised learning"*](/pubs/Conferences/NS3L.pdf), International Conference on Machine Learning (ICML-20), 2020.
+  
+  
+  <button id="b_abs_c31"> Abstract </button>
+  <button id="b_bib_c31"> Bibtex </button>
+  <p id="abs_c31"> <i> We consider the question whether algorithmic choices in over-parameterized linear matrix factorization introduce implicit low-rank regularization.We focus on the noiseless matrix sensing scenario over low-rank positive semi-definite (PSD) matrices over the reals, with a sensing mechanism that satisfies restricted isometry properties.Surprisingly, it was recently argued that for recovery of PSD matrices, gradient descent over a squared, full-rank factorized space introduces implicit low-rank regularization.Thus, a clever choice of the recovery algorithm avoids the need for explicit low-rank regularization. In this contribution, we prove that in fact, under certain conditions, the PSD constraint by itself is sufficient to lead to a unique low-rank matrix recovery, without explicit or implicit regularization.Therefore, under these conditions, the set of PSD matrices that are consistent with the observed data, is a singleton, regardless of the algorithm used. Our numerical study indicates that this result is general and extends to cases beyond the those covered by the proof.
+  </i> </p>
+ 
+  <pre id="bib_c31"><samp>
+  		@inproceedings{chen2020negative,
+  title={Negative sampling in semi-supervised learning},
+  author={Chen, John and Shah, Vatsal and Kyrillidis, Anastasios},
+  booktitle={International Conference on Machine Learning},
+  year={2020}
+}
+  </samp></pre>
+  
+  
++ Kelly Geyer, Anastasios Kyrillidis, and Amir Kalev, [*``Low-rank regularization and solution uniqueness in over- parameterized matrix sensing"*](/pubs/Conferences/sol_unique_MS.pdf), Twenty-third International Conference on Artificial Intelligence and Statistics (AISTATS-20), 2020.
+  
+  
+  <button id="b_abs_c30"> Abstract </button>
+  <button id="b_bib_c30"> Bibtex </button>
+  <p id="abs_c30"> <i> We consider the question whether algorithmic choices in over-parameterized linear matrix factorization introduce implicit low-rank regularization.We focus on the noiseless matrix sensing scenario over low-rank positive semi-definite (PSD) matrices over the reals, with a sensing mechanism that satisfies restricted isometry properties.Surprisingly, it was recently argued that for recovery of PSD matrices, gradient descent over a squared, full-rank factorized space introduces implicit low-rank regularization.Thus, a clever choice of the recovery algorithm avoids the need for explicit low-rank regularization. In this contribution, we prove that in fact, under certain conditions, the PSD constraint by itself is sufficient to lead to a unique low-rank matrix recovery, without explicit or implicit regularization.Therefore, under these conditions, the set of PSD matrices that are consistent with the observed data, is a singleton, regardless of the algorithm used. Our numerical study indicates that this result is general and extends to cases beyond the those covered by the proof.
+  </i> </p>
+ 
+  <pre id="bib_c30"><samp>
+  		@inproceedings{geyer2020low,
+  title={Low-rank regularization and solution uniqueness in over-parameterized matrix sensing},
+  author={Geyer, Kelly and Kyrillidis, Anastasios and Kalev, Amir},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={930--940},
+  year={2020}
+}
+  </samp></pre>
+  
+  
 + Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y. Vardi, Zhiwei Zhang, [*``FourierSAT: A Fourier Expansion-Based Algebraic Framework for Solving Hybrid Boolean Constraints"*](/pubs/Conferences/FourierSAT.pdf), AAAI Conference on Artificial Intelligence (AAAI-20), 2020.
   
   
