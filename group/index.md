@@ -3,9 +3,9 @@ layout: dirindex
 fb_comments: 3
 ---
 
-<center> <h1>OptimaLab</h1> </center>
+<center> <h2>OptimaLab</h2> </center>
 
-## PhD Students
+<center> <h3>PhD Students</h3> </center>
 
 [**John Chen**](https://johnchenresearch.github.io/)
 
@@ -19,10 +19,10 @@ fb_comments: 3
 
 [**Zhiwei Zhang**](https://www.cs.rice.edu/~zz59/) -- Co-advised with Moshe Vardi
 
-## MSc Students
+<center> <h3>MSc Students</h3> </center>
 
 [**Jasper Liao**]()
 
-## Undergraduate Students
+<center> <h3>Undegraduate Students</h3> </center>
 
 [**Chuck Wang**](http://wangqihan.com/)
