@@ -7,6 +7,10 @@ fb_comments: 3
 
 <center> <h3>PhD Students</h3> </center>
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://...Dark.png)  |  ![](https://...Ocean.png)
+
 [**John Chen**](https://johnchenresearch.github.io/)
 
 [**Chen Dun**]()
