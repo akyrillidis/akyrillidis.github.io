@@ -3,7 +3,7 @@ layout: dirindex
 fb_comments: 3
 ---
 
-# OptimaLab
+<center> <h1>OptimaLab</h1> </center>
 
 ## PhD Students
 
