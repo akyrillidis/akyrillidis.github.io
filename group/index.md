@@ -1,4 +1,3 @@
-
 ---
 layout: dirindex
 fb_comments: 3
@@ -9,11 +8,17 @@ fb_comments: 3
 ## PhD Students
 
 [**John Chen**]()
+
 [**Chen Dun**]()
+
 [**Lyle Kim**]()
+
 [**Carlos Quintero Pena**]()
+
 [**Cameron Wolfe**]()
+
 [**Zhiwei Zhang**]()
+
 
 ## MSc Students
 
@@ -22,4 +27,3 @@ fb_comments: 3
 ## Undergraduate Students
 
 [**Chuck Wang**]()
-
