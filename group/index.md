@@ -25,4 +25,4 @@ fb_comments: 3
 
 ## Undergraduate Students
 
-[**Chuck Wang**]()
+[**Chuck Wang**](http://wangqihan.com/)
