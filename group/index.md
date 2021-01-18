@@ -14,7 +14,6 @@ fb_comments: 3
 [**Cameron Wolfe**]()
 [**Zhiwei Zhang**]()
 
-
 ## MSc Students
 
 [**Jasper Liao**]()
