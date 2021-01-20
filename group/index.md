@@ -25,4 +25,7 @@ Co-adv. Moshe Vardi
 
 <center> <h3>Undegraduate Students</h3> </center>
 
+![Chuck Wang](/group/chuck_wang.png)
+:-------------------------:
 [**Chuck Wang**](http://wangqihan.com/)
+(2019 - )
