@@ -7,7 +7,7 @@ fb_comments: 3
 
 <center> <h3>PhD Students</h3> </center>
 
-![John Chen](/group/john_chen.png)  |  ![Chen Dun](/group/john_chen.png)  |  ![Lyle Kim](/group/lyle_kim.png)
+![John Chen](/group/john_chen.png)  |  ![Chen Dun](/group/chen_dun.png)  |  ![Lyle Kim](/group/lyle_kim.png)
 :-------------------------:|:-------------------------:|:-------------------------:
 John Chen                  | Chen Dun                  | Lyle Kim
 
