@@ -13,11 +13,11 @@ fb_comments: 3
 [**John Chen**](https://johnchenresearch.github.io/)  | | [**Chen Dun**]()   | | [**Lyle Kim**](https://jlylekim.github.io/) | | [**Carlos Q. Pena**](https://carlosquinterop.github.io/)  | | [**Cameron Wolfe**](https://wolfecameron.github.io/)   
 (2020 - )   |  |    (2019 - )  |  | (2019 - ) | | (2019 - )   |  |    (2020 - ) 
 
-![Carlos Quintero Pena](/group/carlos_quintero.png)  |  |  ![Cameron Wolfe](/group/cameron_wolfe.png)  |  |  ![Zhiwei Zhang](/group/zhiwei_zhang.png)
-:-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
-[**Carlos Q. Pena**](https://carlosquinterop.github.io/)  | | [**Cameron Wolfe**](https://wolfecameron.github.io/)   |  | [**Zhiwei Zhang**](https://www.cs.rice.edu/~zz59/)
-(2019 - )   |  |    (2020 - )  |  | (2018 - )
-Co-adv. Lydia Kavraki   |  |     |  | Co-adv. Moshe Vardi
+![Zhiwei Zhang](/group/zhiwei_zhang.png)
+:-------------------------:
+[**Zhiwei Zhang**](https://www.cs.rice.edu/~zz59/)
+(2018 - )
+Co-adv. Moshe Vardi
 
 <center> <h3>MSc Students</h3> </center>
 
