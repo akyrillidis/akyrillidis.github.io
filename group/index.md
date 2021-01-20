@@ -7,9 +7,15 @@ fb_comments: 3
 
 <center> <h3>PhD Students</h3> </center>
 
-John Chen             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![John Chen](/group/john_chen.png)  |  ![](https://...Ocean.png)
+![John Chen](/group/john_chen.png)  |  ![Chen Dun](/group/john_chen.png)  |  ![Lyle Kim](/group/lyle_kim.png)
+:-------------------------:|:-------------------------:|:-------------------------:
+John Chen                  | Chen Dun                  | Lyle Kim
+
+
+![Carlos Quintero Pena](/group/carlos_quintero.png)  |  ![Cameron Wolfe](/group/cameron_wolfe.png)  |  ![Zhiwei Zhang](/group/zhiwei_zhang.png)
+:-------------------------:|:-------------------------:|:-------------------------:
+Carlos Quintero Pena                  | Cameron Wolfe                 | Zhiwei Zhang
+
 
 [**John Chen**](https://johnchenresearch.github.io/)
 
