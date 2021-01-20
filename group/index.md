@@ -7,9 +7,9 @@ fb_comments: 3
 
 <center> <h3>PhD Students</h3> </center>
 
-![John Chen](/group/john_chen.png)  |  ![Chen Dun](/group/chen_dun.png)  |  ![Lyle Kim](/group/lyle_kim.png)
-:-------------------------:|:-------------------------:|:-------------------------:
-[**John Chen (2020 - )**](https://johnchenresearch.github.io/)                  | [**Chen Dun (2019 - )**]()                  | [**Lyle Kim (2019 - ) **](https://jlylekim.github.io/)
+![John Chen](/group/john_chen.png)  |  |  ![Chen Dun](/group/chen_dun.png)  |  | ![Lyle Kim](/group/lyle_kim.png)
+:-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
+[**John Chen (2020 - )**](https://johnchenresearch.github.io/)  | | [**Chen Dun (2019 - )**]()   | | [**Lyle Kim (2019 - ) **](https://jlylekim.github.io/)
 
 
 ![Carlos Quintero Pena](/group/carlos_quintero.png)  |  ![Cameron Wolfe](/group/cameron_wolfe.png)  |  ![Zhiwei Zhang](/group/zhiwei_zhang.png)
