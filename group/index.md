@@ -9,7 +9,7 @@ fb_comments: 3
 
 
 ![John Chen](/group/john_chen.png)  |  |  ![Chen Dun](/group/chen_dun.png)  |  | ![Lyle Kim](/group/lyle_kim.png)
--------------------------:|:-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
+:-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
 [**John Chen**](https://johnchenresearch.github.io/)  | | [**Chen Dun**]()   | | [**Lyle Kim**](https://jlylekim.github.io/)
 (2020 - )   |  |    (2019 - )  |  | (2019 - )
 
