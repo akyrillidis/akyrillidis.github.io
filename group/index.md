@@ -9,12 +9,13 @@ fb_comments: 3
 
 ![John Chen](/group/john_chen.png)  |  |  ![Chen Dun](/group/chen_dun.png)  |  | ![Lyle Kim](/group/lyle_kim.png)
 :-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
-[**John Chen (2020 - )**](https://johnchenresearch.github.io/)  | | [**Chen Dun (2019 - )**]()   | | [**Lyle Kim (2019 - )**](https://jlylekim.github.io/)
-
+[**John Chen**](https://johnchenresearch.github.io/)  | | [**Chen Dun**]()   | | [**Lyle Kim**](https://jlylekim.github.io/)
+(2020 - )   |  |    (2019 - )  |  | (2019 - )
 
 ![Carlos Quintero Pena](/group/carlos_quintero.png)  |  |  ![Cameron Wolfe](/group/cameron_wolfe.png)  |  |  ![Zhiwei Zhang](/group/zhiwei_zhang.png)
 :-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
-[**Carlos Quintero Pena (2019 - )**](https://carlosquinterop.github.io/)  | | [**Cameron Wolfe (2020 - )**](https://wolfecameron.github.io/)   |  | [**Zhiwei Zhang (2018 - )**](https://www.cs.rice.edu/~zz59/)
+[**Carlos Q. Pena**](https://carlosquinterop.github.io/)  | | [**Cameron Wolfe**](https://wolfecameron.github.io/)   |  | [**Zhiwei Zhang**](https://www.cs.rice.edu/~zz59/)
+(2019 - )   |  |    (2020 - )  |  | (2018 - )
 Co-advised with Lydia Kavraki   |  |     |  | Co-advised with Moshe Vardi
 
 
