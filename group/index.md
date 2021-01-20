@@ -14,7 +14,7 @@ fb_comments: 3
 (2020 - )   |  |    (2019 - )  |  | (2019 - ) | | (2019 - )   |  |    (2020 - ) 
 
 ![Zhiwei Zhang](/group/zhiwei_zhang.png) |
-:-------------------------:|
+|:-------------------------:|
 [**Zhiwei Zhang**](https://www.cs.rice.edu/~zz59/) |
 (2018 - ) |
 Co-adv. Moshe Vardi
@@ -26,6 +26,6 @@ Co-adv. Moshe Vardi
 <center> <h3>Undegraduate Students</h3> </center>
 
 ![Chuck Wang](/group/chuck_wang.png)
-:-------------------------:
+|:-------------------------:|
 [**Chuck Wang**](http://wangqihan.com/)
 (2019 - )
