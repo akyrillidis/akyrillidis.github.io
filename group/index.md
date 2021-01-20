@@ -7,6 +7,7 @@ fb_comments: 3
 
 <center> <h3>PhD Students</h3> </center>
 
+<center>
 ![John Chen](/group/john_chen.png)  |  |  ![Chen Dun](/group/chen_dun.png)  |  | ![Lyle Kim](/group/lyle_kim.png)
 :-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
 [**John Chen**](https://johnchenresearch.github.io/)  | | [**Chen Dun**]()   | | [**Lyle Kim**](https://jlylekim.github.io/)
@@ -17,7 +18,7 @@ fb_comments: 3
 [**Carlos Q. Pena**](https://carlosquinterop.github.io/)  | | [**Cameron Wolfe**](https://wolfecameron.github.io/)   |  | [**Zhiwei Zhang**](https://www.cs.rice.edu/~zz59/)
 (2019 - )   |  |    (2020 - )  |  | (2018 - )
 Co-adv. Lydia Kavraki   |  |     |  | Co-adv. Moshe Vardi
-
+</center>
 
 <center> <h3>MSc Students</h3> </center>
 
