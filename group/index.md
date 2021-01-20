@@ -16,7 +16,7 @@ fb_comments: 3
 :-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
 [**Carlos Q. Pena**](https://carlosquinterop.github.io/)  | | [**Cameron Wolfe**](https://wolfecameron.github.io/)   |  | [**Zhiwei Zhang**](https://www.cs.rice.edu/~zz59/)
 (2019 - )   |  |    (2020 - )  |  | (2018 - )
-Co-adv. Lydia Kavraki   |  |     |  | Co-adv. Moshe Vardi
+Co-adv. Kavraki   |  |     |  | Co-adv. Vardi
 
 
 <center> <h3>MSc Students</h3> </center>
