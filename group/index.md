@@ -12,7 +12,7 @@ fb_comments: 3
 :-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:|:----:|:-------------------------:
 [**John Chen**](https://johnchenresearch.github.io/)  | | [**Chen Dun**]()   | | [**Lyle Kim**](https://jlylekim.github.io/) | | [**Carlos Q. Pena**](https://carlosquinterop.github.io/)  | | [**Cameron Wolfe**](https://wolfecameron.github.io/)   
 (2020 - )   |  |    (2019 - )  |  | (2019 - ) | | (2019 - )   |  |    (2020 - ) 
- | | | | | | | Co-adv. Lydia Kavraki | |
+ | | | | | | Co-adv. Lydia Kavraki | |
 
 
 ![Zhiwei Zhang](/group/zhiwei_zhang.png) | 
