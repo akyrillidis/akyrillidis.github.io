@@ -7,6 +7,58 @@ fb_comments: 3
 
 ## Conference papers
 
+
++ Jacky Y. Zhang, Rajiv Khanna, Anastasios Kyrillidis, and Oluwasanmi Koyejo, [*``Bayesian Coresets: Revisiting the Optimization Perspective"*](/pubs/Conferences/Bayesian_coresets.pdf), Twenty-fourth International Conference on Artificial Intelligence and Statistics (AISTATS-21), 2021.
+  
+  
+  <button id="b_abs_c33"> Abstract </button>
+  <button id="b_bib_c33"> Bibtex </button>
+  <p id="abs_c33"> <i> We explore the potential of continuous local search (CLS) in SAT solving by proposing a novel
+approach for finding a solution of a hybrid system of Boolean constraints. The algorithm is based on
+CLS combined with belief propagation on binary decision diagrams (BDDs). Our framework accepts
+all Boolean constraints that admit compact BDDs, including symmetric Boolean constraints and
+small-coefficient pseudo-Boolean constraints as interesting families. We propose a novel algorithm
+for efficiently computing the gradient needed by CLS. We study the capabilities and limitations of
+our versatile CLS solver, GradSAT, by applying it on many benchmark instances. The experimental
+results indicate that GradSAT can be a useful addition to the portfolio of existing SAT and MaxSAT
+solvers for solving Boolean satisfiability and optimization problems.
+  </i> </p>
+ 
+  <pre id="bib_c33"><samp>
+  		@inproceedings{zhang2021bayesian,
+  title={Bayesian Coresets: Revisiting the Optimization Perspective},
+  author={Zhang, Jacky and Khanna, Rajiv and Kyrillidis, Anastasios and Koyejo, Oluwasanmi},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  year={2021}
+}
+  </samp></pre>
+  
+  
++ Anastasios Kyrillidis, Moshe Y. Vardi, and Zhiwei Zhang, [*``On Continuous Local BDD-Based Search for Hybrid SAT Solving"*](/pubs/Conferences/GradSAT.pdf), AAAI Conference on Artificial Intelligence (AAAI-21), 2021.
+  
+  
+  <button id="b_abs_c32"> Abstract </button>
+  <button id="b_bib_c32"> Bibtex </button>
+  <p id="abs_c32"> <i> We explore the potential of continuous local search (CLS) in SAT solving by proposing a novel
+approach for finding a solution of a hybrid system of Boolean constraints. The algorithm is based on
+CLS combined with belief propagation on binary decision diagrams (BDDs). Our framework accepts
+all Boolean constraints that admit compact BDDs, including symmetric Boolean constraints and
+small-coefficient pseudo-Boolean constraints as interesting families. We propose a novel algorithm
+for efficiently computing the gradient needed by CLS. We study the capabilities and limitations of
+our versatile CLS solver, GradSAT, by applying it on many benchmark instances. The experimental
+results indicate that GradSAT can be a useful addition to the portfolio of existing SAT and MaxSAT
+solvers for solving Boolean satisfiability and optimization problems.
+  </i> </p>
+ 
+  <pre id="bib_c32"><samp>
+  		@inproceedings{kyrillidis2021continuous,
+  title={On Continuous Local BDD-Based Search for Hybrid SAT Solving},
+  author={Kyrillidis, Anastasios and Vardi, Moshe and Zhang, Zhiwei},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2021}
+}
+  </samp></pre>
+  
 + John Chen, Vatsal Shah and Anastasios Kyrillidis, [*``Negative sampling in semi-supervised learning"*](/pubs/Conferences/NS3L.pdf), International Conference on Machine Learning (ICML-20), 2020.
   
   
