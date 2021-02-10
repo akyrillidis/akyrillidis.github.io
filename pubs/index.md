@@ -176,6 +176,7 @@ be known, in order to get a good solution within polynomial time, and does not c
 
   <button id="b_abs_c25"> Abstract </button>
   <button id="b_bib_c25"> Bibtex </button>
+  <button id="b_pos_c25"> Poster </button>
   <p id="abs_c25"> <i> We study --both in theory and practice-- the use of momentum motions 
     in classic iterative hard thresholding (IHT) methods. By simply modifying plain IHT, 
     we investigate its convergence behavior on convex optimization criteria with non-convex 
