@@ -152,6 +152,7 @@ To address the issues above, we design FourierSAT, an incomplete SAT solver base
 
   <button id="b_abs_c26"> Abstract </button>
   <button id="b_bib_c26"> Bibtex </button>
+  <button id="b_pos_c26"> Poster </button>
   <p id="abs_c26"> <i> We propose practical algorithms for entrywise $\ell_p$-norm low-rank approximation, 
 for $p = 1$ or $p = \infty$. The proposed framework, which is non-convex and gradient-based, 
 is easy to implement and typically attains better approximations, faster, than state of 
@@ -201,7 +202,6 @@ be known, in order to get a good solution within polynomial time, and does not c
 
   <button id="b_abs_c24"> Abstract </button>
   <button id="b_bib_c24"> Bibtex </button>
-  <button id="b_pos_c24"> Poster </button>
   <p id="abs_c24"> <i> We present a novel method for frequentist statistical inference in 
   	$M$-estimation problems, based on stochastic gradient descent (SGD) with a fixed step size: 
   	we demonstrate that the average of such SGD sequences can be used for statistical inference, 
