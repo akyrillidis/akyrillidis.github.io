@@ -8,6 +8,6 @@ title: Teaching
 
 <button id="COMP545"> Website </button>
 
-* COMP 414/514 - Optimization: Algorithms, Complexity & Approximations (*Fall '19*, *Fall '20*)
+* COMP 414/514 - Optimization: Algorithms, Complexity & Approximations (*Fall '19*, *Fall '20*, *Fall '21*)
 
 <button id="COMP414"> Website </button>
