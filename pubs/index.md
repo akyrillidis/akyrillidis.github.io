@@ -955,7 +955,7 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 ## Journals
 
-+ Amir Kalev, Anastasios Kyrillidis, and Norbert M Linke, [*``Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions"*](/pubs/Journals/fourierSAT.pdf), Artificial Intelligence, Elsevier, 2021. 
++ Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y Vardi, Zhiwei Zhang, [*``Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions"*](/pubs/Journals/fourierSAT.pdf), Artificial Intelligence, Elsevier, 2021. 
   
   <button id="b_abs_j15"> Abstract </button>
   <button id="b_bib_j15"> Bibtex </button>
