@@ -921,14 +921,14 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 + Amir Kalev, Anastasios Kyrillidis, and Norbert M Linke, [*``Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions"*](/pubs/Journals/fourierSAT.pdf), Artificial Intelligence, Elsevier, 2021. 
   
-  <button id="b_abs_j13"> Abstract </button>
-  <button id="b_bib_j13"> Bibtex </button>
-   <p id="abs_j13"> <i>  The Boolean SATisfiability problem (SAT) is of central importance in computer science. Although SAT is known to be NP-complete, progress on the engineering side—especially that of Conflict-Driven Clause Learning (CDCL) and Local Search SAT solvers—has been remarkable. Yet, while SAT solvers, aimed at solving industrial-scale benchmarks in Conjunctive Normal Form (CNF), have become quite mature, SAT solvers that are effective on other types of constraints (e.g., cardinality constraints and XORs) are less well-studied; a general approach to handling non-CNF constraints is still lacking.
+  <button id="b_abs_j15"> Abstract </button>
+  <button id="b_bib_j15"> Bibtex </button>
+   <p id="abs_j15"> <i>  The Boolean SATisfiability problem (SAT) is of central importance in computer science. Although SAT is known to be NP-complete, progress on the engineering side—especially that of Conflict-Driven Clause Learning (CDCL) and Local Search SAT solvers—has been remarkable. Yet, while SAT solvers, aimed at solving industrial-scale benchmarks in Conjunctive Normal Form (CNF), have become quite mature, SAT solvers that are effective on other types of constraints (e.g., cardinality constraints and XORs) are less well-studied; a general approach to handling non-CNF constraints is still lacking.
 
 To address the issue above, we design FourierSAT,1 an incomplete SAT solver based on Fourier Analysis (also known as Walsh-Fourier Transform) of Boolean functions, a technique to represent Boolean functions by multilinear polynomials. By such a reduction to continuous optimization, we propose an algebraic framework for solving systems consisting of different types of constraints. The idea is to leverage gradient information to guide the search process in the direction of local improvements. We show this reduction enjoys interesting theoretical properties. Empirical results demonstrate that FourierSAT can be a useful complement to other solvers on certain classes of benchmarks.
    </i> </p>
    
-   <pre id="bib_j13"><samp>
+   <pre id="bib_j15"><samp>
    		@article{kyrillidis2021solving,
   title={Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions},
   author={Kyrillidis, Anastasios and Shrivastava, Anshumali and Vardi, Moshe Y and Zhang, Zhiwei},
@@ -943,16 +943,16 @@ To address the issue above, we design FourierSAT,1 an incomplete SAT solver base
 
 + Amir Kalev, Anastasios Kyrillidis, and Norbert M Linke, [*``Validating and certifying stabilizer states"*](/pubs/Journals/stabilizer_states.pdf), Physical Review A, 2019. 
   
-  <button id="b_abs_j12"> Abstract </button>
-  <button id="b_bib_j12"> Bibtex </button>
-   <p id="abs_j12"> <i>  We propose a measurement scheme that validates the preparation of an $n$-qubit stabilizer state. 
+  <button id="b_abs_j14"> Abstract </button>
+  <button id="b_bib_j14"> Bibtex </button>
+   <p id="abs_j14"> <i>  We propose a measurement scheme that validates the preparation of an $n$-qubit stabilizer state. 
      The scheme involves a measurement of $n$ Pauli observables, a priori determined from the stabilizer state and which can be realized using single-qubit gates. 
      Based on the proposed validation scheme, we derive an explicit expression for the worst-case fidelity, i.e., the minimum fidelity between the stabilizer 
      state and any other state consistent with the measured data. We also show that the worst-case fidelity can be certified, with high probability, using $O(n^2)$
      copies of the state.	
    </i> </p>
    
-   <pre id="bib_j12"><samp>
+   <pre id="bib_j14"><samp>
    		@article{PhysRevA.99.042337,
   			title = {Validating and certifying stabilizer states},
   			author = {Kalev, Amir and Kyrillidis, Anastasios and Linke, Norbert M.},
@@ -970,12 +970,12 @@ To address the issue above, we design FourierSAT,1 an incomplete SAT solver base
 
 + Ya-Ping Hsieh, Yu-Chun Kao, Rabeeh Karimi Mahabadi, Yurtsever Alp, Anastasios Kyrillidis, Volkan Cevher, [*``A Non-Euclidean Gradient Descent Framework for Non-Convex Matrix Factorization"*](/pubs/Journals/non_euclidean_noncvx.pdf), IEEE Transactions on Signal Processing, 2018. 
   
-  <button id="b_abs_j14"> Abstract </button>
-  <button id="b_bib_j14"> Bibtex </button>
-   <p id="abs_j14"> <i>   We study convex optimization problems that feature low-rank matrix solutions. In such scenarios, non-convex methods offer significant advantages over convex methods due to their lower space complexity, as well as practical faster convergence. Under mild assumptions, these methods feature global convergence guarantees. In this paper, we extend the results on this matter by following a different path. We derive a non-Euclidean optimization framework in the non-convex setting that takes nonlinear gradient steps on the factors. Our framework enables the possibility to further exploit the underlying problem structures, such as sparsity or low-rankness on the factorized domain, or better dimensional dependence of the smoothness parameters of the objectives. We prove that the non-Euclidean methods enjoy the same rigorous guarantees as their Euclidean counterparts under appropriate assumptions. Numerical evidence with Fourier ptychography and FastText applications, using real data, shows that our approach can enhance solution quality, as well as convergence speed over the standard non-convex approaches.
+  <button id="b_abs_j13"> Abstract </button>
+  <button id="b_bib_j13"> Bibtex </button>
+   <p id="abs_j13"> <i>   We study convex optimization problems that feature low-rank matrix solutions. In such scenarios, non-convex methods offer significant advantages over convex methods due to their lower space complexity, as well as practical faster convergence. Under mild assumptions, these methods feature global convergence guarantees. In this paper, we extend the results on this matter by following a different path. We derive a non-Euclidean optimization framework in the non-convex setting that takes nonlinear gradient steps on the factors. Our framework enables the possibility to further exploit the underlying problem structures, such as sparsity or low-rankness on the factorized domain, or better dimensional dependence of the smoothness parameters of the objectives. We prove that the non-Euclidean methods enjoy the same rigorous guarantees as their Euclidean counterparts under appropriate assumptions. Numerical evidence with Fourier ptychography and FastText applications, using real data, shows that our approach can enhance solution quality, as well as convergence speed over the standard non-convex approaches.
 	</i> </p>
    
-   <pre id="bib_j14"><samp>
+   <pre id="bib_j13"><samp>
    		@article{hsieh2018non,
   title={A non-Euclidean gradient descent framework for non-convex matrix factorization},
   author={Hsieh, Ya-Ping and Kao, Yu-Chun and Mahabadi, Rabeeh Karimi and Yurtsever, Alp and Kyrillidis, Anastasios and Cevher, Volkan},
@@ -990,12 +990,12 @@ To address the issue above, we design FourierSAT,1 an incomplete SAT solver base
 
 + Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi, [*``Finding low-rank solutions via non-convex matrix factorization, efficiently and provably"*](/pubs/Journals/finding_low_rank.pdf), SIAM Journal on Imaging Sciences, 2018. 
   
-  <button id="b_abs_j13"> Abstract </button>
-  <button id="b_bib_j13"> Bibtex </button>
-   <p id="abs_j13"> <i>   A rank-$r$ matrix $X \in \mathbb{R}^{m \times n}$ can be written as a product $U V^\top$, where $U \in \mathbb{R}^{m \times r}$ and $V \in \mathbb{R}^{n \times r}$. One could exploit this observation in optimization: e.g., consider the minimization of a convex function $f(X)$ over rank-$r$ matrices, where the set of low-rank matrices is modeled via $UV^\top$. Though such parameterization reduces the number of variables and is more computationally efficient (of particular interest is the case $r \ll \min\{m, n\}$), it comes at a cost: $f(U V^\top)$ becomes a nonconvex function w.r.t. $U$ and $V$. We study such parameterization on generic convex objectives $f$ and focus on first-order, gradient descent algorithms. We propose the bifactored gradient descent (BFGD) algorithm, an efficient first-order method that operates directly on the $U, V$ factors. We show that when $f$ is (restricted) smooth, BFGD has local sublinear convergence; when $f$ is both (restricted) smooth and (restricted) strongly convex, it has local linear convergence. For several applications, we provide simple and efficient initialization schemes that provide initial conditions, good enough for the above convergence results to hold, globally. Extensive experimental results support our arguments that BFGD is an efficient and accurate nonconvex method, compared to state-of-the-art approaches.
+  <button id="b_abs_j12"> Abstract </button>
+  <button id="b_bib_j12"> Bibtex </button>
+   <p id="abs_j12"> <i>   A rank-$r$ matrix $X \in \mathbb{R}^{m \times n}$ can be written as a product $U V^\top$, where $U \in \mathbb{R}^{m \times r}$ and $V \in \mathbb{R}^{n \times r}$. One could exploit this observation in optimization: e.g., consider the minimization of a convex function $f(X)$ over rank-$r$ matrices, where the set of low-rank matrices is modeled via $UV^\top$. Though such parameterization reduces the number of variables and is more computationally efficient (of particular interest is the case $r \ll \min\{m, n\}$), it comes at a cost: $f(U V^\top)$ becomes a nonconvex function w.r.t. $U$ and $V$. We study such parameterization on generic convex objectives $f$ and focus on first-order, gradient descent algorithms. We propose the bifactored gradient descent (BFGD) algorithm, an efficient first-order method that operates directly on the $U, V$ factors. We show that when $f$ is (restricted) smooth, BFGD has local sublinear convergence; when $f$ is both (restricted) smooth and (restricted) strongly convex, it has local linear convergence. For several applications, we provide simple and efficient initialization schemes that provide initial conditions, good enough for the above convergence results to hold, globally. Extensive experimental results support our arguments that BFGD is an efficient and accurate nonconvex method, compared to state-of-the-art approaches.
 	</i> </p>
    
-   <pre id="bib_j13"><samp>
+   <pre id="bib_j12"><samp>
    		@article{park2018finding,
   title={Finding low-rank solutions via nonconvex matrix factorization, efficiently and provably},
   author={Park, Dohyung and Kyrillidis, Anastasios and Caramanis, Constantine and Sanghavi, Sujay},
