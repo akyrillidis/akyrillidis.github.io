@@ -7,6 +7,42 @@ fb_comments: 3
 
 ## Conference papers
 
++ John Chen, Qihan Wang, Anastasios Kyrillidis, [*``Mitigating deep double descent by concatenating inputs"*](/pubs/Conferences/concat.pdf), ACM International Conference on Information and Knowledge Management (CIKM-21), 2021.
+  
+  
+  <button id="b_abs_c35"> Abstract </button>
+  <button id="b_bib_c35"> Bibtex </button>
+  <p id="abs_c35"> <i> Motion planning for high degree-of-freedom (DOF) robots is challenging, especially when acting in complex environments under sensing uncertainty. While there is significant work on how to plan under state uncertainty for low-DOF robots, existing methods cannot be easily translated into the high-DOF case, due to the complex geometry of the robot’s body and its environment. In this paper, we present a method that enhances optimization-based motion planners to produce robust trajectories for high-DOF robots for convex obstacles. Our approach introduces robustness into planners that are based on sequential convex programming: We reformulate each convex subproblem as a robust optimization problem that “protects” the solution against deviations due to sensing uncertainty. The parameters of the robust problem are estimated by sampling from the distribution of noisy obstacles, and performing a first-order approximation of the signed distance function. The original merit function is updated to account for the new costs of the robust formulation at every step. The effectiveness of our approach is demonstrated on two simulated experiments that involve a full body square robot, that moves in randomly generated scenes, and a 7-DOF Fetch robot, performing tabletop operations. The results show nearly zero probability of collision for a reasonable range of the noise parameters for Gaussian and Uniform uncertainty.
+  </i> </p>
+ 
+  <pre id="bib_c35"><samp>
+  		@article{chen2021mitigating,
+  title={Mitigating deep double descent by concatenating inputs},
+  author={Chen, John and Wang, Qihan and Kyrillidis, Anastasios},
+  journal={arXiv preprint arXiv:2107.00797},
+  year={2021}
+}
+  </samp></pre>
+  
+  
+  
++ Carlos Quintero-Pena, Anastasios Kyrillidis, Lydia E Kavraki, [*``Robust Optimization-based Motion Planning for high-DOF Robots under Sensing Uncertainty"*](/pubs/Conferences/ROMP.pdf), IEEE International Conference on Robotics and Automation (ICRA-21), 2021.
+  
+  
+  <button id="b_abs_c34"> Abstract </button>
+  <button id="b_bib_c34"> Bibtex </button>
+  <p id="abs_c34"> <i> Motion planning for high degree-of-freedom (DOF) robots is challenging, especially when acting in complex environments under sensing uncertainty. While there is significant work on how to plan under state uncertainty for low-DOF robots, existing methods cannot be easily translated into the high-DOF case, due to the complex geometry of the robot’s body and its environment. In this paper, we present a method that enhances optimization-based motion planners to produce robust trajectories for high-DOF robots for convex obstacles. Our approach introduces robustness into planners that are based on sequential convex programming: We reformulate each convex subproblem as a robust optimization problem that “protects” the solution against deviations due to sensing uncertainty. The parameters of the robust problem are estimated by sampling from the distribution of noisy obstacles, and performing a first-order approximation of the signed distance function. The original merit function is updated to account for the new costs of the robust formulation at every step. The effectiveness of our approach is demonstrated on two simulated experiments that involve a full body square robot, that moves in randomly generated scenes, and a 7-DOF Fetch robot, performing tabletop operations. The results show nearly zero probability of collision for a reasonable range of the noise parameters for Gaussian and Uniform uncertainty.
+  </i> </p>
+ 
+  <pre id="bib_c34"><samp>
+  		@inproceedings{quintero2021robust,
+  title={Robust Optimization-based Motion Planning for high-DOF Robots under Sensing Uncertainty},
+  author={Quintero-Pena, Carlos and Kyrillidis, Anastasios and Kavraki, Lydia E},
+  booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2021}
+}
+  </samp></pre>
+  
 
 + Jacky Y. Zhang, Rajiv Khanna, Anastasios Kyrillidis, and Oluwasanmi Koyejo, [*``Bayesian Coresets: Revisiting the Optimization Perspective"*](/pubs/Conferences/Bayesian_coresets.pdf), Twenty-fourth International Conference on Artificial Intelligence and Statistics (AISTATS-21), 2021.
   
