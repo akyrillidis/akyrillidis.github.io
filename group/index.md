@@ -15,7 +15,7 @@ fb_comments: 3
  | | | | | | Co-adv. Lydia Kavraki | |
 
 
-![Zhiwei Zhang](/group/zhiwei_zhang.png) |  | ![Jasper Liao](/group/jasper_liao.jpg)  |
+![Zhiwei Zhang](/group/zhiwei_zhang.png) |  | ![Jasper Liao](/group/jasper_liao.png)  |
 :-------------------------:|:----:|:-------------------------:
 [**Zhiwei Zhang**](https://www.cs.rice.edu/~zz59/) |  |  [**Jasper Liao**]() 
 (2018 - )  | |  (2021 - ) 
