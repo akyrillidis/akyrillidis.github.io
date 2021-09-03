@@ -919,6 +919,28 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 ## Journals
 
++ Amir Kalev, Anastasios Kyrillidis, and Norbert M Linke, [*``Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions"*](/pubs/Journals/fourierSAT.pdf), Artificial Intelligence, Elsevier, 2021. 
+  
+  <button id="b_abs_j13"> Abstract </button>
+  <button id="b_bib_j13"> Bibtex </button>
+   <p id="abs_j13"> <i>  The Boolean SATisfiability problem (SAT) is of central importance in computer science. Although SAT is known to be NP-complete, progress on the engineering side—especially that of Conflict-Driven Clause Learning (CDCL) and Local Search SAT solvers—has been remarkable. Yet, while SAT solvers, aimed at solving industrial-scale benchmarks in Conjunctive Normal Form (CNF), have become quite mature, SAT solvers that are effective on other types of constraints (e.g., cardinality constraints and XORs) are less well-studied; a general approach to handling non-CNF constraints is still lacking.
+
+To address the issue above, we design FourierSAT,1 an incomplete SAT solver based on Fourier Analysis (also known as Walsh-Fourier Transform) of Boolean functions, a technique to represent Boolean functions by multilinear polynomials. By such a reduction to continuous optimization, we propose an algebraic framework for solving systems consisting of different types of constraints. The idea is to leverage gradient information to guide the search process in the direction of local improvements. We show this reduction enjoys interesting theoretical properties. Empirical results demonstrate that FourierSAT can be a useful complement to other solvers on certain classes of benchmarks.
+   </i> </p>
+   
+   <pre id="bib_j13"><samp>
+   		@article{kyrillidis2021solving,
+  title={Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions},
+  author={Kyrillidis, Anastasios and Shrivastava, Anshumali and Vardi, Moshe Y and Zhang, Zhiwei},
+  journal={Artificial Intelligence},
+  volume={299},
+  pages={103559},
+  year={2021},
+  publisher={Elsevier}
+}
+   </samp></pre>
+
+
 + Amir Kalev, Anastasios Kyrillidis, and Norbert M Linke, [*``Validating and certifying stabilizer states"*](/pubs/Journals/stabilizer_states.pdf), Physical Review A, 2019. 
   
   <button id="b_abs_j12"> Abstract </button>
