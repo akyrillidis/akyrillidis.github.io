@@ -1465,17 +1465,27 @@ margin-left:1.5em;
     display: none;
 }
 
-#bib_c22, #bib_c21, #bib_c20, #bib_c19, #bib_c18, #bib_c17, #bib_c16, #bib_c15, #bib_c14, #bib_c13, #bib_c12, #bib_c11, #bib_c10, #bib_c09, #bib_c08, #bib_c07, #bib_c06, #bib_c05, #bib_c04, #bib_c03, #bib_c02, #bib_c01 {
-    display: none;
-}
-
 #abs_c23, #abs_c24, #abs_c25, #abs_c26, #abs_c27, #abs_c28, #abs_c29, #abs_c30, #abs_c31, #abs_c32, #abs_c33 {
 	display: none;
+}
+
+#abs_c34, #abs_c35 {
+	display: none;
+}
+
+#bib_c22, #bib_c21, #bib_c20, #bib_c19, #bib_c18, #bib_c17, #bib_c16, #bib_c15, #bib_c14, #bib_c13, #bib_c12, #bib_c11, #bib_c10, #bib_c09, #bib_c08, #bib_c07, #bib_c06, #bib_c05, #bib_c04, #bib_c03, #bib_c02, #bib_c01 {
+    display: none;
 }
 
 #bib_c23, #bib_c24, #bib_c25, #bib_c26, #bib_c27, #bib_c28, #bib_c29, #bib_c30, #bib_c31, #bib_c32, #bib_c33 {
 	display: none;
 }
+
+#bib_c34, #bib_c35 {
+	display: none;
+}
+
+
 
 /*#des_s1, #des_s2, #des_s3, #des_s4, #des_s5, #des_s6, #des_s7, #des_s8 {
     display: none;
