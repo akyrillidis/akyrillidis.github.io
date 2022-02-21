@@ -24,3 +24,13 @@ My research interests include (but not limited to):
 <button id="b_LinkedIn"> LinkedIn </button>
 
 Contact: anastasios@rice.edu
+
+##### Teaching
+
+* COMP 545 - Advanced topics in optimization: From simple to complex ML systems (*Spring '19*, *Spring '20*)
+
+<button id="COMP545"> Website </button>
+
+* COMP 414/514 - Optimization: Algorithms, Complexity & Approximations (*Fall '19*, *Fall '20*, *Fall '21*)
+
+<button id="COMP414"> Website </button>
