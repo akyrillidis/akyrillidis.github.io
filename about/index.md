@@ -37,6 +37,6 @@ Contact: anastasios@rice.edu
 
 ##### Funding sources
 
-<img src="/public/nsf.jpeg" width="132" height="180" align="right">
-<img src="/public/intel.png" width="132" height="180" align="right">
-<img src="/public/rice.png" width="132" height="180" align="right">
+<img src="/public/logos.png" width="976" height="270" align="right">
+
+My research is supported by NSF FET:Small no. 1907936, NSF MLWiNS CNS no. 2003137 (in collaboration with Intel), NSF CMMI no. 2037545, NSF CAREER award no. 2145629, and Rice InterDisciplinary Excellence Award (IDEA).
