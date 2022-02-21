@@ -25,7 +25,7 @@ My research interests include (but not limited to):
 
 Contact: anastasios@rice.edu
 
-#### Teaching
+### **Teaching**
 
 * COMP 545 - Advanced topics in optimization: From simple to complex ML systems (*Spring '19*, *Spring '20*)
 
@@ -35,8 +35,8 @@ Contact: anastasios@rice.edu
 
 <button id="COMP414"> Website </button>
 
-#### Funding sources
+### **Funding sources**
 
-<img src="/public/logos.png" width="976" height="170" align="right">
+<img src="/public/logos.png" width="650" height="112" align="center">
 
 My research is supported by NSF FET:Small no. 1907936, NSF MLWiNS CNS no. 2003137 (in collaboration with Intel), NSF CMMI no. 2037545, NSF CAREER award no. 2145629, and Rice InterDisciplinary Excellence Award (IDEA).
