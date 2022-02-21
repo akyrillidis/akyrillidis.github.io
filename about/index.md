@@ -34,3 +34,9 @@ Contact: anastasios@rice.edu
 * COMP 414/514 - Optimization: Algorithms, Complexity & Approximations (*Fall '19*, *Fall '20*, *Fall '21*)
 
 <button id="COMP414"> Website </button>
+
+##### Funding sources
+
+<img src="/public/nsf.jpeg" width="132" height="180" align="right">
+<img src="/public/intel.png" width="132" height="180" align="right">
+<img src="/public/rice.png" width="132" height="180" align="right">
