@@ -7,10 +7,6 @@ fb_comments: 3
 
 ## Conference papers
 
-Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, “ ´ Local Stochastic Factored
-Gradient Descent for Distributed Quantum State Tomography”, IEEE Conference on Decision and Control (CDC),
-2022
-
 + Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, [*``Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography"*](https://arxiv.org/pdf/2203.11579.pdf), IEEE Conference on Decision and Control (CDC), 2022
    
   <button id="b_abs_c45"> Abstract </button>
