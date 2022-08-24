@@ -122,7 +122,7 @@ constraints
  
   <pre id="bib_c40"><samp>
   		@inproceedings{dun2022resist,
-  title={{ResIST}: Layer-Wise Decomposition of ResNets for Distributed Training},
+  title={ResIST: Layer-Wise Decomposition of ResNets for Distributed Training},
   author={Dun, Chen and Wolfe, Cameron R and Jermaine, Chris and Kyrillidis, Anastasios},
   booktitle={The 38th Conference on Uncertainty in Artificial Intelligence},
   year={2022}
@@ -139,7 +139,7 @@ constraints
  
   <pre id="bib_c39"><samp>
   		@inproceedings{chen2022stackmix,
-  title={Stack{M}ix: A complementary {M}ix algorithm},
+  title={StackMix: A complementary {M}ix algorithm},
   author={Chen, John and Sinha, Samarth and Kyrillidis, Anastasios},
   booktitle={The 38th Conference on Uncertainty in Artificial Intelligence},
   year={2022}
@@ -156,7 +156,7 @@ constraints
  
   <pre id="bib_c38"><samp>
   		@article{chen2022rex,
-  title={{REX}: Revisiting Budgeted Training with an Improved Schedule},
+  title={REX: Revisiting Budgeted Training with an Improved Schedule},
   author={Chen, John and Wolfe, Cameron and Kyrillidis, Tasos},
   journal={Proceedings of Machine Learning and Systems},
   volume={4},
@@ -175,7 +175,7 @@ constraints
  
   <pre id="bib_c37"><samp>
   		@inproceedings{wolfe2022spasp,
-  title={i-{SpaSP}: Structured Neural Pruning via Sparse Signal Recovery},
+  title={i-SpaSP: Structured Neural Pruning via Sparse Signal Recovery},
   author={Wolfe, Cameron R and Kyrillidis, Anastasios},
   booktitle={Learning for Dynamics and Control Conference},
   pages={248--262},
