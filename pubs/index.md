@@ -7,7 +7,207 @@ fb_comments: 3
 
 ## Conference papers
 
-+ John Chen, Qihan Wang, Anastasios Kyrillidis, [*``Mitigating deep double descent by concatenating inputs"*](/pubs/Conferences/concat.pdf), ACM International Conference on Information and Knowledge Management (CIKM-21), 2021.
+Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, “ ´ Local Stochastic Factored
+Gradient Descent for Distributed Quantum State Tomography”, IEEE Conference on Decision and Control (CDC),
+2022
+
++ Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, [*``Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography"*](https://arxiv.org/pdf/2203.11579.pdf), IEEE Conference on Decision and Control (CDC), 2022
+   
+  <button id="b_abs_c45"> Abstract </button>
+  <button id="b_bib_c45"> Bibtex </button>
+  <p id="abs_c45"> <i> We propose a distributed Quantum State Tomography (QST) protocol, named Local Stochastic Factored Gradient Descent (Local SFGD), to learn the low-rank factor of a density matrix over a set of local machines. QST is the canonical procedure to characterize the state of a quantum system, which we formulate as a stochastic nonconvex smooth optimization problem. Physically, the estimation of a low-rank density matrix helps characterizing the amount of noise introduced by quantum computation. Theoretically, we prove the local convergence of Local SFGD for a general class of restricted strongly convex/smooth loss functions, i.e., Local SFGD converges locally to a small neighborhood of the global optimum at a linear rate with a constant step size, while it locally converges exactly at a sub-linear rate with diminishing step sizes. With a proper initialization, local convergence results imply global convergence. We validate our theoretical findings with numerical simulations of QST on the Greenberger-Horne-Zeilinger (GHZ) state.
+  </i> </p>
+ 
+  <pre id="bib_c45"><samp>
+  		@article{kim2022local,
+  title={Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography},
+  author={Kim, Junhyung Lyle and Toghani, Mohammad Taha and Uribe, C{\'e}sar A and Kyrillidis, Anastasios},
+  journal={arXiv preprint arXiv:2203.11579},
+  year={2022}
+}
+  </samp></pre>
+ 
+ 
+ + Cheng Wan, Youjie Li, Cameron R. Wolfe, Anastasios Kyrillidis, Nam Sung Kim, Yingyan Lin, [*``PipeGCN: Efficient Full-Graph Training of Graph Convolutional Networks with Pipelined Feature Communication"*](https://akyrillidis.github.io/pubs/Conferences/PipeGCN.pdf), International Conference on Learning Representations (ICLR), 2022.
+   
+  <button id="b_abs_c44"> Abstract </button>
+  <button id="b_bib_c44"> Bibtex </button>
+  <p id="abs_c44"> <i> Graph Convolutional Networks (GCNs) is the state-of-the-art method for learning graph-structured data, and training large-scale GCNs requires distributed training across multiple accelerators such that each accelerator is able to hold a partitioned subgraph. However, distributed GCN training incurs prohibitive overhead of communicating node features and feature gradients among partitions for every GCN layer in each training iteration, limiting the achievable training efficiency and model scalability. To this end, we propose PipeGCN, a simple-yet-effective scheme that hides the communication overhead by pipelining inter-partition communication with intra-partition computation. It is non-trivial to pipeline for efficient GCN training, as communicated node features/gradients will become stale and thus can harm the convergence, negating the pipeline benefit. Notably, little is known regarding the convergence rate of GCN training with both stale features and stale feature gradients. This work not only provides a theoretical convergence guarantee but also finds the convergence rate of PipeGCN to be close to that of the vanilla distributed GCN training without staleness. Furthermore, we develop a smoothing method to further improve PipeGCN’s convergence. Extensive experiments show that PipeGCN can largely boost training throughput (up to 2.2x) while achieving the same accuracy as its vanilla counterpart and outperforming existing full-graph training methods. All code will be released publicly upon acceptance.
+  </i> </p>
+ 
+  <pre id="bib_c44"><samp>
+  		@inproceedings{wan2021pipegcn,
+  title={Pipe{GCN}: Efficient Full-Graph Training of Graph Convolutional Networks with Pipelined Feature Communication},
+  author={Wan, Cheng and Li, Youjie and Wolfe, Cameron R and Kyrillidis, Anastasios and Kim, Nam Sung and Lin, Yingyan},
+  booktitle={International Conference on Learning Representations},
+  year={2022}
+}
+  </samp></pre>
+ 
++ Binhang Yuan, Cameron Wolfe, Chen Dun, Yuxin Tang, Anastasios Kyrillidis and Chris Jermaine, [*``Distributed Learning of Deep Neural Networks Using Independent Subnet Training"*](https://www.vldb.org/pvldb/vol15/p1581-wolfe.pdf), International Conference on Very Large Databases (VLDB), 2022.
+   
+  <button id="b_abs_c43"> Abstract </button>
+  <button id="b_bib_c43"> Bibtex </button>
+  <p id="abs_c43"> <i> Distributed machine learning (ML) can bring more computational resources to bear than single-machine learning, thus enabling reductions in training time. Distributed learning partitions models and data over many machines, allowing model and dataset sizes beyond the available compute power and memory of a single machine. In practice though, distributed ML is challenging when distribution is mandatory, rather than chosen by the practitioner. In such scenarios, data could unavoidably be separated among workers due to limited memory capacity per worker or even because of data privacy issues. There, existing distributed methods will utterly fail due to dominant transfer costs across workers, or do not even apply. We propose a new approach to distributed fully connected neural network learning, called independent subnet training (IST), to handle these cases. In IST, the original network is decomposed into a set of narrow subnetworks with the same depth. These subnetworks are then trained locally before parameters are exchanged to produce new subnets and the training cycle repeats. Such a naturally łmodel parallelž approach limits memory usage by storing only a portion of network parameters on each device. Additionally, no requirements exist for sharing data between workers (i.e., subnet training is local and independent) and communication volume and frequency are reduced by decomposing the original network into independent subnets. These properties of IST can cope with issues due to distributed data, slow interconnects, or limited device memory, making IST a suitable approach for cases of mandatory distribution. We show experimentally that IST results in training times that are much lower than common distributed learning approaches.
+  </i> </p>
+ 
+  <pre id="bib_c43"><samp>
+  		@article{yuan2022distributed,
+  title={Distributed learning of fully connected neural networks using independent subnet training},
+  author={Yuan, Binhang and Wolfe, Cameron R and Dun, Chen and Tang, Yuxin and Kyrillidis, Anastasios and Jermaine, Chris},
+  journal={Proceedings of the VLDB Endowment},
+  volume={15},
+  number={8},
+  pages={1581--1590},
+  year={2022},
+  publisher={VLDB Endowment}
+}
+  </samp></pre>
+  
++ Ahmed Imtiaz Humayun, Randall Balestriero, Anastasios Kyrillidis, Richard Baraniuk, [*``No More Than 6ft Apart: Robust K-Means via Radius Upper Bounds"*](https://akyrillidis.github.io/pubs/Conferences/Robust_Kmeans.pdf), IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP-22), 2022.
+   
+  <button id="b_abs_c42"> Abstract </button>
+  <button id="b_bib_c42"> Bibtex </button>
+  <p id="abs_c42"> <i> Centroid based clustering methods such as k-means, kmedoids and k-centers are heavily applied as a go-to tool
+in exploratory data analysis. In many cases, those methods are used to obtain representative centroids of the data
+manifold for visualization or summarization of a dataset.
+Real world datasets often contain inherent abnormalities e.g.
+repeated samples and sampling bias, that manifest imbalanced clustering. We propose to remedy such scenario by
+introducing a maximal radius constraint r on the clusters
+formed by the centroids i.e. samples from a same cluster
+should not be more than 2r apart in term of `2 distance. We
+achieve this constraint by solving a semi-definite program,
+followed by a linear assignment problem with quadratic
+constraints. Through qualitative results, we show that our
+proposed method is robust towards dataset imbalances and
+sampling artefacts. To the best of our knowledge, ours is the
+first constrained k-means clustering method with hard radius
+constraints
+  </i> </p>
+ 
+  <pre id="bib_c42"><samp>
+  		@inproceedings{humayun2022no,
+  title={No More Than 6ft Apart: Robust $k$-Means via Radius Upper Bounds},
+  author={Humayun, Ahmed Imtiaz and Balestriero, Randall and Kyrillidis, Anastasios and Baraniuk, Richard},
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={4433--4437},
+  year={2022},
+  organization={IEEE}
+}
+  </samp></pre>
+  
+  
++ John Chen, Cameron Wolfe, Zhao Li Anastasios Kyrillidis, [*``Demon: Decaying momentum helps neural network training"*](https://arxiv.org/pdf/1910.04952.pdf), IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP-22), 2022.
+   
+  <button id="b_abs_c41"> Abstract </button>
+  <button id="b_bib_c41"> Bibtex </button>
+  <p id="abs_c41"> <i> Momentum is a widely used technique for gradient-based optimizers in deep learning. Here, we propose a decaying momentum (DEMON) hyperparameter rule. We conduct large-scale empirical analysis of momentum decay methods for modern neural network optimization and compare to the most popular learning rate decay schedules. Across 28 relevant combinations of models, epochs, datasets, and optimizers, DEMON achieves Top-1 and Top-3 performance in 39\% and 85\% of cases, respectively, almost doubling the second-placed cosine learning rate schedule at 17\% and 60\%, respectively. DEMON consistently outperforms other widely-used schedulers including, but not limited to, the learning rate step schedule, linear schedule, OneCycle schedule, and exponential schedule. Compared with the widely-used learning rate step schedule, DEMON is less sensitive to parameter tuning, which is critical to training neural networks in practice. Results are demonstrated across a variety of settings and architectures, ncluding image classification models, generative models, and language models. DEMON is easy to implement, requires no additional tuning, and incurs almost no extra computational overhead compared to the vanilla counterparts. Code is readily available.
+  </i> </p>
+ 
+  <pre id="bib_c41"><samp>
+  		@inproceedings{chen2022demon,
+  title={Demon: Improved Neural Network Training with Momentum Decay},
+  author={Chen, John and Wolfe, Cameron and Li, Zhao and Kyrillidis, Anastasios},
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={3958--3962},
+  year={2022},
+  organization={IEEE}
+}
+  </samp></pre>
+  
+  
+  
++ Chen Dun, Cameron Wolfe, Anastasios Kyrillidis, [*``ResIST: Layer-Wise Decomposition of ResNets for Distributed Training"*](https://openreview.net/pdf?id=rq4v8Ujcec), Conference on Uncertainty in Artificial Intelligence (UAI-22), 2022.
+   
+  <button id="b_abs_c40"> Abstract </button>
+  <button id="b_bib_c40"> Bibtex </button>
+  <p id="abs_c40"> <i> We propose ResIST, a novel distributed training protocol for Residual Networks (ResNets). ResIST randomly decomposes a global ResNet into several shallow sub-ResNets that are trained independently in a distributed manner for several local iterations, before having their updates synchronized and aggregated into the global model. In the next round, new sub-ResNets are randomly generated and the process repeats until convergence. By construction, per iteration, ResIST communicates only a small portion of network parameters to each machine and never uses the full model during training. Thus, ResIST reduces the per-iteration communication, memory, and time requirements of ResNet training to only a fraction of the requirements of full-model training. In comparison to common protocols, like data-parallel training and data-parallel training with local SGD, ResIST yields a decrease in communication and compute requirements, while being competitive with respect to model performance.
+  </i> </p>
+ 
+  <pre id="bib_c40"><samp>
+  		@inproceedings{dun2022resist,
+  title={{ResIST}: Layer-Wise Decomposition of ResNets for Distributed Training},
+  author={Dun, Chen and Wolfe, Cameron R and Jermaine, Chris and Kyrillidis, Anastasios},
+  booktitle={The 38th Conference on Uncertainty in Artificial Intelligence},
+  year={2022}
+}
+  </samp></pre>
+  
+  
++ John Chen, Samarth Sinha, Anastasios Kyrillidis, [*``StackMix: A complementary Mix algorithm"*](https://openreview.net/pdf?id=HqIlPIUo5g9), Conference on Uncertainty in Artificial Intelligence (UAI-22), 2022.
+   
+  <button id="b_abs_c39"> Abstract </button>
+  <button id="b_bib_c39"> Bibtex </button>
+  <p id="abs_c39"> <i> Techniques combining multiple images as input/output have proven to be effective data augmentations for training convolutional neural networks. In this paper, we present StackMix: each input is presented as a concatenation of two images, and the label is the mean of the two one-hot labels. On its own, StackMix rivals other widely used methods in the Mix’’ line of work. More importantly, unlike previous work, significant gains across a variety of benchmarks are achieved by combining StackMix with existing Mix augmentation, effectively mixing more than two images. E.g., by combining StackMix with CutMix, test error in the supervised setting is improved across a variety of settings over CutMix, including 0.8\% on ImageNet, 3\% on Tiny ImageNet, 2\% on CIFAR-100, 0.5\% on CIFAR-10, and 1.5\% on STL-10. Similar results are achieved with Mixup. We further show that gains hold for robustness to common input corruptions and perturbations at varying severities with a 0.7\% improvement on CIFAR-100-C, by combining StackMix with AugMix over AugMix. On its own, improvements with StackMix hold across different number of labeled samples on CIFAR-100, maintaining approximately a 2\% gap in test accuracy –down to using only 5\% of the whole dataset– and is effective in the semi-supervised setting with a 2\% improvement with the standard benchmark -model. Finally, we perform an extensive ablation study to better understand the proposed methodology.
+  </i> </p>
+ 
+  <pre id="bib_c39"><samp>
+  		@inproceedings{chen2022stackmix,
+  title={Stack{M}ix: A complementary {M}ix algorithm},
+  author={Chen, John and Sinha, Samarth and Kyrillidis, Anastasios},
+  booktitle={The 38th Conference on Uncertainty in Artificial Intelligence},
+  year={2022}
+}
+  </samp></pre>
+  
+  
+ + John Chen, Cameron Wolfe, Anastasios Kyrillidis, [*``REX: Revisiting Budgeted Training with an Improved Schedule"*](https://akyrillidis.github.io/pubs/Conferences/REX.pdf), 5th Conference on Machine Learning and Systems (MLSys-22), 2022.
+   
+  <button id="b_abs_c38"> Abstract </button>
+  <button id="b_bib_c38"> Bibtex </button>
+  <p id="abs_c38"> <i> Deep learning practitioners often operate on a computational and monetary budget. Thus, it is critical to design optimization algorithms that perform well under any budget. The linear learning rate schedule is considered the best budget-aware schedule, as it outperforms most other schedules in the low budget regime. On the other hand, learning rate schedules – such as the 30-60-90 step schedule – are known to achieve high performance when the model can be trained for many epochs. Yet, it is often not known a priori whether one’s budget will be large or small; thus, the optimal choice of learning rate schedule is made on a case-by-case basis. In this paper, we frame the learning rate schedule selection problem as a combination of selecting a profile (i.e., the continuous function that models the learning rate schedule), and choosing a sampling rate (i.e., how frequently the learning rate is updated/sampled from this profile). We propose a novel profile and sampling rate combination called the Reflected Exponential (REX) schedule, which we evaluate across seven different experimental settings with both SGD and Adam optimizers. REX outperforms the linear schedule in the low budget regime, while matching or exceeding the performance of several state-of-the-art learning rate schedules (linear, step, exponential, cosine, step decay on plateau, and OneCycle) in both high and low budget regimes. Furthermore, REX requires no added computation, storage, or hyperparameters.
+  </i> </p>
+ 
+  <pre id="bib_c38"><samp>
+  		@article{chen2022rex,
+  title={{REX}: Revisiting Budgeted Training with an Improved Schedule},
+  author={Chen, John and Wolfe, Cameron and Kyrillidis, Tasos},
+  journal={Proceedings of Machine Learning and Systems},
+  volume={4},
+  pages={64--76},
+  year={2022}
+}
+  </samp></pre>
+  
+
++ Cameron R Wolfe, Anastasios Kyrillidis, [*``i-SpaSP: Structured Neural Pruning via Sparse Signal Recovery"*](https://proceedings.mlr.press/v168/wolfe22a/wolfe22a.pdf), 4th Annual Learning for Dynamics & Control Conference (L4DC-22), 2022.
+   
+  <button id="b_abs_c37"> Abstract </button>
+  <button id="b_bib_c37"> Bibtex </button>
+  <p id="abs_c37"> <i> We propose a novel, structured pruning algorithm for neural networks—the iterative, Sparse Structured Pruning algorithm, dubbed as i-SpaSP. Inspired by ideas from sparse signal recovery, i-SpaSP operates by iteratively identifying a larger set of important parameter groups (e.g., filters or neurons) within a network that contribute most to the residual between pruned and dense network output, then thresholding these groups based on a smaller, pre-defined pruning ratio. For both two-layer and multi-layer network architectures with ReLU activations, we show the error induced by pruning with i-SpaSP decays polynomially, where the degree of this polynomial becomes arbitrarily large based on the sparsity of the dense network’s hidden representations. In our experiments, i-SpaSP is evaluated across a variety of datasets (i.e., MNIST, ImageNet, and XNLI) and architectures (i.e., feed forward networks, ResNet34, MobileNetV2, and BERT), where it is shown to discover high-performing sub-networks and improve upon the pruning efficiency of provable baseline methodologies by several orders of magnitude. Put simply, i-SpaSP is easy to implement with automatic differentiation, achieves strong empirical results, comes with theoretical convergence guarantees, and is efficient, thus distinguishing itself as one of the few computationally efficient, practical, and provable pruning algorithms.
+  </i> </p>
+ 
+  <pre id="bib_c37"><samp>
+  		@inproceedings{wolfe2022spasp,
+  title={i-{SpaSP}: Structured Neural Pruning via Sparse Signal Recovery},
+  author={Wolfe, Cameron R and Kyrillidis, Anastasios},
+  booktitle={Learning for Dynamics and Control Conference},
+  pages={248--262},
+  year={2022},
+  organization={PMLR}
+}
+  </samp></pre>
+  
+
++ Junhyung Lyle Kim, Panos Toulis, Anastasios Kyrillidis, [*``Convergence and Stability of the Stochastic Proximal Point Algorithm with Momentum"*](https://proceedings.mlr.press/v168/kim22a/kim22a.pdf), 4th Annual Learning for Dynamics & Control Conference (L4DC-22), 2022.
+   
+  <button id="b_abs_c36"> Abstract </button>
+  <button id="b_bib_c36"> Bibtex </button>
+  <p id="abs_c36"> <i> Stochastic gradient descent with momentum (SGDM) is the dominant algorithm in many optimization scenarios, including convex optimization instances and non-convex neural network training. Yet, in the stochastic setting, momentum interferes with gradient noise, often leading to specific step size and momentum choices in order to guarantee convergence, set aside acceleration. Proximal point methods, on the other hand, have gained much attention due to their numerical stability and elasticity against imperfect tuning. Their stochastic accelerated variants though have received limited attention: how momentum interacts with the stability of (stochastic) proximal point methods remains largely unstudied. To address this, we focus on the convergence and stability of the stochastic proximal point algorithm with momentum (SPPAM), and show that SPPAM allows a faster linear convergence to a neighborhood compared to stochastic proximal point algorithm (SPPA) with a better contraction factor, under proper hyperparameter tuning. In terms of stability, we show that SPPAM depends on problem constants more favorably than SGDM, allowing a wider range of step size and momentum that lead to convergence.
+  </i> </p>
+ 
+  <pre id="bib_c36"><samp>
+  		@inproceedings{kim2022convergence,
+  title={Convergence and Stability of the Stochastic Proximal Point Algorithm with Momentum},
+  author={Kim, Junhyung Lyle and Toulis, Panos and Kyrillidis, Anastasios},
+  booktitle={Learning for Dynamics and Control Conference},
+  pages={1034--1047},
+  year={2022},
+  organization={PMLR}
+}
+  </samp></pre>
+  
+  + John Chen, Qihan Wang, Anastasios Kyrillidis, [*``Mitigating deep double descent by concatenating inputs"*](/pubs/Conferences/concat.pdf), ACM International Conference on Information and Knowledge Management (CIKM-21), 2021.
   
   
   <button id="b_abs_c35"> Abstract </button>
@@ -955,7 +1155,41 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 ## Journals
 
-+ Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y Vardi, Zhiwei Zhang, [*``Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions"*](/pubs/Journals/fourierSAT.pdf), Artificial Intelligence, Elsevier, 2021. 
++ Fangshup Liao, Anastasios Kyrillidis, [*``On the Convergence of Shallow Neural Network Training with Randomly Masked Neurons"*](https://arxiv.org/pdf/2112.02668.pdf), Transactions on Machine Learning Research (TMLR), 2022. 
+  
+  <button id="b_abs_j17"> Abstract </button>
+  <button id="b_bib_j17"> Bibtex </button>
+   <p id="abs_j17"> <i>  With the motive of training all the parameters of a neural network, we study why and when one can achieve this by iteratively creating, training, and combining randomly selected subnetworks. Such scenarios have either implicitly or explicitly emerged in the recent literature: see e.g., the Dropout family of regularization techniques, or some distributed ML training protocols that reduce communication/computation complexities, such as the Independent Subnet Training protocol. While these methods are studied empirically and utilized in practice, they often enjoy partial or no theoretical support, especially when applied on neural network-based objectives.
+
+In this manuscript, our focus is on overparameterized single hidden layer neural networks with ReLU activations in the lazy training regime. By carefully analyzing i) the subnetworks’ neural tangent kernel, ii) the surrogate functions’ gradient, and iii) how we sample and combine the surrogate functions, we prove linear convergence rate of the training error –up to a neighborhood around the optimal point– for an overparameterized single-hidden layer perceptron with a regression loss. Our analysis reveals a dependency of the size of the neighborhood around the optimal point on the number of surrogate models and the number of local training steps for each selected subnetwork. Moreover, the considered framework generalizes and provides new insights on dropout training, multi-sample dropout training, as well as Independent Subnet Training; for each case, we provide convergence results as corollaries of our main theorem.
+   </i> </p>
+   
+   <pre id="bib_j17"><samp>
+   		@article{liao2021convergence,
+  title={On the convergence of shallow neural network training with randomly masked neurons},
+  author={Liao, Fangshuo and Kyrillidis, Anastasios},
+  journal={arXiv preprint arXiv:2112.02668},
+  year={2021}
+}
+   </samp></pre>
+   
+   + Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, [*``Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography"*](https://arxiv.org/pdf/2203.11579.pdf), IEEE Control Systems Letters (L-CSS), 2022. 
+  
+  <button id="b_abs_j16"> Abstract </button>
+  <button id="b_bib_j16"> Bibtex </button>
+   <p id="abs_j16"> <i>  We propose a distributed Quantum State Tomography (QST) protocol, named Local Stochastic Factored Gradient Descent (Local SFGD), to learn the low-rank factor of a density matrix over a set of local machines. QST is the canonical procedure to characterize the state of a quantum system, which we formulate as a stochastic nonconvex smooth optimization problem. Physically, the estimation of a low-rank density matrix helps characterizing the amount of noise introduced by quantum computation. Theoretically, we prove the local convergence of Local SFGD for a general class of restricted strongly convex/smooth loss functions, i.e., Local SFGD converges locally to a small neighborhood of the global optimum at a linear rate with a constant step size, while it locally converges exactly at a sub-linear rate with diminishing step sizes. With a proper initialization, local convergence results imply global convergence. We validate our theoretical findings with numerical simulations of QST on the Greenberger-Horne-Zeilinger (GHZ) state.
+   </i> </p>
+   
+   <pre id="bib_j16"><samp>
+   		@article{kim2022local,
+  title={Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography},
+  author={Kim, Junhyung Lyle and Toghani, Mohammad Taha and Uribe, C{\'e}sar A and Kyrillidis, Anastasios},
+  journal={arXiv preprint arXiv:2203.11579},
+  year={2022}
+}
+   </samp></pre>
+   
+   + Anastasios Kyrillidis, Anshumali Shrivastava, Moshe Y Vardi, Zhiwei Zhang, [*``Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions"*](/pubs/Journals/fourierSAT.pdf), Artificial Intelligence, Elsevier, 2021. 
   
   <button id="b_abs_j15"> Abstract </button>
   <button id="b_bib_j15"> Bibtex </button>
