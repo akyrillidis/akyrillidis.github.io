@@ -29,6 +29,6 @@ Co-adv. Moshe Vardi | |
 (2019 - 2021) |
 (Now at Microsoft) |
 
-<center> <h3>Undegraduate Students</h3> </center>
+
 
 
