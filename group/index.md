@@ -23,7 +23,7 @@ Co-adv. Moshe Vardi | |
 
 <center> <h3>MSc Students</h3> </center>
 
-![Chuck Wang](/group/chuck_wang.png) |
+![Chuck Wang](/group/chuck_wang.png) | |
 :-------------------------:|:-------------------------:
 [**Chuck Wang**](http://wangqihan.com/) | |
 (2019 - 2021) | |
