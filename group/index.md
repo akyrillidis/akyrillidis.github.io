@@ -25,9 +25,9 @@ Co-adv. Moshe Vardi | |
 
 ![Chuck Wang](/group/chuck_wang.png) |
 :-------------------------:|:-------------------------:
-[**Chuck Wang**](http://wangqihan.com/) |
-(2019 - 2021) |
-(Now at Microsoft) |
+[**Chuck Wang**](http://wangqihan.com/) | |
+(2019 - 2021) | |
+(Now at Microsoft) | |
 
 
 
