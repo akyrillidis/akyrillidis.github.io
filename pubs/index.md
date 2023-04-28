@@ -1266,6 +1266,46 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 ## Journals
 
++ Junhyung Lyle Kim, George Kollias, Amir Kalev, Ken X Wei, Anastasios Kyrillidis, [*``Fast quantum state reconstruction via accelerated non-convex programming"*](https://www.mdpi.com/2304-6732/10/2/116), Photonics, 10(2), MDPI, 2023
+   
+  <button id="b_abs_j19"> Abstract </button>
+  <button id="b_abs_j19"> Bibtex </button>
+  <button id="b_abs_j19"> Link to software </button>
+  <p id="abs_j19"> <i> We propose a new quantum state reconstruction method that combines ideas from compressed sensing, non-convex optimization, and acceleration methods. The algorithm, called Momentum-Inspired Factored Gradient Descent (MiFGD), extends the applicability of quantum tomography for larger systems. Despite being a non-convex method, MiFGD converges provably close to the true density matrix at an accelerated linear rate asymptotically in the absence of experimental and statistical noise, under common assumptions. With this manuscript, we present the method, prove its convergence property and provide the Frobenius norm bound guarantees with respect to the true density matrix. From a practical point of view, we benchmark the algorithm performance with respect to other existing methods, in both synthetic and real (noisy) experiments, performed on the IBM’s quantum processing unit. We find that the proposed algorithm performs orders of magnitude faster than the state-of-the-art approaches, with similar or better accuracy. In both synthetic and real experiments, we observed accurate and robust reconstruction, despite the presence of experimental and statistical noise in the tomographic data. Finally, we provide a ready-to-use code for state tomography of multi-qubit systems.
+  </i> </p>
+ 
+  <pre id="bib_j19"><samp>  		
+	@inproceedings{kim2023fast,
+  title={Fast quantum state reconstruction via accelerated non-convex programming},
+  author={Kim, Junhyung Lyle and Kollias, George and Kalev, Amir and Wei, Ken X and Kyrillidis, Anastasios},
+  booktitle={Photonics},
+  volume={10},
+  number={2},
+  pages={116},
+  year={2023},
+  organization={MDPI}
+}
+  </samp></pre>
+
+
++ Cameron R Wolfe, Jingkang Yang, Arindam Chowdhury, Chen Dun, Artun Bayer, Santiago Segarra, Anastasios Kyrillidis, [*``GIST: Distributed Training for Large-Scale Graph Convolutional Network"*](/pubs/Journals/GCN_IST.pdf), Journal of Applied and Computational Topology, Special issue on Data Science on Graphs, Springer, 2023.
+   
+  <button id="b_abs_j18"> Abstract </button>
+  <button id="b_abs_j18"> Bibtex </button>
+  <button id="b_abs_j18"> Link to software </button>
+  <p id="abs_j18"> <i> The graph convolutional network (GCN) is a go-to solution for machine learning on graphs, but its training is notoriously difficult to scale both in terms of graph size and the number of model parameters. Although some work has explored training on large-scale graphs (e.g., GraphSAGE, ClusterGCN, etc.), we pioneer efficient training of large-scale GCN models (i.e., ultra-wide, overparameterized models) with the proposal of a novel, distributed training framework. Our proposed training methodology, called GIST, disjointly partitions the parameters of a GCN model into several, smaller sub-GCNs that are trained independently and in parallel. In addition to being compatible with all GCN architectures and existing sampling techniques for efficient GCN training, GIST i) improves model performance, ii) scales to training on arbitrarily large graphs, iii) decreases wall-clock training time, and iv) enables the training of markedly overparameterized GCN models. Remarkably, with GIST, we train an astonishgly-wide 32,768-dimensional GraphSAGE model, which exceeds the capacity of a single GPU by a factor of 8x, to SOTA performance on the Amazon2M dataset.
+  </i> </p>
+ 
+  <pre id="bib_j18"><samp>  		
+	@article{wolfe2021gist,
+  title={GIST: Distributed training for large-scale graph convolutional networks},
+  author={Wolfe, Cameron R and Yang, Jingkang and Chowdhury, Arindam and Dun, Chen and Bayer, Artun and Segarra, Santiago and Kyrillidis, Anastasios},
+  journal={arXiv preprint arXiv:2102.10424},
+  year={2021}
+}
+  </samp></pre>
+
+
 + Fangshuo Liao, Anastasios Kyrillidis, [*``On the Convergence of Shallow Neural Network Training with Randomly Masked Neurons"*](https://arxiv.org/pdf/2112.02668.pdf), Transactions on Machine Learning Research (TMLR), 2022. 
   
   <button id="b_abs_j17"> Abstract </button>
