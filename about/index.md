@@ -13,10 +13,12 @@ Prior to that, I was a Goldstine
 PostDoctoral Fellow at IBM T. J. Watson Research Center (NY), and a Simons Foundation PostDoc member at the University of Texas at Austin. 
 I finished my PhD at the CS Department of EPFL (Switzerland).
 
+I'm recipient of a NSF CAREER award, an Amazon Research Award (ARA), a Microsoft Research Award, and I'm closely collaborating with Intel.
+
 My research interests include (but not limited to):
 * Optimization for machine learning
 * Convex and non-convex algorithms and analysis
-* Large-scale optimization
+* Efficient large-scale optimization, including budgeted optimization, and algorithmic design that moves away from regular optimizers.
 * Any problem that includes a math-driven criterion, and requires an efficient method for its solution.
 
 <button id="b_CV"> CV </button>
