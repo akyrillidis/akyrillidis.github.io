@@ -11,6 +11,8 @@ fb_comments: 3
    
   <button id="b_abs_c50"> Abstract </button>
   <button id="b_bib_c50"> Bibtex </button>
+  <button id="b_pos_c50"> Poster </button>
+  <button id="b_sof_c50"> Link to software </button>
   <p id="abs_c50"> <i> Recent work on the Lottery Ticket Hypothesis (LTH) shows that there exist “winning tickets” in large neural networks. These tickets represent “sparse” versions of the full model that can be trained independently to achieve comparable accuracy with respect to the full model. However, finding the winning tickets requires one to pretrain the large model for at least a number of epochs, which can be a burdensome task, especially when the original neural network gets larger. In this paper, we explore how one can efficiently identify the emergence of such winning tickets, and use this observation to design efficient pretraining algorithms. For clarity of exposition, our focus is on convolutional neural networks (CNNs). To identify good filters, we propose a novel filter distance metric that well-represents the model convergence. As our theory dictates, our filter analysis behaves consistently with recent findings of neural network learning dynamics. Motivated by these observations, we present the LOttery ticket through Filter-wise Training algorithm, dubbed as LoFT. LoFT is a model-parallel pretraining algorithm that partitions convolutional layers by filters to train them independently in a distributed setting, resulting in reduced memory and communication costs during pretraining. Experiments show that LoFT i) preserves and finds good lottery tickets, while ii) it achieves non-trivial computation and communication savings, and maintains comparable or even better accuracy than other pretraining methods.
   </i> </p>
  
@@ -34,6 +36,8 @@ fb_comments: 3
    
   <button id="b_abs_c49"> Abstract </button>
   <button id="b_bib_c49"> Bibtex </button>
+  <button id="b_pos_c49"> Poster </button>
+  <button id="b_sof_c49"> Link to software </button>
   <p id="abs_c49"> <i> Asynchronous learning protocols have regained attention lately, especially in the Federated Learning (FL) setup, where slower clients can severely impede the learning process. Herein, we propose AsyncDrop, a novel asynchronous FL framework that utilizes dropout regularization to handle device heterogeneity in distributed settings. Overall, AsyncDrop achieves better performance compared to state of the art asynchronous methodologies, while resulting in less communication and training time overheads. The key idea revolves around creating “submodels” out of the global model, and distributing their training to workers, based on device heterogeneity. We rigorously justify that such an approach can be theoretically characterized. We implement our approach and compare it against other asynchronous baselines, both by design and by adapting existing synchronous FL algorithms to asynchronous scenarios. Empirically, AsyncDrop reduces the communication cost and training time, while matching or improving the final test accuracy in diverse non-i.i.d. FL scenarios.
   </i> </p>
  
@@ -57,6 +61,9 @@ fb_comments: 3
    
   <button id="b_abs_c48"> Abstract </button>
   <button id="b_bib_c48"> Bibtex </button>
+  <button id="b_pre_c48"> Presentation </button>
+  <button id="b_pos_c48"> Poster </button>
+  <button id="b_sof_c48"> Link to software </button>
   <p id="abs_c48"> <i> The strong Lottery Ticket Hypothesis (LTH) (Ramanujan et al., 2019; Zhou et al., 2019) claims the existence of a subnetwork in a sufficiently large, randomly initialized neural network that approximates some target neural network without the need of training. We extend the theoretical guarantee of the strong LTH literature to a scenario more similar to the original LTH, by generalizing the weight change in the pre-training step to some perturbation around initialization. In particular, we focus on the following open questions: By allowing a perturbation on the random initial weights, can we reduce the over-parameterization requirement for the candidate network in the strong LTH? Furthermore, does the weight change by SGD coincide with a good set of such perturbation? We answer the first question by first extending the theoretical result on subset sum problem (Lueker, 1998) to allow perturbation on the candidates. Applying this result to the neural network setting, we show that by allowing scale perturbation, we can reduce the over-parameterization requirement of the strong LTH. To answer the second question, we show via experiments that the perturbed weight achieved by the projected SGD shows better performance under the strong LTH pruning.
   </i> </p>
  
