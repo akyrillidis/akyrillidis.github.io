@@ -228,7 +228,9 @@ constraints
 + Chen Dun, Cameron Wolfe, Anastasios Kyrillidis, [*``ResIST: Layer-Wise Decomposition of ResNets for Distributed Training"*](https://openreview.net/pdf?id=rq4v8Ujcec), Conference on Uncertainty in Artificial Intelligence (UAI-22), 2022.
    
   <button id="b_abs_c40"> Abstract </button>
-  <button id="b_bib_c40"> Bibtex </button>
+  <button id="b_bib_c40"> Bibtex </button>	
+  <button id="b_pos_c40"> Poster </button>
+  <button id="b_sof_c40"> Link to software </button>	
   <p id="abs_c40"> <i> We propose ResIST, a novel distributed training protocol for Residual Networks (ResNets). ResIST randomly decomposes a global ResNet into several shallow sub-ResNets that are trained independently in a distributed manner for several local iterations, before having their updates synchronized and aggregated into the global model. In the next round, new sub-ResNets are randomly generated and the process repeats until convergence. By construction, per iteration, ResIST communicates only a small portion of network parameters to each machine and never uses the full model during training. Thus, ResIST reduces the per-iteration communication, memory, and time requirements of ResNet training to only a fraction of the requirements of full-model training. In comparison to common protocols, like data-parallel training and data-parallel training with local SGD, ResIST yields a decrease in communication and compute requirements, while being competitive with respect to model performance.
   </i> </p>
  
