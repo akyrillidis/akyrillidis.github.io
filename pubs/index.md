@@ -15,7 +15,7 @@ fb_comments: 3
   </i> </p>
  
   <pre id="bib_c50"><samp>  		
-@InProceedings{loft2023wang,
+	@article{loft2023wang,
   title = 	 {LOFT: Finding Lottery Tickets through Filter-wise Training},
   author =       {Wang, Qihan and Dun, Chen and Liao, Fangshuo and Jermaine, Chris and Kyrillidis, Anastasios},
   booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
@@ -31,51 +31,7 @@ fb_comments: 3
 
 
 
-+ Chen Dun, Mirian Hipolito, Chris Jermaine, Dimitrios Dimitriadis, Anastasios Kyrillidis, [*``Efficient and Light-Weight Federated Learning via Asynchronous Distributed Dropout"*](https://proceedings.mlr.press/v206/dun23a/dun23a.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
-   
-  <button id="b_abs_c49"> Abstract </button>
-  <button id="b_bib_c49"> Bibtex </button>
-  <p id="abs_c49"> <i> Asynchronous learning protocols have regained attention lately, especially in the Federated Learning (FL) setup, where slower clients can severely impede the learning process. Herein, we propose AsyncDrop, a novel asynchronous FL framework that utilizes dropout regularization to handle device heterogeneity in distributed settings. Overall, AsyncDrop achieves better performance compared to state of the art asynchronous methodologies, while resulting in less communication and training time overheads. The key idea revolves around creating “submodels” out of the global model, and distributing their training to workers, based on device heterogeneity. We rigorously justify that such an approach can be theoretically characterized. We implement our approach and compare it against other asynchronous baselines, both by design and by adapting existing synchronous FL algorithms to asynchronous scenarios. Empirically, AsyncDrop reduces the communication cost and training time, while matching or improving the final test accuracy in diverse non-i.i.d. FL scenarios.
-  </i> </p>
- 
-  <pre id="bib_c49"><samp>  		
-@InProceedings{asyncdrop2023dun,
-  title = 	 {Efficient and Light-Weight Federated Learning via Asynchronous Distributed Dropout},
-  author =       {Dun, Chen and Hipolito, Mirian and Jermaine, Chris and Dimitriadis, Dimitrios and Kyrillidis, Anastasios},
-  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
-  pages = 	 {6630--6660},
-  year = 	 {2023},
-  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
-  volume = 	 {206},
-  series = 	 {Proceedings of Machine Learning Research},
-  month = 	 {25--27 Apr},
-  publisher =    {PMLR}
- }
-  </samp></pre>
 
-
-
-+ Zheyang Xiong, Fangshuo Liao, Anastasios Kyrillidis, [*``Strong Lottery Ticket Hypothesis with perturbation"*](https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
-   
-  <button id="b_abs_c48"> Abstract </button>
-  <button id="b_bib_c48"> Bibtex </button>
-  <p id="abs_c48"> <i> The strong Lottery Ticket Hypothesis (LTH) (Ramanujan et al., 2019; Zhou et al., 2019) claims the existence of a subnetwork in a sufficiently large, randomly initialized neural network that approximates some target neural network without the need of training. We extend the theoretical guarantee of the strong LTH literature to a scenario more similar to the original LTH, by generalizing the weight change in the pre-training step to some perturbation around initialization. In particular, we focus on the following open questions: By allowing a perturbation on the random initial weights, can we reduce the over-parameterization requirement for the candidate network in the strong LTH? Furthermore, does the weight change by SGD coincide with a good set of such perturbation? We answer the first question by first extending the theoretical result on subset sum problem (Lueker, 1998) to allow perturbation on the candidates. Applying this result to the neural network setting, we show that by allowing scale perturbation, we can reduce the over-parameterization requirement of the strong LTH. To answer the second question, we show via experiments that the perturbed weight achieved by the projected SGD shows better performance under the strong LTH pruning.
-  </i> </p>
- 
-  <pre id="bib_c48"><samp>  		
-@InProceedings{slth2023xiong,
-  title = 	 {Strong Lottery Ticket Hypothesis with $\varepsilon$–perturbation},
-  author =       {Xiong, Zheyang and Liao, Fangshuo and Kyrillidis, Anastasios},
-  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
-  pages = 	 {6879--6902},
-  year = 	 {2023},
-  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
-  volume = 	 {206},
-  series = 	 {Proceedings of Machine Learning Research},
-  month = 	 {25--27 Apr},
-  publisher =    {PMLR}
-}
-  </samp></pre>
 
 
 + Carlos Quintero-Pena, Zachary Kingston, Tianyang Pan, Rahul Shome, Anastasios Kyrillidis, and Lydia E. Kavraki, [*``Optimal Grasps and Placements for Task and Motion Planning in Clutter"*](https://www.kavrakilab.rice.edu/publications/quintero2023-optimal-tmp.pdf), IEEE International Conference on Robotics and Automation (ICRA), 2023.
