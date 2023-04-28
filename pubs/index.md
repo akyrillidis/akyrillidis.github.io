@@ -7,6 +7,52 @@ fb_comments: 3
 
 ## Conference papers
 
++ Qihan Wang, Chen Dun, Fangshuo Liao, Chris Jermaine, Anastasios Kyrillidis, [*``LOFT: Finding Lottery Tickets through Filter-wise Training"*](https://proceedings.mlr.press/v206/wang23f/wang23f.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
+   
+  <button id="b_abs_c50"> Abstract </button>
+  <button id="b_bib_c50"> Bibtex </button>
+  <p id="abs_c50"> <i> Recent work on the Lottery Ticket Hypothesis (LTH) shows that there exist “winning tickets” in large neural networks. These tickets represent “sparse” versions of the full model that can be trained independently to achieve comparable accuracy with respect to the full model. However, finding the winning tickets requires one to pretrain the large model for at least a number of epochs, which can be a burdensome task, especially when the original neural network gets larger. In this paper, we explore how one can efficiently identify the emergence of such winning tickets, and use this observation to design efficient pretraining algorithms. For clarity of exposition, our focus is on convolutional neural networks (CNNs). To identify good filters, we propose a novel filter distance metric that well-represents the model convergence. As our theory dictates, our filter analysis behaves consistently with recent findings of neural network learning dynamics. Motivated by these observations, we present the LOttery ticket through Filter-wise Training algorithm, dubbed as LoFT. LoFT is a model-parallel pretraining algorithm that partitions convolutional layers by filters to train them independently in a distributed setting, resulting in reduced memory and communication costs during pretraining. Experiments show that LoFT i) preserves and finds good lottery tickets, while ii) it achieves non-trivial computation and communication savings, and maintains comparable or even better accuracy than other pretraining methods.
+  </i> </p>
+ 
+  <pre id="bib_c50"><samp>  		
+	@article{loft2023wang,
+  title = 	 {LOFT: Finding Lottery Tickets through Filter-wise Training},
+  author =       {Wang, Qihan and Dun, Chen and Liao, Fangshuo and Jermaine, Chris and Kyrillidis, Anastasios},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {6498--6526},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR}
+}
+  </samp></pre>
+
+
++ Chen Dun, Mirian Hipolito, Chris Jermaine, Dimitrios Dimitriadis, Anastasios Kyrillidis, [*``Efficient and Light-Weight Federated Learning via Asynchronous Distributed Dropout"*](https://proceedings.mlr.press/v206/dun23a/dun23a.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
+   
+  <button id="b_abs_c49"> Abstract </button>
+  <button id="b_bib_c49"> Bibtex </button>
+  <p id="abs_c49"> <i> Asynchronous learning protocols have regained attention lately, especially in the Federated Learning (FL) setup, where slower clients can severely impede the learning process. Herein, we propose AsyncDrop, a novel asynchronous FL framework that utilizes dropout regularization to handle device heterogeneity in distributed settings. Overall, AsyncDrop achieves better performance compared to state of the art asynchronous methodologies, while resulting in less communication and training time overheads. The key idea revolves around creating “submodels” out of the global model, and distributing their training to workers, based on device heterogeneity. We rigorously justify that such an approach can be theoretically characterized. We implement our approach and compare it against other asynchronous baselines, both by design and by adapting existing synchronous FL algorithms to asynchronous scenarios. Empirically, AsyncDrop reduces the communication cost and training time, while matching or improving the final test accuracy in diverse non-i.i.d. FL scenarios.
+  </i> </p>
+ 
+  <pre id="bib_c49"><samp>  		
+	@article{asyncdrop2023dun,
+  title = 	 {Efficient and Light-Weight Federated Learning via Asynchronous Distributed Dropout},
+  author =       {Dun, Chen and Hipolito, Mirian and Jermaine, Chris and Dimitriadis, Dimitrios and Kyrillidis, Anastasios},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {6630--6660},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR}
+ }
+  </samp></pre>
+
+
 + Zheyang Xiong, Fangshuo Liao, Anastasios Kyrillidis, [*``Strong Lottery Ticket Hypothesis with perturbation"*](https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
    
   <button id="b_abs_c48"> Abstract </button>
