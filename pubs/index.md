@@ -15,7 +15,7 @@ fb_comments: 3
   </i> </p>
  
   <pre id="bib_c50"><samp>  		
-@InProceedings{pmlr-v206-wang23f,
+@InProceedings{loft2023wang,
   title = 	 {LOFT: Finding Lottery Tickets through Filter-wise Training},
   author =       {Wang, Qihan and Dun, Chen and Liao, Fangshuo and Jermaine, Chris and Kyrillidis, Anastasios},
   booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
@@ -25,10 +25,7 @@ fb_comments: 3
   volume = 	 {206},
   series = 	 {Proceedings of Machine Learning Research},
   month = 	 {25--27 Apr},
-  publisher =    {PMLR},
-  pdf = 	 {https://proceedings.mlr.press/v206/wang23f/wang23f.pdf},
-  url = 	 {https://proceedings.mlr.press/v206/wang23f.html},
-  abstract = 	 {Recent work on the Lottery Ticket Hypothesis (LTH) shows that there exist “winning tickets” in large neural networks. These tickets represent “sparse” versions of the full model that can be trained independently to achieve comparable accuracy with respect to the full model. However, finding the winning tickets requires one to pretrain the large model for at least a number of epochs, which can be a burdensome task, especially when the original neural network gets larger. In this paper, we explore how one can efficiently identify the emergence of such winning tickets, and use this observation to design efficient pretraining algorithms. For clarity of exposition, our focus is on convolutional neural networks (CNNs). To identify good filters, we propose a novel filter distance metric that well-represents the model convergence. As our theory dictates, our filter analysis behaves consistently with recent findings of neural network learning dynamics. Motivated by these observations, we present the LOttery ticket through Filter-wise Training algorithm, dubbed as LoFT. LoFT is a model-parallel pretraining algorithm that partitions convolutional layers by filters to train them independently in a distributed setting, resulting in reduced memory and communication costs during pretraining. Experiments show that LoFT i) preserves and finds good lottery tickets, while ii) it achieves non-trivial computation and communication savings, and maintains comparable or even better accuracy than other pretraining methods.}
+  publisher =    {PMLR}
 }
   </samp></pre>
 
@@ -42,7 +39,7 @@ fb_comments: 3
   </i> </p>
  
   <pre id="bib_c49"><samp>  		
-@InProceedings{pmlr-v206-dun23a,
+@InProceedings{asyncdrop2023dun,
   title = 	 {Efficient and Light-Weight Federated Learning via Asynchronous Distributed Dropout},
   author =       {Dun, Chen and Hipolito, Mirian and Jermaine, Chris and Dimitriadis, Dimitrios and Kyrillidis, Anastasios},
   booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
@@ -52,11 +49,8 @@ fb_comments: 3
   volume = 	 {206},
   series = 	 {Proceedings of Machine Learning Research},
   month = 	 {25--27 Apr},
-  publisher =    {PMLR},
-  pdf = 	 {https://proceedings.mlr.press/v206/dun23a/dun23a.pdf},
-  url = 	 {https://proceedings.mlr.press/v206/dun23a.html},
-  abstract = 	 {Asynchronous learning protocols have regained attention lately, especially in the Federated Learning (FL) setup, where slower clients can severely impede the learning process. Herein, we propose AsyncDrop, a novel asynchronous FL framework that utilizes dropout regularization to handle device heterogeneity in distributed settings. Overall, AsyncDrop achieves better performance compared to state of the art asynchronous methodologies, while resulting in less communication and training time overheads. The key idea revolves around creating “submodels” out of the global model, and distributing their training to workers, based on device heterogeneity. We rigorously justify that such an approach can be theoretically characterized. We implement our approach and compare it against other asynchronous baselines, both by design and by adapting existing synchronous FL algorithms to asynchronous scenarios. Empirically, AsyncDrop reduces the communication cost and training time, while matching or improving the final test accuracy in diverse non-i.i.d. FL scenarios.}
-}
+  publisher =    {PMLR}
+ }
   </samp></pre>
 
 
@@ -66,11 +60,10 @@ fb_comments: 3
   <button id="b_abs_c48"> Abstract </button>
   <button id="b_bib_c48"> Bibtex </button>
   <p id="abs_c48"> <i> The strong Lottery Ticket Hypothesis (LTH) (Ramanujan et al., 2019; Zhou et al., 2019) claims the existence of a subnetwork in a sufficiently large, randomly initialized neural network that approximates some target neural network without the need of training. We extend the theoretical guarantee of the strong LTH literature to a scenario more similar to the original LTH, by generalizing the weight change in the pre-training step to some perturbation around initialization. In particular, we focus on the following open questions: By allowing a perturbation on the random initial weights, can we reduce the over-parameterization requirement for the candidate network in the strong LTH? Furthermore, does the weight change by SGD coincide with a good set of such perturbation? We answer the first question by first extending the theoretical result on subset sum problem (Lueker, 1998) to allow perturbation on the candidates. Applying this result to the neural network setting, we show that by allowing scale perturbation, we can reduce the over-parameterization requirement of the strong LTH. To answer the second question, we show via experiments that the perturbed weight achieved by the projected SGD shows better performance under the strong LTH pruning.
-
   </i> </p>
  
   <pre id="bib_c48"><samp>  		
-@InProceedings{pmlr-v206-xiong23a,
+@InProceedings{slth2023xiong,
   title = 	 {Strong Lottery Ticket Hypothesis with $\varepsilon$–perturbation},
   author =       {Xiong, Zheyang and Liao, Fangshuo and Kyrillidis, Anastasios},
   booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
@@ -80,27 +73,23 @@ fb_comments: 3
   volume = 	 {206},
   series = 	 {Proceedings of Machine Learning Research},
   month = 	 {25--27 Apr},
-  publisher =    {PMLR},
-  pdf = 	 {https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf},
-  url = 	 {https://proceedings.mlr.press/v206/xiong23a.html},
-  abstract = 	 {The strong Lottery Ticket Hypothesis (LTH) (Ramanujan et al., 2019; Zhou et al., 2019) claims the existence of a subnetwork in a sufficiently large, randomly initialized neural network that approximates some target neural network without the need of training. We extend the theoretical guarantee of the strong LTH literature to a scenario more similar to the original LTH, by generalizing the weight change in the pre-training step to some perturbation around initialization. In particular, we focus on the following open questions: By allowing an $\varepsilon$-scale perturbation on the random initial weights, can we reduce the over-parameterization requirement for the candidate network in the strong LTH? Furthermore, does the weight change by SGD coincide with a good set of such perturbation? We answer the first question by first extending the theoretical result on subset sum problem (Lueker, 1998) to allow perturbation on the candidates. Applying this result to the neural network setting, we show that by allowing $\varepsilon$-scale perturbation, we can reduce the over-parameterization requirement of the strong LTH by a factor of $O(1/(1+\varepsilon))$. To answer the second question, we show via experiments that the perturbed weight achieved by the projected SGD shows better performance under the strong LTH pruning.}
+  publisher =    {PMLR}
 }
   </samp></pre>
-
 
 
 + Carlos Quintero-Pena, Zachary Kingston, Tianyang Pan, Rahul Shome, Anastasios Kyrillidis, and Lydia E. Kavraki, [*``Optimal Grasps and Placements for Task and Motion Planning in Clutter"*](https://www.kavrakilab.rice.edu/publications/quintero2023-optimal-tmp.pdf), IEEE International Conference on Robotics and Automation (ICRA), 2023.
    
   <button id="b_abs_c47"> Abstract </button>
   <button id="b_bib_c47"> Bibtex </button>
-  <p id="abs_c47"> <i> — Many methods that solve robot planning problems,
+  <p id="abs_c47"> <i> Many methods that solve robot planning problems,
 such as task and motion planners, employ discrete symbolic
 search to find sequences of valid symbolic actions that are
 grounded with motion planning. Much of the efficacy of these
 planners lies in this grounding—bad placement and grasp
 choices can lead to inefficient planning when a problem has
 many geometric constraints. Moreover, grounding methods such
-as na¨ıve sampling often fail to find appropriate values for
+as naive sampling often fail to find appropriate values for
 these choices in the presence of clutter. Towards efficient task
 and motion planning, we present a novel optimization-based
 approach for grounding to solve cluttered problems that have
@@ -1279,13 +1268,11 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 ## Journals
 
-+ Fangshup Liao, Anastasios Kyrillidis, [*``On the Convergence of Shallow Neural Network Training with Randomly Masked Neurons"*](https://arxiv.org/pdf/2112.02668.pdf), Transactions on Machine Learning Research (TMLR), 2022. 
++ Fangshuo Liao, Anastasios Kyrillidis, [*``On the Convergence of Shallow Neural Network Training with Randomly Masked Neurons"*](https://arxiv.org/pdf/2112.02668.pdf), Transactions on Machine Learning Research (TMLR), 2022. 
   
   <button id="b_abs_j17"> Abstract </button>
   <button id="b_bib_j17"> Bibtex </button>
-   <p id="abs_j17"> <i>  With the motive of training all the parameters of a neural network, we study why and when one can achieve this by iteratively creating, training, and combining randomly selected subnetworks. Such scenarios have either implicitly or explicitly emerged in the recent literature: see e.g., the Dropout family of regularization techniques, or some distributed ML training protocols that reduce communication/computation complexities, such as the Independent Subnet Training protocol. While these methods are studied empirically and utilized in practice, they often enjoy partial or no theoretical support, especially when applied on neural network-based objectives.
-
-In this manuscript, our focus is on overparameterized single hidden layer neural networks with ReLU activations in the lazy training regime. By carefully analyzing i) the subnetworks’ neural tangent kernel, ii) the surrogate functions’ gradient, and iii) how we sample and combine the surrogate functions, we prove linear convergence rate of the training error –up to a neighborhood around the optimal point– for an overparameterized single-hidden layer perceptron with a regression loss. Our analysis reveals a dependency of the size of the neighborhood around the optimal point on the number of surrogate models and the number of local training steps for each selected subnetwork. Moreover, the considered framework generalizes and provides new insights on dropout training, multi-sample dropout training, as well as Independent Subnet Training; for each case, we provide convergence results as corollaries of our main theorem.
+   <p id="abs_j17"> <i>  With the motive of training all the parameters of a neural network, we study why and when one can achieve this by iteratively creating, training, and combining randomly selected subnetworks. Such scenarios have either implicitly or explicitly emerged in the recent literature: see e.g., the Dropout family of regularization techniques, or some distributed ML training protocols that reduce communication/computation complexities, such as the Independent Subnet Training protocol. While these methods are studied empirically and utilized in practice, they often enjoy partial or no theoretical support, especially when applied on neural network-based objectives. In this manuscript, our focus is on overparameterized single hidden layer neural networks with ReLU activations in the lazy training regime. By carefully analyzing i) the subnetworks’ neural tangent kernel, ii) the surrogate functions’ gradient, and iii) how we sample and combine the surrogate functions, we prove linear convergence rate of the training error –up to a neighborhood around the optimal point– for an overparameterized single-hidden layer perceptron with a regression loss. Our analysis reveals a dependency of the size of the neighborhood around the optimal point on the number of surrogate models and the number of local training steps for each selected subnetwork. Moreover, the considered framework generalizes and provides new insights on dropout training, multi-sample dropout training, as well as Independent Subnet Training; for each case, we provide convergence results as corollaries of our main theorem.
    </i> </p>
    
    <pre id="bib_j17"><samp>
