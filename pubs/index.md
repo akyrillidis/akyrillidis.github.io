@@ -33,7 +33,7 @@ fb_comments: 3
  
   <pre id="bib_c44"><samp>
   		@inproceedings{wan2021pipegcn,
-  title={Pipe{GCN}: Efficient Full-Graph Training of Graph Convolutional Networks with Pipelined Feature Communication},
+  title={PipeGCN: Efficient Full-Graph Training of Graph Convolutional Networks with Pipelined Feature Communication},
   author={Wan, Cheng and Li, Youjie and Wolfe, Cameron R and Kyrillidis, Anastasios and Kim, Nam Sung and Lin, Yingyan},
   booktitle={International Conference on Learning Representations},
   year={2022}
