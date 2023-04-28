@@ -97,7 +97,7 @@ fb_comments: 3
   </samp></pre>
 
 
-+ Syed Rizvi, Chen Dun, Anastasios Kyrillidis, [*``PCRIST: Variance Reduction through Periodic Centralized Training in Distributed Subnetwork Training of Residual Networks"*], IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), in proceedings of “Timely and Private Machine Learning over Networks” workshop, 2023.
++ Syed Rizvi, Chen Dun, Anastasios Kyrillidis, [*``PCRIST: Variance Reduction through Periodic Centralized Training in Distributed Subnetwork Training of Residual Networks"*](), IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), in proceedings of “Timely and Private Machine Learning over Networks” workshop, 2023.
    
   <button id="b_abs_c46"> Abstract </button>
   <button id="b_bib_c46"> Bibtex </button>
@@ -114,7 +114,7 @@ fb_comments: 3
   </samp></pre>
  
  
- + Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, [*``Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography"*](https://arxiv.org/pdf/2203.11579.pdf), IEEE Conference on Decision and Control (CDC), 2022
+ + Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, [*``Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography"*](https://arxiv.org/pdf/2203.11579.pdf), IEEE Conference on Decision and Control (CDC), 2022.
    
   <button id="b_abs_c45"> Abstract </button>
   <button id="b_bib_c45"> Bibtex </button>
@@ -135,6 +135,7 @@ fb_comments: 3
    
   <button id="b_abs_c44"> Abstract </button>
   <button id="b_bib_c44"> Bibtex </button>
+  <button id="b_sof_c44"> Link to software </button>
   <p id="abs_c44"> <i> Graph Convolutional Networks (GCNs) is the state-of-the-art method for learning graph-structured data, and training large-scale GCNs requires distributed training across multiple accelerators such that each accelerator is able to hold a partitioned subgraph. However, distributed GCN training incurs prohibitive overhead of communicating node features and feature gradients among partitions for every GCN layer in each training iteration, limiting the achievable training efficiency and model scalability. To this end, we propose PipeGCN, a simple-yet-effective scheme that hides the communication overhead by pipelining inter-partition communication with intra-partition computation. It is non-trivial to pipeline for efficient GCN training, as communicated node features/gradients will become stale and thus can harm the convergence, negating the pipeline benefit. Notably, little is known regarding the convergence rate of GCN training with both stale features and stale feature gradients. This work not only provides a theoretical convergence guarantee but also finds the convergence rate of PipeGCN to be close to that of the vanilla distributed GCN training without staleness. Furthermore, we develop a smoothing method to further improve PipeGCN’s convergence. Extensive experiments show that PipeGCN can largely boost training throughput (up to 2.2x) while achieving the same accuracy as its vanilla counterpart and outperforming existing full-graph training methods. All code will be released publicly upon acceptance.
   </i> </p>
  
@@ -151,6 +152,9 @@ fb_comments: 3
    
   <button id="b_abs_c43"> Abstract </button>
   <button id="b_bib_c43"> Bibtex </button>
+  <button id="b_pre_c43a"> Presentation 1 </button>
+  <button id="b_pre_c43b"> Presentation 2 </button>
+  <button id="b_sof_c43"> Link to software </button>
   <p id="abs_c43"> <i> Distributed machine learning (ML) can bring more computational resources to bear than single-machine learning, thus enabling reductions in training time. Distributed learning partitions models and data over many machines, allowing model and dataset sizes beyond the available compute power and memory of a single machine. In practice though, distributed ML is challenging when distribution is mandatory, rather than chosen by the practitioner. In such scenarios, data could unavoidably be separated among workers due to limited memory capacity per worker or even because of data privacy issues. There, existing distributed methods will utterly fail due to dominant transfer costs across workers, or do not even apply. We propose a new approach to distributed fully connected neural network learning, called independent subnet training (IST), to handle these cases. In IST, the original network is decomposed into a set of narrow subnetworks with the same depth. These subnetworks are then trained locally before parameters are exchanged to produce new subnets and the training cycle repeats. Such a naturally łmodel parallelž approach limits memory usage by storing only a portion of network parameters on each device. Additionally, no requirements exist for sharing data between workers (i.e., subnet training is local and independent) and communication volume and frequency are reduced by decomposing the original network into independent subnets. These properties of IST can cope with issues due to distributed data, slow interconnects, or limited device memory, making IST a suitable approach for cases of mandatory distribution. We show experimentally that IST results in training times that are much lower than common distributed learning approaches.
   </i> </p>
  
@@ -204,6 +208,7 @@ constraints
    
   <button id="b_abs_c41"> Abstract </button>
   <button id="b_bib_c41"> Bibtex </button>
+  <button id="b_sof_c41"> Link to software </button>
   <p id="abs_c41"> <i> Momentum is a widely used technique for gradient-based optimizers in deep learning. Here, we propose a decaying momentum (DEMON) hyperparameter rule. We conduct large-scale empirical analysis of momentum decay methods for modern neural network optimization and compare to the most popular learning rate decay schedules. Across 28 relevant combinations of models, epochs, datasets, and optimizers, DEMON achieves Top-1 and Top-3 performance in 39\% and 85\% of cases, respectively, almost doubling the second-placed cosine learning rate schedule at 17\% and 60\%, respectively. DEMON consistently outperforms other widely-used schedulers including, but not limited to, the learning rate step schedule, linear schedule, OneCycle schedule, and exponential schedule. Compared with the widely-used learning rate step schedule, DEMON is less sensitive to parameter tuning, which is critical to training neural networks in practice. Results are demonstrated across a variety of settings and architectures, ncluding image classification models, generative models, and language models. DEMON is easy to implement, requires no additional tuning, and incurs almost no extra computational overhead compared to the vanilla counterparts. Code is readily available.
   </i> </p>
  
