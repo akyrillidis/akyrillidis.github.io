@@ -7,7 +7,135 @@ fb_comments: 3
 
 ## Conference papers
 
-+ Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, [*``Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography"*](https://arxiv.org/pdf/2203.11579.pdf), IEEE Conference on Decision and Control (CDC), 2022
++ Qihan Wang, Chen Dun, Fangshuo Liao, Chris Jermaine, Anastasios Kyrillidis, [*``LOFT: Finding Lottery Tickets through Filter-wise Training"*](https://proceedings.mlr.press/v206/wang23f/wang23f.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
+   
+  <button id="b_abs_c50"> Abstract </button>
+  <button id="b_bib_c50"> Bibtex </button>
+  <p id="abs_c50"> <i> Recent work on the Lottery Ticket Hypothesis (LTH) shows that there exist “winning tickets” in large neural networks. These tickets represent “sparse” versions of the full model that can be trained independently to achieve comparable accuracy with respect to the full model. However, finding the winning tickets requires one to pretrain the large model for at least a number of epochs, which can be a burdensome task, especially when the original neural network gets larger. In this paper, we explore how one can efficiently identify the emergence of such winning tickets, and use this observation to design efficient pretraining algorithms. For clarity of exposition, our focus is on convolutional neural networks (CNNs). To identify good filters, we propose a novel filter distance metric that well-represents the model convergence. As our theory dictates, our filter analysis behaves consistently with recent findings of neural network learning dynamics. Motivated by these observations, we present the LOttery ticket through Filter-wise Training algorithm, dubbed as LoFT. LoFT is a model-parallel pretraining algorithm that partitions convolutional layers by filters to train them independently in a distributed setting, resulting in reduced memory and communication costs during pretraining. Experiments show that LoFT i) preserves and finds good lottery tickets, while ii) it achieves non-trivial computation and communication savings, and maintains comparable or even better accuracy than other pretraining methods.
+  </i> </p>
+ 
+  <pre id="bib_c50"><samp>  		
+@InProceedings{pmlr-v206-wang23f,
+  title = 	 {LOFT: Finding Lottery Tickets through Filter-wise Training},
+  author =       {Wang, Qihan and Dun, Chen and Liao, Fangshuo and Jermaine, Chris and Kyrillidis, Anastasios},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {6498--6526},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v206/wang23f/wang23f.pdf},
+  url = 	 {https://proceedings.mlr.press/v206/wang23f.html},
+  abstract = 	 {Recent work on the Lottery Ticket Hypothesis (LTH) shows that there exist “winning tickets” in large neural networks. These tickets represent “sparse” versions of the full model that can be trained independently to achieve comparable accuracy with respect to the full model. However, finding the winning tickets requires one to pretrain the large model for at least a number of epochs, which can be a burdensome task, especially when the original neural network gets larger. In this paper, we explore how one can efficiently identify the emergence of such winning tickets, and use this observation to design efficient pretraining algorithms. For clarity of exposition, our focus is on convolutional neural networks (CNNs). To identify good filters, we propose a novel filter distance metric that well-represents the model convergence. As our theory dictates, our filter analysis behaves consistently with recent findings of neural network learning dynamics. Motivated by these observations, we present the LOttery ticket through Filter-wise Training algorithm, dubbed as LoFT. LoFT is a model-parallel pretraining algorithm that partitions convolutional layers by filters to train them independently in a distributed setting, resulting in reduced memory and communication costs during pretraining. Experiments show that LoFT i) preserves and finds good lottery tickets, while ii) it achieves non-trivial computation and communication savings, and maintains comparable or even better accuracy than other pretraining methods.}
+}
+  </samp></pre>
+
+
+
++ Chen Dun, Mirian Hipolito, Chris Jermaine, Dimitrios Dimitriadis, Anastasios Kyrillidis, [*``Efficient and Light-Weight Federated Learning via Asynchronous Distributed Dropout"*](https://proceedings.mlr.press/v206/dun23a/dun23a.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
+   
+  <button id="b_abs_c49"> Abstract </button>
+  <button id="b_bib_c49"> Bibtex </button>
+  <p id="abs_c49"> <i> Asynchronous learning protocols have regained attention lately, especially in the Federated Learning (FL) setup, where slower clients can severely impede the learning process. Herein, we propose AsyncDrop, a novel asynchronous FL framework that utilizes dropout regularization to handle device heterogeneity in distributed settings. Overall, AsyncDrop achieves better performance compared to state of the art asynchronous methodologies, while resulting in less communication and training time overheads. The key idea revolves around creating “submodels” out of the global model, and distributing their training to workers, based on device heterogeneity. We rigorously justify that such an approach can be theoretically characterized. We implement our approach and compare it against other asynchronous baselines, both by design and by adapting existing synchronous FL algorithms to asynchronous scenarios. Empirically, AsyncDrop reduces the communication cost and training time, while matching or improving the final test accuracy in diverse non-i.i.d. FL scenarios.
+  </i> </p>
+ 
+  <pre id="bib_c49"><samp>  		
+@InProceedings{pmlr-v206-dun23a,
+  title = 	 {Efficient and Light-Weight Federated Learning via Asynchronous Distributed Dropout},
+  author =       {Dun, Chen and Hipolito, Mirian and Jermaine, Chris and Dimitriadis, Dimitrios and Kyrillidis, Anastasios},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {6630--6660},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v206/dun23a/dun23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v206/dun23a.html},
+  abstract = 	 {Asynchronous learning protocols have regained attention lately, especially in the Federated Learning (FL) setup, where slower clients can severely impede the learning process. Herein, we propose AsyncDrop, a novel asynchronous FL framework that utilizes dropout regularization to handle device heterogeneity in distributed settings. Overall, AsyncDrop achieves better performance compared to state of the art asynchronous methodologies, while resulting in less communication and training time overheads. The key idea revolves around creating “submodels” out of the global model, and distributing their training to workers, based on device heterogeneity. We rigorously justify that such an approach can be theoretically characterized. We implement our approach and compare it against other asynchronous baselines, both by design and by adapting existing synchronous FL algorithms to asynchronous scenarios. Empirically, AsyncDrop reduces the communication cost and training time, while matching or improving the final test accuracy in diverse non-i.i.d. FL scenarios.}
+}
+  </samp></pre>
+
+
+
++ Zheyang Xiong, Fangshuo Liao, Anastasios Kyrillidis, [*``Strong Lottery Ticket Hypothesis with perturbation"*](https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
+   
+  <button id="b_abs_c48"> Abstract </button>
+  <button id="b_bib_c48"> Bibtex </button>
+  <p id="abs_c48"> <i> The strong Lottery Ticket Hypothesis (LTH) (Ramanujan et al., 2019; Zhou et al., 2019) claims the existence of a subnetwork in a sufficiently large, randomly initialized neural network that approximates some target neural network without the need of training. We extend the theoretical guarantee of the strong LTH literature to a scenario more similar to the original LTH, by generalizing the weight change in the pre-training step to some perturbation around initialization. In particular, we focus on the following open questions: By allowing a perturbation on the random initial weights, can we reduce the over-parameterization requirement for the candidate network in the strong LTH? Furthermore, does the weight change by SGD coincide with a good set of such perturbation? We answer the first question by first extending the theoretical result on subset sum problem (Lueker, 1998) to allow perturbation on the candidates. Applying this result to the neural network setting, we show that by allowing scale perturbation, we can reduce the over-parameterization requirement of the strong LTH. To answer the second question, we show via experiments that the perturbed weight achieved by the projected SGD shows better performance under the strong LTH pruning.
+
+  </i> </p>
+ 
+  <pre id="bib_c48"><samp>  		
+@InProceedings{pmlr-v206-xiong23a,
+  title = 	 {Strong Lottery Ticket Hypothesis with $\varepsilon$–perturbation},
+  author =       {Xiong, Zheyang and Liao, Fangshuo and Kyrillidis, Anastasios},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {6879--6902},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v206/xiong23a/xiong23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v206/xiong23a.html},
+  abstract = 	 {The strong Lottery Ticket Hypothesis (LTH) (Ramanujan et al., 2019; Zhou et al., 2019) claims the existence of a subnetwork in a sufficiently large, randomly initialized neural network that approximates some target neural network without the need of training. We extend the theoretical guarantee of the strong LTH literature to a scenario more similar to the original LTH, by generalizing the weight change in the pre-training step to some perturbation around initialization. In particular, we focus on the following open questions: By allowing an $\varepsilon$-scale perturbation on the random initial weights, can we reduce the over-parameterization requirement for the candidate network in the strong LTH? Furthermore, does the weight change by SGD coincide with a good set of such perturbation? We answer the first question by first extending the theoretical result on subset sum problem (Lueker, 1998) to allow perturbation on the candidates. Applying this result to the neural network setting, we show that by allowing $\varepsilon$-scale perturbation, we can reduce the over-parameterization requirement of the strong LTH by a factor of $O(1/(1+\varepsilon))$. To answer the second question, we show via experiments that the perturbed weight achieved by the projected SGD shows better performance under the strong LTH pruning.}
+}
+  </samp></pre>
+
+
+
++ Carlos Quintero-Pena, Zachary Kingston, Tianyang Pan, Rahul Shome, Anastasios Kyrillidis, and Lydia E. Kavraki, [*``Optimal Grasps and Placements for Task and Motion Planning in Clutter"*](https://www.kavrakilab.rice.edu/publications/quintero2023-optimal-tmp.pdf), IEEE International Conference on Robotics and Automation (ICRA), 2023.
+   
+  <button id="b_abs_c47"> Abstract </button>
+  <button id="b_bib_c47"> Bibtex </button>
+  <p id="abs_c47"> <i> — Many methods that solve robot planning problems,
+such as task and motion planners, employ discrete symbolic
+search to find sequences of valid symbolic actions that are
+grounded with motion planning. Much of the efficacy of these
+planners lies in this grounding—bad placement and grasp
+choices can lead to inefficient planning when a problem has
+many geometric constraints. Moreover, grounding methods such
+as na¨ıve sampling often fail to find appropriate values for
+these choices in the presence of clutter. Towards efficient task
+and motion planning, we present a novel optimization-based
+approach for grounding to solve cluttered problems that have
+many constraints that arise from geometry. Our approach finds
+an optimal grounding and can provide feedback to discrete
+search for more effective planning. We demonstrate our method
+against baseline methods in complex simulated environments.
+  </i> </p>
+ 
+  <pre id="bib_c47"><samp>
+  		@article{quinterooptimal,
+  title={Optimal Grasps and Placements for Task and Motion Planning in Clutter},
+  author={Quintero-Pena, Carlos and Kingston, Zachary and Pan, Tianyang and Shome, Rahul and Kyrillidis, Anastasios and Kavraki, Lydia E}
+}
+  </samp></pre>
+
+
++ Syed Rizvi, Chen Dun, Anastasios Kyrillidis, [*``PCRIST: Variance Reduction through Periodic Centralized Training in Distributed Subnetwork Training of Residual Networks"*], IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), in proceedings of “Timely and Private Machine Learning over Networks” workshop, 2023.
+   
+  <button id="b_abs_c46"> Abstract </button>
+  <button id="b_bib_c46"> Bibtex </button>
+  <p id="abs_c46"> <i> In this work, we propose Periodic Centralized ResIST (PCRIST), a distributed training protocol for residual Convolutional Neural Networks which reduces variance during training in order to recover model performance in distributed settings. PCRIST introduces short periods of centralized training into the ResIST distributed training protocol, which aims to reduce the variance among distributed workers each training subnets of the global Resnet. PCRIST improves on the performance of ResIST while maintaining many of its  advantages in terms of communication efficiency compared to baseline distributed training protocols. We evaluate PCRIST on two benchmark image classification tasks, and demonstrate superior performance to the ResIST training protocol while maintaining the benefits of communication efficiency seen with the ResIST protocol.
+  </i> </p>
+ 
+  <pre id="bib_c46"><samp>
+  		@article{rivzi2023pcrist,
+  title={PCRIST: Variance Reduction through Periodic Centralized Training in Distributed Subnetwork Training of Residual Networks},
+  author={Syed Rizvi, Chen Dun, Anastasios Kyrillidis},
+  journal={preprint},
+  year={2023}
+}
+  </samp></pre>
+ 
+ 
+ + Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, [*``Local Stochastic Factored Gradient Descent for Distributed Quantum State Tomography"*](https://arxiv.org/pdf/2203.11579.pdf), IEEE Conference on Decision and Control (CDC), 2022
    
   <button id="b_abs_c45"> Abstract </button>
   <button id="b_bib_c45"> Bibtex </button>
