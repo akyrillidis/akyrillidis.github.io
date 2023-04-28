@@ -37,8 +37,10 @@ Contact: anastasios@rice.edu
 
 <button id="COMP414"> Website </button>
 
+* COMP 182 - Algorithmic Thinking (*Spring '23*)
+
 ### **Funding sources**
 
 <img src="/public/logos.png" width="325" height="65" align="right">
 
-My research is supported by **NSF FET:Small no. 1907936**, **NSF MLWiNS CNS no. 2003137** (in collaboration with Intel), **NSF CMMI no. 2037545**, **NSF CAREER award no. 2145629**, **Welch Foundation Research Grant no. 964181**, and Rice **InterDisciplinary Excellence Award (IDEA)**.
+My research is supported by **NSF FET:Small no. 1907936**, **NSF MLWiNS CNS no. 2003137** (in collaboration with Intel), **NSF CMMI no. 2037545**, **NSF CAREER award no. 2145629**, **Welch Foundation Research Grant no. 964181**, **Amazon Research Award**, **Microsoft Research Award**, and Rice **InterDisciplinary Excellence Award (IDEA)**.
