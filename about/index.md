@@ -4,7 +4,7 @@ fb_comments: 3
 title: About
 ---
 
-<img src="/public/me2.png" width="132" height="180" align="right">
+<img src="/public/me2.png" width="132" height="220" align="right">
 
 My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname 'Tasos' ('Τάσος'). 
 Currently, I'm a Noah Harding Assistant Professor at the Computer Science department at Rice University. 
