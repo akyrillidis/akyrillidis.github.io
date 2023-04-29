@@ -237,22 +237,22 @@
 		    <tr>
                     <td align="center" width="240px">
               		<center>
-			<img class="round" style="width:240px" src="/group/chen_dun.png"/>
+			<img class="round" style="width:240px" src="/group/john_chen.png"/>
                 	</center>
                    </td> 
 		    <td align="center" width="240px">
               		<center>
-			<img class="round" style="width:240px" src="/group/lyle_kim.png"/>
+			<img class="round" style="width:240px" src="/group/cameron_wolfe.png"/>
                 	</center>
                    </td> 
 		    <td align="center" width="240px">
               		<center>
-			<img class="round" style="width:240px" src="/group/carlos_quintero.png"/>
+			<img class="round" style="width:240px" src="/group/jasper_liao.png"/>
                 	</center>
                    </td> 
 		    <td align="center" width="240px">
               		<center>
-			<img class="round" style="width:240px" src="/group/zhiwei_zhang.png"/>
+			<img class="round" style="width:240px" src="/group/ria_stevens.png"/>
                 	</center>
                    </td>
 		 </tr>
@@ -264,150 +264,82 @@
             <tbody>
 		   <td align="center" width="240px">
               		<center>
-			<span style="font-size:24px"><a href="">Chen Dun</a></span>
+			<span style="font-size:24px"><a href="https://johnchenresearch.github.io/">John Chen</a></span>
                 	</center>
                    </td> 
 		    <td align="center" width="240px">
               		<center>
-			<span style="font-size:24px"><a href="https://jlylekim.github.io/">Lyle Kim</a></span>
+			<span style="font-size:24px"><a href="https://cameronrwolfe.me/">Cameron Wolfe</a></span>
                 	</center>
                    </td> 
 		    <td align="center" width="240px">
               		<center>
-			<span style="font-size:24px"><a href="https://carlosquinterop.github.io/">Carlos Quintero</a></span>
+			<span style="font-size:24px"><a href="">Jasper Liao</a></span>
                 	</center>
                    </td> 
 		    <td align="center" width="240px">
               		<center>
-			<span style="font-size:24px"><a href="https://www.cs.rice.edu/~zz59/">Zhiwei Zhang</a></span>
+			<span style="font-size:24px"><a href="">Ria Stevens</a></span>
                 	</center>
                    </td> 
             	 </tr>
 		</tbody>
 	</table>
 	<br><br>
-			    			    
-          </table>
-		<br>
-		<td align=center width=960px>
-			<center>
-			<td><img class="round" style="width:960px" src="./assets/img/cascades.png"/></td>
-			</center>
-		</td>
-		    
-	<br><hr>
-        <center>
-          <h2>
-            Abstract
-          </h2>
-        </center>
-        <p>
-        <left>
-          Distributed machine learning (ML) can bring more computational resources to bear than single-machine learning, reducing training time. 
-Further, distribution allows models to be partitioned over many machines, allowing very large models to be trained—models that may be much larger than the available memory of any individual machine. 
-However, in practice, distributed ML remains challenging, primarily due to high communication costs. 
-We propose a new approach to distributed neural network learning, called independent subnet training (IST). 
-In IST, per iteration, a neural network is decomposed into a set of subnetworks of the same depth as the original network, each of which is trained locally, before the various subnets are exchanged and the process is repeated. 
-IST training has many advantages over standard data parallel approaches. 
-Because the original network is decomposed into independent parts, communication volume is reduced. 
-The decomposition makes IST naturally ``model parallel’’, and so IST scales to very large models that cannot fit on any single machine. 
-Furthermore, because the subsets are independent, communication frequency is reduced. 
-We show experimentally that IST results in training times that are much lower than data parallel approaches to distributed learning.
-Furthermore, IST scales to large models that cannot be learned using standard approaches. <br> <br>
-		
-		This paper is part of the IST project, ran by PIs Anastasios Kyrillidis, Chris Jermaine, and Yingyan Lin. More info <a href="https://akyrillidis.github.io/ist/">here.</a>
-        </left>
-      </p>
-      <br>
-	<hr>
-
-	<table align=center width=960px>
-		<center><h1>The idea of Independent Subnetwork Training (IST)</h1></center>
-		<tr>
-			<td>
-				The central idea in this paper, called independent subnet training (IST), facilitates combined model and data parallel distributed training. 
-				IST utilizes ideas from dropout and approximate matrix multiplication.
-				IST decomposes the NN layers into a set of subnets for the same task, by partitioning the neurons across different sites.
-				Each of those subnets is trained for one or more local stochastic gradient descent (SGD) iterations, before synchronization. <br> <br>
-
-				Since subnets share no parameters in the distributed setting, synchronization requires no aggregation on these parameters, in contrast to the data parallel method---it is just an exchange of parameters.
-				Moreover, because subnets are sampled without replacement, the interdependence among them is minimized, which allows their local SGD updates for a larger number of iterations without significant ``model drifting'', before synchronizing. 
-				This reduces communication frequency. 
-				Communication costs per synchronization step are also reduced because in an n-machine cluster, each machine gets between 1/n^2 and 1/n of the weights---contrast this to data parallel training, when each machine must receive all of the weights. <br> <br>
-
-				IST has advantages over model parallel approaches.  
-				Since subnets are trained independently during local updates, no synchronization between subnetworks is required.
-				Yet, IST inherits the advantages of model parallel methods. Since each machine gets just a small fraction of the overall model, IST allows the training of very large models that cannot fit into the RAM of a node or a device. 
-				This can be an advantage when training large models using GPUs, which tend to have limited memory. <br> <br> 
-				
-				<p><b>Contributions.</b>This paper has the following key contributions:</p>
-					<ul>
-  						<li>We propose independent subnet training, a method for combined model parallel/data parallel training of neural networks on a cluster of machines. IST is specifically designed to work well on public clouds, where it is difficult to realize high-performance, distributed training.  These clouds often combine high performance CPUs and GPUs with relatively low-speed inter-machine inerconnects.</li>
-  						<li>We evaluate IST on speech recognition, image classification (CIFAR10 and full ImageNet), and a large-scale Amazon product recommendation task. We find that IST results in up to a 10x speedup for time-to-convergence, compared to a state-of-the-art data parallel realization, using bandwidth-optimal ring all-reduce, as well as the ``vanilla'' local SGD method.</li>
-  						<li>Because IST allows for efficient implicit model parallel training, we show that IST can solve an ``extreme'' Amazon product recommendation task with improved generalization, by increasing the embedding dimensions for larger models, which is not supported by data parallel based training.</li>
-						<li>Finally, we present theoretical results showing that decomposing a neural network into subnets for distributed training still allows for convergence under a set of standard assumptions.</li>
-					</ul>																
-			</td>
-		</tr>
-	</table>
-
-	<br><hr>
-	<table align=center width=960px>
-		<center><h1>Results</h1></center>
-		<tr>
-			<td>
-				<p><b>Learning tasks and environments:</b></p>
-				<ul>
-					<li>Google Speech Commands: We learn a 2-layer network of 4096 neurons and a 3-layer network of 8192 neurons to recognize 35 labeled keywords from audio waveforms (in contrast to the 12 keywords in prior reports). We represent each waveform as a 4096-dimensional feature vector.</li>
-					<li>Image classification on CIFAR10 and full ImageNet: We train the Resnet18 model over CIFAR10, and the VGG12 model over full ImageNet. Note that we include the complete ImageNet dataset with all 21,841 categories and report the top-10 accuracy.  Because it is so difficult to train, there are few reported results over the complete ImageNet data set.</li>
-					<li>Amazon-670k: We train a 2-layer, fully-connected neural network, which accepts a 135,909-dimensional input feature, and generates a prediction over 670,091 output labels. Further details of the learning tasks and hyperparameter tuning description are enumerated in the full version of the paper. </li>
-				</ul>
-				<p>We train Google speech and Resnet18 on CIFAR10 on three AWS CPU clusters, with 2, 4, and 8 CPU instances (m5.2xlarge).  We train the VGG model on full ImageNet and Amazon-670k extreme classification network on three AWS GPU clusters, with 2, 4, and 8 GPU machines (p3.2xlarge). Our choice of AWS was deliberate, as it is a very common learning platform, and illustrates the challenge faced by many consumers: distributed ML without a super-fast interconnect.</p>																
-
-			</td>
-		</tr>
-	</table>
+			
+	<table align="center" width="960px">
+            <tbody>
+		    <tr>
+                    <td align="center" width="240px">
+              		<center>
+			<img class="round" style="width:240px" src="/group/david_quiroga.png"/>
+                	</center>
+                   </td> 		    
+		 </tr>
+		</tbody>
+	</table>	
 	<br>
-				<td align=center width=960px>
-					<center>
-						<td><img class="round" style="width:960px" src="./assets/img/fig1.png"/></td> 
-					</center>
-				</td>
-		    		<p>The figure and the table above generally show that IST is much faster compared to the other frameworks for achieving high levels of accuracy on a hold-out test set. For example, IST exhibits a 4.2x speedup compared to local SGD, and 10.6x speedup compared to classical data parallel for the 2-layer Google speech model to reach 77%. IST exhibits 6.1x speedup compared to local SGD, and a 16.6x speedup comparing to data parallel for the 3-layer model to reach the accuracy of 77%. 
-				Note that this was observed even though IST was handicapped by its use of gloo for its GPU implementation. Interestingly, for the full ImageNet data set, the communication bottleneck using AWS is so severe that the smaller clusters were always faster; at each cluster size, IST was still the fastest option. For CIFAR10, because CPUs were used for training, the network is less of a bottlneck and all methods were able to scale.  This negates the IST advantage just a bit. In this case, IST was fastest to 85% accuracy, but was slower to fine-tune to 90% accuracy in 8-CPU cluster.</p>
-
-				<br>
-				<td align=center width=960px>
-					<center>
-						<td><img class="round" style="width:500px" src="./assets/img/fig2.png"/></td>
-					</center>
-				</td>
-		    		<p>Another key advantage of IST is illustrated in the table above; because it is a model-parallel framework and distributes the model to multiple machines, IST is able to scale to virtually unlimited model sizes. In this case, it can compute 2560-dimensional embedding in 8-GPU cluster (and realize the associated, additional accuracy) whereas the data parallel approaches are unable to do this.</p>
-				<br>
-
-		    		<td align=center width=960px>
-					<center>
-						<td><img class="round" style="width:500px" src="./assets/img/fig3.png"/></td>
-					</center>
-				</td>
-	<br>
-
 	
-
-	<hr>
-	<br>
-
-	<table align=center width=900px>
-		<tr>
-			<td width=400px>
-				<left>
-					<center><h1>Acknowledgements</h1></center>
-					AK, CJ acknowledges funding by the NSF/Intel (CNS-2003137).
-					This code for this template can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
-				</left>
-			</td>
-		</tr>
+	<table align="center" width="960px">
+            <tbody>
+		   <td align="center" width="240px">
+              		<center>
+			<span style="font-size:24px"><a href="">David Quiroga</a></span>
+                	</center>
+                   </td> 
+            	 </tr>
+		</tbody>
 	</table>
+	<br><br>
+
+         <center>
+	<span style="font-size:24px">Alumni</span><br><br><br>
+	</center>
+
+	<table align="center" width="960px">
+            <tbody>
+		    <tr>
+                    <td align="center" width="240px">
+              		<center>
+			<img class="round" style="width:240px" src="/group/chuck_wang.png"/>
+                	</center>
+                   </td> 		    
+		 </tr>
+		</tbody>
+	</table>	
+	<br>
+	
+	<table align="center" width="960px">
+            <tbody>
+		   <td align="center" width="240px">
+              		<center>
+			<span style="font-size:24px"><a href="https://wangqihan.com/">Chuck Wang (Now at Microsoft)</a></span>
+                	</center>
+                   </td> 
+            	 </tr>
+		</tbody>
+	</table>
+	<br><br>
 
 <br>
 </body>
