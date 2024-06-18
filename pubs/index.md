@@ -3,7 +3,7 @@ layout: dirindex
 fb_comments: 3
 ---
 
-*(Only peer-reviewed and accepted papers; for the most recent drafts, please check my [Google Scholar](https://scholar.google.com/citations?user=TEGzkZMAAAAJ&hl=en&oi=ao) profile)*
+*(**I have stopped updating this page as it felt a waste of time**; for the most recent drafts, please check my [Google Scholar](https://scholar.google.com/citations?user=TEGzkZMAAAAJ&hl=en&oi=ao) profile)*
 
 ## Conference papers
 
