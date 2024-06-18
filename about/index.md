@@ -39,6 +39,8 @@ Contact: anastasios@rice.edu
 
 * COMP 182 - Algorithmic Thinking (*Spring '23*)
 
+### **Old notes on various stuff**
+
 ### **Funding sources**
 
 <img src="/public/logos2.png" width="325" height="130" align="right">
