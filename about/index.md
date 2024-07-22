@@ -7,7 +7,7 @@ title: About
 <img src="/public/me2.png" width="132" height="200" align="right">
 
 My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname 'Tasos' ('Τάσος'). 
-Currently, I'm a Noah Harding Assistant Professor at the Computer Science department at Rice University. 
+Currently, I'm a Noah Harding Associate Professor at the Computer Science department at Rice University. 
 
 Prior to that, I was a Goldstine
 PostDoctoral Fellow at IBM T. J. Watson Research Center (NY), and a Simons Foundation PostDoc member at the University of Texas at Austin. 
