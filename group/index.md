@@ -264,6 +264,46 @@ title: OptimaLab
 .tree-legend .dot.current { background: #2ecc71; }
 .tree-legend .sep { margin: 0 15px; }
 
+/* Section headers for active members */
+.section-header {
+  max-width: 800px;
+  margin: 30px auto 10px auto;
+  padding: 0 20px;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 6px;
+}
+.section-header .badge {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.section-header .badge.postdoc { background: #e8d5f5; color: #7b2d8e; }
+.section-header .badge.msc { background: #d5e8f5; color: #2d5f8e; }
+.section-header .badge.undergrad { background: #f5e8d5; color: #8e6a2d; }
+
+/* PostDoc card */
+.current-card.postdoc {
+  background: #f5f0fa;
+  border-color: #d4b8e8;
+}
+/* MSc card */
+.current-card.msc {
+  background: #f0f4fa;
+  border-color: #b8cce8;
+}
+/* Undergrad card */
+.current-card.undergrad {
+  background: #faf5f0;
+  border-color: #e8d4b8;
+}
+
 /* Responsive */
 @media (max-width: 700px) {
   .tree-trunk::before {
@@ -453,6 +493,79 @@ title: OptimaLab
       <div class="student-name"><a href="https://www.linkedin.com/in/thanasis-hadjidimoulas/">Thanasis Hadjidimoulas</a></div>
       <div class="student-since">PhD &middot; Since 2024</div>
       <div class="student-topic">Quantum algorithms and optimization, theoretical computer science.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PostDoc -->
+<div class="section-header">Postdoctoral Researcher <span class="badge postdoc">PostDoc</span></div>
+<div class="current-section">
+  <div class="current-grid">
+
+    <div class="current-card postdoc">
+      <div class="student-name">Jianqiang Li</div>
+      <div class="student-since">PostDoc</div>
+      <div class="student-topic">Quantum computing and algorithms.</div>
+      <div style="font-size:0.75em; color:#999; font-style:italic;">Co-advised with Tirthak Patel and Nai-Hui Chia</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MSc Students -->
+<div class="section-header">MSc Students <span class="badge msc">MSc</span></div>
+<div class="current-section">
+  <div class="current-grid">
+
+    <div class="current-card msc">
+      <div class="student-name">Hamza Shili</div>
+      <div class="student-since">MSc</div>
+      <div class="student-topic">Mixture of Experts systems.</div>
+    </div>
+
+    <div class="current-card msc">
+      <div class="student-name">Michael Menezes</div>
+      <div class="student-since">MSc (previously undergraduate)</div>
+      <div class="student-topic">Pruning methods in AI, transfer learning, distributed optimization and learning.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Undergraduate Students -->
+<div class="section-header">Undergraduate Students <span class="badge undergrad">Undergrad</span></div>
+<div class="current-section">
+  <div class="current-grid">
+
+    <div class="current-card undergrad">
+      <div class="student-name">Barbara Su</div>
+      <div class="student-since">Undergraduate</div>
+      <div class="student-topic">Pruning methods in AI, distributed methods in learning, recursive neural network architectures for AI reasoning.</div>
+    </div>
+
+    <div class="current-card undergrad">
+      <div class="student-name">Xinze Fang</div>
+      <div class="student-since">Undergraduate</div>
+      <div class="student-topic">Pruning methods in AI, distributed methods in learning.</div>
+    </div>
+
+    <div class="current-card undergrad">
+      <div class="student-name">Jack Shen</div>
+      <div class="student-since">Undergraduate</div>
+      <div class="student-topic">Recursive neural network architectures for AI reasoning.</div>
+    </div>
+
+    <div class="current-card undergrad">
+      <div class="student-name">Aayan Ilyas</div>
+      <div class="student-since">Undergraduate</div>
+      <div class="student-topic">Classical algorithms benchmarking against quantum algorithms for MIS instances.</div>
+    </div>
+
+    <div class="current-card undergrad">
+      <div class="student-name">Oneal Wang</div>
+      <div class="student-since">Undergraduate</div>
+      <div class="student-topic">Classical algorithms benchmarking against quantum algorithms for MIS instances.</div>
     </div>
 
   </div>
