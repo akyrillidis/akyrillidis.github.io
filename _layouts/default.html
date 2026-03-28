@@ -26,7 +26,17 @@
 		    $(":button").css("font-family", "Avenir Book");
 		    $(":button").css("padding", "3px");
 		    $(":button").css("margin-left", "4px");
-    		
+
+		    // Generic handler: auto-wire any b_abs_* / b_bib_* buttons
+		    $("[id^='b_abs_']").each(function(){
+		        var target = "#" + this.id.replace("b_abs_", "abs_");
+		        $(this).click(function(){ $(target).fadeToggle("slow"); });
+		    });
+		    $("[id^='b_bib_']").each(function(){
+		        var target = "#" + this.id.replace("b_bib_", "bib_");
+		        $(this).click(function(){ $(target).fadeToggle("slow"); });
+		    });
+
     		$("#b_CV").click(function(){
 	    		location.href = "/pubs/Various/Anastasios_Kyrillidis_CV_academia.pdf";
 		    });

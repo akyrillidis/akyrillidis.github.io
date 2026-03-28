@@ -3,9 +3,339 @@ layout: dirindex
 fb_comments: 3
 ---
 
-*(**I have stopped updating this page as it felt a waste of time**; for the most recent drafts, please check my [Google Scholar](https://scholar.google.com/citations?user=TEGzkZMAAAAJ&hl=en&oi=ao) profile)*
-
 ## Conference papers
+
++ Fangshuo Liao, Anastasios Kyrillidis, [*``Guided by the Experts: Provable Feature Learning Dynamic of Soft-Routed Mixture-of-Experts"*](https://arxiv.org/abs/2510.07205), Twenty-ninth International Conference on Artificial Intelligence and Statistics (AISTATS-26), 2026.
+
+  <button id="b_abs_c67"> Abstract </button>
+  <button id="b_bib_c67"> Bibtex </button>
+  <p id="abs_c67"> <i> Mixture-of-Experts (MoE) architectures have emerged as a cornerstone of modern AI systems. In particular, MoEs route inputs dynamically to specialized experts whose outputs are aggregated through weighted summation. Despite their widespread application, theoretical understanding of MoE training dynamics remains limited to either separate expert-router optimization or only top-1 routing scenarios with carefully constructed datasets. This paper advances MoE theory by providing convergence guarantees for joint training of soft-routed MoE models with non-linear routers and experts in a student-teacher framework. We prove that, with moderate over-parameterization, the student network undergoes a feature learning phase, where the router's learning process is "guided" by the experts, that recovers the teacher's parameters. Moreover, we show that a post-training pruning can effectively eliminate redundant neurons, followed by a provably convergent fine-tuning process that reaches global optimality. To our knowledge, our analysis is the first to bring novel insights in understanding the optimization landscape of the MoE architecture.
+  </i> </p>
+
+  <pre id="bib_c67"><samp>
+	@inproceedings{liao2026guided,
+  title = {Guided by the Experts: Provable Feature Learning Dynamic of Soft-Routed Mixture-of-Experts},
+  author = {Liao, Fangshuo and Kyrillidis, Anastasios},
+  booktitle = {Proceedings of The 29th International Conference on Artificial Intelligence and Statistics},
+  year = {2026},
+  series = {Proceedings of Machine Learning Research},
+  publisher = {PMLR}
+}
+  </samp></pre>
+
+
++ Junhyung Lyle Kim, Nai-Hui Chia, Anastasios Kyrillidis, [*``A Catalyst Framework for the Quantum Linear System Problem via the Proximal Point Algorithm"*](https://arxiv.org/abs/2406.13879), Fortieth AAAI Conference on Artificial Intelligence (AAAI-26), 2026.
+
+  <button id="b_abs_c66"> Abstract </button>
+  <button id="b_bib_c66"> Bibtex </button>
+  <p id="abs_c66"> <i> Solving systems of linear equations is a fundamental problem, but it can be computationally intensive for classical algorithms in high dimensions. Existing quantum algorithms can achieve exponential speedups for the quantum linear system problem (QLSP) in terms of the problem dimension, but the advantage is bottlenecked by condition number of the coefficient matrix. In this work, we propose a new quantum algorithm for QLSP inspired by the classical proximal point algorithm (PPA). Our proposed method can be viewed as a meta-algorithm that allows inverting a modified matrix via an existing QLSP solver, thereby directly approximating the solution vector instead of approximating the inverse of the coefficient matrix. By carefully choosing the step size, the proposed algorithm can effectively precondition the linear system to mitigate the dependence on condition numbers that hindered the applicability of previous approaches. Importantly, this is the first iterative framework for QLSP where a tunable parameter and initialization allows controlling the trade-off between the runtime and approximation error.
+  </i> </p>
+
+  <pre id="bib_c66"><samp>
+	@inproceedings{kim2026catalyst,
+  title = {A Catalyst Framework for the Quantum Linear System Problem via the Proximal Point Algorithm},
+  author = {Kim, Junhyung Lyle and Chia, Nai-Hui and Kyrillidis, Anastasios},
+  booktitle = {Fortieth {AAAI} Conference on Artificial Intelligence},
+  pages = {22582--22590},
+  year = {2026},
+  publisher = {{AAAI} Press},
+  doi = {10.1609/aaai.v40i27.39418}
+}
+  </samp></pre>
+
+
++ Yehya Farhat, Hamza ElMokhtar Shili, Fangshuo Liao, Chen Dun, Mirian Hipolito Garcia, Guoqing Zheng, Ahmed Awadallah, Robert Sim, Dimitrios Dimitriadis, Anastasios Kyrillidis, [*``Learning to Specialize: Joint Gating-Expert Training for Adaptive MoEs in Decentralized Settings"*](https://neurips.cc/virtual/2025/poster/120055), Advances in Neural Information Processing Systems (NeurIPS-25), 2025.
+
+  <button id="b_abs_c65"> Abstract </button>
+  <button id="b_bib_c65"> Bibtex </button>
+  <p id="abs_c65"> <i> Mixture-of-Experts (MoEs) achieve scalability by dynamically activating subsets of their components. Yet, understanding how expertise emerges through joint training of gating mechanisms and experts remains incomplete, especially in scenarios without clear task partitions. Motivated by inference costs and data heterogeneity, we study how joint training of gating functions and experts can dynamically allocate domain-specific expertise across multiple underlying data distributions. As an outcome of our framework, we develop an instance tailored specifically to decentralized training scenarios, introducing Dynamically Decentralized Orchestration of MoEs or DDOME. DDOME leverages heterogeneity emerging from distributional shifts across decentralized data sources to specialize experts dynamically. By integrating a pretrained common expert to inform a gating function, DDOME achieves personalized expert subset selection on-the-fly, facilitating just-in-time personalization. We empirically validate DDOME within a Federated Learning (FL) context: DDOME attains from 4% up to an 24% accuracy improvement over state-of-the-art FL baselines in image and text classification tasks, while maintaining competitive zero-shot generalization capabilities. Furthermore, we provide theoretical insights confirming that the joint gating-experts training is critical for achieving meaningful expert specialization.
+  </i> </p>
+
+  <pre id="bib_c65"><samp>
+	@inproceedings{farhat2025learning,
+  title = {Learning to Specialize: Joint Gating-Expert Training for Adaptive MoEs in Decentralized Settings},
+  author = {Farhat, Yehya and Shili, Hamza ElMokhtar and Liao, Fangshuo and Dun, Chen and Garcia, Mirian Hipolito and Zheng, Guoqing and Awadallah, Ahmed and Sim, Robert and Dimitriadis, Dimitrios and Kyrillidis, Anastasios},
+  booktitle = {Advances in Neural Information Processing Systems 38 (NeurIPS)},
+  year = {2025}
+}
+  </samp></pre>
+
+
++ Chen Dun, Mirian del Carmen Hipolito Garcia, Guoqing Zheng, Ahmed Hassan Awadallah, Robert Sim, Anastasios Kyrillidis, [*``Sweeping Heterogeneity with Smart MoPs: Mixture of Prompts for LLM Task Adaptation"*](https://doi.org/10.1609/aaai.v39i16.33804), Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI-25), 2025.
+
+  <button id="b_abs_c64"> Abstract </button>
+  <button id="b_bib_c64"> Bibtex </button>
+  <p id="abs_c64"> <i> Large Language Models demonstrate versatility across diverse tasks like summarization and mathematical problem-solving without task-specific training. However, current approaches rely on prompt instruction tuning for individual downstream tasks. We address how to scale prompt tuning across multiple heterogeneous tasks and data distributions simultaneously. We introduce Mixture of Prompts (MoPs) with smart gating that identifies relevant skills in different prompt groups and dynamically combines experts based on target tasks. We show that MoPs work regardless of model compression techniques, data sources, or task composition. The approach substantially reduces perplexity -- from 9% up to 70% in non-i.i.d. distributed cases and from 3% up to 30% in centralized cases compared to baselines.
+  </i> </p>
+
+  <pre id="bib_c64"><samp>
+	@inproceedings{dun2025sweeping,
+  title = {Sweeping Heterogeneity with Smart MoPs: Mixture of Prompts for {LLM} Task Adaptation},
+  author = {Dun, Chen and Garcia, Mirian del Carmen Hipolito and Zheng, Guoqing and Awadallah, Ahmed Hassan and Sim, Robert and Kyrillidis, Anastasios},
+  booktitle = {Thirty-Ninth {AAAI} Conference on Artificial Intelligence},
+  pages = {16426--16434},
+  year = {2025},
+  publisher = {{AAAI} Press},
+  doi = {10.1609/aaai.v39i16.33804}
+}
+  </samp></pre>
+
+
++ Fangshuo Liao, Wenyi Su, Anastasios Kyrillidis, [*``Provable Model-Parallel Distributed Principal Component Analysis with Parallel Deflation"*](https://proceedings.mlr.press/v280/liao25a.html), Conference on Parsimony and Learning (CPAL-25), 2025.
+
+  <button id="b_abs_c63"> Abstract </button>
+  <button id="b_bib_c63"> Bibtex </button>
+  <p id="abs_c63"> <i> We study a distributed Principal Component Analysis (PCA) framework where each worker targets a distinct eigenvector and refines its solution by updating from intermediate solutions provided by peers deemed as "superior". Drawing intuition from the deflation method in centralized eigenvalue problems, our approach breaks the sequential dependency in the deflation steps and allows asynchronous updates of workers, while incurring only a small communication cost. To our knowledge, a gap in the literature -- the theoretical underpinning of such distributed, dynamic interactions among workers -- has remained unaddressed. This paper offers a theoretical analysis explaining why, how, and when these intermediate, hierarchical updates lead to practical and provable convergence in distributed environments. Despite being a theoretical work, our prototype implementation demonstrates that such a distributed PCA algorithm converges effectively and in scalable way: through experiments, our proposed framework offers comparable performance to EigenGame-mu, the state-of-the-art model-parallel PCA solver.
+  </i> </p>
+
+  <pre id="bib_c63"><samp>
+	@inproceedings{liao2025provable,
+  title = {Provable Model-Parallel Distributed Principal Component Analysis with Parallel Deflation},
+  author = {Liao, Fangshuo and Su, Wenyi and Kyrillidis, Anastasios},
+  booktitle = {Conference on Parsimony and Learning (CPAL)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {280},
+  pages = {392--416},
+  year = {2025},
+  publisher = {PMLR}
+}
+  </samp></pre>
+
+
++ David A. Quiroga, Jason Han, Anastasios Kyrillidis, [*``Quantum EigenGame for excited state calculation"*](https://proceedings.mlr.press/v280/quiroga25a.html), Conference on Parsimony and Learning (CPAL-25), 2025.
+
+  <button id="b_abs_c62"> Abstract </button>
+  <button id="b_bib_c62"> Bibtex </button>
+  <p id="abs_c62"> <i> Computing the excited states of a given Hamiltonian is computationally hard for large systems, but methods that do so using quantum computers scale tractably. This problem is equivalent to the PCA problem where we are interested in decomposing a matrix into a collection of principal components. Classically, PCA is a well-studied problem setting, for which both centralized and distributed approaches have been developed. On the distributed side, one recent approach is that of EigenGame, a game-theoretic approach to finding eigenvectors where each eigenvector reaches a Nash equilibrium either sequentially or in parallel. With this work, we extend the EigenGame algorithm for both a 0th-order approach and for quantum computers, and harness the framework that quantum computing provides in computing excited states. Results show that using the Quantum EigenGame allows us to converge to excited states of a given Hamiltonian without the need of a deflation step. We also develop theory on error accumulation for finite-differences and parameterized approaches.
+  </i> </p>
+
+  <pre id="bib_c62"><samp>
+	@inproceedings{quiroga2025quantum,
+  title = {Quantum EigenGame for excited state calculation},
+  author = {Quiroga, David A. and Han, Jason and Kyrillidis, Anastasios},
+  booktitle = {Conference on Parsimony and Learning (CPAL)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {280},
+  pages = {837--864},
+  year = {2025},
+  publisher = {PMLR}
+}
+  </samp></pre>
+
+
++ Tom Pan, Evan Dramko, Mitchell D. Miller, George N. Phillips Jr., Anastasios Kyrillidis, [*``RecCrysFormer: Refined Protein Structural Prediction from 3D Patterson Maps via Recycling Training Runs"*](https://proceedings.mlr.press/v280/pan25a.html), Conference on Parsimony and Learning (CPAL-25), 2025.
+
+  <button id="b_abs_c61"> Abstract </button>
+  <button id="b_bib_c61"> Bibtex </button>
+  <p id="abs_c61"> <i> Determining protein structures at an atomic level remains a significant challenge in structural biology. We introduce RecCrysFormer, a hybrid model that exploits the strengths of transformers with the aim of integrating experimental and ML approaches to protein structure determination from crystallographic data. RecCrysFormer leverages Patterson maps and incorporates known standardized partial structures of amino acid residues to directly predict electron density maps, which are essential for constructing detailed atomic models through crystallographic refinement processes. RecCrysFormer benefits from a "recycling" training regimen that iteratively incorporates results from crystallographic refinements and previous training runs as additional inputs in the form of template maps. Using a preliminary dataset of synthetic peptide fragments based on Protein Data Bank, RecCrysFormer achieves good accuracy in structural predictions and shows robustness against variations in crystal parameters, such as unit cell dimensions and angles.
+  </i> </p>
+
+  <pre id="bib_c61"><samp>
+	@inproceedings{pan2025reccrysformer,
+  title = {RecCrysFormer: Refined Protein Structural Prediction from 3D Patterson Maps via Recycling Training Runs},
+  author = {Pan, Tom and Dramko, Evan and Miller, Mitchell D. and Phillips Jr., George N. and Kyrillidis, Anastasios},
+  booktitle = {Conference on Parsimony and Learning (CPAL)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {280},
+  pages = {897--912},
+  year = {2025},
+  publisher = {PMLR}
+}
+  </samp></pre>
+
+
++ Junhyung Lyle Kim, Mohammad Taha Toghani, Cesar A. Uribe, Anastasios Kyrillidis, [*``Adaptive Federated Learning with Auto-Tuned Clients"*](https://openreview.net/forum?id=g0mlwqs8pi), Twelfth International Conference on Learning Representations (ICLR-24), 2024.
+
+  <button id="b_abs_c60"> Abstract </button>
+  <button id="b_bib_c60"> Bibtex </button>
+  <p id="abs_c60"> <i> Federated learning (FL) is a distributed machine learning framework where the global model of a central server is trained via multiple collaborative steps by participating clients without sharing their data. While being a flexible framework, where the distribution of local data, participation rate, and computing power of each client can greatly vary, such flexibility gives rise to many new challenges, especially in the hyperparameter tuning on the client side. We propose Delta-SGD, a simple step size rule for SGD that enables each client to use its own step size by adapting to the local smoothness of the function each client is optimizing. We provide theoretical and empirical results where the benefit of the client adaptivity is shown in various FL scenarios.
+  </i> </p>
+
+  <pre id="bib_c60"><samp>
+	@inproceedings{kim2024adaptive,
+  title = {Adaptive Federated Learning with Auto-Tuned Clients},
+  author = {Kim, Junhyung Lyle and Toghani, Mohammad Taha and Uribe, C{\'e}sar A. and Kyrillidis, Anastasios},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year = {2024},
+  publisher = {OpenReview.net}
+}
+  </samp></pre>
+
+
++ Fangshuo Liao, Junhyung Lyle Kim, Cruz Barnum, Anastasios Kyrillidis, [*``On the Error-Propagation of Inexact Hotelling's Deflation for Principal Component Analysis"*](https://proceedings.mlr.press/v235/liao24a.html), Forty-first International Conference on Machine Learning (ICML-24), 2024.
+
+  <button id="b_abs_c59"> Abstract </button>
+  <button id="b_bib_c59"> Bibtex </button>
+  <p id="abs_c59"> <i> Principal Component Analysis (PCA) aims to find subspaces spanned by the so-called principal components that best represent the variance in the dataset. The deflation method is a popular meta-algorithm that sequentially finds individual principal components, starting from the most important ones and working towards the less important ones. However, as deflation proceeds, numerical errors from the imprecise estimation of principal components propagate due to its sequential nature. This paper mathematically characterizes the error propagation of the inexact Hotelling's deflation method. We consider two scenarios: i) when the sub-routine for finding the leading eigenvector is abstract and can represent various algorithms; and ii) when power iteration is used as the sub-routine. In the latter case, the additional directional information from power iteration allows us to obtain a tighter error bound than the sub-routine agnostic case. For both scenarios, we explicitly characterize how the errors progress and affect subsequent principal component estimations.
+  </i> </p>
+
+  <pre id="bib_c59"><samp>
+	@inproceedings{liao2024error,
+  title = {On the Error-Propagation of Inexact Hotelling's Deflation for Principal Component Analysis},
+  author = {Liao, Fangshuo and Kim, Junhyung Lyle and Barnum, Cruz and Kyrillidis, Anastasios},
+  booktitle = {Forty-first International Conference on Machine Learning (ICML)},
+  pages = {29720--29747},
+  year = {2024},
+  publisher = {PMLR}
+}
+  </samp></pre>
+
+
++ Fangshuo Liao, Anastasios Kyrillidis, [*``Provable Accelerated Convergence of Nesterov's Momentum for Deep ReLU Neural Networks"*](https://proceedings.mlr.press/v237/liao24a.html), International Conference on Algorithmic Learning Theory (ALT-24), 2024.
+
+  <button id="b_abs_c58"> Abstract </button>
+  <button id="b_bib_c58"> Bibtex </button>
+  <p id="abs_c58"> <i> Current state-of-the-art analyses on the convergence of gradient descent for training neural networks focus on characterizing properties of the loss landscape, such as the Polyak-Lojaciewicz (PL) condition and the restricted strong convexity. While gradient descent converges linearly under such conditions, it remains an open question whether Nesterov's momentum enjoys accelerated convergence under similar settings and assumptions. In this work, we consider a new class of objective functions, where only a subset of the parameters satisfies strong convexity, and show Nesterov's momentum achieves acceleration in theory for this objective class. We provide two realizations of the problem class, one of which is deep ReLU networks, which -- to the best of our knowledge -- constitutes this work the first that proves accelerated convergence rate for non-trivial neural network architectures.
+  </i> </p>
+
+  <pre id="bib_c58"><samp>
+	@inproceedings{liao2024provable,
+  title = {Provable Accelerated Convergence of Nesterov's Momentum for Deep ReLU Neural Networks},
+  author = {Liao, Fangshuo and Kyrillidis, Anastasios},
+  booktitle = {International Conference on Algorithmic Learning Theory (ALT)},
+  pages = {732--784},
+  year = {2024},
+  publisher = {PMLR}
+}
+  </samp></pre>
+
+
++ Emmanouil Kariotakis, Grigorios Tsagkatakis, Panagiotis Tsakalides, Anastasios Kyrillidis, [*``Leveraging Sparse Input and Sparse Models: Efficient Distributed Learning in Resource-Constrained Environments"*](https://proceedings.mlr.press/v234/kariotakis24a.html), Conference on Parsimony and Learning (CPAL-24), 2024.
+
+  <button id="b_abs_c57"> Abstract </button>
+  <button id="b_bib_c57"> Bibtex </button>
+  <p id="abs_c57"> <i> Optimizing for reduced computational and bandwidth resources enables model training in less-than-ideal environments and paves the way for practical and accessible AI solutions. We develop a system leveraging sparsity across neural network input and intermediate layers for distributed image classification. Using transfer learning with a pre-trained feature extractor and the Independent Subnetwork Training algorithm, the approach subsamples input and intermediate features during training. Testing on CIFAR-10, NWPU-RESISC45, and aerial imagery datasets demonstrates that the model achieves comparable or even superior accuracy with only a fraction (50% or less) of the original image, particularly valuable for bandwidth-constrained deployments. The findings underscore the robustness of Vision Transformer features for sparse, distributed learning scenarios.
+  </i> </p>
+
+  <pre id="bib_c57"><samp>
+	@inproceedings{kariotakis2024leveraging,
+  title = {Leveraging Sparse Input and Sparse Models: Efficient Distributed Learning in Resource-Constrained Environments},
+  author = {Kariotakis, Emmanouil and Tsagkatakis, Grigorios and Tsakalides, Panagiotis and Kyrillidis, Anastasios},
+  booktitle = {Conference on Parsimony and Learning (CPAL)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {234},
+  pages = {554--569},
+  year = {2024},
+  publisher = {PMLR}
+}
+  </samp></pre>
+
+
++ Carlos Quintero-Pena, Wil Thomason, Zachary Kingston, Anastasios Kyrillidis, Lydia E. Kavraki, [*``Stochastic Implicit Neural Signed Distance Functions for Safe Motion Planning under Sensing Uncertainty"*](https://doi.org/10.1109/ICRA57147.2024.10610773), IEEE International Conference on Robotics and Automation (ICRA-24), 2024.
+
+  <button id="b_abs_c56"> Abstract </button>
+  <button id="b_bib_c56"> Bibtex </button>
+  <p id="abs_c56"> <i> Motion planning under sensing uncertainty is critical for robots in unstructured environments to guarantee safety for both the robot and any nearby humans. Most work on planning under uncertainty does not scale to high-dimensional robots such as manipulators, assumes simplified geometry of the robot or environment, or requires per-object knowledge of noise. Instead, we propose a method that directly models sensor-specific aleatoric uncertainty to find safe motions for high-dimensional systems in complex environments, without exact knowledge of environment geometry. We combine a novel implicit neural model of stochastic signed distance functions with a hierarchical optimization-based motion planner to plan low-risk motions without sacrificing path quality. Our method also explicitly bounds the risk of the path, offering trustworthiness. We empirically validate that our method produces safe motions and accurate risk bounds and is safer than baseline approaches.
+  </i> </p>
+
+  <pre id="bib_c56"><samp>
+	@inproceedings{quintero2024stochastic,
+  title = {Stochastic Implicit Neural Signed Distance Functions for Safe Motion Planning under Sensing Uncertainty},
+  author = {Quintero-Pe{\~{n}}a, Carlos and Thomason, Wil and Kingston, Zachary and Kyrillidis, Anastasios and Kavraki, Lydia E.},
+  booktitle = {{IEEE} International Conference on Robotics and Automation (ICRA)},
+  pages = {2360--2367},
+  year = {2024},
+  publisher = {{IEEE}},
+  doi = {10.1109/ICRA57147.2024.10610773}
+}
+  </samp></pre>
+
+
++ John Chen, Chen Dun, Anastasios Kyrillidis, [*``Fast FixMatch: Faster Semi-Supervised Learning with Curriculum Batch Size"*](https://doi.org/10.1109/ISIT57864.2024.10619518), IEEE International Symposium on Information Theory (ISIT-24), 2024.
+
+  <button id="b_abs_c55"> Abstract </button>
+  <button id="b_bib_c55"> Bibtex </button>
+  <p id="abs_c55"> <i> Advances in Semi-Supervised Learning have substantially reduced the performance gap with supervised learning while using fewer labels. However, these improvements have come with significantly increased computational costs during training. We propose Curriculum Batch Size (CBS), an unlabeled batch size curriculum which exploits the natural training dynamics of deep neural networks. This approach uses smaller unlabeled batches initially, then gradually increases them throughout training. Fast FixMatch achieves 2.1x-3.4x reduced training computations on CIFAR-10 compared to vanilla FixMatch while attaining the same error rate, with similar improvements on CIFAR-100, SVHN, and STL-10, and 2.6x-3.3x reduced training computations in federated and online learning scenarios.
+  </i> </p>
+
+  <pre id="bib_c55"><samp>
+	@inproceedings{chen2024fast,
+  title = {Fast FixMatch: Faster Semi-Supervised Learning with Curriculum Batch Size},
+  author = {Chen, John and Dun, Chen and Kyrillidis, Anastasios},
+  booktitle = {{IEEE} International Symposium on Information Theory (ISIT)},
+  pages = {1836--1841},
+  year = {2024},
+  publisher = {{IEEE}},
+  doi = {10.1109/ISIT57864.2024.10619518}
+}
+  </samp></pre>
+
+
++ Zichang Liu, Aditya Desai, Fangshuo Liao, Weitao Wang, Victor Xie, Zhaozhuo Xu, Anastasios Kyrillidis, Anshumali Shrivastava, [*``Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time"*](https://proceedings.neurips.cc/paper_files/paper/2023/hash/a452a7c6c463e4ae8fbdc614c6e983e6-Abstract-Conference.html), Advances in Neural Information Processing Systems (NeurIPS-23), 2023.
+
+  <button id="b_abs_c54"> Abstract </button>
+  <button id="b_bib_c54"> Bibtex </button>
+  <p id="abs_c54"> <i> Large language models (LLMs) have sparked a new wave of exciting AI applications. Hosting these models at scale requires significant memory resources. One crucial memory bottleneck for the deployment stems from the context window. It is commonly recognized that model weights are memory hungry; however, the size of key-value embedding stored during the generation process (KV cache) can easily surpass the model size. The enormous size of the KV cache puts constraints on the inference batch size, which is crucial for high throughput inference workload. Inspired by an interesting observation of the attention scores, we hypothesize the persistence of importance: only pivotal tokens, which had a substantial influence at one step, will significantly influence future generations. Based on our empirical verification and theoretical analysis around this hypothesis, we propose Scissorhands, a system that maintains the memory usage of the KV cache at a fixed budget without finetuning the model. In essence, Scissorhands manages the KV cache by storing the pivotal tokens with a higher probability. We validate that Scissorhands reduces the inference memory usage of the KV cache by up to 5X without compromising model quality. We further demonstrate that Scissorhands can be combined with 4-bit quantization, traditionally used to compress model weights, to achieve up to 20X compression.
+  </i> </p>
+
+  <pre id="bib_c54"><samp>
+	@inproceedings{liu2023scissorhands,
+  title = {Scissorhands: Exploiting the Persistence of Importance Hypothesis for {LLM} {KV} Cache Compression at Test Time},
+  author = {Liu, Zichang and Desai, Aditya and Liao, Fangshuo and Wang, Weitao and Xie, Victor and Xu, Zhaozhuo and Kyrillidis, Anastasios and Shrivastava, Anshumali},
+  booktitle = {Advances in Neural Information Processing Systems 36 (NeurIPS)},
+  year = {2023}
+}
+  </samp></pre>
+
+
++ Erdong Hu, Yuxin Tang, Anastasios Kyrillidis, Chris Jermaine, [*``Federated Learning Over Images: Vertical Decompositions and Pre-Trained Backbones Are Difficult to Beat"*](https://doi.org/10.1109/ICCV51070.2023.01776), IEEE/CVF International Conference on Computer Vision (ICCV-23), 2023.
+
+  <button id="b_abs_c53"> Abstract </button>
+  <button id="b_bib_c53"> Bibtex </button>
+  <p id="abs_c53"> <i> We carefully evaluate a number of algorithms for learning in a federated environment, and test their utility for a variety of image classification tasks. We consider many issues that have not been adequately considered before: whether learning over data sets that do not have diverse sets of images affects the results; whether to use a pre-trained feature extraction "backbone"; how to evaluate learner performance (we argue that classification accuracy is not enough), among others. Overall, across a wide variety of settings, we find that vertically decomposing a neural network seems to give the best results, and outperforms more standard reconciliation-based methods.
+  </i> </p>
+
+  <pre id="bib_c53"><samp>
+	@inproceedings{hu2023federated,
+  title = {Federated Learning Over Images: Vertical Decompositions and Pre-Trained Backbones Are Difficult to Beat},
+  author = {Hu, Erdong and Tang, Yuxin and Kyrillidis, Anastasios and Jermaine, Chris},
+  booktitle = {{IEEE/CVF} International Conference on Computer Vision (ICCV)},
+  pages = {19328--19339},
+  year = {2023},
+  publisher = {{IEEE}}
+}
+  </samp></pre>
+
+
++ Cameron R. Wolfe, Anastasios Kyrillidis, [*``Better Schedules for Low Precision Training of Deep Neural Networks"*](https://proceedings.mlr.press/v222/wolfe23a.html), Asian Conference on Machine Learning (ACML-23), 2023.
+
+  <button id="b_abs_c52"> Abstract </button>
+  <button id="b_bib_c52"> Bibtex </button>
+  <p id="abs_c52"> <i> Low precision training can significantly reduce the computational overhead of training deep neural networks (DNNs). Though many such techniques exist, cyclic precision training (CPT), which dynamically adjusts precision throughout training according to a cyclic schedule, achieves particularly impressive improvements in training efficiency, while actually improving DNN performance. Existing CPT implementations take common learning rate schedules and use them for low precision training without adequate comparisons to alternative scheduling options. We define a diverse suite of CPT schedules and analyze their performance across a variety of DNN training regimes, some of which are unexplored in the low precision training literature. From these experiments, we discover alternative CPT schedules that offer further improvements in training efficiency and model performance, as well as derive a set of best practices for choosing CPT schedules.
+  </i> </p>
+
+  <pre id="bib_c52"><samp>
+	@inproceedings{wolfe2023better,
+  title = {Better Schedules for Low Precision Training of Deep Neural Networks},
+  author = {Wolfe, Cameron R. and Kyrillidis, Anastasios},
+  booktitle = {Asian Conference on Machine Learning (ACML)},
+  series = {Proceedings of Machine Learning Research},
+  volume = {222},
+  year = {2023},
+  publisher = {PMLR}
+}
+  </samp></pre>
+
+
++ David A. Quiroga, Anastasios Kyrillidis, [*``Using non-convex optimization in quantum process tomography: Factored gradient descent is tough to beat"*](https://doi.org/10.1109/ICRC60800.2023.10386455), IEEE International Conference on Rebooting Computing (ICRC-23), 2023. *(Best Poster Award)*
+
+  <button id="b_abs_c51"> Abstract </button>
+  <button id="b_bib_c51"> Bibtex </button>
+  <p id="abs_c51"> <i> We propose a non-convex optimization algorithm, based on the Burer-Monteiro (BM) factorization, for the quantum process tomography problem, in order to estimate a low-rank process matrix for near-unitary quantum gates. We compare our approach against state of the art convex optimization approaches based on gradient descent. We use a reduced set of initial states and measurement operators that require 2*8^n circuit settings, as well as O(4^n) measurements for an underdetermined setting. We find our algorithm converges faster and achieves higher fidelities than state of the art, both in terms of measurement settings, as well as in terms of noise tolerance, in the cases of depolarizing and Gaussian noise models.
+  </i> </p>
+
+  <pre id="bib_c51"><samp>
+	@inproceedings{quiroga2023nonconvex,
+  title = {Using non-convex optimization in quantum process tomography: Factored gradient descent is tough to beat},
+  author = {Quiroga, David A. and Kyrillidis, Anastasios},
+  booktitle = {{IEEE} International Conference on Rebooting Computing (ICRC)},
+  pages = {1--10},
+  year = {2023},
+  publisher = {{IEEE}},
+  doi = {10.1109/ICRC60800.2023.10386455}
+}
+  </samp></pre>
+
 
 + Qihan Wang, Chen Dun, Fangshuo Liao, Chris Jermaine, Anastasios Kyrillidis, [*``LOFT: Finding Lottery Tickets through Filter-wise Training"*](https://proceedings.mlr.press/v206/wang23f/wang23f.pdf), Twenty-sixth International Conference on Artificial Intelligence and Statistics (AISTATS-23), 2023.
    
@@ -1266,6 +1596,83 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 ## Journals
 
++ Yuqian Huo, David A. Quiroga, Anastasios Kyrillidis, Tirthak Patel, [*``Three Birds with One Stone: Improving Performance, Convergence, and System Throughput with NEST"*](https://doi.org/10.1145/3771580), Proceedings of the ACM on Measurement and Analysis of Computing Systems (POMACS/SIGMETRICS), 9(3), 2025.
+
+  <button id="b_abs_j23"> Abstract </button>
+  <button id="b_bib_j23"> Bibtex </button>
+  <p id="abs_j23"> <i> Variational quantum algorithms (VQAs) have the potential to demonstrate quantum utility on near-term quantum computers. However, these algorithms often get executed on the highest-fidelity qubits and computers to achieve the best performance, causing low system throughput. Recent efforts have shown that VQAs can be run on low-fidelity qubits initially and high-fidelity qubits later on to still achieve good performance. We take this effort forward and show that carefully varying the qubit fidelity map of the VQA over its execution using our technique, NEST, does not just improve performance (i.e., help achieve close to optimal results), but also leads to faster convergence. We also use NEST to co-locate multiple VQAs concurrently on the same computer, thus increasing the system throughput, and therefore, balancing and optimizing three conflicting metrics simultaneously.
+  </i> </p>
+
+  <pre id="bib_j23"><samp>
+	@article{huo2025nest,
+  title = {Three Birds with One Stone: Improving Performance, Convergence, and System Throughput with {NEST}},
+  author = {Huo, Yuqian and Quiroga, David A. and Kyrillidis, Anastasios and Patel, Tirthak},
+  journal = {Proceedings of the ACM on Measurement and Analysis of Computing Systems},
+  volume = {9},
+  number = {3},
+  pages = {65:1--65:26},
+  year = {2025},
+  doi = {10.1145/3771580}
+}
+  </samp></pre>
+
+
++ Cameron R. Wolfe, Anastasios Kyrillidis, [*``Better schedules for low precision training of deep neural networks"*](https://doi.org/10.1007/s10994-023-06480-0), Machine Learning, 113(6):3569-3587, Springer, 2024.
+
+  <button id="b_abs_j22"> Abstract </button>
+  <button id="b_bib_j22"> Bibtex </button>
+  <p id="abs_j22"> <i> Low precision training can significantly reduce the computational overhead of training deep neural networks (DNNs). Though many such techniques exist, cyclic precision training (CPT), which dynamically adjusts precision throughout training according to a cyclic schedule, achieves particularly impressive improvements in training efficiency, while actually improving DNN performance. Existing CPT implementations take common learning rate schedules and use them for low precision training without adequate comparisons to alternative scheduling options. We define a diverse suite of CPT schedules and analyze their performance across a variety of DNN training regimes, some of which are unexplored in the low precision training literature. From these experiments, we discover alternative CPT schedules that offer further improvements in training efficiency and model performance, as well as derive a set of best practices for choosing CPT schedules. Going further, we find that a correlation exists between model performance and training cost, and that changing the underlying CPT schedule can control the tradeoff between these two variables. To explain the direct correlation between model performance and training cost, we draw a connection between quantized training and critical learning periods, suggesting that aggressive quantization is a form of learning impairment that can permanently damage model performance.
+  </i> </p>
+
+  <pre id="bib_j22"><samp>
+	@article{wolfe2024better,
+  title = {Better schedules for low precision training of deep neural networks},
+  author = {Wolfe, Cameron R. and Kyrillidis, Anastasios},
+  journal = {Machine Learning},
+  volume = {113},
+  number = {6},
+  pages = {3569--3587},
+  year = {2024},
+  publisher = {Springer},
+  doi = {10.1007/s10994-023-06480-0}
+}
+  </samp></pre>
+
+
++ Junhyung Lyle Kim, Gauthier Gidel, Anastasios Kyrillidis, Fabian Pedregosa, [*``When is Momentum Extragradient Optimal? A Polynomial-Based Analysis"*](https://openreview.net/forum?id=ZLVbQEu4Ab), Transactions on Machine Learning Research (TMLR), 2024.
+
+  <button id="b_abs_j21"> Abstract </button>
+  <button id="b_bib_j21"> Bibtex </button>
+  <p id="abs_j21"> <i> The extragradient method has gained popularity due to its robust convergence properties for differentiable games. Unlike single-objective optimization, game dynamics involve complex interactions reflected by the eigenvalues of the game vector field's Jacobian scattered across the complex plane. This complexity can cause the simple gradient method to diverge, even for bilinear games, while the extragradient method achieves convergence. Building on the recently proven accelerated convergence of the momentum extragradient method for bilinear games, we use a polynomial-based analysis to identify three distinct scenarios where this method exhibits further accelerated convergence. These scenarios encompass situations where the eigenvalues reside on the (positive) real line, lie on the real line alongside complex conjugates, or exist solely as complex conjugates. Furthermore, we derive the hyperparameters for each scenario that achieve the fastest convergence rate.
+  </i> </p>
+
+  <pre id="bib_j21"><samp>
+	@article{kim2024momentum,
+  title = {When is Momentum Extragradient Optimal? {A} Polynomial-Based Analysis},
+  author = {Kim, Junhyung Lyle and Gidel, Gauthier and Kyrillidis, Anastasios and Pedregosa, Fabian},
+  journal = {Transactions on Machine Learning Research},
+  year = {2024}
+}
+  </samp></pre>
+
+
++ Cameron R. Wolfe, Fangshuo Liao, Qihan Wang, Junhyung Lyle Kim, Anastasios Kyrillidis, [*``How Much Pre-training Is Enough to Discover a Good Subnetwork?"*](https://openreview.net/forum?id=UVE7LllpXe), Transactions on Machine Learning Research (TMLR), 2024.
+
+  <button id="b_abs_j20"> Abstract </button>
+  <button id="b_bib_j20"> Bibtex </button>
+  <p id="abs_j20"> <i> Neural network pruning is useful for discovering efficient, high-performing subnetworks within pre-trained, dense network architectures. More often than not, it involves a three-step process -- pre-training, pruning, and re-training -- that is computationally expensive, as the dense model must be fully pre-trained. While previous work has revealed through experiments the relationship between the amount of pre-training and the performance of the pruned network, a theoretical characterization of such dependency is still missing. Aiming to mathematically analyze the amount of dense network pre-training needed for a pruned network to perform well, we discover a simple theoretical bound in the number of gradient descent pre-training iterations on a two-layer, fully-connected network, beyond which pruning via greedy forward selection yields a subnetwork that achieves good training error. Interestingly, this threshold is shown to be logarithmically dependent upon the size of the dataset, meaning that experiments with larger datasets require more pre-training for subnetworks obtained via pruning to perform well. Lastly, we empirically validate our theoretical results on a multi-layer perceptron trained on MNIST.
+  </i> </p>
+
+  <pre id="bib_j20"><samp>
+	@article{wolfe2024pretraining,
+  title = {How Much Pre-training Is Enough to Discover a Good Subnetwork?},
+  author = {Wolfe, Cameron R. and Liao, Fangshuo and Wang, Qihan and Kim, Junhyung Lyle and Kyrillidis, Anastasios},
+  journal = {Transactions on Machine Learning Research},
+  year = {2024}
+}
+  </samp></pre>
+
+
 + Junhyung Lyle Kim, George Kollias, Amir Kalev, Ken X Wei, Anastasios Kyrillidis, [*``Fast quantum state reconstruction via accelerated non-convex programming"*](https://www.mdpi.com/2304-6732/10/2/116), Photonics, 10(2), MDPI, 2023
    
   <button id="b_abs_j19"> Abstract </button>
@@ -1288,7 +1695,7 @@ grid-based “maps” visualizing the spatial extent of the various relations.
   </samp></pre>
 
 
-+ Cameron R Wolfe, Jingkang Yang, Arindam Chowdhury, Chen Dun, Artun Bayer, Santiago Segarra, Anastasios Kyrillidis, [*``GIST: Distributed Training for Large-Scale Graph Convolutional Network"*](/pubs/Journals/GCN_IST.pdf), Journal of Applied and Computational Topology, Special issue on Data Science on Graphs, Springer, 2023.
++ Cameron R Wolfe, Jingkang Yang, Arindam Chowdhury, Chen Dun, Artun Bayer, Santiago Segarra, Anastasios Kyrillidis, [*``GIST: Distributed Training for Large-Scale Graph Convolutional Network"*](/pubs/Journals/GCN_IST.pdf), Journal of Applied and Computational Topology, Special issue on Data Science on Graphs, Springer, 2024.
    
   <button id="b_abs_j18"> Abstract </button>
   <button id="b_abs_j18"> Bibtex </button>
