@@ -344,106 +344,30 @@ title: OptimaLab
 </div>
 
 <div class="tree-legend">
-  <span class="dot alumni"></span> Alumni
-  <span class="sep">|</span>
   <span class="dot current"></span> Active
+  <span class="sep">|</span>
+  <span class="dot alumni"></span> Alumni
 </div>
 
-<!-- Timeline trunk -->
-<div class="tree-trunk">
+<!-- ═══════════════ ACTIVE MEMBERS ═══════════════ -->
 
-  <!-- 2021 -->
-  <div class="year-marker"><span>2021</span></div>
+<!-- PostDoc -->
+<div class="section-header">Postdoctoral Researcher <span class="badge postdoc">PostDoc</span></div>
+<div class="current-section">
+  <div class="current-grid">
 
-  <div class="branch left">
-    <div class="card">
-      <div class="student-name"><a href="http://wangqihan.com/">Qihan "Chuck" Wang</a></div>
-      <div class="student-degree">MSc &middot; 2019 &ndash; 2021</div>
-      <div class="student-topic">Efficient distributed techniques on lottery ticket hypothesis for neural networks.</div>
-      <div class="student-position">First position: Microsoft</div>
+    <div class="current-card postdoc">
+      <div class="student-name">Jianqiang Li</div>
+      <div class="student-since">PostDoc</div>
+      <div class="student-topic">Quantum computing and algorithms.</div>
+      <div style="font-size:0.75em; color:#999; font-style:italic;">Co-advised with Tirthak Patel and Nai-Hui Chia</div>
     </div>
+
   </div>
-
-  <!-- 2023 -->
-  <div class="year-marker"><span>2023</span></div>
-
-  <div class="branch right">
-    <div class="card">
-      <div class="student-name"><a href="https://cameronrwolfe.me/">Cameron Wolfe</a></div>
-      <div class="student-degree">PhD &middot; 2020 &ndash; 2023</div>
-      <div class="student-topic">Theories and perspectives on practical deep learning.</div>
-      <div class="student-position">First position: Director of AI, ReBuy &middot; Now: Netflix</div>
-    </div>
-  </div>
-
-  <div class="branch left">
-    <div class="card">
-      <div class="student-name"><a href="https://johnchenresearch.github.io/">John Chen</a></div>
-      <div class="student-degree">PhD &middot; 2020 &ndash; 2023</div>
-      <div class="student-topic">Contrastive learning in deep learning.</div>
-      <div class="student-position">First position: Meta</div>
-    </div>
-  </div>
-
-  <div class="branch right">
-    <div class="card">
-      <div class="student-name"><a href="https://github.com/dunchen">Chen Dun</a></div>
-      <div class="student-degree">PhD &middot; 2019 &ndash; 2023</div>
-      <div class="student-topic">Distributed learning of neural networks, federated learning, mixture of experts.</div>
-      <div class="student-position">First position: Bytedance</div>
-    </div>
-  </div>
-
-  <!-- 2024 -->
-  <div class="year-marker"><span>2024</span></div>
-
-  <div class="branch left">
-    <div class="card">
-      <div class="student-name"><a href="https://carlosquinterop.github.io/">Carlos Quintero</a></div>
-      <div class="student-degree">PhD &middot; 2019 &ndash; 2024</div>
-      <div class="student-topic">Robustness in optimization for robotics.</div>
-      <div class="student-coadv">Co-advised with Lydia Kavraki</div>
-      <div class="student-position">First position: Research Scientist, Bookout Center (Houston)</div>
-    </div>
-  </div>
-
-  <div class="branch right">
-    <div class="card">
-      <div class="student-name"><a href="https://jlylekim.github.io/">Lyle Kim</a></div>
-      <div class="student-degree">PhD &middot; 2019 &ndash; 2024</div>
-      <div class="student-topic">Quantum state tomography, game-theoretic optimization, acceleration, optimization in quantum computing.</div>
-      <div class="student-position">First position: Quantum Computing Research Scientist, JPMorganChase</div>
-    </div>
-  </div>
-
-  <!-- 2025 -->
-  <div class="year-marker"><span>2025</span></div>
-
-  <div class="branch left">
-    <div class="card">
-      <div class="student-name"><a href="https://www.cs.rice.edu/~zz59/">Zhiwei Zhang</a></div>
-      <div class="student-degree">PhD &middot; 2019 &ndash; 2025</div>
-      <div class="student-topic">From discrete to continuous methods for SAT.</div>
-      <div class="student-coadv">Co-advised with Moshe Vardi</div>
-      <div class="student-position">First position: JP Morgan &middot; Now: Applied Scientist, Amazon</div>
-    </div>
-  </div>
-
-  <div class="branch right">
-    <div class="card">
-      <div class="student-name"><a href="https://scholar.google.com/citations?hl=en&user=p1A-oPoAAAAJ">Tom Pan</a></div>
-      <div class="student-degree">PhD &middot; 2021 &ndash; 2025</div>
-      <div class="student-topic">ML-based approach to protein structure determination and partial template completion.</div>
-      <div class="student-coadv">Co-advised with George Phillips (Biosciences)</div>
-    </div>
-  </div>
-
-  <!-- Present -->
-  <div class="year-marker present"><span>Present</span></div>
-
 </div>
 
-<!-- Current students grid -->
+<!-- PhD Students -->
+<div class="section-header">PhD Students <span class="badge" style="background:#d5f5e3; color:#1a7a3a;">PhD</span></div>
 <div class="current-section">
   <div class="current-grid">
 
@@ -493,21 +417,6 @@ title: OptimaLab
       <div class="student-name"><a href="https://www.linkedin.com/in/thanasis-hadjidimoulas/">Thanasis Hadjidimoulas</a></div>
       <div class="student-since">PhD &middot; Since 2024</div>
       <div class="student-topic">Quantum algorithms and optimization, theoretical computer science.</div>
-    </div>
-
-  </div>
-</div>
-
-<!-- PostDoc -->
-<div class="section-header">Postdoctoral Researcher <span class="badge postdoc">PostDoc</span></div>
-<div class="current-section">
-  <div class="current-grid">
-
-    <div class="current-card postdoc">
-      <div class="student-name">Jianqiang Li</div>
-      <div class="student-since">PostDoc</div>
-      <div class="student-topic">Quantum computing and algorithms.</div>
-      <div style="font-size:0.75em; color:#999; font-style:italic;">Co-advised with Tirthak Patel and Nai-Hui Chia</div>
     </div>
 
   </div>
@@ -569,4 +478,97 @@ title: OptimaLab
     </div>
 
   </div>
+</div>
+
+<!-- ═══════════════ ALUMNI TIMELINE ═══════════════ -->
+
+<!-- Alumni timeline trunk (reversed: most recent first) -->
+<div class="tree-trunk">
+
+  <!-- 2025 -->
+  <div class="year-marker"><span>2025</span></div>
+
+  <div class="branch left">
+    <div class="card">
+      <div class="student-name"><a href="https://scholar.google.com/citations?hl=en&user=p1A-oPoAAAAJ">Tom Pan</a></div>
+      <div class="student-degree">PhD &middot; 2021 &ndash; 2025</div>
+      <div class="student-topic">ML-based approach to protein structure determination and partial template completion.</div>
+      <div class="student-coadv">Co-advised with George Phillips (Biosciences)</div>
+    </div>
+  </div>
+
+  <div class="branch right">
+    <div class="card">
+      <div class="student-name"><a href="https://www.cs.rice.edu/~zz59/">Zhiwei Zhang</a></div>
+      <div class="student-degree">PhD &middot; 2019 &ndash; 2025</div>
+      <div class="student-topic">From discrete to continuous methods for SAT.</div>
+      <div class="student-coadv">Co-advised with Moshe Vardi</div>
+      <div class="student-position">First position: JP Morgan &middot; Now: Applied Scientist, Amazon</div>
+    </div>
+  </div>
+
+  <!-- 2024 -->
+  <div class="year-marker"><span>2024</span></div>
+
+  <div class="branch left">
+    <div class="card">
+      <div class="student-name"><a href="https://jlylekim.github.io/">Lyle Kim</a></div>
+      <div class="student-degree">PhD &middot; 2019 &ndash; 2024</div>
+      <div class="student-topic">Quantum state tomography, game-theoretic optimization, acceleration, optimization in quantum computing.</div>
+      <div class="student-position">First position: Quantum Computing Research Scientist, JPMorganChase</div>
+    </div>
+  </div>
+
+  <div class="branch right">
+    <div class="card">
+      <div class="student-name"><a href="https://carlosquinterop.github.io/">Carlos Quintero</a></div>
+      <div class="student-degree">PhD &middot; 2019 &ndash; 2024</div>
+      <div class="student-topic">Robustness in optimization for robotics.</div>
+      <div class="student-coadv">Co-advised with Lydia Kavraki</div>
+      <div class="student-position">First position: Research Scientist, Bookout Center (Houston)</div>
+    </div>
+  </div>
+
+  <!-- 2023 -->
+  <div class="year-marker"><span>2023</span></div>
+
+  <div class="branch left">
+    <div class="card">
+      <div class="student-name"><a href="https://github.com/dunchen">Chen Dun</a></div>
+      <div class="student-degree">PhD &middot; 2019 &ndash; 2023</div>
+      <div class="student-topic">Distributed learning of neural networks, federated learning, mixture of experts.</div>
+      <div class="student-position">First position: Bytedance</div>
+    </div>
+  </div>
+
+  <div class="branch right">
+    <div class="card">
+      <div class="student-name"><a href="https://johnchenresearch.github.io/">John Chen</a></div>
+      <div class="student-degree">PhD &middot; 2020 &ndash; 2023</div>
+      <div class="student-topic">Contrastive learning in deep learning.</div>
+      <div class="student-position">First position: Meta</div>
+    </div>
+  </div>
+
+  <div class="branch left">
+    <div class="card">
+      <div class="student-name"><a href="https://cameronrwolfe.me/">Cameron Wolfe</a></div>
+      <div class="student-degree">PhD &middot; 2020 &ndash; 2023</div>
+      <div class="student-topic">Theories and perspectives on practical deep learning.</div>
+      <div class="student-position">First position: Director of AI, ReBuy &middot; Now: Netflix</div>
+    </div>
+  </div>
+
+  <!-- 2021 -->
+  <div class="year-marker"><span>2021</span></div>
+
+  <div class="branch right">
+    <div class="card">
+      <div class="student-name"><a href="http://wangqihan.com/">Qihan "Chuck" Wang</a></div>
+      <div class="student-degree">MSc &middot; 2019 &ndash; 2021</div>
+      <div class="student-topic">Efficient distributed techniques on lottery ticket hypothesis for neural networks.</div>
+      <div class="student-position">First position: Microsoft</div>
+    </div>
+  </div>
+
 </div>
