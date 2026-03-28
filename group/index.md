@@ -359,7 +359,7 @@ title: OptimaLab
 
   <div class="branch right">
     <div class="card">
-      <div class="student-name"><a href="https://www.linkedin.com/in/tom-pan-88b583171/">Tom Pan</a></div>
+      <div class="student-name"><a href="https://scholar.google.com/citations?hl=en&user=p1A-oPoAAAAJ">Tom Pan</a></div>
       <div class="student-degree">PhD &middot; 2021 &ndash; 2025</div>
       <div class="student-topic">ML-based approach to protein structure determination and partial template completion.</div>
       <div class="student-coadv">Co-advised with George Phillips (Biosciences)</div>
@@ -376,13 +376,13 @@ title: OptimaLab
   <div class="current-grid">
 
     <div class="current-card">
-      <div class="student-name"><a href="https://fangshuoliao.github.io/">Jasper Liao</a></div>
+      <div class="student-name"><a href="https://jasperliao.github.io/">Jasper Liao</a></div>
       <div class="student-since">PhD &middot; Since 2021</div>
       <div class="student-topic">Provable optimization methods in nonconvex objectives (neural networks).</div>
     </div>
 
     <div class="current-card">
-      <div class="student-name"><a href="https://www.linkedin.com/in/ria-stevens-28564a187/">Ria Stevens</a></div>
+      <div class="student-name"><a href="https://riastevens.github.io/">Ria Stevens</a></div>
       <div class="student-since">PhD &middot; Since 2022</div>
       <div class="student-topic">Adversarial training, theory of non-convex smooth games, Byzantine attacks.</div>
     </div>
@@ -394,7 +394,7 @@ title: OptimaLab
     </div>
 
     <div class="current-card">
-      <div class="student-name"><a href="https://www.linkedin.com/in/evan-dramko/">Evan Dramko</a></div>
+      <div class="student-name"><a href="https://evandramko.github.io/">Evan Dramko</a></div>
       <div class="student-since">PhD &middot; Since 2023</div>
       <div class="student-topic">AI in material science.</div>
     </div>
@@ -412,7 +412,7 @@ title: OptimaLab
     </div>
 
     <div class="current-card">
-      <div class="student-name"><a href="https://www.linkedin.com/in/yehya-farhat/">Yehya Farhat</a></div>
+      <div class="student-name"><a href="https://yehya-farhat.github.io/">Yehya Farhat</a></div>
       <div class="student-since">PhD &middot; Since 2024</div>
       <div class="student-topic">Agentic AI, mixture of experts, AI orchestration.</div>
     </div>
