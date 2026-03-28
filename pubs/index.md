@@ -38,7 +38,7 @@ fb_comments: 3
   booktitle = {Fortieth {AAAI} Conference on Artificial Intelligence},
   pages = {22582--22590},
   year = {2026},
-  publisher = {{AAAI} Press},
+  publisher = {AAAI} Press},
   doi = {10.1609/aaai.v40i27.39418}
 }
   </samp></pre>
@@ -75,7 +75,7 @@ fb_comments: 3
   booktitle = {Thirty-Ninth {AAAI} Conference on Artificial Intelligence},
   pages = {16426--16434},
   year = {2025},
-  publisher = {{AAAI} Press},
+  publisher = {AAAI} Press},
   doi = {10.1609/aaai.v39i16.33804}
 }
   </samp></pre>
@@ -231,11 +231,11 @@ fb_comments: 3
   <pre id="bib_c56"><samp>
 	@inproceedings{quintero2024stochastic,
   title = {Stochastic Implicit Neural Signed Distance Functions for Safe Motion Planning under Sensing Uncertainty},
-  author = {Quintero-Pe{\~{n}}a, Carlos and Thomason, Wil and Kingston, Zachary and Kyrillidis, Anastasios and Kavraki, Lydia E.},
-  booktitle = {{IEEE} International Conference on Robotics and Automation (ICRA)},
+  author = {Quintero-Pe{\~{n}a, Carlos and Thomason, Wil and Kingston, Zachary and Kyrillidis, Anastasios and Kavraki, Lydia E.},
+  booktitle = {IEEE} International Conference on Robotics and Automation (ICRA)},
   pages = {2360--2367},
   year = {2024},
-  publisher = {{IEEE}},
+  publisher = {IEEE},
   doi = {10.1109/ICRA57147.2024.10610773}
 }
   </samp></pre>
@@ -252,10 +252,10 @@ fb_comments: 3
 	@inproceedings{chen2024fast,
   title = {Fast FixMatch: Faster Semi-Supervised Learning with Curriculum Batch Size},
   author = {Chen, John and Dun, Chen and Kyrillidis, Anastasios},
-  booktitle = {{IEEE} International Symposium on Information Theory (ISIT)},
+  booktitle = {IEEE} International Symposium on Information Theory (ISIT)},
   pages = {1836--1841},
   year = {2024},
-  publisher = {{IEEE}},
+  publisher = {IEEE},
   doi = {10.1109/ISIT57864.2024.10619518}
 }
   </samp></pre>
@@ -289,10 +289,10 @@ fb_comments: 3
 	@inproceedings{hu2023federated,
   title = {Federated Learning Over Images: Vertical Decompositions and Pre-Trained Backbones Are Difficult to Beat},
   author = {Hu, Erdong and Tang, Yuxin and Kyrillidis, Anastasios and Jermaine, Chris},
-  booktitle = {{IEEE/CVF} International Conference on Computer Vision (ICCV)},
+  booktitle = {IEEE/CVF} International Conference on Computer Vision (ICCV)},
   pages = {19328--19339},
   year = {2023},
-  publisher = {{IEEE}}
+  publisher = {IEEE}
 }
   </samp></pre>
 
@@ -328,10 +328,10 @@ fb_comments: 3
 	@inproceedings{quiroga2023nonconvex,
   title = {Using non-convex optimization in quantum process tomography: Factored gradient descent is tough to beat},
   author = {Quiroga, David A. and Kyrillidis, Anastasios},
-  booktitle = {{IEEE} International Conference on Rebooting Computing (ICRC)},
+  booktitle = {IEEE} International Conference on Rebooting Computing (ICRC)},
   pages = {1--10},
   year = {2023},
-  publisher = {{IEEE}},
+  publisher = {IEEE},
   doi = {10.1109/ICRC60800.2023.10386455}
 }
   </samp></pre>
@@ -1605,7 +1605,7 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
   <pre id="bib_j23"><samp>
 	@article{huo2025nest,
-  title = {Three Birds with One Stone: Improving Performance, Convergence, and System Throughput with {NEST}},
+  title = {Three Birds with One Stone: Improving Performance, Convergence, and System Throughput with {NEST},
   author = {Huo, Yuqian and Quiroga, David A. and Kyrillidis, Anastasios and Patel, Tirthak},
   journal = {Proceedings of the ACM on Measurement and Analysis of Computing Systems},
   volume = {9},
