@@ -28,6 +28,7 @@ title: OptimaLab
   margin: 0 auto;
   padding: 20px 0 40px 0;
 }
+/* Central vertical line */
 .tree-trunk::before {
   content: '';
   position: absolute;
@@ -36,7 +37,7 @@ title: OptimaLab
   bottom: 0;
   width: 3px;
   background: linear-gradient(to bottom, #1367a7, #208799, #2ecc71);
-  transform: translateX(-50%);
+  margin-left: -1.5px;
 }
 
 /* Year markers */
@@ -45,6 +46,7 @@ title: OptimaLab
   text-align: center;
   margin: 30px 0 10px 0;
   z-index: 2;
+  clear: both;
 }
 .year-marker span {
   display: inline-block;
@@ -65,87 +67,99 @@ title: OptimaLab
   50% { box-shadow: 0 0 0 8px rgba(46,204,113,0); }
 }
 
-/* Branch nodes */
+/* Branch nodes — use float to place left/right of center */
 .branch {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  margin: 8px 0;
-  min-height: 60px;
-}
-.branch.left {
-  flex-direction: row-reverse;
-}
-.branch.right {
-  flex-direction: row;
+  overflow: hidden;
+  margin: 10px 0;
+  min-height: 10px;
 }
 
 .branch .card {
-  width: 44%;
+  width: 42%;
   background: #f8f9fa;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 12px 16px;
   position: relative;
   transition: box-shadow 0.2s, transform 0.2s;
+  box-sizing: border-box;
 }
 .branch .card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transform: translateY(-1px);
 }
+
+/* Left card: floats to the left half */
 .branch.left .card {
-  margin-right: 6%;
+  float: left;
+  margin-left: 4%;
   text-align: right;
 }
+
+/* Right card: floats to the right half */
 .branch.right .card {
-  margin-left: 56%;
+  float: right;
+  margin-right: 4%;
   text-align: left;
 }
 
-/* Connector lines */
+/* Connector: horizontal line from card edge to center trunk */
+/* Left card — line goes from right edge of card to center */
 .branch.left .card::after {
   content: '';
   position: absolute;
-  top: 20px;
-  right: -26px;
-  width: 26px;
-  height: 2px;
-  background: #bbb;
+  top: 18px;
+  left: 100%;
+  width: calc(50vw - 50% - 100%);
+  height: 0;
+  border: none;
 }
-.branch.left .card::before {
-  content: '';
-  position: absolute;
-  top: 16px;
-  right: -32px;
-  width: 10px;
-  height: 10px;
-  background: #1367a7;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 2px #1367a7;
-  z-index: 3;
-}
+/* Right card — line from left edge to center */
 .branch.right .card::after {
   content: '';
   position: absolute;
-  top: 20px;
-  left: -26px;
-  width: 26px;
-  height: 2px;
-  background: #bbb;
+  top: 18px;
+  right: 100%;
+  height: 0;
+  border: none;
 }
-.branch.right .card::before {
+
+/* Use a pseudo-element on .branch itself for the connector line + dot */
+/* This way the line always starts exactly at the center trunk */
+
+/* Dot on the trunk */
+.branch::before {
   content: '';
   position: absolute;
-  top: 16px;
-  left: -32px;
-  width: 10px;
-  height: 10px;
+  left: 50%;
+  top: 18px;
+  width: 12px;
+  height: 12px;
   background: #1367a7;
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 0 0 2px #1367a7;
+  margin-left: -6px;
   z-index: 3;
+}
+
+/* Horizontal connector line from trunk to card */
+.branch::after {
+  content: '';
+  position: absolute;
+  top: 23px;
+  height: 2px;
+  background: #bbb;
+  z-index: 1;
+}
+.branch.left::after {
+  left: calc(4% + 42%);  /* right edge of left card */
+  right: 50%;
+}
+.branch.right::after {
+  left: 50%;
+  right: calc(4% + 42%);  /* left edge of right card */
 }
 
 /* Card content */
@@ -252,16 +266,34 @@ title: OptimaLab
 
 /* Responsive */
 @media (max-width: 700px) {
-  .branch.left .card, .branch.right .card {
-    width: 80%;
-    margin-left: 15% !important;
-    margin-right: 5% !important;
+  .tree-trunk::before {
+    left: 20px;
+    margin-left: 0;
+  }
+  .year-marker {
+    text-align: left;
+    padding-left: 40px;
+  }
+  .branch::before {
+    left: 20px;
+    margin-left: -6px;
+  }
+  .branch::after {
+    left: 20px !important;
+    right: auto !important;
+    width: 20px !important;
+  }
+  .branch.left .card,
+  .branch.right .card {
+    float: none;
+    width: auto;
+    margin-left: 50px !important;
+    margin-right: 10px !important;
     text-align: left !important;
   }
-  .branch.left .card::after, .branch.left .card::before { display: none; }
-  .branch.right .card::after, .branch.right .card::before { display: none; }
-  .tree-trunk::before { left: 8%; }
-  .current-grid { grid-template-columns: 1fr; }
+  .current-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
