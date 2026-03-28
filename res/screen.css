@@ -1433,64 +1433,9 @@ margin-left:1.5em;
   content: "- ";
 }
 
-#abs_j9, #abs_j8, #abs_j7, #abs_j6, #abs_j5, #abs_j4, #abs_j3, #abs_j2, #abs_j1 {
+/* Hide all abstract, bibtex, and book chapter toggle elements by default */
+[id^="abs_"], [id^="bib_"] {
     display: none;
-}
-
-#abs_j19, #abs_j18, #abs_j17, #abs_j16, #abs_j15, #abs_j14, #abs_j13, #abs_j12, #abs_j11, #abs_j10 {
-	display: none;
-}
-
-/*#sof_j6, #sof_j4, #sof_j3, #sof_j2, #sof_j1{
-	display: none;
-}*/
-
-#abs_b02, #abs_b01 {
-	display: none;
-}
-
-#bib_b02, #bib_b01 {
-	display: none;
-}
-
-#bib_j9, #bib_j8, #bib_j7, #bib_j6, #bib_j5, #bib_j4, #bib_j3, #bib_j2, #bib_j1 {
-    display: none;
-}
-
-#bib_j19, #bib_j18, #bib_j17, #bib_j16, #bib_j15, #bib_j14, #bib_j13, #bib_j12, #bib_j11, #bib_j10 {
-	display: none;
-}
-
-#abs_c22, #abs_c21, #abs_c20, #abs_c19, #abs_c18, #abs_c17, #abs_c16, #abs_c15, #abs_c14, #abs_c13, #abs_c12, #abs_c11, #abs_c10, #abs_c09, #abs_c08, #abs_c07, #abs_c06, #abs_c05, #abs_c04, #abs_c03, #abs_c02, #abs_c01 {
-    display: none;
-}
-
-#abs_c23, #abs_c24, #abs_c25, #abs_c26, #abs_c27, #abs_c28, #abs_c29, #abs_c30, #abs_c31, #abs_c32, #abs_c33 {
-	display: none;
-}
-
-#abs_c34, #abs_c35, #abs_c36, #abs_c37, #abs_c38, #abs_c39, #abs_c40, #abs_c41, #abs_c42, #abs_c43, #abs_c44, #abs_c45 {
-	display: none;
-}
-
-#abs_c46, #abs_c47, #abs_c48, #abs_c49, #abs_c50 {
-	display: none;
-}
-
-#bib_c22, #bib_c21, #bib_c20, #bib_c19, #bib_c18, #bib_c17, #bib_c16, #bib_c15, #bib_c14, #bib_c13, #bib_c12, #bib_c11, #bib_c10, #bib_c09, #bib_c08, #bib_c07, #bib_c06, #bib_c05, #bib_c04, #bib_c03, #bib_c02, #bib_c01 {
-    display: none;
-}
-
-#bib_c23, #bib_c24, #bib_c25, #bib_c26, #bib_c27, #bib_c28, #bib_c29, #bib_c30, #bib_c31, #bib_c32, #bib_c33 {
-	display: none;
-}
-
-#bib_c34, #bib_c35, #bib_c36, #bib_c37, #bib_c38, #bib_c39, #bib_c40, #bib_c41, #bib_c42, #bib_c43, #bib_c44, #bib_c45 {
-	display: none;
-}
-
-#bib_c46, #bib_c47, #bib_c48, #bib_c49, #bib_c50 {
-	display: none;
 }
 
 
