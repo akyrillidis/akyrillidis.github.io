@@ -10,13 +10,14 @@ fb_comments: 3
   <img src="/public/maxkcut_hyper.png" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
 
   <a href="https://arxiv.org/abs/2602.20376"><button>Paper</button></a>
-  <a href="https://github.com/barbara-su/MaxKCutParallel/tree/public-release"><button>Code (public-release branch)</button></a>
+  <a href="https://github.com/barbara-su/MaxKCutParallel/tree/public-release"><button>Code</button></a>
   <br><br>
   <a href="https://akyrillidis.github.io/explore-quantum/MaxKCut.html"><button>Blog #1: Overview</button></a>
   <a href="https://akyrillidis.github.io/explore-quantum/LowRankMaxCut_GPU.html"><button>Blog #2: 15 GPUs</button></a>
   <a href="https://akyrillidis.github.io/explore-quantum/LowRankMaxCut_Rank1.html"><button>Blog #3: Rank-1</button></a>
-  <br>
+  <br><br>
   <a href="https://akyrillidis.github.io/explore-quantum/LowRankMaxCut_RandR2.html"><button>Blog #4: Rand Rank-2</button></a>
+  <br><br>
   <a href="https://akyrillidis.github.io/explore-quantum/LowRankMaxCut_DSatur.html"><button>Blog #5: Spectral vs Combinatorial</button></a>
 
   <p><i>Ria Stevens, Fangshuo Liao, Barbara Su, Jianqiang Li, Anastasios Kyrillidis</i></p>
