@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2026-03-26 12:00:00 UTC
-title: "New blog post: What Can 15 Obsolete GPUs Do for Combinatorial Optimization?"
+title: "What Can 15 Obsolete GPUs Do for Combinatorial Optimization?"
 ---
 
 We published a follow-up blog post on our [explore-quantum](https://akyrillidis.github.io/explore-quantum/) page, describing our GPU-parallel implementation of the low-rank Max-K-Cut solver.

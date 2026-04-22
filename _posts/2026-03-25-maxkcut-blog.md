@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2026-03-25 12:00:00 UTC
-title: "New blog post: Exploiting Low-Rank Structure in Max-K-Cut Problems"
+title: "Exploiting Low-Rank Structure in Max-K-Cut Problems"
 ---
 
 We published a new blog post on our [explore-quantum](https://akyrillidis.github.io/explore-quantum/) page, describing our work on exploiting low-rank structure in Max-K-Cut problems.

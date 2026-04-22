@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2026-04-18 12:00:00 UTC
-title: "New blog post: Spectral vs. Combinatorial for Max-3-Cut"
+title: "Spectral vs. Combinatorial for Max-3-Cut"
 ---
 
 We published a new blog post on our [explore-quantum](https://akyrillidis.github.io/explore-quantum/) page, comparing spectral and combinatorial construction heuristics for Max-3-Cut.

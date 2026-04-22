@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2026-04-05 12:00:00 UTC
-title: "New blog post: Rank-1 as a Building Block for Million-Node Max-3-Cut"
+title: "Rank-1 as a Building Block for Million-Node Max-3-Cut"
 ---
 
 We published a new blog post on our [explore-quantum](https://akyrillidis.github.io/explore-quantum/) page, describing how three algorithmic insights make rank-1 spectral methods practical at extreme scale for Max-3-Cut.

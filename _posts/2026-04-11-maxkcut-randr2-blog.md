@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2026-04-11 12:00:00 UTC
-title: "New blog post: Randomized Rank-2 for Max-3-Cut — When Two Eigenvectors Beat One"
+title: "Randomized Rank-2 for Max-3-Cut — When Two Eigenvectors Beat One"
 ---
 
 We published a new blog post on our [explore-quantum](https://akyrillidis.github.io/explore-quantum/) page, introducing a 3-phase spectral pipeline for Max-3-Cut that outperforms simulated annealing on half of the graph families tested.
