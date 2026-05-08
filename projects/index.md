@@ -5,6 +5,48 @@ fb_comments: 3
 
 ## Github available software packages
 
++ **GHOST: Grouped Hidden-state Output-aware Selection and Truncation &mdash; State Pruning for Mamba2 Selective State-Space Models (Python/PyTorch)**
+
+  <img src="https://akyrillidis.github.io/aiowls/assets/img/ghost_main_diagram.png" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
+
+  <a href="https://arxiv.org/abs/2602.11408"><button>Paper</button></a>
+  <a href="https://github.com/Menezmic21/mamba2_ghost"><button>Code</button></a>
+  <a href="https://akyrillidis.github.io/aiowls/ghost_mamba2.html"><button>Blog</button></a>
+
+  <p><i>Michael Menezes, Anastasios Kyrillidis. ICML 2026 (Seoul).</i></p>
+
+  <p><i>While Mamba2's expanded state dimension enhances temporal modeling, it incurs substantial inference overhead that saturates bandwidth during autoregressive generation. Standard pruning methods fail to address this bottleneck: unstructured sparsity leaves activations dense, magnitude-based selection ignores runtime dynamics, and gradient-based methods impose prohibitive costs. We introduce GHOST (Grouped Hidden-state Output-aware Selection and Truncation), a structured pruning framework that approximates control-theoretic balanced truncation using only forward-pass statistics. By jointly measuring controllability and observability, GHOST rivals the fidelity of gradient-based methods without requiring backpropagation. On models ranging from 130M to 2.7B parameters, our approach achieves a 50% state-dimension reduction with approximately 1 perplexity point increase on WikiText-2.</i></p>
+
+---
+
++ **Stochastic Self-Stabilization at the Edge of Stability (Python/PyTorch)**
+
+  <img src="https://akyrillidis.github.io/aiowls/assets/img/seos_fig1_trajectories.png" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
+
+  <a href="https://arxiv.org/abs/2604.21016"><button>Paper</button></a>
+  <a href="https://github.com/akyrillidis/stochastic-eos"><button>Code</button></a>
+  <a href="https://akyrillidis.github.io/aiowls/stochastic_self_stabilization.html"><button>Blog</button></a>
+
+  <p><i>Fangshuo (Jasper) Liao, Afroditi Kolomvaki, Anastasios Kyrillidis.</i></p>
+
+  <p><i>Train a neural network with full-batch gradient descent and the largest eigenvalue of its loss Hessian &mdash; the sharpness &mdash; climbs to a specific value, 2/&eta;, and pins itself there: the well-known Edge of Stability. Replace gradient descent with mini-batch SGD and the same quantity sits below 2/&eta;, with the gap widening as the batch shrinks. We close this. Our analysis extends Damian's coupling theorem to the stochastic case and yields a closed-form sharpness gap &Delta;S &asymp; (&eta;&beta;&sigma;<sub>u</sub><sup>2</sup>)/(4&alpha;), inversely proportional to batch size and depending on three landscape quantities &mdash; progressive sharpening rate &alpha;, self-stabilisation strength &beta;, and the noise variance projected onto the top Hessian eigenvector. Experiments on CIFAR-10 confirm the 1/b scaling (fitted slope &minus;1.27, R<sup>2</sup> = 0.98) across MLP and small-CNN architectures.</i></p>
+
+---
+
++ **Multiplicative Gaussian Input Noise for Two-Layer ReLU Networks (Python/PyTorch)**
+
+  <img src="https://akyrillidis.github.io/aiowls/assets/img/mgi_thumbnail.png" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
+
+  <a href="https://arxiv.org/abs/2602.17423"><button>Paper</button></a>
+  <a href="https://github.com/akyrillidis/multiplicative-gaussian-input-noise"><button>Code</button></a>
+  <a href="https://akyrillidis.github.io/aiowls/multiplicative_gaussian_input.html"><button>Blog</button></a>
+
+  <p><i>Afroditi Kolomvaki, Fangshuo (Jasper) Liao, Evan Dramko, Ziyun Guang, Anastasios Kyrillidis.</i></p>
+
+  <p><i>What happens when every input to a two-layer ReLU network is multiplied by an independent Gaussian random number &mdash; centered at 1, standard deviation &kappa;, with a fresh draw at every iteration? The training loss does not blow up: it converges linearly to a target whose distance from the global minimum we can write down as a function of &kappa;, the network width m, and the number of samples n. The technical move is a closed-form expectation: when the argument of a ReLU is Gaussian, the expected output has a clean expression z&middot;&Phi;(z/&sigma;) + &sigma;&middot;&phi;(z/&sigma;). Plugged back into the loss, the expected loss decomposes into a smoothed-network MSE plus a &kappa;<sup>2</sup>-scaled regularizer, both clean enough to admit an NTK-style convergence proof. Underneath the result is a general SGD theorem for biased gradient estimators with a relaxed smoothness condition.</i></p>
+
+---
+
 + **Exploiting Low-Rank Structure in Max-K-Cut Problems (Python/PyTorch)**
 
   <img src="/public/maxkcut_hyper.png" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
@@ -23,6 +65,20 @@ fb_comments: 3
   <p><i>Ria Stevens, Fangshuo Liao, Barbara Su, Jianqiang Li, Anastasios Kyrillidis</i></p>
 
   <p><i>We approach the Max-3-Cut problem through the lens of maximizing complex-valued quadratic forms and demonstrate that low-rank structure in the objective matrix can be exploited, leading to alternative algorithms to classical semidefinite programming (SDP) relaxations and heuristic techniques. We propose an algorithm for maximizing these quadratic forms over a domain of size K that enumerates and evaluates a set of O(n<sup>2r−1</sup>) candidate solutions, where n is the dimension of the matrix and r represents the rank of an approximation of the objective. We prove that this candidate set is guaranteed to include the exact maximizer when K=3 (corresponding to Max-3-Cut) and the objective is low-rank, and provide approximation guarantees when the objective is a perturbation of a low-rank matrix. This construction results in a family of novel, inherently parallelizable and theoretically-motivated algorithms for Max-3-Cut. Extensive experimental results demonstrate that our approach achieves performance comparable to existing algorithms across a wide range of graphs, while being highly scalable.</i></p>
+
+---
+
++ **Provable Model-Parallel Distributed PCA with Parallel Deflation (Python/PyTorch)**
+
+  <img src="https://akyrillidis.github.io/aiowls/assets/img/ParallelDeflationDiagram.png" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
+
+  <a href="https://openreview.net/pdf?id=n3SpSUzGi0"><button>Paper</button></a>
+  <a href="https://github.com/JLiao980706/ParallelDeflation"><button>Code</button></a>
+  <a href="https://akyrillidis.github.io/aiowls/parallel_deflation.html"><button>Blog</button></a>
+
+  <p><i>Fangshuo (Jasper) Liao, Wenyi Su, Anastasios Kyrillidis. CPAL 2025.</i></p>
+
+  <p><i>We introduce Parallel Deflation, a distributed PCA framework where K workers compute all K principal components simultaneously, with no sequential dependencies. Unlike prior approaches that require components to be extracted one at a time, our method provides the first provable convergence guarantees for model-parallel PCA: each component converges at a geometric rate that depends on the spectral gap, and crucially, errors from early imprecise estimates self-correct as later components improve. The algorithm achieves substantial speedups over sequential deflation while maintaining theoretical optimality, with applications including LoRA fine-tuning and large-scale matrix factorization.</i></p>
 
 ---
 
