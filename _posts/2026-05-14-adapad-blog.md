@@ -5,7 +5,7 @@ date: 2026-05-14 12:00:00 UTC
 title: "From PCA to LoRA: why fine-tuning could have been parallel all along"
 ---
 
-We published a new blog post on our [AI-OWLS](https://akyrillidis.github.io/aiowls/) page, summarising our NeurIPS 2026 submission with [Barbara Su](https://github.com/barbara-su) and [Fangshuo (Jasper) Liao](https://jasperliao.github.io/) on parallel rank-one deflation for low-rank fine-tuning.
+We published a new blog post on our [AI-OWLS](https://akyrillidis.github.io/aiowls/) page, summarising our recent [arXiv preprint](https://arxiv.org/abs/2605.10741) with [Barbara Su](https://github.com/barbara-su) and [Fangshuo (Jasper) Liao](https://jasperliao.github.io/) on parallel rank-one deflation for low-rank fine-tuning.
 
 The setup. Hotelling's 1933 deflation procedure — extract the leading rank-one component of a matrix, subtract its outer product, and ask the same question of the residual — has been the default for ninety-two years. It powers principal component analysis, animates the power method, and underwrites the rank-one updates that animate LoRA. The convention has always been *sequential*: the $k$-th component depends on the $(k-1)$-th, which depended on the $(k-2)$-th, and so on. Sequential ordering is convenient, but in practice each rank-one solver is approximate, and the errors *propagate*: the residual handed to the second component carries the first's slip, the third inherits the second's compounded error, and so on. There is no theorem of mathematics requiring sequence.
 
