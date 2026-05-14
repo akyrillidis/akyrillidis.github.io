@@ -384,12 +384,6 @@ title: OptimaLab
     </div>
 
     <div class="current-card">
-      <div class="student-name"><a href="https://raijeku.github.io/">David Quiroga</a></div>
-      <div class="student-since">PhD &middot; Since 2022</div>
-      <div class="student-topic">Quantum process tomography, distributed estimation of excited quantum states, variational methods.</div>
-    </div>
-
-    <div class="current-card">
       <div class="student-name"><a href="https://evandramko.github.io/">Evan Dramko</a></div>
       <div class="student-since">PhD &middot; Since 2023</div>
       <div class="student-topic">AI in material science.</div>
@@ -428,12 +422,6 @@ title: OptimaLab
   <div class="current-grid">
 
     <div class="current-card msc">
-      <div class="student-name">Hamza Shili</div>
-      <div class="student-since">MSc</div>
-      <div class="student-topic">Mixture of Experts systems.</div>
-    </div>
-
-    <div class="current-card msc">
       <div class="student-name">Michael Menezes</div>
       <div class="student-since">MSc (previously undergraduate)</div>
       <div class="student-topic">Pruning methods in AI, transfer learning, distributed optimization and learning.</div>
@@ -446,18 +434,6 @@ title: OptimaLab
 <div class="section-header">Undergraduate Students <span class="badge undergrad">Undergrad</span></div>
 <div class="current-section">
   <div class="current-grid">
-
-    <div class="current-card undergrad">
-      <div class="student-name">Barbara Su</div>
-      <div class="student-since">Undergraduate</div>
-      <div class="student-topic">Pruning methods in AI, distributed methods in learning, recursive neural network architectures for AI reasoning.</div>
-    </div>
-
-    <div class="current-card undergrad">
-      <div class="student-name">Xinze Fang</div>
-      <div class="student-since">Undergraduate</div>
-      <div class="student-topic">Pruning methods in AI, distributed methods in learning.</div>
-    </div>
 
     <div class="current-card undergrad">
       <div class="student-name">Jack Shen</div>
@@ -484,6 +460,45 @@ title: OptimaLab
 
 <!-- Alumni timeline trunk (reversed: most recent first) -->
 <div class="tree-trunk">
+
+  <!-- 2026 -->
+  <div class="year-marker"><span>2026</span></div>
+
+  <div class="branch left">
+    <div class="card">
+      <div class="student-name"><a href="https://raijeku.github.io/">David Quiroga</a></div>
+      <div class="student-degree">PhD &middot; 2022 &ndash; 2026</div>
+      <div class="student-topic">Quantum process tomography, distributed estimation of excited quantum states, variational methods.</div>
+      <div class="student-position">First position: Toyota</div>
+    </div>
+  </div>
+
+  <div class="branch right">
+    <div class="card">
+      <div class="student-name">Hamza Shili</div>
+      <div class="student-degree">MSc &middot; graduated 2026</div>
+      <div class="student-topic">Mixture of Experts systems.</div>
+      <div class="student-position">First position: Uber</div>
+    </div>
+  </div>
+
+  <div class="branch left">
+    <div class="card">
+      <div class="student-name"><a href="https://github.com/barbara-su">Barbara Su</a></div>
+      <div class="student-degree">Undergraduate &middot; graduated 2026</div>
+      <div class="student-topic">Pruning methods in AI, distributed methods in learning, recursive neural network architectures for AI reasoning.</div>
+      <div class="student-position">Next: MSc in CS, Stanford</div>
+    </div>
+  </div>
+
+  <div class="branch right">
+    <div class="card">
+      <div class="student-name">Xinze Feng</div>
+      <div class="student-degree">Undergraduate &middot; graduated 2026</div>
+      <div class="student-topic">Pruning methods in AI, distributed methods in learning.</div>
+      <div class="student-position">Next: PhD student, CMU</div>
+    </div>
+  </div>
 
   <!-- 2025 -->
   <div class="year-marker"><span>2025</span></div>
