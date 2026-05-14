@@ -9,10 +9,11 @@ fb_comments: 3
 
   <img src="https://akyrillidis.github.io/aiowls/assets/img/adapad_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
 
+  <a href="https://arxiv.org/abs/2605.10741"><button>Paper</button></a>
   <a href="https://github.com/barbara-su/ParallelLinearRegression"><button>Code</button></a>
   <a href="https://akyrillidis.github.io/aiowls/adapad.html"><button>Blog</button></a>
 
-  <p><i>Barbara Su, Fangshuo (Jasper) Liao, Anastasios Kyrillidis. NeurIPS 2026 submission.</i></p>
+  <p><i>Barbara Su, Fangshuo (Jasper) Liao, Anastasios Kyrillidis. NeurIPS 2026 submission. arXiv:2605.10741.</i></p>
 
   <p><i>For ninety-two years the convention has been to extract rank-one components sequentially &mdash; Hotelling's 1933 deflation, in essence. We show that running all r workers in parallel, with each worker rebuilding its deflation target from the latest estimates of its predecessors every round, makes the deflation mismatch vanish exponentially rather than freezing at predecessor finish. The proof carries from PCA to bilinear regression &mdash; the setting that underlies LoRA &mdash; via Wedin's theorem. On top of the parallel backbone, AdaPaD adds advance learning and per-module dynamic rank discovery, so the rank distribution is an output rather than an input. On the eight tasks of GLUE with DeBERTaV3-base at matched 0.34M-parameter budget, AdaPaD achieves the best average score (89.34); on four H200 GPUs at rank 64, the per-batch wall-clock speedup is 3.62&times;.</i></p>
 

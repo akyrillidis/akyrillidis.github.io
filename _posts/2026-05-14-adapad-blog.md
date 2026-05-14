@@ -17,6 +17,6 @@ The headline numbers. On the eight tasks of GLUE with DeBERTaV3-base at matched 
 
 Honest scope: the convergence proof is for bilinear regression, while LoRA's training loss composes the adapter output with the pretrained network's nonlinear forward pass and a task head. The empirical results confirm that AdaPaD's behaviour persists, but the formal extension via neural-tangent-kernel arguments or local linearization around the converged backbone is the natural next step. Synchronous communication is assumed; bounded-staleness asynchrony with provable guarantees remains open.
 
-Read the full post [here](https://akyrillidis.github.io/aiowls/adapad.html). Code: [github.com/barbara-su/ParallelLinearRegression](https://github.com/barbara-su/ParallelLinearRegression).
+Read the full post [here](https://akyrillidis.github.io/aiowls/adapad.html). Paper on [arXiv:2605.10741](https://arxiv.org/abs/2605.10741). Code: [github.com/barbara-su/ParallelLinearRegression](https://github.com/barbara-su/ParallelLinearRegression).
 
 Joint work with [Barbara Su](https://github.com/barbara-su) and [Fangshuo (Jasper) Liao](https://jasperliao.github.io/).
