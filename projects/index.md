@@ -5,6 +5,20 @@ fb_comments: 3
 
 ## Github available software packages
 
++ **AIR: Asymmetric Input Recurrence &mdash; One Model, Two Roles in a Shared Recurrent Transformer (Python/PyTorch)**
+
+  <img src="https://akyrillidis.github.io/aiowls/assets/img/air_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
+
+  <a href="https://arxiv.org/abs/2605.17811"><button>Paper</button></a>
+  <a href="https://github.com/juchengshen/air"><button>Code</button></a>
+  <a href="https://akyrillidis.github.io/aiowls/asymmetric_input.html"><button>Blog</button></a>
+
+  <p><i>Jucheng Shen, Barbara Su, Anastasios Kyrillidis. Preprint, arXiv:2605.17811, 2026.</i></p>
+
+  <p><i>Can a shared-weight recurrent Transformer develop distinct internal roles without being partitioned into separate modules? AIR is a minimal two-state reasoning architecture in which the <em>same</em> Transformer block is reused for both updates, and the only built-in asymmetry is that the encoded input is injected during L-updates but not H-updates. Across Sudoku-Extreme and 30&times;30 mazes, decoded rollouts show a stable split: <strong>z<sub>H</sub></strong> behaves like a fully-committed proposal state while <strong>z<sub>L</sub></strong> retains local uncertainty and shifting intermediate structure. Freeze experiments confirm the two states are coupled (collapsing either drops final accuracy to zero), and attention analysis shows L-updates are ~47% more local than H-updates at the deepest layer. With half the parameters of the two-network HRM baseline, AIR matches or exceeds it on both tasks (60.0% vs 55.0% on Sudoku, 75.6% vs 74.5% on Maze). A level-token control further shows the load-bearing requirement is a structurally separable state-identity signal, not input injection specifically.</i></p>
+
+---
+
 + **AdaPaD: Adaptive Parallel Deflation for PEFT with Self-Correcting Rank Discovery (Python/PyTorch)**
 
   <img src="https://akyrillidis.github.io/aiowls/assets/img/adapad_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
