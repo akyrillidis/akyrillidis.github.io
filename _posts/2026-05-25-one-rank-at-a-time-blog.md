@@ -1,0 +1,22 @@
+---
+layout: post
+disqus_comments: false
+date: 2026-05-25 12:00:00 UTC
+title: "One rank at a time: cascading error dynamics in sequential learning"
+---
+
+We published a new blog post on our [AI-OWLS](https://akyrillidis.github.io/aiowls/) page, summarising our recent [arXiv preprint](https://arxiv.org/abs/2505.22602) — accepted to TMLR — with [Mahtab Alizadeh Vandchali](#) and [Fangshuo (Jasper) Liao](https://jasperliao.github.io/) on error propagation in sequential rank-one learning.
+
+The setup. Many modern training schemes — low-rank adaptation (LoRA) being the canonical example — proceed in stages: fit a small low-rank update, freeze it, then fit another on the residual, and repeat. Each step depends on the residual left by the previous ones, and each step is approximate. The question we never seem to ask in this corner of the literature is the obvious one: how does a numerical mistake in step 1 actually affect everything that follows? This is the *sequential* half of the picture; the *parallel* half was our [AdaPaD paper](https://akyrillidis.github.io/aiowls/adapad.html) from earlier this spring, where the deflation runs concurrently and the same per-step errors *self-correct* across communication rounds rather than compounding.
+
+The answer is uncomfortably clean. For fixed-design linear regression we prove that the cumulative training error after $r$ sequential rank-one steps is bounded by the unavoidable truncation tail plus a sum of per-step numerical errors $\|\boldsymbol{\Psi}_k\|_F$, where each error is amplified by a *product* of factors $\rho_j = 2 + 6\sigma_j^\star / \mathcal{T}_j^\star$ over every later step. The $\sigma_j^\star$ are singular values of the true regressor; the $\mathcal{T}_j^\star = \sigma_j^\star - \sigma_{j+1}^\star$ are singular gaps. When gaps are large, the amplification is damped. When gaps are tight, the cascade can blow up geometrically: a small error in step 1 can grow by a factor of eight by step 8, on top of fresh errors at every later step. Theorems 2 and 3 lift the same structure to parameter recovery, in the noiseless case and under Gaussian label noise.
+
+The cascade structure has an immediate practical consequence: errors at early steps propagate through every later step; errors at late steps do not. So if you have a fixed total compute budget $T$ for solving the $r$ per-step rank-1 sub-problems, you should spend disproportionately more on the first few. We make this quantitative via a one-parameter schedule family indexed by $\alpha$: positive $\alpha$ shifts budget toward earlier components, negative $\alpha$ toward later, $\alpha=0$ is uniform. Synthetic experiments on rank-20 linear regression at fixed budget $T=500$ confirm the prediction — *more-first* schedules dominate uniformly across reconstruction error, training objective, and a cumulative numerical-error proxy, saturating around $\alpha \approx 1.5$; *less-first* schedules sharply degrade.
+
+Two exploratory probes outside the linear setting suggest the qualitative pattern travels. Sequential rank-1 LoRA on feedforward nets for MNIST/CIFAR10/CIFAR100 lands in the same accuracy band as jointly trained rank-3 LoRA within five per cent of total FLOPs. On DistilBERT/SST-2, the first sequential rank-1 component already matches the jointly trained rank-3 LoRA reference at 0.872 accuracy; the second and third add 0.003 and 0.001. Across the more-first $\alpha$ branch, many schedules close the gap to joint training as compute accumulates; within that branch the dependence on $\alpha$ is not strictly monotone, which we read as a more nuanced scheduling picture rather than a single universally optimal rule.
+
+Honest scope: the theorems are for fixed-design linear regression. The LoRA experiments are exploratory probes — qualitative evidence that the linear theory's intuition survives, not theorem-validated extensions. We do not claim a benchmark-beating method, we do not claim superiority over joint training, and we do not claim a tight lower bound matching the cascade product. What we do claim is an explanatory framework: when sequential rank-1 algorithms behave well, *why* they do; and when they don't, *why* they don't.
+
+Read the full post [here](https://akyrillidis.github.io/aiowls/one_rank_at_a_time.html). Paper on [arXiv:2505.22602](https://arxiv.org/abs/2505.22602). Code release forthcoming.
+
+Joint work with [Mahtab Alizadeh Vandchali](#) and [Fangshuo (Jasper) Liao](https://jasperliao.github.io/).
