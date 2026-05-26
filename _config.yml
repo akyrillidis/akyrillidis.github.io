@@ -1,6 +1,10 @@
 port: 3000
 highlighter: rouge
 lsi: false
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  input: GFM
 permalink: /:year/:month/:day/:title.html
 # paginate: 50
 # markdown: rdiscount
