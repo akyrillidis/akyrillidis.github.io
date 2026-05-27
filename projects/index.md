@@ -5,6 +5,20 @@ fb_comments: 3
 
 ## Github available software packages
 
++ **ORAT: One Rank at a Time &mdash; Cascading Error Dynamics in Sequential Learning (Python / NumPy / SciPy)**
+
+  <img src="https://akyrillidis.github.io/aiowls/assets/img/one_rank_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
+
+  <a href="https://arxiv.org/abs/2505.22602"><button>Paper</button></a>
+  <a href="https://github.com/MahiAV/ORAT"><button>Code</button></a>
+  <a href="https://akyrillidis.github.io/aiowls/one_rank_at_a_time.html"><button>Blog</button></a>
+
+  <p><i>Mahtab Alizadeh Vandchali, Fangshuo (Jasper) Liao, Anastasios Kyrillidis. Transactions on Machine Learning Research (TMLR), 2026 (in press). arXiv:2505.22602.</i></p>
+
+  <p><i>When low-rank models are fit one rank-1 component at a time &mdash; the canonical mode of LoRA fine-tuning, deflation PCA, and orthogonal matching pursuit &mdash; per-step numerical errors compound geometrically through every later step. The amplification is governed by the spectral gaps of the output matrix <strong>Y</strong>. We prove this for fixed-design linear regression (three theorems on training error, noiseless parameter recovery, and Gaussian-noise recovery) and derive a one-parameter family of compute-allocation schedules; the "more-first" schedule with &alpha;&nbsp;&asymp;&nbsp;1.5 saturates the empirical optimum. Exploratory probes on vision LoRA (MNIST / CIFAR-10 / CIFAR-100) and language LoRA (DistilBERT / SST-2) show the qualitative pattern transfers across domains. The first sequential rank-1 component on SST-2 already matches jointly trained rank-3 LoRA at 0.872 accuracy. Honest scope: an explanatory framework, not a benchmark-beating method.</i></p>
+
+---
+
 + **AIR: Asymmetric Input Recurrence &mdash; One Model, Two Roles in a Shared Recurrent Transformer (Python/PyTorch)**
 
   <img src="https://akyrillidis.github.io/aiowls/assets/img/air_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">

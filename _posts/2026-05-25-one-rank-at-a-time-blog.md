@@ -19,6 +19,6 @@ Two exploratory probes outside the linear setting suggest the qualitative patter
 
 Honest scope: the theorems are for fixed-design linear regression. The LoRA experiments are exploratory probes — qualitative evidence that the linear theory's intuition survives, not theorem-validated extensions. We do not claim a benchmark-beating method, we do not claim superiority over joint training, and we do not claim a tight lower bound matching the cascade product. What we do claim is an explanatory framework: when sequential rank-1 algorithms behave well, *why* they do; and when they don't, *why* they don't.
 
-Read the full post [here](https://akyrillidis.github.io/aiowls/one_rank_at_a_time.html). Paper on [arXiv:2505.22602](https://arxiv.org/abs/2505.22602). Code release forthcoming.
+Read the full post [here](https://akyrillidis.github.io/aiowls/one_rank_at_a_time.html). Paper on [arXiv:2505.22602](https://arxiv.org/abs/2505.22602). Code at [github.com/MahiAV/ORAT](https://github.com/MahiAV/ORAT).
 
 Joint work with [Mahtab Alizadeh Vandchali](#) and [Fangshuo (Jasper) Liao](https://jasperliao.github.io/).
