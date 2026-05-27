@@ -1596,6 +1596,29 @@ grid-based “maps” visualizing the spatial extent of the various relations.
 
 ## Journals
 
++ Mahtab Alizadeh Vandchali, Fangshuo (Jasper) Liao, Anastasios Kyrillidis, [*``One Rank at a Time: Cascading Error Dynamics in Sequential Learning"*](https://arxiv.org/abs/2505.22602), Transactions on Machine Learning Research (TMLR), 2026 (accepted, in press).
+
+  <button id="b_abs_j24"> Abstract </button>
+  <button id="b_bib_j24"> Bibtex </button>
+  <button id="b_code_j24"> Code </button>
+  <button id="b_blog_j24"> Blog </button>
+  <p id="abs_j24"> <i> Sequential learning — where complex tasks are broken down into simpler, hierarchical components — has emerged as a paradigm in AI. This paper views sequential learning through the lens of low-rank linear regression, focusing on how errors propagate when learning rank-1 subspaces sequentially. We present an analysis framework that decomposes the learning process into a series of rank-1 estimation problems, where each subsequent estimation depends on the accuracy of previous steps. Our aim is explanatory rather than comparative: we analyze error propagation and derive compute-allocation guidance without claiming superiority over joint or one-shot training. The main contribution is a characterization of error propagation in this sequential process, establishing bounds on how per-step numerical errors — caused by limited computational budgets and finite precision — affect overall model accuracy. We prove that these errors compound in predictable ways, with implications for both algorithmic design and stability guarantees. Synthetic linear-regression experiments validate the theory; exploratory LoRA-based vision (MNIST/CIFAR) and language (DistilBERT/SST-2) probes show the qualitative cascade pattern transfers across domains.
+  </i> </p>
+
+  <pre id="bib_j24"><samp>
+	@article{vandchali2026onerank,
+  title = {One Rank at a Time: Cascading Error Dynamics in Sequential Learning},
+  author = {Vandchali, Mahtab Alizadeh and Liao, Fangshuo and Kyrillidis, Anastasios},
+  journal = {Transactions on Machine Learning Research (TMLR)},
+  year = {2026},
+  note = {Accepted, in press. arXiv:2505.22602}
+}
+  </samp></pre>
+
+  <p id="code_j24"><a href="https://github.com/akyrillidis/ORAT">github.com/akyrillidis/ORAT</a></p>
+  <p id="blog_j24"><a href="https://akyrillidis.github.io/aiowls/one_rank_at_a_time.html">AI-OWLS blog post</a></p>
+
+
 + Yuqian Huo, David A. Quiroga, Anastasios Kyrillidis, Tirthak Patel, [*``Three Birds with One Stone: Improving Performance, Convergence, and System Throughput with NEST"*](https://doi.org/10.1145/3771580), Proceedings of the ACM on Measurement and Analysis of Computing Systems (POMACS/SIGMETRICS), 9(3), 2025.
 
   <button id="b_abs_j23"> Abstract </button>
