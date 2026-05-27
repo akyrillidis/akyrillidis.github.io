@@ -10,7 +10,7 @@ fb_comments: 3
   <img src="https://akyrillidis.github.io/aiowls/assets/img/one_rank_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
 
   <a href="https://arxiv.org/abs/2505.22602"><button>Paper</button></a>
-  <a href="https://github.com/MahiAV/ORAT"><button>Code</button></a>
+  <a href="https://github.com/akyrillidis/ORAT"><button>Code</button></a>
   <a href="https://akyrillidis.github.io/aiowls/one_rank_at_a_time.html"><button>Blog</button></a>
 
   <p><i>Mahtab Alizadeh Vandchali, Fangshuo (Jasper) Liao, Anastasios Kyrillidis. Transactions on Machine Learning Research (TMLR), 2026 (in press). arXiv:2505.22602.</i></p>
