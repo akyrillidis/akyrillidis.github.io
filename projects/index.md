@@ -5,6 +5,20 @@ fb_comments: 3
 
 ## Github available software packages
 
++ **G-DEQ: Guided Deep Equilibrium &mdash; Decoupling Basin Selection from Equilibrium Precision for Learned Atomic Relaxation (Python/PyTorch)**
+
+  <img src="https://akyrillidis.github.io/aiowls/assets/img/gdeq_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
+
+  <a href="https://akyrillidis.github.io/pubs/Preprints/G-DEQ.pdf"><button>Paper</button></a>
+  <a href="https://github.com/akyrillidis/G-DEQ"><button>Code</button></a>
+  <a href="https://akyrillidis.github.io/aiowls/guided_deq.html"><button>Blog</button></a>
+
+  <p><i>Yifei Zhang, Evan Dramko, Anastasios Kyrillidis. Preprint, 2026.</i></p>
+
+  <p><i>Relaxing a candidate atomic structure to its nearest energy minimum &mdash; the expensive inner loop of materials discovery &mdash; is an iterated fixed-point map: a machine-learned interatomic potential applied for many steps until the forces vanish. Training <em>through</em> that relaxation forces a trade-off: backpropagation-through-time steers which basin the structure lands in but stores every step (each a full neural-network evaluation over every atom, so memory grows with trajectory length), while implicit differentiation is constant-memory but only sharpens whichever minimum it already reached. We show these are two separable jobs. A short unrolled <strong>guidance</strong> phase selects the basin at O(K) memory; an implicit <strong>equilibrium</strong> phase settles precisely at O(1) memory &mdash; so the memory footprint becomes a tunable knob rather than a fixed cost. On silicon point defects the decomposition matches full backpropagation-through-time at 3.5&times; less memory and reaches more correct minima (85 of 100 basins vs 79), a controlled analysis showing the advantage is basin selection rather than a memory optimization. We also map the method's regime of validity &mdash; correct base forces, genuinely competing minima, a base that lands in the wrong one, and a short relaxation &mdash; turning "when does trajectory-level training help?" into a checkable guide across the machine-learned-potential dataset landscape, with a shared vocabulary bridging machine learning and materials science.</i></p>
+
+---
+
 + **ORAT: One Rank at a Time &mdash; Cascading Error Dynamics in Sequential Learning (Python / NumPy / SciPy)**
 
   <img src="https://akyrillidis.github.io/aiowls/assets/img/one_rank_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
