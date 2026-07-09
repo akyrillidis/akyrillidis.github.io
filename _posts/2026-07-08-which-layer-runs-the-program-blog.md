@@ -18,3 +18,5 @@ The two lines of work meet from opposite ends: Anthropic reads, off a model we c
 If you can spare a few minutes, please [give it a read](https://akyrillidis.github.io/aiowls/which_layer_runs_the_program.html) and send along your honest feedback.
 
 The paper and the code are available on request at anastasios@rice.edu. In collaboration with Microsoft Research.
+
+*This line of work was inspired by Dimitris Papailiopoulos's essay ["Can You Train a Computer?"](https://x.com/DimitrisPapail/status/2028669695344148946).*

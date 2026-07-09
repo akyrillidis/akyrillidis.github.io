@@ -16,3 +16,5 @@ We are just as explicit about the edges. The effect is robust — it holds acros
 This one is early and exploratory, and the main reason I'm sharing it is to hear what the community makes of it. If you can spare a few minutes, please [give it a read](https://akyrillidis.github.io/aiowls/can_we_train_a_computer.html) and send along your honest feedback — more posts in this vein will follow.
 
 The paper and the code are available on request at anastasios@rice.edu. In collaboration with Microsoft Research.
+
+*This line of work was inspired by Dimitris Papailiopoulos's essay ["Can You Train a Computer?"](https://x.com/DimitrisPapail/status/2028669695344148946).*
