@@ -11,6 +11,6 @@ The key result: for a rank-r objective, drawing a single random direction from t
 
 Experimentally, a single random draw already lands within 87&ndash;98% of the true rank-r optimum (about 7&times; the guaranteed worst-case floor), and the sample budget needed for a near-optimal cut stays flat as we scale graphs from a thousand to a million nodes &mdash; exactly the n-independence the theory predicts.
 
-Read the full blog post [here](https://akyrillidis.github.io/explore-quantum/LowRankMaxCut_Theory.html), and check out the [code](https://github.com/barbara-su/MaxKCutParallel/tree/public-release).
+Read the full blog post [here](https://akyrillidis.github.io/explore-quantum/LowRankMaxCut_Theory.html), check out the [code](https://github.com/barbara-su/MaxKCutParallel/tree/public-release), and the paper on [arXiv](https://arxiv.org/abs/2602.20376).
 
-Joint work with Ria Stevens and Jasper Liao.
+Joint work with Ria Stevens, Fangshuo Liao, Barbara Su, Thanasis Hadjidimoulas, and Jianqiang Li.
