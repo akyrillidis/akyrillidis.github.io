@@ -5,6 +5,20 @@ fb_comments: 3
 
 ## Github available software packages
 
++ **IP-PDT: Identity-Paired Progressive Depth Training &mdash; When Trainability Persists Beyond Expressibility (Python / PennyLane)**
+
+  <img src="https://akyrillidis.github.io/explore-quantum/assets/img/ippdt_shock.png" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
+
+  <a href="https://arxiv.org/abs/2607.16800"><button>Paper</button></a>
+  <a href="https://github.com/tanihad/PDT-VQE"><button>Code</button></a>
+  <a href="https://akyrillidis.github.io/explore-quantum/IP-PDT.html"><button>Blog</button></a>
+
+  <p><i>Athanasios Hadjidimoulas, Tirthak Patel, Anastasios Kyrillidis. arXiv:2607.16800, 2026.</i></p>
+
+  <p><i>Variational quantum eigensolvers are trained by growing a circuit deeper, but in hardware-efficient ans&auml;tze the entangling CNOT gates cannot be switched off &mdash; so every appended layer irreversibly commits to more entanglement and spikes the energy just minimized (an <em>initialization shock</em> that can erase prior progress). IP-PDT appends instead a matched forward/inverse block pair that composes to the identity at initialization: each stage begins exactly where the previous one succeeded, and because the adjacent CNOT rings cancel, the effective circuit retains a single entangling layer wrapped in overparameterized single-qubit rotations. We prove a <strong>Reachable Set Saturation Theorem</strong> &mdash; the variational manifold expands exactly once and then saturates, so all further depth is pure overparameterization &mdash; yet progressive training keeps improving the result (<em>trainability beyond expressibility</em>), and we pair it with a monotone-energy guarantee and spectral-gap fidelity bounds. On structurally simple ground states IP-PDT matches or beats full-depth baselines with about 5&times; fewer two-qubit gates, wins on 7 of 9 benchmark Hamiltonians, and stays trainable at n=16 where the hardware-efficient baseline collapses. We map the regime of validity explicitly: the gains come mostly from the progressive curriculum (identity-pairing is the enabling architecture, not a trainability serum), the convergence guarantee is an inheritance result vacuous in the barren regime, and near criticality &mdash; where the ground state leaves the single-entangler reachable set &mdash; deeper entangling circuits are still required.</i></p>
+
+---
+
 + **G-DEQ: Guided Deep Equilibrium &mdash; Decoupling Basin Selection from Equilibrium Precision for Learned Atomic Relaxation (Python/PyTorch)**
 
   <img src="https://akyrillidis.github.io/aiowls/assets/img/gdeq_thumbnail.svg" width="220" align="right" style="margin-left:12px; margin-bottom:8px;">
