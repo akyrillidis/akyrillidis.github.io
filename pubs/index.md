@@ -5,6 +5,8 @@ fb_comments: 3
 
 ## Conference papers
 
++ Ria Stevens, Fangshuo Liao, Barbara Su, Thanasis Hadjidimoulas, Jianqiang Li, Anastasios Kyrillidis, [*``Exploiting Low-Rank Objective Structure in Discrete Quadratic Optimization"*](https://arxiv.org/abs/2602.20376), arXiv preprint, 2026.
+
 + Fangshuo Liao, Anastasios Kyrillidis, [*``Guided by the Experts: Provable Feature Learning Dynamic of Soft-Routed Mixture-of-Experts"*](https://arxiv.org/abs/2510.07205), Twenty-ninth International Conference on Artificial Intelligence and Statistics (AISTATS-26), 2026.
 
   <button id="b_abs_c67"> Abstract </button>
