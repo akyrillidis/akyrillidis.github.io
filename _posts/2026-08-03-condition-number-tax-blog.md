@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus_comments: false
-date: 2026-08-03 12:00:00 UTC
+date: 2026-08-03 00:00:00 UTC
 title: "The condition-number tax: same matrix, same condition number, three iterations or three thousand"
 ---
 
